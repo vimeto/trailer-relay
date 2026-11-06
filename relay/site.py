@@ -108,7 +108,7 @@ def _size(p: Path) -> int:
 
 
 def build(out: str | Path, root: str | Path, runs_dir: str | Path | None = None, full_traces: bool = False, log=print,
-          valid_only: bool = False) -> dict:
+          valid_only: bool = False, viewer_dir: str | Path | None = None) -> dict:
     root = Path(root)
     runs = Path(runs_dir) if runs_dir else root / "runs"
     out = Path(out)
@@ -129,7 +129,7 @@ def build(out: str | Path, root: str | Path, runs_dir: str | Path | None = None,
 
     # the viewer, marked static
     ex = out / "explorer"
-    shutil.copytree(root / "viewer", ex, ignore=shutil.ignore_patterns(*VIEWER_SKIP, ".*"))
+    shutil.copytree(Path(viewer_dir) if viewer_dir else root / "viewer", ex, ignore=shutil.ignore_patterns(*VIEWER_SKIP, ".*"))
     page = (ex / "index.html").read_text(encoding="utf-8")
     if STATIC_META not in page:
         page = page.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n' + STATIC_META, 1)

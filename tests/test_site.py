@@ -103,3 +103,12 @@ def test_valid_export_removes_whole_infrastructure_failed_study(tmp_path):
     assert not (out / 'runs/b2.json').exists()
     assert json.loads((out / 'runs/studies/index.json').read_text()) == []
     assert json.loads((out / 'runs/results.json').read_text())['studies'] == []
+
+
+def test_export_uses_installed_viewer_assets_outside_workspace(tmp_path):
+    root = _fixture(tmp_path)
+    (root / 'viewer').unlink()
+    out = tmp_path / 'installed-export'
+    build(out, root, viewer_dir=ROOT / 'viewer', log=lambda _: None)
+    assert (out / 'explorer/vendor/three.module.min.js').is_file()
+    assert (out / 'runs/a1.json').is_file()

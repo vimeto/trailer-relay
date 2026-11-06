@@ -148,7 +148,7 @@ def cmd_serve(a):
 def cmd_site(a):
     from .site import build
 
-    build(a.out, ROOT, a.runs, full_traces=a.full_traces, valid_only=a.valid_only)
+    build(a.out, ROOT, a.runs, full_traces=a.full_traces, valid_only=a.valid_only, viewer_dir=viewer_directory())
 
 
 def main(argv=None):
