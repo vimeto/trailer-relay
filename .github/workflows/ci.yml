@@ -6,6 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         python: ['3.11', '3.13']
     steps:
@@ -30,3 +31,12 @@ jobs:
       - run: python -m pip install -e '.[dev]'
       - run: python -m playwright install --with-deps chromium
       - run: pytest -q -m browser
+  macos-isolation:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e '.[dev]'
+      - run: pytest -q tests/test_continuous.py::test_controller_sandbox_blocks_home_and_network tests/test_harness_v3.py::test_program_sandbox_blocks_secrets_network_and_writes

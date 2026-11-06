@@ -161,22 +161,36 @@ def test_checkpoints_are_partial_prefixes(mini_relay):
     assert seen[0]["totals"]["legs"] == 2 and seen[0]["totals"]["legs_run"] == 1
 
 
-def test_parallel_checkpoint_when_prefix_grows(mini_relay, monkeypatch):
-    """Legs may finish out of order; a checkpoint is written whenever the contiguous prefix of legs grows."""
-    import time as _t
-    relay = dict(mini_relay, tracks=list(mini_relay["tracks"]) * 3)
-    delays = iter([0.0, 0.4, 0.1])  # legs submitted in order; leg 1 finishes last
-    lock = __import__("threading").Lock()
+def test_parallel_checkpoint_when_prefix_grows():
+    """Drive completion order explicitly; simulator speed and scheduling must not decide the assertion."""
+    from threading import Event
+    from relay.runner import _drive_all
 
-    class Slow(Autopilot):
-        def run_leg(self, leg, *a, **k):
-            with lock:
-                d = next(delays)
-            _t.sleep(d)
-            return super().run_leg(leg)
+    gates = [Event() for _ in range(3)]
+    gates[0].set()
+    done, seen, completion = {}, [], []
 
-    seen = []
-    # run_relay only parallelises LLM drivers through run_trials; call with parallel_legs directly
-    run_relay(relay, Slow(), "autopilot", log=None, checkpoint=seen.append, parallel_legs=True)
-    # leg 0 done -> prefix 1 (checkpoint); leg 2 done -> prefix still 1 (none); leg 1 -> complete (final record, no checkpoint)
-    assert [len(r["legs"]) for r in seen] == [1]
+    def run_one(i, track):
+        assert gates[i].wait(10), f"leg {i} was never released"
+        return i
+
+    def finish(i, out):
+        done[i] = out
+        completion.append(i)
+        if i == 0:
+            gates[2].set()
+        elif i == 2:
+            gates[1].set()
+
+    def prefix(records):
+        out = []
+        for i in range(3):
+            if i not in records:
+                break
+            out.append(records[i])
+        return out
+
+    _drive_all([0, 1, 2], run_one, finish, done, prefix, True, seen.append, lambda: prefix(done))
+    assert completion == [0, 2, 1]
+    assert seen == [[0]]  # leg 2 adds no prefix; the complete relay is returned without a partial checkpoint
+    assert prefix(done) == [0, 1, 2]

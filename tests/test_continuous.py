@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import math
+import shutil
+import sys
 from pathlib import Path
 import time
 
@@ -165,28 +167,39 @@ def test_controller_tick_errors(mini_relay, code, needle):
     assert needle in str(ei.value) and not c.alive
 
 
+@pytest.mark.skipif(sys.platform != "darwin" or shutil.which("sandbox-exec") is None, reason="macOS sandbox-exec isolation only")
 def test_controller_sandbox_blocks_home_and_network():
-    secret = str(Path.home() / ".secrets")
-    code = f"""
+    import socket
+    import tempfile
+
+    # A real readable canary and listening local socket make denial observable without personal files or internet.
+    with tempfile.TemporaryDirectory(prefix=".relay-canary-", dir=Path.home()) as home_dir, socket.socket() as listener:
+        canary = Path(home_dir) / "canary.txt"
+        canary.write_text("isolated-test-canary")
+        listener.bind(("127.0.0.1", 0))
+        listener.listen()
+        port = listener.getsockname()[1]
+        code = f"""
 import socket
 r = []
 try:
-    open({secret!r}).read(); r.append("READ")
+    open({str(canary)!r}).read(); r.append("READ")
 except Exception as e:
     r.append(type(e).__name__)
 try:
-    socket.create_connection(("example.com", 80), timeout=2); r.append("NET")
+    socket.create_connection(("127.0.0.1", {port}), timeout=2); r.append("NET")
 except Exception as e:
     r.append(type(e).__name__)
 def control(obs):
     return (0, 0)
 print(r)
 """
-    c = ControllerProcess(code)
-    try:
-        assert "READ" not in c.startup_out and "NET" not in c.startup_out
-    finally:
-        c.close()
+        c = ControllerProcess(code)
+        try:
+            assert c.sandbox
+            assert "READ" not in c.startup_out and "NET" not in c.startup_out
+        finally:
+            c.close()
 
 
 def test_parse_command_forms():
