@@ -1,0 +1,801 @@
+{
+ "study": "20261106-1455-pool-claude-opus-5-5-allow-336b",
+ "model": "claude-code:claude-opus-5-5",
+ "condition": "pool",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 3,
+ "steps": 2,
+ "policy": {
+  "numbers": "allow",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-145540-0a1ed7",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 88.5,
+     "progress": 1.0,
+     "touches": 3,
+     "notes_in": [],
+     "note": {
+      "text": "Finished, but I lost time to a sign error. My first controllers swung the trailer the wrong way, so it hit the rear-left rail twice, and I clipped the front-right corner while pulling forward. Once fixed, it worked well: aim the trailer's rear at the widest open gap seen on the reversing camera, look at the screen the whole time, and hold the hitch near the angle you want with steering that follows it. This course bends right. With this short trailer, keep the hitch under about 25 degrees and reverse at about 0.8 m/s. Check your hitch-angle sign early.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (602 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished, but I lost time to one sign error. My first controllers told the trailer to swing the wrong way, so it hit the rear-left rail twice, and I clipped the front-right corner while pulling forward. Once fixed, it worked well: aim the trailer's rear at the widest open gap seen on the reversing camera, look at the screen the whole time, and hold the hitch near the angle you want with steering that follows it. This course bends right. With this short trailer, keep the hitch under about 25 degrees and reverse at about 0.8 m/s. Check your hitch-angle sign in the first second before you trust it.",
+       "Finished, but I lost time to a sign error. My first controllers swung the trailer the wrong way, so it hit the rear-left rail twice, and I clipped the front-right corner while pulling forward. Once fixed, it worked well: aim the trailer's rear at the widest open gap seen on the reversing camera, look at the screen the whole time, and hold the hitch near the angle you want with steering that follows it. This course bends right. With this short trailer, keep the hitch under about 25 degrees and reverse at about 0.8 m/s. Check your hitch-angle sign early."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "FINISHED",
+     "time": 87.55,
+     "progress": 1.0,
+     "touches": 2,
+     "notes_in": [],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "too long (670 characters; the limit is 600)"
+       ],
+       [
+        "too long (607 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished in 88 s with 2 touches. The first touch came from planning a path off a short memory of the rails while swinging the trailer hard: its rear-right corner clipped the inside of the bend. The second came from pulling forward to unpin with the wheels turned, which swung the tractor's front-right corner into the rail. Priorities: hold the trailer's rear well clear of the inside rail and keep the hitch angle moderate (under about 30 degrees). When you unpin, pull forward straight and only a short way. Near the bay, stop aiming for an angle and just hold the hitch at zero while creeping in. For this short trailer, steering slowly at reversing speed works well.",
+       "Finished in 88 s with 2 touches. Touch one: the path was planned from a short memory of the rails while swinging the trailer hard, so its rear-right corner clipped the inside of the bend. Touch two: I pulled forward to unpin with the wheels turned, and the tractor's front-right corner swung into the rail. Keep the trailer's rear well clear of the inside rail and keep the hitch angle moderate, under about 30 degrees. To unpin, pull forward nearly straight and only a short way. Near the bay, stop aiming and just hold the hitch straight while creeping in. A slow reversing speed suits this short trailer."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "FINISHED",
+     "time": 98.15,
+     "progress": 1.0,
+     "touches": 5,
+     "notes_in": [],
+     "note": {
+      "text": "Finished but touched the left rail 5 times. The alley seems to bend near the end, and steering by the gap between the rails let the cart drift left. The bay sits right of the alley centre, so watch its painted corners early. The short cart reacts fast: keep hitch targets small, steer gently and reverse at about 0.3 m/s. Pull-forwards caused touches because the mower's nose swings into the rail, so avoid them, or keep them short and straight. Tip: if the front is pinned, reverse with the wheels turned slightly toward that rail. The nose swings off and the cart still goes in straight.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (633 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished but touched the left rail 5 times. The alley bends near the end (rails angled about 17 deg), so steering by the gap between rails without a heading fit made the cart drift left. The bay sits right of the alley centre, so watch its painted corners. The short cart reacts fast: keep hitch targets small, steer gently and reverse at about 0.3 m/s. Pulls forward cost touches because the mower's nose swings into the rail, so avoid them and keep it short and straight if you must. Tip: if the front is pinned, reverse with the wheels turned slightly toward that rail; it swings the nose off and the cart still rolls in straight.",
+       "Finished but touched the left rail 5 times. The alley seems to bend near the end, and steering by the gap between the rails let the cart drift left. The bay sits right of the alley centre, so watch its painted corners early. The short cart reacts fast: keep hitch targets small, steer gently and reverse at about 0.3 m/s. Pull-forwards caused touches because the mower's nose swings into the rail, so avoid them, or keep them short and straight. Tip: if the front is pinned, reverse with the wheels turned slightly toward that rail. The nose swings off and the cart still goes in straight."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "FINISHED",
+     "time": 62.1,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "too long (663 characters; the limit is 600)"
+       ],
+       [
+        "too long (630 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished in 62 s, no touches, no gear changes, using one controller that I left running the whole leg. What worked: track the cab pose from speed and steering, keep the rail points seen in the camera and both mirrors in a world frame, choose the most open direction behind the trailer's rear and nudge it towards the middle of the lane. Then steer to set the hitch angle aimed for, with a feedforward term. Keep your eyes mostly on the camera screen and glance briefly at the mirrors. The long semi-trailer reacts slowly, so hitch angles up to about 28 degrees were safe at a steady 1.4 m/s. Reaching the bay ended the leg even with the hitch at about 20 degrees.",
+       "Finished in 62 s with no touches and no gear changes, using one controller for the whole leg. What worked: track the cab's position from speed and steering. Keep the rail points from the camera and both mirrors in a world frame. Choose the most open direction behind the trailer's rear, nudge it towards the middle of the lane, then steer to set the hitch angle you want, with feedforward. Watch the camera screen most of the time and glance briefly at the mirrors. The long semi reacts slowly, so hitch angles up to about 28 degrees were safe at a steady 1.4 m/s. The leg ended in the bay even with the hitch at about 20 degrees."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145540-c7f883",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 124.05,
+     "progress": 1.0,
+     "touches": 5,
+     "notes_in": [],
+     "note": {
+      "text": "This course turns RIGHT going backwards. I lost time early: the trailer's rear-left corner hit the left rail four times because I reversed straight or let a gap-seeking steer pull the trailer left. What worked: pull forward on left lock until the car points slightly left in the lane, then reverse at walking pace holding the trailer swung right about 20 degrees through the bend, watching the reversing camera. Once the painted bay corners show, track the bay centre line and straighten gradually; the leg ends once lined up. Commit to the turn early; shuffling costs most.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (660 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "This course turns RIGHT going backwards. I lost a lot of time early: the trailer's rear-left corner hit the left rail four times because I reversed straight, or let a gap-seeking steer pull the trailer left. What worked: first pull forward on left lock until the car points a bit left in the lane. Then reverse at a walking pace and hold the trailer swung right at about 20 degrees through the whole bend. Watch the reversing camera. Once the painted bay corners show, track the bay's centre line and straighten gradually. The leg ends as soon as the trailer is lined up. Commit to the turn direction early; shuffling forward and back costs more than anything.",
+       "This course turns RIGHT going backwards. I lost time early: the trailer's rear-left corner hit the left rail four times because I reversed straight or let a gap-seeking steer pull the trailer left. What worked: pull forward on left lock until the car points slightly left in the lane, then reverse at walking pace holding the trailer swung right about 20 degrees through the bend, watching the reversing camera. Once the painted bay corners show, track the bay centre line and straighten gradually; the leg ends once lined up. Commit to the turn early; shuffling costs most."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 211.7,
+     "progress": 0.8159,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "too long (663 characters; the limit is 600)"
+       ],
+       [
+        "too long (606 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "The first bend was easy with closed-loop hitch control. I failed in the final bend, about 8 m before the bay, which sits toward the RIGHT rail. The trailer's rear-left corner kept clipping the left (inside) rail, and later the tractor's front-left did too. Swinging the trailer's rear right too early made the trailer cut the corner. Each rewrite reset my wall memory and repeated the mistake from a pinned spot. Priority: before the last bend, stay wide toward the outside and start the swing late. Keep one map of the rails for the whole leg. Tip: this short trailer reacts fast and the tractor's nose swings wide, so watch both ends and go slowly near the end.",
+       "The first bend was easy with closed-loop hitch control. I failed in the final bend, about 8 m before the bay, which sits toward the RIGHT rail. The trailer's rear-left corner kept clipping the left (inside) rail, and later the tractor's front-left did too. Swinging the trailer's rear right too early made it cut the corner. Each rewrite reset my rail memory, so I repeated the mistake from a pinned spot. Priority: stay wide to the outside before the last bend and start the swing late. Tip: this short trailer reacts fast and the tractor's nose swings wide, so watch both ends and go slowly near the end."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 195.9,
+     "progress": 0.4962,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "DNF on touches. The alley bends right about halfway. My cart drifted onto the left (outer) rail before the bend. Every rescue after that was a short forward-and-reverse shunt, and the mower's left corners kept hitting that rail, front-left most often. Priority: keep the whole rig in the inside (right) half before the bend, and start turning the cart right early and gently. Watch all four mower corners as well as the cart. Tip: this cart is very short, so its hitch angle changes fast. Reverse slowly and stop well before a rail, not just before contact.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (628 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "DNF on touches. The alley bends right about halfway. My cart drifted onto the left (outer) rail before the bend. Every rescue after that was a short forward-and-reverse shunt, and the mower's left corners kept hitting that rail (front-left most often). Priority: keep the whole rig near the inside (right) half before the bend. Start turning the cart right early and gently, so the mower never has to swing its nose or tail into the outer rail. Watch all four mower corners as well as the cart. Tip: this cart is very short, so its hitch angle changes fast. Reverse slowly and stop well before a rail, never just before contact.",
+       "DNF on touches. The alley bends right about halfway. My cart drifted onto the left (outer) rail before the bend. Every rescue after that was a short forward-and-reverse shunt, and the mower's left corners kept hitting that rail, front-left most often. Priority: keep the whole rig in the inside (right) half before the bend, and start turning the cart right early and gently. Watch all four mower corners as well as the cart. Tip: this cart is very short, so its hitch angle changes fast. Reverse slowly and stop well before a rail, not just before contact."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "FINISHED",
+     "time": 102.55,
+     "progress": 1.0,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "too long (652 characters; the limit is 600)"
+       ],
+       [
+        "too long (611 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished in 103 s with one touch. Following the open gap with the camera handled the long straight and the turn well. Near the bay my steering kept switching between following the gap and aiming at the bay corners. It asked for big hitch angles, the trailer folded to about 50 degrees and the cab's rear-right corner hit the rail. A short forward pull, steering away from the fold, straightened it within 5 m. A slow, nearly straight reverse then finished. Priority: in the final stretch keep the hitch angle small, go slow and line up early. Don't chase the bay corners hard. Tip: this long trailer responds slowly, so make small, patient corrections.",
+       "Finished in 103 s with one touch. Following the open gap with the camera handled the straight and the turn well. Near the bay my steering kept switching between following the gap and aiming at the bay corners. It asked for big hitch angles, the trailer folded to about 50 degrees and the cab's rear-right corner hit the rail. A short forward pull, steering away from the fold, straightened it within 5 m. A slow, nearly straight reverse then finished. Priority: in the final stretch keep the hitch angle small, go slow and line up early. Tip: this long trailer reacts slowly, so make small, patient corrections."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145540-f5ab11",
+   "role": "train",
+   "step": 1,
+   "member": 2,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 64.55,
+     "progress": 1.0,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "Finished in 65 s with one touch. My first controller aimed the trailer the wrong way. To send the trailer's rear left you need a negative hitch angle, not a positive one. Hitch hit 48 deg, I pulled forward and clipped the front-left corner on a rail. Once fixed, gap-seeking from the camera with dead-reckoned rail memory took the L-turn smoothly at about 1 m/s. I reached the bay 16 deg skewed. A short straight pull forward of about 3 m, then a slow reverse holding the hitch near zero, parked it. Tip: this short box trailer folds fast, so go slow and pull forward before the hitch reaches 40 deg.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Finished in 65 s with one touch. My first controller aimed the trailer the wrong way. To send the trailer's rear left you need a negative hitch angle, not a positive one. Hitch hit 48 deg, I pulled forward and clipped the front-left corner on a rail. Once fixed, gap-seeking from the camera with dead-reckoned rail memory took the L-turn smoothly at about 1 m/s. I reached the bay 16 deg skewed. A short straight pull forward of about 3 m, then a slow reverse holding the hitch near zero, parked it. Tip: this short box trailer folds fast, so go slow and pull forward before the hitch reaches 40 deg."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 174.6,
+     "progress": 0.3553,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "DNF on touches. About 12 m back, the course turns sharply LEFT, so the trailer rear has to go left. I swung the trailer too late, and its rear-right corner kept hitting the outside rail. Retrying with small fixes from the same spot used up the touch budget. Priority: start the left swing a few metres before the bend and hold a hitch angle of about 30 degrees through it. Watch the tractor as well: with a big left hitch, its front-right corner swings into the right rail. Tip: the hitch reacts quickly, so reverse slowly and keep both sides of the rig in view.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (604 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "DNF on touches. About 12 m back, the course turns sharply LEFT (trailer rear going left). I swung the trailer far too late, so its rear-right corner hit the outside rail six times. Retrying with small fixes from the same spot wasted the touch budget. Priority: build the left swing early, a few metres before the bend, and hold a hitch angle of about 30 degrees through it. Watch the tractor too: with a big left hitch, the tractor's front-right corner swings into the right rail, and that cost my last two touches. Tip: the hitch reacts quickly, so reverse slowly and keep both sides of the rig in view.",
+       "DNF on touches. About 12 m back, the course turns sharply LEFT, so the trailer rear has to go left. I swung the trailer too late, and its rear-right corner kept hitting the outside rail. Retrying with small fixes from the same spot used up the touch budget. Priority: start the left swing a few metres before the bend and hold a hitch angle of about 30 degrees through it. Watch the tractor as well: with a big left hitch, its front-right corner swings into the right rail. Tip: the hitch reacts quickly, so reverse slowly and keep both sides of the rig in view."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "FINISHED",
+     "time": 162.25,
+     "progress": 1.0,
+     "touches": 6,
+     "notes_in": [],
+     "note": {
+      "text": "The alley bends right partway down, and the bay sits near the right rail. I lost time steering at the bay, or at the gap I could see between the rails: the cart cut the corner and the mower's front swung into the rails, which caused 6 touches. What worked was mapping the walls once, then pulling forward about 2 m to line up with the approach alley. After that, reverse slowly so the cart's rear follows a planned line: straight, round the bend, then along the bay. Keep the hitch under about 30 degrees. Tip: this short cart folds fast, so reverse at about 0.3 m/s.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (626 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "The alley bends right partway down, and the bay sits near the right rail. I lost time steering at the bay or the gap between the rails I could see: the cart cut the corner and the mower's front swung into the rails. Six touches came from that. What worked was mapping the walls once, then pulling forward about 2 m to line up with the approach alley. After that, reverse slowly so the cart's rear follows a planned line: straight, then round the bend, then along the bay. Keep the hitch angle under about 30 degrees. Tip: this short cart folds fast, so reverse at about 0.3 m/s and watch the mower's front corners on the turn.",
+       "The alley bends right partway down, and the bay sits near the right rail. I lost time steering at the bay, or at the gap I could see between the rails: the cart cut the corner and the mower's front swung into the rails, which caused 6 touches. What worked was mapping the walls once, then pulling forward about 2 m to line up with the approach alley. After that, reverse slowly so the cart's rear follows a planned line: straight, round the bend, then along the bay. Keep the hitch under about 30 degrees. Tip: this short cart folds fast, so reverse at about 0.3 m/s."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 337.1,
+     "progress": 0.5359,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "DNF at the L-turn about halfway along. I took the turn with a deep hitch angle, then kept pulling forward and reversing again, and the cab's rear-left corner swung into the outer rail 4 times. Priorities: put a guard that stops before contact on every corner of the cab and trailer from the very first second, not after touches pile up. Start the turn early and gently, because the long semi-trailer reacts slowly. Watch the cab's swing as well as the trailer. Tip: when steering hard in reverse, the cab corner on the outside of the turn hits first, so keep it in the mirror.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (624 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "DNF at the L-turn about halfway along. I took the turn with a deep hitch angle, then pulled forward and re-reversed again and again, and the cab's rear-left corner swung into the outer rail 4 times. Priorities: have a stop-before-contact guard on every corner of the cab and trailer from the very first second, not after the touches have piled up. Start the turn early and gently, because the long semi-trailer reacts slowly. Watch the cab's swing as well as the trailer. Tip: when steering hard while reversing, the cab's rear corner on the outside of the turn is the part that hits first, so keep it visible in the mirror.",
+       "DNF at the L-turn about halfway along. I took the turn with a deep hitch angle, then kept pulling forward and reversing again, and the cab's rear-left corner swung into the outer rail 4 times. Priorities: put a guard that stops before contact on every corner of the cab and trailer from the very first second, not after touches pile up. Start the turn early and gently, because the long semi-trailer reacts slowly. Watch the cab's swing as well as the trailer. Tip: when steering hard in reverse, the cab corner on the outside of the turn hits first, so keep it in the mirror."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-152412-9681da",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 35.9,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Finished, but I lost time to a sign error. My first controllers swung the trailer the wrong way, so it hit the rear-left rail twice, and I clipped the front-right corner while pulling forward. Once fixed, it worked well: aim the trailer's rear at the widest open gap seen on the reversing camera, look at the screen the whole time, and hold the hitch near the angle you want with steering that follows it. This course bends right. With this short trailer, keep the hitch under about 25 degrees and reverse at about 0.8 m/s. Check your hitch-angle sign early."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "This course turns RIGHT going backwards. I lost time early: the trailer's rear-left corner hit the left rail four times because I reversed straight or let a gap-seeking steer pull the trailer left. What worked: pull forward on left lock until the car points slightly left in the lane, then reverse at walking pace holding the trailer swung right about 20 degrees through the bend, watching the reversing camera. Once the painted bay corners show, track the bay centre line and straighten gradually; the leg ends once lined up. Commit to the turn early; shuffling costs most."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "Finished in 65 s with one touch. My first controller aimed the trailer the wrong way. To send the trailer's rear left you need a negative hitch angle, not a positive one. Hitch hit 48 deg, I pulled forward and clipped the front-left corner on a rail. Once fixed, gap-seeking from the camera with dead-reckoned rail memory took the L-turn smoothly at about 1 m/s. I reached the bay 16 deg skewed. A short straight pull forward of about 3 m, then a slow reverse holding the hitch near zero, parked it. Tip: this short box trailer folds fast, so go slow and pull forward before the hitch reaches 40 deg."
+      }
+     ],
+     "note": {
+      "text": "Finished in 36 s with no touches and no pull-forward, using one controller I never replaced. I reversed from the start, looking at the camera screen the whole way. I aimed the trailer at the widest clear lane on the camera, then at the bay centre once its painted corners showed. The target hitch angle came from that aim error, capped at 25 degrees, and the steering followed the hitch. The hitch went negative (rear swung right) through the bend. At 0.8 m/s it was smooth. Priority: one closed-loop controller, then let it run. Lower the hitch cap near the bay so you arrive straight.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (615 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished in 36 s with no touches and no pull-forward, using one controller I never replaced. I reversed straight from the start, looking at the camera screen the whole way. I aimed the trailer's heading at the widest clear lane on the camera, and at the bay centre once its painted corners showed. The target hitch angle came from that aim error, capped at 25 degrees, and the steering followed the hitch. The hitch went negative (rear swung right) through the bend. At 0.8 m/s it was smooth. Priority: one closed-loop controller, then let it run. Tighten the hitch cap as the bay gets close so you arrive straight.",
+       "Finished in 36 s with no touches and no pull-forward, using one controller I never replaced. I reversed from the start, looking at the camera screen the whole way. I aimed the trailer at the widest clear lane on the camera, then at the bay centre once its painted corners showed. The target hitch angle came from that aim error, capped at 25 degrees, and the steering followed the hitch. The hitch went negative (rear swung right) through the bend. At 0.8 m/s it was smooth. Priority: one closed-loop controller, then let it run. Lower the hitch cap near the bay so you arrive straight."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "TIME_UP",
+     "time": 458.0,
+     "progress": 0.2644,
+     "touches": 8,
+     "notes_in": [
+      {
+       "from": "round 1, driver 3",
+       "text": "DNF on touches. About 12 m back, the course turns sharply LEFT, so the trailer rear has to go left. I swung the trailer too late, and its rear-right corner kept hitting the outside rail. Retrying with small fixes from the same spot used up the touch budget. Priority: start the left swing a few metres before the bend and hold a hitch angle of about 30 degrees through it. Watch the tractor as well: with a big left hitch, its front-right corner swings into the right rail. Tip: the hitch reacts quickly, so reverse slowly and keep both sides of the rig in view."
+      }
+     ],
+     "note": {
+      "text": "Time ran out, all touches used, stuck at 11 m before the sharp left bend. A hitch near 45 degrees put the tractor's front-right on the outer right rail; a near-straight hitch put the trailer's rear-right on it. Repeated short pulls forward and a dozen controller rewrites burned the clock. Priority: one working controller early, slow reversing, a moderate left swing started a few metres before the bend. Untested: enter the bend nearer the left rail so the nose has room. Keep per-call computing light or the controller gets stopped.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (689 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Failed: time ran out with all touches used, stuck at about 11 m, just before the sharp left bend. Hitches near 45 degrees pushed the tractor's front-right into the outer right rail. Hitches near zero put the trailer's rear-right corner on that same rail at the bend. Short pulls forward and retries from the same spot wasted the clock; so did rewriting the controller over a dozen times. Priority: get one controller working early, reverse slowly, and start a moderate left swing a few metres before the bend. Untested idea: enter the bend with the rig nearer the left rail so the tractor's nose has room. Keep the per-call computing light, because a slow call gets the controller stopped.",
+       "Time ran out, all touches used, stuck at 11 m before the sharp left bend. A hitch near 45 degrees put the tractor's front-right on the outer right rail; a near-straight hitch put the trailer's rear-right on it. Repeated short pulls forward and a dozen controller rewrites burned the clock. Priority: one working controller early, slow reversing, a moderate left swing started a few metres before the bend. Untested: enter the bend nearer the left rail so the nose has room. Keep per-call computing light or the controller gets stopped."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "TIME_UP",
+     "time": 364.0,
+     "progress": 0.4569,
+     "touches": 7,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Finished but touched the left rail 5 times. The alley seems to bend near the end, and steering by the gap between the rails let the cart drift left. The bay sits right of the alley centre, so watch its painted corners early. The short cart reacts fast: keep hitch targets small, steer gently and reverse at about 0.3 m/s. Pull-forwards caused touches because the mower's nose swings into the rail, so avoid them, or keep them short and straight. Tip: if the front is pinned, reverse with the wheels turned slightly toward that rail. The nose swings off and the cart still goes in straight."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "DNF on touches. The alley bends right about halfway. My cart drifted onto the left (outer) rail before the bend. Every rescue after that was a short forward-and-reverse shunt, and the mower's left corners kept hitting that rail, front-left most often. Priority: keep the whole rig in the inside (right) half before the bend, and start turning the cart right early and gently. Watch all four mower corners as well as the cart. Tip: this cart is very short, so its hitch angle changes fast. Reverse slowly and stop well before a rail, not just before contact."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The alley bends right partway down, and the bay sits near the right rail. I lost time steering at the bay, or at the gap I could see between the rails: the cart cut the corner and the mower's front swung into the rails, which caused 6 touches. What worked was mapping the walls once, then pulling forward about 2 m to line up with the approach alley. After that, reverse slowly so the cart's rear follows a planned line: straight, round the bend, then along the bay. Keep the hitch under about 30 degrees. Tip: this short cart folds fast, so reverse at about 0.3 m/s."
+      }
+     ],
+     "note": {
+      "text": "Ran out of time at the bend about 6 m in, with 7 touches. My first controller had the hitch-hold sign backwards, so the cart drifted into the left rail before the bend. Check the sign as soon as you start reversing: the hitch must move towards its target. After that, every forward shunt swung the mower's left nose into the outer rail and lost ground. Priority: keep to the right half before the bend and start turning the cart right early, with the hitch near 25 degrees. Never let a cautious controller sit idle. Tip: the cart folds in centimetres, so reverse at about 0.2 m/s.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (714 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "TIME_UP at the bend about 6 m in, with 7 touches. My first controller had the hitch-hold sign backwards, so the cart drifted into the left rail before the bend. Test your sign in the first second of reversing: the hitch must move towards your target. After that, every forward shunt swung the mower's left nose into the outer rail. Short pulls also gave back more ground than the reverses gained, so I made no progress for minutes. Priority: before the bend, hug the right half and start the cart turning right early, with the hitch held near 25 degrees. Never let a cautious controller sit still: an idle stop costs more than a slow, careful move. Tip: this cart folds in centimetres, so reverse at about 0.2 m/s.",
+       "Ran out of time at the bend about 6 m in, with 7 touches. My first controller had the hitch-hold sign backwards, so the cart drifted into the left rail before the bend. Check the sign as soon as you start reversing: the hitch must move towards its target. After that, every forward shunt swung the mower's left nose into the outer rail and lost ground. Priority: keep to the right half before the bend and start turning the cart right early, with the hitch near 25 degrees. Never let a cautious controller sit idle. Tip: the cart folds in centimetres, so reverse at about 0.2 m/s."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "FINISHED",
+     "time": 247.05,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "round 1, driver 3",
+       "text": "DNF at the L-turn about halfway along. I took the turn with a deep hitch angle, then kept pulling forward and reversing again, and the cab's rear-left corner swung into the outer rail 4 times. Priorities: put a guard that stops before contact on every corner of the cab and trailer from the very first second, not after touches pile up. Start the turn early and gently, because the long semi-trailer reacts slowly. Watch the cab's swing as well as the trailer. Tip: when steering hard in reverse, the cab corner on the outside of the turn hits first, so keep it in the mirror."
+      }
+     ],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "too long (611 characters; the limit is 600)"
+       ],
+       [
+        "too long (619 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished with no touches but slow, mostly lost at the final right bend into the bay lane. Old rail points left on the map caused false stops, so only treat rails seen in the last few seconds as obstacles. Keep each call fast: a big map timed out my controller. What worked: before the bend, pull forward about 9 m to get the trailer straight, then swing the trailer's rear right while reversing slowly. Then steer the trailer's rear toward a point a few metres ahead on the lane centreline, not into whatever gap looks widest. Check the cab corners in advance, every call. Keep the hitch under about 30 degrees.",
+       "Finished with no touches but slowly; most of the time went at the final right bend into the bay lane. Old rail points left on the map caused false stops, so only treat rails seen in the last few seconds as obstacles. Keep each call fast, because a big map timed out my controller. What worked: before the bend, pull forward about 9 m to straighten the trailer, then swing its rear right while reversing slowly. Steer the trailer's rear toward a point a few metres ahead on the lane centreline, not into whatever gap looks widest. Check the cab corners ahead of time on every call. Keep the hitch under about 30 degrees."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-152412-c3fcb8",
+   "role": "train",
+   "step": 2,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 91.6,
+     "progress": 1.0,
+     "touches": 3,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Finished, but I lost time to a sign error. My first controllers swung the trailer the wrong way, so it hit the rear-left rail twice, and I clipped the front-right corner while pulling forward. Once fixed, it worked well: aim the trailer's rear at the widest open gap seen on the reversing camera, look at the screen the whole time, and hold the hitch near the angle you want with steering that follows it. This course bends right. With this short trailer, keep the hitch under about 25 degrees and reverse at about 0.8 m/s. Check your hitch-angle sign early."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "This course turns RIGHT going backwards. I lost time early: the trailer's rear-left corner hit the left rail four times because I reversed straight or let a gap-seeking steer pull the trailer left. What worked: pull forward on left lock until the car points slightly left in the lane, then reverse at walking pace holding the trailer swung right about 20 degrees through the bend, watching the reversing camera. Once the painted bay corners show, track the bay centre line and straighten gradually; the leg ends once lined up. Commit to the turn early; shuffling costs most."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "Finished in 65 s with one touch. My first controller aimed the trailer the wrong way. To send the trailer's rear left you need a negative hitch angle, not a positive one. Hitch hit 48 deg, I pulled forward and clipped the front-left corner on a rail. Once fixed, gap-seeking from the camera with dead-reckoned rail memory took the L-turn smoothly at about 1 m/s. I reached the bay 16 deg skewed. A short straight pull forward of about 3 m, then a slow reverse holding the hitch near zero, parked it. Tip: this short box trailer folds fast, so go slow and pull forward before the hitch reaches 40 deg."
+      }
+     ],
+     "note": {
+      "text": "Finished, but 3 touches cost me. Check the sign first: the bend goes right, so the trailer needs a NEGATIVE hitch angle. A positive one hit the rear-left rail. Then I clipped the front-right corner twice while reversing on full left lock, because that swings the car's nose right into the rail. What worked: a gentle forward pull that straightened the rig with the nose slightly left. Then reverse at 0.8 m/s, watch the camera screen throughout, aim the trailer at the widest gap and cap the hitch near 24 degrees. It straightened into the bay by itself. Keep steering moderate near the rails.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (604 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished, but 3 touches cost me. First the sign: the bend goes right, so the trailer needs a NEGATIVE hitch angle. A positive one hit the rear-left rail. Then I clipped the front-right corner twice while reversing on full left lock: reversing on left lock swings the car's nose right, into the rail. What worked: a gentle forward pull that straightened the rig with the nose slightly left. Then reverse at 0.8 m/s, look at the camera screen the whole time, aim the trailer at the widest gap and cap the hitch near 24 degrees. It straightened into the bay by itself. Keep steering moderate near the rails.",
+       "Finished, but 3 touches cost me. Check the sign first: the bend goes right, so the trailer needs a NEGATIVE hitch angle. A positive one hit the rear-left rail. Then I clipped the front-right corner twice while reversing on full left lock, because that swings the car's nose right into the rail. What worked: a gentle forward pull that straightened the rig with the nose slightly left. Then reverse at 0.8 m/s, watch the camera screen throughout, aim the trailer at the widest gap and cap the hitch near 24 degrees. It straightened into the bay by itself. Keep steering moderate near the rails."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "FINISHED",
+     "time": 112.0,
+     "progress": 1.0,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "round 1, driver 3",
+       "text": "DNF on touches. About 12 m back, the course turns sharply LEFT, so the trailer rear has to go left. I swung the trailer too late, and its rear-right corner kept hitting the outside rail. Retrying with small fixes from the same spot used up the touch budget. Priority: start the left swing a few metres before the bend and hold a hitch angle of about 30 degrees through it. Watch the tractor as well: with a big left hitch, its front-right corner swings into the right rail. Tip: the hitch reacts quickly, so reverse slowly and keep both sides of the rig in view."
+      }
+     ],
+     "note": {
+      "text": "Finished in 112 s with no touches in the S-bend. Both touches came at the end: the trailer's rear-right corner hit the dock wall because I steered toward the bay with the trailer still angled 20 to 30 degrees. The fix was to pull forward until the trailer was straight, then reverse slowly, steering only to keep the hitch at zero. The bay lines up with the final straight, so follow the rails, not the bay corners. Priority: get the trailer straight before the last few metres. Tip: the trailer reacts fast, so reverse slowly and keep the hitch under 35 degrees.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (621 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished in 112 s with no touches in the S-bend. Both of my touches came at the end: the trailer's rear-right corner hit the dock wall because I steered toward the bay with the trailer still angled about 20 to 30 degrees. What fixed it was pulling forward until the trailer was straight, then reversing slowly and only steering to keep the hitch at zero. The bay lines up with the final straight of rails, so aim for the rails, not the bay corners. Priority: get the trailer straight before the last few metres of the straight. Tip: the trailer reacts quickly, so reverse slowly and keep the hitch below about 35 degrees.",
+       "Finished in 112 s with no touches in the S-bend. Both touches came at the end: the trailer's rear-right corner hit the dock wall because I steered toward the bay with the trailer still angled 20 to 30 degrees. The fix was to pull forward until the trailer was straight, then reverse slowly, steering only to keep the hitch at zero. The bay lines up with the final straight, so follow the rails, not the bay corners. Priority: get the trailer straight before the last few metres. Tip: the trailer reacts fast, so reverse slowly and keep the hitch under 35 degrees."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "FINISHED",
+     "time": 58.85,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Finished but touched the left rail 5 times. The alley seems to bend near the end, and steering by the gap between the rails let the cart drift left. The bay sits right of the alley centre, so watch its painted corners early. The short cart reacts fast: keep hitch targets small, steer gently and reverse at about 0.3 m/s. Pull-forwards caused touches because the mower's nose swings into the rail, so avoid them, or keep them short and straight. Tip: if the front is pinned, reverse with the wheels turned slightly toward that rail. The nose swings off and the cart still goes in straight."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "DNF on touches. The alley bends right about halfway. My cart drifted onto the left (outer) rail before the bend. Every rescue after that was a short forward-and-reverse shunt, and the mower's left corners kept hitting that rail, front-left most often. Priority: keep the whole rig in the inside (right) half before the bend, and start turning the cart right early and gently. Watch all four mower corners as well as the cart. Tip: this cart is very short, so its hitch angle changes fast. Reverse slowly and stop well before a rail, not just before contact."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The alley bends right partway down, and the bay sits near the right rail. I lost time steering at the bay, or at the gap I could see between the rails: the cart cut the corner and the mower's front swung into the rails, which caused 6 touches. What worked was mapping the walls once, then pulling forward about 2 m to line up with the approach alley. After that, reverse slowly so the cart's rear follows a planned line: straight, round the bend, then along the bay. Keep the hitch under about 30 degrees. Tip: this short cart folds fast, so reverse at about 0.3 m/s."
+      }
+     ],
+     "note": {
+      "text": "Finished in 59 s with no touches. What worked: keep a running map of every rail point you see, with your head turned fully back, and steer the cart along the widest clear opening, not the midpoint between the rails. At the bend the right rail drops out of view, and the midpoint then pulls you onto the outer rail. Once the bay is in sight, aim the cart's rear at its centre and straighten before you arrive. Reverse at about 0.3 m/s. Tip: the hitch overshot when the bend started, so keep hitch targets small and steer firmly. It recovers without pulling forward.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Finished in 59 s with no touches. What worked: keep a running map of every rail point you see, with your head turned fully back, and steer the cart along the widest clear opening, not the midpoint between the rails. At the bend the right rail drops out of view, and the midpoint then pulls you onto the outer rail. Once the bay is in sight, aim the cart's rear at its centre and straighten before you arrive. Reverse at about 0.3 m/s. Tip: the hitch overshot when the bend started, so keep hitch targets small and steer firmly. It recovers without pulling forward."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "FINISHED",
+     "time": 93.6,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "round 1, driver 3",
+       "text": "DNF at the L-turn about halfway along. I took the turn with a deep hitch angle, then kept pulling forward and reversing again, and the cab's rear-left corner swung into the outer rail 4 times. Priorities: put a guard that stops before contact on every corner of the cab and trailer from the very first second, not after touches pile up. Start the turn early and gently, because the long semi-trailer reacts slowly. Watch the cab's swing as well as the trailer. Tip: when steering hard in reverse, the cab corner on the outside of the turn hits first, so keep it in the mirror."
+      }
+     ],
+     "note": {
+      "text": "Finished in 94 s, no touches, no gear changes, one controller all leg. It steered by hitch angle and aimed the trailer rear at the widest open gap behind it. It used a memory of rail points from the camera, mirrors and direct view. Keep the hitch gentle (target under about 35 degrees) and reverse slowly at about 0.8 m/s; this long trailer forgives early corrections. Priority: avoid stops and forward pulls, since gear changes cost a lot. Tip: watch the camera screen with brief left-mirror looks. The bay is offset, so expect a late swing near the end and straighten before it.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (665 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished in 94 s with no touches and no gear changes, using one controller for the whole leg. What worked: steer only by the hitch angle, aiming the trailer's rear at the widest open gap behind it. Build a memory of rail points seen through the camera, the mirrors and the direct view. Keep the hitch angle gentle, never past about 35 degrees, and reverse slowly at about 0.8 m/s. The semi-trailer is long and forgiving if you correct early. Priority: no stops and no forward pulls, because the gear change is costly. Tip: keep your gaze mostly on the camera screen with brief looks at the left mirror. The bay is offset, so finish by following the painted corners.",
+       "Finished in 94 s, no touches, no gear changes, one controller all leg. It steered by hitch angle and aimed the trailer rear at the widest open gap behind it. It used a memory of rail points from the camera, mirrors and direct view. Keep the hitch gentle (target under about 35 degrees) and reverse slowly at about 0.8 m/s; this long trailer forgives early corrections. Priority: avoid stops and forward pulls, since gear changes cost a lot. Tip: watch the camera screen with brief left-mirror looks. The bay is offset, so expect a late swing near the end and straighten before it."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-152412-b33ada",
+   "role": "train",
+   "step": 2,
+   "member": 2,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 85.3,
+     "progress": 1.0,
+     "touches": 3,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Finished, but I lost time to a sign error. My first controllers swung the trailer the wrong way, so it hit the rear-left rail twice, and I clipped the front-right corner while pulling forward. Once fixed, it worked well: aim the trailer's rear at the widest open gap seen on the reversing camera, look at the screen the whole time, and hold the hitch near the angle you want with steering that follows it. This course bends right. With this short trailer, keep the hitch under about 25 degrees and reverse at about 0.8 m/s. Check your hitch-angle sign early."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "This course turns RIGHT going backwards. I lost time early: the trailer's rear-left corner hit the left rail four times because I reversed straight or let a gap-seeking steer pull the trailer left. What worked: pull forward on left lock until the car points slightly left in the lane, then reverse at walking pace holding the trailer swung right about 20 degrees through the bend, watching the reversing camera. Once the painted bay corners show, track the bay centre line and straighten gradually; the leg ends once lined up. Commit to the turn early; shuffling costs most."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "Finished in 65 s with one touch. My first controller aimed the trailer the wrong way. To send the trailer's rear left you need a negative hitch angle, not a positive one. Hitch hit 48 deg, I pulled forward and clipped the front-left corner on a rail. Once fixed, gap-seeking from the camera with dead-reckoned rail memory took the L-turn smoothly at about 1 m/s. I reached the bay 16 deg skewed. A short straight pull forward of about 3 m, then a slow reverse holding the hitch near zero, parked it. Tip: this short box trailer folds fast, so go slow and pull forward before the hitch reaches 40 deg."
+      }
+     ],
+     "note": {
+      "text": "Finished in 85 s with 3 touches. Going backwards, this course bends right, so keep the hitch angle NEGATIVE (trailer rear swung right) from the very start. Reversing straight, or letting a gap-seeker pull it left, puts the trailer's rear-left corner on the rail. What worked: pull forward on left lock until the car points into the bend and the hitch is near zero. Then reverse at 0.7 m/s watching the camera, holding the hitch around minus 20 through the bend and easing it to about minus 10 at the bay. That finished it. Pull forward gently: I clipped the front-right corner.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (616 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Finished in 85 s with 3 touches. Going backwards this course bends right, so keep the hitch angle NEGATIVE (trailer rear swung right) from the very start. If you reverse straight, or let a gap-seeker pull it left, the trailer's rear-left corner hits the rail. What worked: pull forward on left lock until the car points into the bend and the hitch is back near zero. Then reverse at 0.7 m/s, looking at the camera screen, holding the hitch around minus 20 through the bend and easing it to about minus 10 at the bay. That was straight enough to finish. Pull forward gently: I clipped the front-right corner doing it.",
+       "Finished in 85 s with 3 touches. Going backwards, this course bends right, so keep the hitch angle NEGATIVE (trailer rear swung right) from the very start. Reversing straight, or letting a gap-seeker pull it left, puts the trailer's rear-left corner on the rail. What worked: pull forward on left lock until the car points into the bend and the hitch is near zero. Then reverse at 0.7 m/s watching the camera, holding the hitch around minus 20 through the bend and easing it to about minus 10 at the bay. That finished it. Pull forward gently: I clipped the front-right corner."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 232.75,
+     "progress": 0.3874,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "round 1, driver 3",
+       "text": "DNF on touches. About 12 m back, the course turns sharply LEFT, so the trailer rear has to go left. I swung the trailer too late, and its rear-right corner kept hitting the outside rail. Retrying with small fixes from the same spot used up the touch budget. Priority: start the left swing a few metres before the bend and hold a hitch angle of about 30 degrees through it. Watch the tractor as well: with a big left hitch, its front-right corner swings into the right rail. Tip: the hitch reacts quickly, so reverse slowly and keep both sides of the rig in view."
+      }
+     ],
+     "note": {
+      "text": "DNF on touches at the left bend, 13 to 17 m back. I started the swing late with the whole rig too far right, so the trailer's rear-right and the tractor's front-right corner took turns hitting the right rail. Short forward nudges from the same spot never fixed it and burned touches and gear changes. Priority: move the rig toward the left (inside) rail before the bend, start swinging early and hold a steady hitch near 30 degrees. If you touch, pull forward several metres to reset rather than nudging. Tip: keep long sweeps slow and short so control() never takes more than half a second.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "DNF on touches at the left bend, 13 to 17 m back. I started the swing late with the whole rig too far right, so the trailer's rear-right and the tractor's front-right corner took turns hitting the right rail. Short forward nudges from the same spot never fixed it and burned touches and gear changes. Priority: move the rig toward the left (inside) rail before the bend, start swinging early and hold a steady hitch near 30 degrees. If you touch, pull forward several metres to reset rather than nudging. Tip: keep long sweeps slow and short so control() never takes more than half a second."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 189.65,
+     "progress": 0.7536,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Finished but touched the left rail 5 times. The alley seems to bend near the end, and steering by the gap between the rails let the cart drift left. The bay sits right of the alley centre, so watch its painted corners early. The short cart reacts fast: keep hitch targets small, steer gently and reverse at about 0.3 m/s. Pull-forwards caused touches because the mower's nose swings into the rail, so avoid them, or keep them short and straight. Tip: if the front is pinned, reverse with the wheels turned slightly toward that rail. The nose swings off and the cart still goes in straight."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "DNF on touches. The alley bends right about halfway. My cart drifted onto the left (outer) rail before the bend. Every rescue after that was a short forward-and-reverse shunt, and the mower's left corners kept hitting that rail, front-left most often. Priority: keep the whole rig in the inside (right) half before the bend, and start turning the cart right early and gently. Watch all four mower corners as well as the cart. Tip: this cart is very short, so its hitch angle changes fast. Reverse slowly and stop well before a rail, not just before contact."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The alley bends right partway down, and the bay sits near the right rail. I lost time steering at the bay, or at the gap I could see between the rails: the cart cut the corner and the mower's front swung into the rails, which caused 6 touches. What worked was mapping the walls once, then pulling forward about 2 m to line up with the approach alley. After that, reverse slowly so the cart's rear follows a planned line: straight, round the bend, then along the bay. Keep the hitch under about 30 degrees. Tip: this short cart folds fast, so reverse at about 0.3 m/s."
+      }
+     ],
+     "note": {
+      "text": "DNF on touches at 75%. The first straight was easy, but I hugged the centre into the right bend: the cart's rear-left hit the outer rail, then hard right steering with the hitch near 40 degrees swung the mower's nose into the left rail four times. What worked was pulling forward to line up on the inside half, then reversing round with the hitch under 30. After the bend the cart cut the corner onto the inside rail. The last stretch is narrow, so tiny shunts there just add touches. Tip: plan the bend with room on both sides and steer the cart's rear wide of the inside corner.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "DNF on touches at 75%. The first straight was easy, but I hugged the centre into the right bend: the cart's rear-left hit the outer rail, then hard right steering with the hitch near 40 degrees swung the mower's nose into the left rail four times. What worked was pulling forward to line up on the inside half, then reversing round with the hitch under 30. After the bend the cart cut the corner onto the inside rail. The last stretch is narrow, so tiny shunts there just add touches. Tip: plan the bend with room on both sides and steer the cart's rear wide of the inside corner."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "TIME_UP",
+     "time": 619.0,
+     "progress": 0.2953,
+     "touches": 8,
+     "notes_in": [
+      {
+       "from": "round 1, driver 3",
+       "text": "DNF at the L-turn about halfway along. I took the turn with a deep hitch angle, then kept pulling forward and reversing again, and the cab's rear-left corner swung into the outer rail 4 times. Priorities: put a guard that stops before contact on every corner of the cab and trailer from the very first second, not after touches pile up. Start the turn early and gently, because the long semi-trailer reacts slowly. Watch the cab's swing as well as the trailer. Tip: when steering hard in reverse, the cab corner on the outside of the turn hits first, so keep it in the mirror."
+      }
+     ],
+     "note": {
+      "text": "DNF at the right-hand L-turn near 25 m. The cab's rear-left corner hit the outer rail 5 times: as the trailer swings right, the cab's tail swings left. Most time went on forward/reverse cycles and on rewrites after sign errors; verify steering and hitch signs on the straight first. Priorities: keep the rig toward the inner right side before the corner, start the swing early and gently, hold a steady moderate hitch angle. Tip: when the cab's tail nears the outer rail, ease the hitch and keep reversing rather than pulling forward again.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (671 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "DNF, stuck at the right-hand L-turn near 25 m. The cab's rear-left corner hit the outer left rail 5 times. As the trailer swings right into the turn, the cab's tail swings out to the left. I lost most of the time to forward/reverse cycles and to rewriting controllers after sign errors. Check your steering and hitch signs on the straight before the turn. Priorities: keep the whole rig toward the inner, right side before the corner. Start the trailer swing early and gently, and hold a steady moderate hitch angle instead of a deep one. Tip: when the cab's tail nears the outer rail, ease the hitch angle and keep reversing, rather than pulling forward again and again.",
+       "DNF at the right-hand L-turn near 25 m. The cab's rear-left corner hit the outer rail 5 times: as the trailer swings right, the cab's tail swings left. Most time went on forward/reverse cycles and on rewrites after sign errors; verify steering and hitch signs on the straight first. Priorities: keep the rig toward the inner right side before the corner, start the swing early and gently, hold a steady moderate hitch angle. Tip: when the cab's tail nears the outer rail, ease the hitch and keep reversing rather than pulling forward again."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-155858-e0a7e4",
+   "role": "transfer",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 36.8,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "round 2, driver 1",
+       "text": "Finished in 36 s with no touches and no pull-forward, using one controller I never replaced. I reversed from the start, looking at the camera screen the whole way. I aimed the trailer at the widest clear lane on the camera, then at the bay centre once its painted corners showed. The target hitch angle came from that aim error, capped at 25 degrees, and the steering followed the hitch. The hitch went negative (rear swung right) through the bend. At 0.8 m/s it was smooth. Priority: one closed-loop controller, then let it run. Lower the hitch cap near the bay so you arrive straight."
+      },
+      {
+       "from": "round 2, driver 2",
+       "text": "Finished, but 3 touches cost me. Check the sign first: the bend goes right, so the trailer needs a NEGATIVE hitch angle. A positive one hit the rear-left rail. Then I clipped the front-right corner twice while reversing on full left lock, because that swings the car's nose right into the rail. What worked: a gentle forward pull that straightened the rig with the nose slightly left. Then reverse at 0.8 m/s, watch the camera screen throughout, aim the trailer at the widest gap and cap the hitch near 24 degrees. It straightened into the bay by itself. Keep steering moderate near the rails."
+      },
+      {
+       "from": "round 2, driver 3",
+       "text": "Finished in 85 s with 3 touches. Going backwards, this course bends right, so keep the hitch angle NEGATIVE (trailer rear swung right) from the very start. Reversing straight, or letting a gap-seeker pull it left, puts the trailer's rear-left corner on the rail. What worked: pull forward on left lock until the car points into the bend and the hitch is near zero. Then reverse at 0.7 m/s watching the camera, holding the hitch around minus 20 through the bend and easing it to about minus 10 at the bay. That finished it. Pull forward gently: I clipped the front-right corner."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 236.3,
+     "progress": 0.866,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "round 2, driver 1",
+       "text": "Time ran out, all touches used, stuck at 11 m before the sharp left bend. A hitch near 45 degrees put the tractor's front-right on the outer right rail; a near-straight hitch put the trailer's rear-right on it. Repeated short pulls forward and a dozen controller rewrites burned the clock. Priority: one working controller early, slow reversing, a moderate left swing started a few metres before the bend. Untested: enter the bend nearer the left rail so the nose has room. Keep per-call computing light or the controller gets stopped."
+      },
+      {
+       "from": "round 2, driver 2",
+       "text": "Finished in 112 s with no touches in the S-bend. Both touches came at the end: the trailer's rear-right corner hit the dock wall because I steered toward the bay with the trailer still angled 20 to 30 degrees. The fix was to pull forward until the trailer was straight, then reverse slowly, steering only to keep the hitch at zero. The bay lines up with the final straight, so follow the rails, not the bay corners. Priority: get the trailer straight before the last few metres. Tip: the trailer reacts fast, so reverse slowly and keep the hitch under 35 degrees."
+      },
+      {
+       "from": "round 2, driver 3",
+       "text": "DNF on touches at the left bend, 13 to 17 m back. I started the swing late with the whole rig too far right, so the trailer's rear-right and the tractor's front-right corner took turns hitting the right rail. Short forward nudges from the same spot never fixed it and burned touches and gear changes. Priority: move the rig toward the left (inside) rail before the bend, start swinging early and hold a steady hitch near 30 degrees. If you touch, pull forward several metres to reset rather than nudging. Tip: keep long sweeps slow and short so control() never takes more than half a second."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "TIME_UP",
+     "time": 214.0,
+     "progress": 0.4381,
+     "touches": 8,
+     "notes_in": [
+      {
+       "from": "round 2, driver 1",
+       "text": "Ran out of time at the bend about 6 m in, with 7 touches. My first controller had the hitch-hold sign backwards, so the cart drifted into the left rail before the bend. Check the sign as soon as you start reversing: the hitch must move towards its target. After that, every forward shunt swung the mower's left nose into the outer rail and lost ground. Priority: keep to the right half before the bend and start turning the cart right early, with the hitch near 25 degrees. Never let a cautious controller sit idle. Tip: the cart folds in centimetres, so reverse at about 0.2 m/s."
+      },
+      {
+       "from": "round 2, driver 2",
+       "text": "Finished in 59 s with no touches. What worked: keep a running map of every rail point you see, with your head turned fully back, and steer the cart along the widest clear opening, not the midpoint between the rails. At the bend the right rail drops out of view, and the midpoint then pulls you onto the outer rail. Once the bay is in sight, aim the cart's rear at its centre and straighten before you arrive. Reverse at about 0.3 m/s. Tip: the hitch overshot when the bend started, so keep hitch targets small and steer firmly. It recovers without pulling forward."
+      },
+      {
+       "from": "round 2, driver 3",
+       "text": "DNF on touches at 75%. The first straight was easy, but I hugged the centre into the right bend: the cart's rear-left hit the outer rail, then hard right steering with the hitch near 40 degrees swung the mower's nose into the left rail four times. What worked was pulling forward to line up on the inside half, then reversing round with the hitch under 30. After the bend the cart cut the corner onto the inside rail. The last stretch is narrow, so tiny shunts there just add touches. Tip: plan the bend with room on both sides and steer the cart's rear wide of the inside corner."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "FINISHED",
+     "time": 245.7,
+     "progress": 1.0,
+     "touches": 6,
+     "notes_in": [
+      {
+       "from": "round 2, driver 2",
+       "text": "Finished in 94 s, no touches, no gear changes, one controller all leg. It steered by hitch angle and aimed the trailer rear at the widest open gap behind it. It used a memory of rail points from the camera, mirrors and direct view. Keep the hitch gentle (target under about 35 degrees) and reverse slowly at about 0.8 m/s; this long trailer forgives early corrections. Priority: avoid stops and forward pulls, since gear changes cost a lot. Tip: watch the camera screen with brief left-mirror looks. The bay is offset, so expect a late swing near the end and straighten before it."
+      },
+      {
+       "from": "round 2, driver 3",
+       "text": "DNF at the right-hand L-turn near 25 m. The cab's rear-left corner hit the outer rail 5 times: as the trailer swings right, the cab's tail swings left. Most time went on forward/reverse cycles and on rewrites after sign errors; verify steering and hitch signs on the straight first. Priorities: keep the rig toward the inner right side before the corner, start the swing early and gently, hold a steady moderate hitch angle. Tip: when the cab's tail nears the outer rail, ease the hitch and keep reversing rather than pulling forward again."
+      }
+     ],
+     "note": null
+    }
+   ]
+  }
+ ]
+}

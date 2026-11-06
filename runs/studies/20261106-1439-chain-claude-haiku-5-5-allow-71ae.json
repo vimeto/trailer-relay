@@ -1,0 +1,734 @@
+{
+ "study": "20261106-1439-chain-claude-haiku-5-5-allow-71ae",
+ "model": "claude-code:claude-haiku-5-5",
+ "condition": "chain",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 1,
+ "steps": 6,
+ "policy": {
+  "numbers": "allow",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-143919-6c6887",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3514,
+     "touches": 6,
+     "notes_in": [],
+     "note": {
+      "text": "Leg timed out: repeated rail touches by the trailer rear-left corner on the left rail, and many gear changes from forward reset attempts that never freed the corner and covered little of the course. Priority: keep the rear-left corner clear from the start, not after contact. Run one steady controller and avoid swapping controllers after each touch or stall. Watch the rear-left gap in the camera and left mirror every few seconds, and correct small hitch angles early. Keep the rear centred between the rails, since hitch damping alone let the rear drift into the left rail.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (677 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "This leg timed out with 30 gear changes and 6 rail touches, all by the trailer rear-left corner on the left rail, covering only 9 of 26 m. Repeated pull-forward resets cost a gear change and a 5 s penalty each time and never freed the corner. Priority: keep the rear-left corner clear from the start, not after contact. Use one steady controller and avoid swapping controllers after each touch. Watch the rear-left gap in the camera and the left mirror every few seconds, and correct the hitch early while it is still small. Tip: hitch damping alone let the rear drift into the left rail, so also watch where the rear centre sits between the rails and steer to keep it centred.",
+       "Leg timed out: repeated rail touches by the trailer rear-left corner on the left rail, and many gear changes from forward reset attempts that never freed the corner and covered little of the course. Priority: keep the rear-left corner clear from the start, not after contact. Run one steady controller and avoid swapping controllers after each touch or stall. Watch the rear-left gap in the camera and left mirror every few seconds, and correct small hitch angles early. Keep the rear centred between the rails, since hitch damping alone let the rear drift into the left rail."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 228.0,
+     "progress": 0.171,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Every touch was the trailer's rear-right corner on the right rail. Holding the hitch near zero was not enough; the rear drifted right anyway. Centre the rear itself, and bias the hitch early to move it left while still clear of the rails. Correct drift before contact, not after. Avoid forward pulls and gear changes: each touch costs a stall, and pulls never cleared the corner. Reverse slowly, about 0.2 to 0.3 m/s, checking in every 2 to 3 s. Watch the right mirror and trailer rear closely early on. Keep steering gains modest; the hitch responds fast.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (668 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Every touch was the trailer's rear-right corner on the right rail. Holding the hitch near zero was not enough: the rear drifted right anyway. Centre the rear itself, and bias the hitch to move it left early while still clear of the rails. Correct drift before contact, not after. Avoid forward pulls and gear changes; each touch costs a stall and a gear change, and the pulls never cleared the corner. Reverse slowly, around 0.2 to 0.3 m/s, and check in often (every 2 to 3 s). Watch the right mirror and the trailer rear closely during the first ten metres. Tip: this rig's hitch responds fast, so keep steering gains modest to avoid overshooting into the right rail.",
+       "Every touch was the trailer's rear-right corner on the right rail. Holding the hitch near zero was not enough; the rear drifted right anyway. Centre the rear itself, and bias the hitch early to move it left while still clear of the rails. Correct drift before contact, not after. Avoid forward pulls and gear changes: each touch costs a stall, and pulls never cleared the corner. Reverse slowly, about 0.2 to 0.3 m/s, checking in every 2 to 3 s. Watch the right mirror and trailer rear closely early on. Keep steering gains modest; the hitch responds fast."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 177.4,
+     "progress": 0.6058,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Lost leg: the trailer's rear-left corner kept clipping the left rail (9 touches, DNF), and every pin cost a 5 s penalty plus a gear change. Hitch-following alone let the rear drift left, and side-bias terms made the hitch swing the wrong way. Priority: prevent pins rather than recover from them. Check the left rail behind the trailer often, correct the hitch early and gently, and keep the reverse slow. Forward pulls clear a pin but waste time. Tip: the trailer is short and reacts fast, so use small steering inputs.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Lost leg: the trailer's rear-left corner kept clipping the left rail (9 touches, DNF), and every pin cost a 5 s penalty plus a gear change. Hitch-following alone let the rear drift left, and side-bias terms made the hitch swing the wrong way. Priority: prevent pins rather than recover from them. Check the left rail behind the trailer often, correct the hitch early and gently, and keep the reverse slow. Forward pulls clear a pin but waste time. Tip: the trailer is short and reacts fast, so use small steering inputs."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 295.55,
+     "progress": 0.3212,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "DNF after 9 touches, all by the trailer's rear-left corner on the left rail. Hitch-following alone let the rear drift left, and pull-forward and hold cycles cost penalties without moving it away. Prioritise the rear's gap to the left rail, read from the reversing camera, and steer early toward the right while the hitch is small. Reverse slowly, about 0.3 m/s, and avoid forward pulls unless jackknifed.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "DNF after 9 touches, all by the trailer's rear-left corner on the left rail. Hitch-following alone let the rear drift left, and pull-forward and hold cycles cost penalties without moving it away. Prioritise the rear's gap to the left rail, read from the reversing camera, and steer early toward the right while the hitch is small. Reverse slowly, about 0.3 m/s, and avoid forward pulls unless jackknifed."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145359-8a9188",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3592,
+     "touches": 6,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "Leg timed out: repeated rail touches by the trailer rear-left corner on the left rail, and many gear changes from forward reset attempts that never freed the corner and covered little of the course. Priority: keep the rear-left corner clear from the start, not after contact. Run one steady controller and avoid swapping controllers after each touch or stall. Watch the rear-left gap in the camera and left mirror every few seconds, and correct small hitch angles early. Keep the rear centred between the rails, since hitch damping alone let the rear drift into the left rail."
+      }
+     ],
+     "note": {
+      "text": "Leg 1 timed out at 36% progress. The trailer rear-left corner kept catching the left rail after an early drift; each touch stalled the rig and started forward/reverse churn that burned the clock. Priority: keep the rear centred from the start, watch the rear-left gap in the camera and left mirror, and correct small hitch angles before contact. If pinned at a small hitch, one short forward pull with modest wheel angle away from the rail, then reverse; never repeat pulls in cycles or swap controllers after each touch. Hard-lock forward pulls swung the nose into the right rail.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Leg 1 timed out at 36% progress. The trailer rear-left corner kept catching the left rail after an early drift; each touch stalled the rig and started forward/reverse churn that burned the clock. Priority: keep the rear centred from the start, watch the rear-left gap in the camera and left mirror, and correct small hitch angles before contact. If pinned at a small hitch, one short forward pull with modest wheel angle away from the rail, then reverse; never repeat pulls in cycles or swap controllers after each touch. Hard-lock forward pulls swung the nose into the right rail."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 203.4,
+     "progress": 0.1699,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "Every touch was the trailer's rear-right corner on the right rail. Holding the hitch near zero was not enough; the rear drifted right anyway. Centre the rear itself, and bias the hitch early to move it left while still clear of the rails. Correct drift before contact, not after. Avoid forward pulls and gear changes: each touch costs a stall, and pulls never cleared the corner. Reverse slowly, about 0.2 to 0.3 m/s, checking in every 2 to 3 s. Watch the right mirror and trailer rear closely early on. Keep steering gains modest; the hitch responds fast."
+      }
+     ],
+     "note": {
+      "text": "Reverse slowly, about 0.2 m/s, holding the hitch near zero and the trailer rear centred, checking in every 2 to 3 seconds. Most touches were the trailer's rear-right corner on the right rail: the rear drifts right even with a centred hitch, so bias it left early, well before the S-bend. Correct drift before contact, not after, with gentle steering toward the side the trailer swings. Once pinned, forward pulls and gear changes did not clear it; each cost a stall, and the front-left corner touched during the pulls. Watch the right mirror continuously.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (613 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Start with one smooth, slow reverse (about 0.2 m/s) that holds the hitch near zero while keeping the trailer rear centred, checking in every 2 to 3 s. Almost every touch was the trailer's rear-right corner on the right rail, and the rear drifted right even with a centred hitch, so bias it left early, well before the S-bend. Once pinned, forward pulls and gear changes did not clear it, each cost a stall, and the front-left corner touched during those pulls. Prefer gentle steering toward the side the trailer is swinging, and correct drift before contact rather than after. Watch the right mirror continuously.",
+       "Reverse slowly, about 0.2 m/s, holding the hitch near zero and the trailer rear centred, checking in every 2 to 3 seconds. Most touches were the trailer's rear-right corner on the right rail: the rear drifts right even with a centred hitch, so bias it left early, well before the S-bend. Correct drift before contact, not after, with gentle steering toward the side the trailer swings. Once pinned, forward pulls and gear changes did not clear it; each cost a stall, and the front-left corner touched during the pulls. Watch the right mirror continuously."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 179.1,
+     "progress": 0.4243,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "Lost leg: the trailer's rear-left corner kept clipping the left rail (9 touches, DNF), and every pin cost a 5 s penalty plus a gear change. Hitch-following alone let the rear drift left, and side-bias terms made the hitch swing the wrong way. Priority: prevent pins rather than recover from them. Check the left rail behind the trailer often, correct the hitch early and gently, and keep the reverse slow. Forward pulls clear a pin but waste time. Tip: the trailer is short and reacts fast, so use small steering inputs."
+      }
+     ],
+     "note": {
+      "text": "Lost leg: the trailer's rear-left corner clipped the left rail repeatedly, and the front-right corner once. Hitch-following alone let the rear drift left even with the hitch near zero, so watch the rear's gap to the left rail, not just the hitch angle. Correct drift early with small, gentle steering and keep reversing slow. Each pin costs a stall and a gear change; forward pulls rarely fixed the rear position and mostly wasted time. Prioritise zero touches over speed. Tip: the trailer reacts fast, so use tiny steering inputs and look back at the left rail often.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Lost leg: the trailer's rear-left corner clipped the left rail repeatedly, and the front-right corner once. Hitch-following alone let the rear drift left even with the hitch near zero, so watch the rear's gap to the left rail, not just the hitch angle. Correct drift early with small, gentle steering and keep reversing slow. Each pin costs a stall and a gear change; forward pulls rarely fixed the rear position and mostly wasted time. Prioritise zero touches over speed. Tip: the trailer reacts fast, so use tiny steering inputs and look back at the left rail often."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 229.25,
+     "progress": 0.3267,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "DNF after 9 touches, all by the trailer's rear-left corner on the left rail. Hitch-following alone let the rear drift left, and pull-forward and hold cycles cost penalties without moving it away. Prioritise the rear's gap to the left rail, read from the reversing camera, and steer early toward the right while the hitch is small. Reverse slowly, about 0.3 m/s, and avoid forward pulls unless jackknifed."
+      }
+     ],
+     "note": {
+      "text": "Leg 4 DNF after 9 touches, all by the trailer's rear-left corner on the left rail near 26.8 m. Hitch-following alone let the rear drift left unnoticed. Each forward pull or pin cycle cost a 5 s penalty and never cleared the rail, so avoid them unless jackknifed. Priority: keep the rear's gap to the left rail, read from the reversing camera, and bias steering to the right early while the hitch is small, aiming the rear well right of centre before it reaches the left rail. Reverse slowly. The rear-corner distance matters more than the hitch angle here.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Leg 4 DNF after 9 touches, all by the trailer's rear-left corner on the left rail near 26.8 m. Hitch-following alone let the rear drift left unnoticed. Each forward pull or pin cycle cost a 5 s penalty and never cleared the rail, so avoid them unless jackknifed. Priority: keep the rear's gap to the left rail, read from the reversing camera, and bias steering to the right early while the hitch is small, aiming the rear well right of centre before it reaches the left rail. Reverse slowly. The rear-corner distance matters more than the hitch angle here."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-151132-a80ff1",
+   "role": "train",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 142.35,
+     "progress": 0.3498,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 2",
+       "text": "Leg 1 timed out at 36% progress. The trailer rear-left corner kept catching the left rail after an early drift; each touch stalled the rig and started forward/reverse churn that burned the clock. Priority: keep the rear centred from the start, watch the rear-left gap in the camera and left mirror, and correct small hitch angles before contact. If pinned at a small hitch, one short forward pull with modest wheel angle away from the rail, then reverse; never repeat pulls in cycles or swap controllers after each touch. Hard-lock forward pulls swung the nose into the right rail."
+      }
+     ],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "no leave_note call"
+       ],
+       [
+        "too long (693 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Rewrote the notebook after the leg 1 DNF.",
+       "Leg 1 DNF: the trailer's rear-left corner hit the left rail nine times. The left rail sat close behind the rear from the start, so there was little margin, and each later fix was a forward pull followed by reverse. Every gear change stalled the rig, so the touch limit and the clock both ran out. Priorities: keep the rear clear of the left rail from the start, check the reversing camera and left mirror often, and correct any hitch angle at once with gentle steering. If pinned, make one short slow forward pull with the wheels straight or gently steered away from the rail, then reverse. Never repeat pull cycles, and avoid hard-lock forward pulls, which swing the nose into the right rail."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 255.25,
+     "progress": 0.2135,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 2",
+       "text": "Reverse slowly, about 0.2 m/s, holding the hitch near zero and the trailer rear centred, checking in every 2 to 3 seconds. Most touches were the trailer's rear-right corner on the right rail: the rear drifts right even with a centred hitch, so bias it left early, well before the S-bend. Correct drift before contact, not after, with gentle steering toward the side the trailer swings. Once pinned, forward pulls and gear changes did not clear it; each cost a stall, and the front-left corner touched during the pulls. Watch the right mirror continuously."
+      }
+     ],
+     "note": {
+      "text": "Reversing slowly with a centred hitch still lets the trailer rear drift right, and most runs pinned on the right rail near 10 m. Bias the rear left early, well before the S-bend, and correct drift gently before contact, not after. Each touch cost a 5 s stand and a gear change; forward pulls with big left steer swung the front-left corner into the left rail. If pinned, pull forward with small steer only, straighten the hitch, stop, then reverse. Avoid repeated gear changes. Tip: watch the right mirror continuously and check in every 2 s near the bend.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Reversing slowly with a centred hitch still lets the trailer rear drift right, and most runs pinned on the right rail near 10 m. Bias the rear left early, well before the S-bend, and correct drift gently before contact, not after. Each touch cost a 5 s stand and a gear change; forward pulls with big left steer swung the front-left corner into the left rail. If pinned, pull forward with small steer only, straighten the hitch, stop, then reverse. Avoid repeated gear changes. Tip: watch the right mirror continuously and check in every 2 s near the bend."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 207.45,
+     "progress": 0.4458,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 2",
+       "text": "Lost leg: the trailer's rear-left corner clipped the left rail repeatedly, and the front-right corner once. Hitch-following alone let the rear drift left even with the hitch near zero, so watch the rear's gap to the left rail, not just the hitch angle. Correct drift early with small, gentle steering and keep reversing slow. Each pin costs a stall and a gear change; forward pulls rarely fixed the rear position and mostly wasted time. Prioritise zero touches over speed. Tip: the trailer reacts fast, so use tiny steering inputs and look back at the left rail often."
+      }
+     ],
+     "note": {
+      "text": "Lost leg: 9 touches, all by the trailer's rear-left corner on the left rail. Holding a fixed hitch angle let the rear walk into the left rail, and steering to zero the hitch pushed the rear left. Watch the rear's gap to the left rail as well as the hitch, and correct drift early with gentle steering toward the drifting side, slowly. Forward pulls with right steer cleared the rail a few times, but each costs a gear change and a stop, and penalty holds ate the clock. Priority: zero touches over speed. Tip: a touch costs a 5 s hold, so plan the correction before contact.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (653 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Lost leg: 9 touches, all by the trailer's rear-left corner on the left rail. Holding the hitch near a fixed angle let the rear walk into the left rail, and steering right to zero the hitch pushed the rear left. Track the rear's gap to the left rail as well as the hitch, and correct drift early with gentle steering toward the drifting side at very low speed. Forward pulls with right steer cleared the rail a few times, but each costs a gear change and a stop, and the penalty holds ate most of the clock. Priority: zero touches over speed; check the left-rear gap often. Tip: a touch costs a 5 s hold, so plan the correction before contact, not after.",
+       "Lost leg: 9 touches, all by the trailer's rear-left corner on the left rail. Holding a fixed hitch angle let the rear walk into the left rail, and steering to zero the hitch pushed the rear left. Watch the rear's gap to the left rail as well as the hitch, and correct drift early with gentle steering toward the drifting side, slowly. Forward pulls with right steer cleared the rail a few times, but each costs a gear change and a stop, and penalty holds ate the clock. Priority: zero touches over speed. Tip: a touch costs a 5 s hold, so plan the correction before contact."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 284.65,
+     "progress": 0.3318,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 2",
+       "text": "Leg 4 DNF after 9 touches, all by the trailer's rear-left corner on the left rail near 26.8 m. Hitch-following alone let the rear drift left unnoticed. Each forward pull or pin cycle cost a 5 s penalty and never cleared the rail, so avoid them unless jackknifed. Priority: keep the rear's gap to the left rail, read from the reversing camera, and bias steering to the right early while the hitch is small, aiming the rear well right of centre before it reaches the left rail. Reverse slowly. The rear-corner distance matters more than the hitch angle here."
+      }
+     ],
+     "note": {
+      "text": "DNF after 9 touches, all by the trailer's rear-left corner on the left rail near 27 m. Hitch-following let the hitch grow and the rear swing left into the rail; right-steer pulls and forward straightening never cleared it and each costs a hold. Priority: keep the hitch small from the start and aim the rear well right of centre before the bend, not at it. Check the rear-left gap on the reversing camera every few seconds and reverse slowly through the bend. Avoid forward pulls unless jackknifed. Small early corrections beat big late ones on this trailer.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "DNF after 9 touches, all by the trailer's rear-left corner on the left rail near 27 m. Hitch-following let the hitch grow and the rear swing left into the rail; right-steer pulls and forward straightening never cleared it and each costs a hold. Priority: keep the hitch small from the start and aim the rear well right of centre before the bend, not at it. Check the rear-left gap on the reversing camera every few seconds and reverse slowly through the bend. Avoid forward pulls unless jackknifed. Small early corrections beat big late ones on this trailer."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-153356-e10de9",
+   "role": "train",
+   "step": 4,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 124.65,
+     "progress": 0.3609,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 2",
+       "text": "Leg 1 timed out at 36% progress. The trailer rear-left corner kept catching the left rail after an early drift; each touch stalled the rig and started forward/reverse churn that burned the clock. Priority: keep the rear centred from the start, watch the rear-left gap in the camera and left mirror, and correct small hitch angles before contact. If pinned at a small hitch, one short forward pull with modest wheel angle away from the rail, then reverse; never repeat pulls in cycles or swap controllers after each touch. Hard-lock forward pulls swung the nose into the right rail."
+      }
+     ],
+     "note": {
+      "text": "Leg 1 DNF: 9 touches, all by the trailer's rear-left corner. The left rail sits close behind the trailer, so the rear hugged it from the start. Priority: from the first metre, hold a slight right-rear hitch bias to keep the rear well right of centre, and watch the rear-left gap in the camera. Keep speed low, about 0.3 to 0.4 m/s; faster reversing overshoots. Avoid large forward pulls: they swung the nose and each gear change burned seconds. Use gentle hitch gain and keep one controller rather than swapping after each touch.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (613 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Leg 1 DNF: 9 touches, all by the trailer's rear-left corner. The left rail sits close behind the trailer, so the rear hugged it from the start, and the first drift to about 0.7 degrees of hitch caused the first touch. Priority: from the first metre, hold a slight right-rear hitch bias so the rear stays well right of centre, and check the rear-left gap in the camera often. Keep speed low (about 0.3 to 0.4 m/s); faster reversing overshoots. Avoid large forward pulls: they swung the nose and each gear change burned seconds. Use gentle hitch gain, and keep one controller rather than swapping after every touch.",
+       "Leg 1 DNF: 9 touches, all by the trailer's rear-left corner. The left rail sits close behind the trailer, so the rear hugged it from the start. Priority: from the first metre, hold a slight right-rear hitch bias to keep the rear well right of centre, and watch the rear-left gap in the camera. Keep speed low, about 0.3 to 0.4 m/s; faster reversing overshoots. Avoid large forward pulls: they swung the nose and each gear change burned seconds. Use gentle hitch gain and keep one controller rather than swapping after each touch."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 330.4,
+     "progress": 0.2124,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 3",
+       "text": "Reversing slowly with a centred hitch still lets the trailer rear drift right, and most runs pinned on the right rail near 10 m. Bias the rear left early, well before the S-bend, and correct drift gently before contact, not after. Each touch cost a 5 s stand and a gear change; forward pulls with big left steer swung the front-left corner into the left rail. If pinned, pull forward with small steer only, straighten the hitch, stop, then reverse. Avoid repeated gear changes. Tip: watch the right mirror continuously and check in every 2 s near the bend."
+      }
+     ],
+     "note": {
+      "text": "Last run DNF: the trailer rear-right corner pinned on the right rail near 9 m, and forward pulls plus reverse loops (about 48 gear changes) burned time and touches. Holding the hitch near straight let the rear drift right every time. Next time bias the hitch left well before the bend, reverse slowly, and correct drift early with small steering while watching the right mirror. On first contact, stop and reassess rather than cycling pulls; repeated forward-then-reverse loops never freed the rail. Tip: the wheels are slow, so use small steering changes.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Last run DNF: the trailer rear-right corner pinned on the right rail near 9 m, and forward pulls plus reverse loops (about 48 gear changes) burned time and touches. Holding the hitch near straight let the rear drift right every time. Next time bias the hitch left well before the bend, reverse slowly, and correct drift early with small steering while watching the right mirror. On first contact, stop and reassess rather than cycling pulls; repeated forward-then-reverse loops never freed the rail. Tip: the wheels are slow, so use small steering changes."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 240.9,
+     "progress": 0.0,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 3",
+       "text": "Lost leg: 9 touches, all by the trailer's rear-left corner on the left rail. Holding a fixed hitch angle let the rear walk into the left rail, and steering to zero the hitch pushed the rear left. Watch the rear's gap to the left rail as well as the hitch, and correct drift early with gentle steering toward the drifting side, slowly. Forward pulls with right steer cleared the rail a few times, but each costs a gear change and a stop, and penalty holds ate the clock. Priority: zero touches over speed. Tip: a touch costs a 5 s hold, so plan the correction before contact."
+      }
+     ],
+     "note": {
+      "text": "Lost again: 9 touches, nearly all by the trailer rear-left corner on the left rail. Holding the hitch near zero let the rear drift left, and every fix (steer reversal, or forward pulls with steer) ended in contact. Start the reverse with the trailer rear well right of centre and hold it there with gentle steering and slow reverse speed, correcting drift early. Keep pulls short and straight; each costs a gear change and a stop, and penalty holds ate the clock. A touch costs a five-second hold, so plan each correction before reaching the rail.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (637 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Lost again: 9 touches, nearly all by the trailer rear-left corner on the left rail. Holding the hitch near zero still let the rear drift left, and each fix (reversing the steer direction, or pulling forward with steer) ended in contact, with front corners also hitting rails. Start the reverse with the trailer rear well right of centre and hold it there using gentle steering and a slow reverse speed, correcting any drift early, before contact. Keep pulls short and straight; each costs a gear change and a stop, and the penalty holds ate the clock. A touch costs a five-second hold, so plan each correction before the rail is reached.",
+       "Lost again: 9 touches, nearly all by the trailer rear-left corner on the left rail. Holding the hitch near zero let the rear drift left, and every fix (steer reversal, or forward pulls with steer) ended in contact. Start the reverse with the trailer rear well right of centre and hold it there with gentle steering and slow reverse speed, correcting drift early. Keep pulls short and straight; each costs a gear change and a stop, and penalty holds ate the clock. A touch costs a five-second hold, so plan each correction before reaching the rail."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 345.1,
+     "progress": 0.3153,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 3",
+       "text": "DNF after 9 touches, all by the trailer's rear-left corner on the left rail near 27 m. Hitch-following let the hitch grow and the rear swing left into the rail; right-steer pulls and forward straightening never cleared it and each costs a hold. Priority: keep the hitch small from the start and aim the rear well right of centre before the bend, not at it. Check the rear-left gap on the reversing camera every few seconds and reverse slowly through the bend. Avoid forward pulls unless jackknifed. Small early corrections beat big late ones on this trailer."
+      }
+     ],
+     "note": {
+      "text": "DNF: 9 touches, all by the trailer's rear-left corner on the left rail near 25 m; the rear never cleared. Hitch-following with a right bias let the hitch grow and the rear swing left into the rail. Repeated forward pulls and reverse restarts burned holds and re-pinned it. Priority: keep the hitch small from the start, aim the rear well right of centre before the bend, and creep through it. Watch the rear-left gap on the camera every few seconds. Pull forward at most once, early, with a clear plan. Correct any hitch growth early, before it passes about 8.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (675 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "DNF: 9 touches, all by the trailer's rear-left corner on the left rail near 25 m, and the rear never got clear. Hitch-following with a right bias let the hitch grow, so the rear swung left into the rail. Repeated forward pulls with right steer and reverse restarts mostly burned holds and re-pinned it. Priority: keep the hitch small from the start, aim the rear well right of centre before the bend, and creep through that section slowly. Check the rear-left gap on the reversing camera every few seconds. Pull forward at most once, early, with a clear plan, not in loops. Tip: keep the hitch within a few degrees; once it passes about 8, correct it before it grows further.",
+       "DNF: 9 touches, all by the trailer's rear-left corner on the left rail near 25 m; the rear never cleared. Hitch-following with a right bias let the hitch grow and the rear swing left into the rail. Repeated forward pulls and reverse restarts burned holds and re-pinned it. Priority: keep the hitch small from the start, aim the rear well right of centre before the bend, and creep through it. Watch the rear-left gap on the camera every few seconds. Pull forward at most once, early, with a clear plan. Correct any hitch growth early, before it passes about 8."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-160244-1c939d",
+   "role": "train",
+   "step": 5,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 174.95,
+     "progress": 0.5907,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 4",
+       "text": "Leg 1 DNF: 9 touches, all by the trailer's rear-left corner. The left rail sits close behind the trailer, so the rear hugged it from the start. Priority: from the first metre, hold a slight right-rear hitch bias to keep the rear well right of centre, and watch the rear-left gap in the camera. Keep speed low, about 0.3 to 0.4 m/s; faster reversing overshoots. Avoid large forward pulls: they swung the nose and each gear change burned seconds. Use gentle hitch gain and keep one controller rather than swapping after each touch."
+      }
+     ],
+     "note": {
+      "text": "Leg 1 DNF: 9 touches, all by the trailer's rear-left corner, mostly near 15 m reversed where the left rail pinches. A right-side hitch bias failed every time; aim for a near-straight hitch. Watch the rear-left corner in the reversing camera and corner of the eye. Reverse slowly, about 0.2 m/s. Forward resets cost 5 s each and 18 gear changes ate the clock, so use at most one short early pull forward, wheels straight, before the rear reaches the pinch. If the left corner nears half a metre, stop and pull forward before contact.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (640 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Leg 1 DNF: 9 touches, all by the trailer's rear-left corner, almost always near 15 m reversed where the left rail pinches. Every right-biased hitch fix failed. Don't hold a hitch bias; aim for a near-straight hitch and watch the rear-left corner in the reversing camera and corner of the eye throughout. Reverse very slowly, around 0.2 m/s. Forward resets cost 5 s each, and 18 gear changes ate the clock, so use at most one short pull forward, taken early with wheels straight, before the rear reaches the pinch rather than after contact. Tip: if the left corner closes to under about half a metre, stop and pull forward before it touches.",
+       "Leg 1 DNF: 9 touches, all by the trailer's rear-left corner, mostly near 15 m reversed where the left rail pinches. A right-side hitch bias failed every time; aim for a near-straight hitch. Watch the rear-left corner in the reversing camera and corner of the eye. Reverse slowly, about 0.2 m/s. Forward resets cost 5 s each and 18 gear changes ate the clock, so use at most one short early pull forward, wheels straight, before the rear reaches the pinch. If the left corner nears half a metre, stop and pull forward before contact."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 217.5,
+     "progress": 0.1715,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 4",
+       "text": "Last run DNF: the trailer rear-right corner pinned on the right rail near 9 m, and forward pulls plus reverse loops (about 48 gear changes) burned time and touches. Holding the hitch near straight let the rear drift right every time. Next time bias the hitch left well before the bend, reverse slowly, and correct drift early with small steering while watching the right mirror. On first contact, stop and reassess rather than cycling pulls; repeated forward-then-reverse loops never freed the rail. Tip: the wheels are slow, so use small steering changes."
+      }
+     ],
+     "note": {
+      "text": "Both runs failed on the right rail mid-course: the rear-right trailer corner pins there when the hitch is held near straight, and forward pulls to free it cost gear changes and left-rail touches. Do not hold the hitch at zero. Bias it clearly left from the start, reverse slowly, and watch the right mirror for the rear corner. Swing the rear left before it nears the right rail, not after contact. If pinned, avoid repeated forward-then-reverse loops; they burned all touches and time. Tip: the wheels turn slowly, so make early, small steering changes.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (609 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Both runs failed on the right rail near 7 m: the trailer's rear-right corner pins there when the hitch is held near straight, and forward pulls to free it cost gear changes and repeatedly touched the left rail with the front-left corner. Do not hold the hitch at zero. Bias it clearly left from the start and reverse slowly, watching the right mirror for the rear corner. Start swinging the rear left before it nears the right rail, not after contact. If pinned, avoid repeated forward-then-reverse loops, which used up all touches and time. Tip: the wheels turn slowly, so make early, small steering changes.",
+       "Both runs failed on the right rail mid-course: the rear-right trailer corner pins there when the hitch is held near straight, and forward pulls to free it cost gear changes and left-rail touches. Do not hold the hitch at zero. Bias it clearly left from the start, reverse slowly, and watch the right mirror for the rear corner. Swing the rear left before it nears the right rail, not after contact. If pinned, avoid repeated forward-then-reverse loops; they burned all touches and time. Tip: the wheels turn slowly, so make early, small steering changes."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 185.9,
+     "progress": 0.5884,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 4",
+       "text": "Lost again: 9 touches, nearly all by the trailer rear-left corner on the left rail. Holding the hitch near zero let the rear drift left, and every fix (steer reversal, or forward pulls with steer) ended in contact. Start the reverse with the trailer rear well right of centre and hold it there with gentle steering and slow reverse speed, correcting drift early. Keep pulls short and straight; each costs a gear change and a stop, and penalty holds ate the clock. A touch costs a five-second hold, so plan each correction before reaching the rail."
+      }
+     ],
+     "note": {
+      "text": "Lost at 9 touches, all by the trailer rear-left corner on the left rail. Starting the rear right of centre did not hold: the trailer drifted left and each steering answer pushed that corner into the rail. In reverse, steering right moves the trailer rear left, so steer left, gently, to move it right. Keep the hitch to a few degrees and go slowly. Make early small corrections whenever the rear-left corner drifts toward the left rail. Forward pulls near the rail failed every time, so avoid them. Re-check the rail after each steering change.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (805 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Lost at 9 touches, all by the trailer rear-left corner on the left rail. Starting with the rear well right of centre did not save it: contacts came when the trailer swung right and the steering that answered it pushed the rear-left corner back into the left rail. Steering right in reverse moves the trailer rear left, so to move the rear right, steer left, gently. Keep the hitch to a few degrees, go slowly, and treat any drift of the rear-left corner toward the left rail as the top priority. Forward pulls near the rail failed every time: each cost a gear change and a hold and ended in contact, so avoid them unless the rail is already clear. Before each correction, check the rear-left corner's distance to the rail in your view. Tip: make small steering changes and re-read the rail after each one.",
+       "Lost at 9 touches, all by the trailer rear-left corner on the left rail. Starting the rear right of centre did not hold: the trailer drifted left and each steering answer pushed that corner into the rail. In reverse, steering right moves the trailer rear left, so steer left, gently, to move it right. Keep the hitch to a few degrees and go slowly. Make early small corrections whenever the rear-left corner drifts toward the left rail. Forward pulls near the rail failed every time, so avoid them. Re-check the rail after each steering change."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 324.5,
+     "progress": 0.2545,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 4",
+       "text": "DNF: 9 touches, all by the trailer's rear-left corner on the left rail near 25 m; the rear never cleared. Hitch-following with a right bias let the hitch grow and the rear swing left into the rail. Repeated forward pulls and reverse restarts burned holds and re-pinned it. Priority: keep the hitch small from the start, aim the rear well right of centre before the bend, and creep through it. Watch the rear-left gap on the camera every few seconds. Pull forward at most once, early, with a clear plan. Correct any hitch growth early, before it passes about 8."
+      }
+     ],
+     "note": {
+      "text": "Previous attempt was DNF after 9 touches, 8 by the trailer's rear-left corner on the left rail near 25 m. Large negative hitch targets overshot: the rear swung left, or the front-right corner hit the right rail. Forward pulls with full wheel lock burned time and touches without fixing the rear. Priority: keep the hitch small, offset the rear right early and gradually, and creep slowly through the bend. Check the rear-left gap on the camera every few seconds. Avoid repeated pulls and restarts.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (606 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Previous drivers hit the rail repeatedly, almost always the trailer's rear-left corner on the left rail near 25 m. A rear centre about a metre right of centre was not enough there. Offset the rear right early and gradually with a small hitch angle, not with a large negative target. Large negative hitch targets overshot and swung the rear left, or swung the front-right corner into the right rail. Forward pulls with full wheel lock burned time and touches without fixing the rear. Priority: keep the hitch small, creep slowly through the bend, and check the rear-left gap on the camera every few seconds.",
+       "Previous attempt was DNF after 9 touches, 8 by the trailer's rear-left corner on the left rail near 25 m. Large negative hitch targets overshot: the rear swung left, or the front-right corner hit the right rail. Forward pulls with full wheel lock burned time and touches without fixing the rear. Priority: keep the hitch small, offset the rear right early and gradually, and creep slowly through the bend. Check the rear-left gap on the camera every few seconds. Avoid repeated pulls and restarts."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-161852-ea87ad",
+   "role": "train",
+   "step": 6,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3489,
+     "touches": 8,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 5",
+       "text": "Leg 1 DNF: 9 touches, all by the trailer's rear-left corner, mostly near 15 m reversed where the left rail pinches. A right-side hitch bias failed every time; aim for a near-straight hitch. Watch the rear-left corner in the reversing camera and corner of the eye. Reverse slowly, about 0.2 m/s. Forward resets cost 5 s each and 18 gear changes ate the clock, so use at most one short early pull forward, wheels straight, before the rear reaches the pinch. If the left corner nears half a metre, stop and pull forward before contact."
+      }
+     ],
+     "note": {
+      "text": "Leg 1 failed (TIME_UP, all touches by the trailer's rear-left corner, pinched every time near 9 to 10 m reversed). Hitch-only and rear-offset steering both drifted the rear into the left rail, and contact came within a second of any swing to the right. Start correcting well before the pinch, watching the reversing camera and the left corner, not after contact. Each forward reset cost a penalty plus a gear change, and many gear changes ate the clock, so avoid resets entirely. Keep a steady slow reverse with a near-straight hitch and no stops; par is well under the time budget.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (651 characters; the limit is 600)",
+        "it contains 7 numbers; at most 6 are allowed"
+       ]
+      ],
+      "drafts": [
+       "Leg 1 failed: 8 touches, all by the trailer's rear-left corner, pinched at the same spot about 9 to 10 m reversed each time, and the clock ran out far short of the bay. Hitch-only correction and rear-offset steering both drifted the rear into the left rail, and contact came within a second of any hitch swing to the right. Start correcting well before the pinch, watching the reversing camera and the left corner, rather than reacting at contact. Each forward reset cost about 5 s penalty plus a gear change, and 14 gear changes ate the clock, so avoid resets entirely. Par is 76 s: keep a steady slow reverse with a near-straight hitch and no stops.",
+       "Leg 1 failed (TIME_UP, all touches by the trailer's rear-left corner, pinched every time near 9 to 10 m reversed). Hitch-only and rear-offset steering both drifted the rear into the left rail, and contact came within a second of any swing to the right. Start correcting well before the pinch, watching the reversing camera and the left corner, not after contact. Each forward reset cost a penalty plus a gear change, and many gear changes ate the clock, so avoid resets entirely. Keep a steady slow reverse with a near-straight hitch and no stops; par is well under the time budget."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 229.2,
+     "progress": 0.6667,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 5",
+       "text": "Both runs failed on the right rail mid-course: the rear-right trailer corner pins there when the hitch is held near straight, and forward pulls to free it cost gear changes and left-rail touches. Do not hold the hitch at zero. Bias it clearly left from the start, reverse slowly, and watch the right mirror for the rear corner. Swing the rear left before it nears the right rail, not after contact. If pinned, avoid repeated forward-then-reverse loops; they burned all touches and time. Tip: the wheels turn slowly, so make early, small steering changes."
+      }
+     ],
+     "note": {
+      "text": "Touches were nearly all the trailer's rear-left corner on the LEFT rail, about 25-28 m into reversing; the right rail was not the problem. Zero or left hitch let the rear drift left and pin, and a right bias alone did not stop it. Straight forward clears cost a gear change and rarely freed the corner; a forward pull with wheels turned right did. Before the bend, keep the rear well right of centre, reverse slowly, and watch the left mirror. Turn the wheels early and in small steps. Avoid repeated forward-reverse loops.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (606 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Touches were almost all the trailer's rear-left corner on the LEFT rail, about 25-28 m into reversing, not the right rail. Zero or left hitch let the rear drift left and pin. A right bias alone did not stop it. Straight forward clears cost a gear change each and rarely freed the corner; a forward pull with wheels turned right moved the rear off the left rail with no touch. Before the bend, keep the rear well right of centre, reverse slowly, and check the left mirror often. The wheels turn slowly, so make early, small steering changes. Avoid repeated forward-reverse loops: they burn time and touches.",
+       "Touches were nearly all the trailer's rear-left corner on the LEFT rail, about 25-28 m into reversing; the right rail was not the problem. Zero or left hitch let the rear drift left and pin, and a right bias alone did not stop it. Straight forward clears cost a gear change and rarely freed the corner; a forward pull with wheels turned right did. Before the bend, keep the rear well right of centre, reverse slowly, and watch the left mirror. Turn the wheels early and in small steps. Avoid repeated forward-reverse loops."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 126.8,
+     "progress": 0.4393,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 5",
+       "text": "Lost at 9 touches, all by the trailer rear-left corner on the left rail. Starting the rear right of centre did not hold: the trailer drifted left and each steering answer pushed that corner into the rail. In reverse, steering right moves the trailer rear left, so steer left, gently, to move it right. Keep the hitch to a few degrees and go slowly. Make early small corrections whenever the rear-left corner drifts toward the left rail. Forward pulls near the rail failed every time, so avoid them. Re-check the rail after each steering change."
+      }
+     ],
+     "note": {
+      "text": "Lost at 9 touches, nearly all by the trailer rear-left corner on the left rail. Aiming the rear slightly right of centre did not hold; the trailer drifted left and corrections came too late. Correct early and gently when the rear-left corner starts moving toward the left rail. Steering left moves the trailer rear right. Keep the hitch within a few degrees and reverse slowly. Big steering swings overshoot and pin you, so keep changes small. Forward pulls and long waits never freed a pinned trailer; avoid getting pinned.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (763 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Lost at 9 touches, nearly all by the trailer rear-left corner on the left rail. Aiming the rear only slightly right of centre did not hold: the trailer drifted left and every correction came too late. Early-correct gently, as soon as the rear-left corner starts moving toward the left rail, not when it is nearly touching. Steering left moves the trailer rear right. Keep the hitch within a few degrees and reverse slowly. Big steering swings overshoot to twenty degrees and pin you again, so use small, steady steering changes. Pinned recovery did not work: forward pulls with either steer direction, and long waits on penalties, never freed the trailer and burned the touch budget. Avoid getting pinned at all. Re-check the left rail after each steering change.",
+       "Lost at 9 touches, nearly all by the trailer rear-left corner on the left rail. Aiming the rear slightly right of centre did not hold; the trailer drifted left and corrections came too late. Correct early and gently when the rear-left corner starts moving toward the left rail. Steering left moves the trailer rear right. Keep the hitch within a few degrees and reverse slowly. Big steering swings overshoot and pin you, so keep changes small. Forward pulls and long waits never freed a pinned trailer; avoid getting pinned."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 237.2,
+     "progress": 0.3655,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 5",
+       "text": "Previous attempt was DNF after 9 touches, 8 by the trailer's rear-left corner on the left rail near 25 m. Large negative hitch targets overshot: the rear swung left, or the front-right corner hit the right rail. Forward pulls with full wheel lock burned time and touches without fixing the rear. Priority: keep the hitch small, offset the rear right early and gradually, and creep slowly through the bend. Check the rear-left gap on the camera every few seconds. Avoid repeated pulls and restarts."
+      }
+     ],
+     "note": {
+      "text": "Previous driver DNF after 9 touches. Every attempt pinned the trailer's rear-left corner on the left rail near 30 m of reverse. Large negative hitch targets to swing the rear right did not clear that bend, and full forward lock made it worse; forward pulls only reset the same spot. Priority: go slowly before the bend, keep the hitch small on the early straight, and watch the rear-left gap on the camera continuously, not just the hitch reading. Untested: offset the rear right earlier, before the bend. Avoid repeated restarts; each pin costs a stop and a gear change.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (714 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Leg 4 notebook (previous driver DNF, 9 touches). Every attempt pinned the trailer's rear-left corner on the left rail near 30 m of reverse, and forward pulls only reset the same spot. Large negative hitch targets, meant to swing the rear right, did not clear that bend, and full forward lock made it worse. Priority: go slowly before the bend (about 0.3 m/s or less), keep the hitch small on the early straight, and watch the rear-left gap on the camera continuously rather than trusting the hitch reading. Untested idea: start the rightward offset earlier, before the bend. Avoid repeated restarts, since each pin costs a stop and a gear change. Gentle early correction beats late large steering for this vehicle.",
+       "Previous driver DNF after 9 touches. Every attempt pinned the trailer's rear-left corner on the left rail near 30 m of reverse. Large negative hitch targets to swing the rear right did not clear that bend, and full forward lock made it worse; forward pulls only reset the same spot. Priority: go slowly before the bend, keep the hitch small on the early straight, and watch the rear-left gap on the camera continuously, not just the hitch reading. Untested: offset the rear right earlier, before the bend. Avoid repeated restarts; each pin costs a stop and a gear change."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163037-c72fd1",
+   "role": "transfer",
+   "step": 7,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 174.2,
+     "progress": 0.38,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 6",
+       "text": "Leg 1 failed (TIME_UP, all touches by the trailer's rear-left corner, pinched every time near 9 to 10 m reversed). Hitch-only and rear-offset steering both drifted the rear into the left rail, and contact came within a second of any swing to the right. Start correcting well before the pinch, watching the reversing camera and the left corner, not after contact. Each forward reset cost a penalty plus a gear change, and many gear changes ate the clock, so avoid resets entirely. Keep a steady slow reverse with a near-straight hitch and no stops; par is well under the time budget."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 185.95,
+     "progress": 0.2442,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 6",
+       "text": "Touches were nearly all the trailer's rear-left corner on the LEFT rail, about 25-28 m into reversing; the right rail was not the problem. Zero or left hitch let the rear drift left and pin, and a right bias alone did not stop it. Straight forward clears cost a gear change and rarely freed the corner; a forward pull with wheels turned right did. Before the bend, keep the rear well right of centre, reverse slowly, and watch the left mirror. Turn the wheels early and in small steps. Avoid repeated forward-reverse loops."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 106.85,
+     "progress": 0.4189,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 6",
+       "text": "Lost at 9 touches, nearly all by the trailer rear-left corner on the left rail. Aiming the rear slightly right of centre did not hold; the trailer drifted left and corrections came too late. Correct early and gently when the rear-left corner starts moving toward the left rail. Steering left moves the trailer rear right. Keep the hitch within a few degrees and reverse slowly. Big steering swings overshoot and pin you, so keep changes small. Forward pulls and long waits never freed a pinned trailer; avoid getting pinned."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 382.8,
+     "progress": 0.3188,
+     "touches": 8,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 6",
+       "text": "Previous driver DNF after 9 touches. Every attempt pinned the trailer's rear-left corner on the left rail near 30 m of reverse. Large negative hitch targets to swing the rear right did not clear that bend, and full forward lock made it worse; forward pulls only reset the same spot. Priority: go slowly before the bend, keep the hitch small on the early straight, and watch the rear-left gap on the camera continuously, not just the hitch reading. Untested: offset the rear right earlier, before the bend. Avoid repeated restarts; each pin costs a stop and a gear change."
+      }
+     ],
+     "note": null
+    }
+   ]
+  }
+ ]
+}

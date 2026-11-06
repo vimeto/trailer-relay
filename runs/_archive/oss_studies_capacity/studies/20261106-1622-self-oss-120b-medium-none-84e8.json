@@ -1,0 +1,652 @@
+{
+ "study": "20261106-1622-self-oss-120b-medium-none-84e8",
+ "model": "agy:gpt-oss-120b-medium",
+ "condition": "self",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 2,
+ "steps": 3,
+ "policy": {
+  "numbers": "none",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-162240-0e1cc1",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3343,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "The controller kept wheels centred and reversed at default speed, letting the trailer swing left and touch a rail early. The main failure was not correcting hitch angle while reversing. Future attempts should prioritise monitoring and reducing the hitch angle, steering toward the swing, and using the head to glance left and right for rail proximity. A slower, gentle reverse gives more time to react and keeps the trailer aligned.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The controller kept wheels centred and reversed at default speed, letting the trailer swing left and touch a rail early. The main failure was not correcting hitch angle while reversing. Future attempts should prioritise monitoring and reducing the hitch angle, steering toward the swing, and using the head to glance left and right for rail proximity. A slower, gentle reverse gives more time to react and keeps the trailer aligned."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "TIME_UP",
+     "time": 458.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": {
+      "text": "Did not start moving; controller never issued reverse speed so the trailer stayed still. Prioritise issuing a reverse command quickly and steer toward the side the trailer is swung. Begin with gentle reverse speed and modest wheel angle, then adjust based on hitch angle and rail sight. Keep head turned to watch rails ahead and use mirrors to maintain clearance.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Did not start moving; controller never issued reverse speed so the trailer stayed still. Prioritise issuing a reverse command quickly and steer toward the side the trailer is swung. Begin with gentle reverse speed and modest wheel angle, then adjust based on hitch angle and rail sight. Keep head turned to watch rails ahead and use mirrors to maintain clearance."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "TIME_UP",
+     "time": 364.0,
+     "progress": 0.4446,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "The trailer hit the rail while reversing because the controller kept almost straight wheels and low reverse speed, giving little steering to fix a slight hitch drift. Prioritize keeping the hitch centered with stronger early steering corrections, and use modest forward\u2011reverse adjustments when the hitch deviates. Tip: turn the wheels toward the side the trailer pulls before changing direction, letting it straighten naturally.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The trailer hit the rail while reversing because the controller kept almost straight wheels and low reverse speed, giving little steering to fix a slight hitch drift. Prioritize keeping the hitch centered with stronger early steering corrections, and use modest forward\u2011reverse adjustments when the hitch deviates. Tip: turn the wheels toward the side the trailer pulls before changing direction, letting it straighten naturally."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "TIME_UP",
+     "time": 619.0,
+     "progress": 0.3091,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "Repeated gear changes and forward pushes on tiny hitch angles wasted time and caused stops. Keep the trailer straight by staying in reverse with gentle steady steering. Watch the left rail and left mirror to monitor swing. Small continuous corrections beat large swings. Avoid unnecessary gear changes and maintain a low, constant reverse speed.",
+      "accepted": true,
+      "rejections": [
+       [
+        "no leave_note call"
+       ]
+      ],
+      "drafts": [
+       "",
+       "Repeated gear changes and forward pushes on tiny hitch angles wasted time and caused stops. Keep the trailer straight by staying in reverse with gentle steady steering. Watch the left rail and left mirror to monitor swing. Small continuous corrections beat large swings. Avoid unnecessary gear changes and maintain a low, constant reverse speed."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-162240-cc7a2a",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.352,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "We contacted the rail with the trailer\u2019s rear\u2011left corner because the simple proportional steering let the hitch angle drift left while reversing. The vehicle stopped, losing precious time. Next run should keep the hitch angle centered by steering toward the side the trailer swings, and retreat with forward motion when the angle grows large. Prioritise watching the rear\u2011left side with the camera or mirror and avoid letting the hitch angle exceed a few degrees.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We contacted the rail with the trailer\u2019s rear\u2011left corner because the simple proportional steering let the hitch angle drift left while reversing. The vehicle stopped, losing precious time. Next run should keep the hitch angle centered by steering toward the side the trailer swings, and retreat with forward motion when the angle grows large. Prioritise watching the rear\u2011left side with the camera or mirror and avoid letting the hitch angle exceed a few degrees."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "TIME_UP",
+     "time": 458.0,
+     "progress": 0.1817,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "We contacted a rail early because the trailer swung right and the controller never steered to correct the hitch angle, leaving us pinned. The constant reverse approach kept the hitch angle growing instead of reducing it. For the next run, keep the hitch angle small by steering toward the swing while reversing, and only switch to forward pull when the angle becomes large. Prioritize watching the hitch angle and using proportional steering, and turn the head to watch the rails laterally. Keep the vehicle moving rather than stopping.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We contacted a rail early because the trailer swung right and the controller never steered to correct the hitch angle, leaving us pinned. The constant reverse approach kept the hitch angle growing instead of reducing it. For the next run, keep the hitch angle small by steering toward the swing while reversing, and only switch to forward pull when the angle becomes large. Prioritize watching the hitch angle and using proportional steering, and turn the head to watch the rails laterally. Keep the vehicle moving rather than stopping."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "TIME_UP",
+     "time": 364.0,
+     "progress": 0.1939,
+     "touches": 2,
+     "notes_in": [],
+     "note": {
+      "text": "Steer toward the side the trailer swings, and always pull forward to straighten when jackknifed before reversing again. Prioritize gentle forward moves to clear rail contacts and watch the front right corner for clearance. A slight side look when the hitch is angled right helps maintain space.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Steer toward the side the trailer swings, and always pull forward to straighten when jackknifed before reversing again. Prioritize gentle forward moves to clear rail contacts and watch the front right corner for clearance. A slight side look when the hitch is angled right helps maintain space."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "TIME_UP",
+     "time": 619.0,
+     "progress": 0.2819,
+     "touches": 3,
+     "notes_in": [],
+     "note": {
+      "text": "We kept steering straight while reversing, letting the trailer swing left and hit rails. The controller never corrected the hitch angle and ignored the PINNED penalty, causing repeated contacts and wasted time. Prioritize actively reducing hitch angle during reverse, and when PINNED wait the full penalty then pull forward with steering opposite the swing to straighten before resuming reverse. Use maximum reverse speed cautiously and watch the direct view for early rail proximity.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We kept steering straight while reversing, letting the trailer swing left and hit rails. The controller never corrected the hitch angle and ignored the PINNED penalty, causing repeated contacts and wasted time. Prioritize actively reducing hitch angle during reverse, and when PINNED wait the full penalty then pull forward with steering opposite the swing to straighten before resuming reverse. Use maximum reverse speed cautiously and watch the direct view for early rail proximity."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-162838-70eeba",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The controller kept wheels centred and reversed at default speed, letting the trailer swing left and touch a rail early. The main failure was not correcting hitch angle while reversing. Future attempts should prioritise monitoring and reducing the hitch angle, steering toward the swing, and using the head to glance left and right for rail proximity. A slower, gentle reverse gives more time to react and keeps the trailer aligned."
+      }
+     ],
+     "note": {
+      "text": "The trailer swung left because the controller never steered to correct hitch angle. Prioritise a controller that continuously steers toward the swing while reversing, using gentle speed to keep reaction time. Turn the head left and right often to watch rail proximity and adjust before contact.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The trailer swung left because the controller never steered to correct hitch angle. Prioritise a controller that continuously steers toward the swing while reversing, using gentle speed to keep reaction time. Turn the head left and right often to watch rail proximity and adjust before contact."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "TIME_UP",
+     "time": 458.0,
+     "progress": 0.2134,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Did not start moving; controller never issued reverse speed so the trailer stayed still. Prioritise issuing a reverse command quickly and steer toward the side the trailer is swung. Begin with gentle reverse speed and modest wheel angle, then adjust based on hitch angle and rail sight. Keep head turned to watch rails ahead and use mirrors to maintain clearance."
+      }
+     ],
+     "note": {
+      "text": "The controller never gave reverse, so the vehicle stayed still and the trailer swung right, touching the rail and causing a pin. Future runs must command reverse right away, steer toward the side the trailer is angled, and keep the head scanning the rails to catch drift early. If pinned, pull forward with opposite steering to straighten before resuming reverse.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The controller never gave reverse, so the vehicle stayed still and the trailer swung right, touching the rail and causing a pin. Future runs must command reverse right away, steer toward the side the trailer is angled, and keep the head scanning the rails to catch drift early. If pinned, pull forward with opposite steering to straighten before resuming reverse."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 357.0,
+     "progress": 0.4701,
+     "touches": 6,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The trailer hit the rail while reversing because the controller kept almost straight wheels and low reverse speed, giving little steering to fix a slight hitch drift. Prioritize keeping the hitch centered with stronger early steering corrections, and use modest forward\u2011reverse adjustments when the hitch deviates. Tip: turn the wheels toward the side the trailer pulls before changing direction, letting it straighten naturally."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "TIME_UP",
+     "time": 619.0,
+     "progress": 0.3088,
+     "touches": 6,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Repeated gear changes and forward pushes on tiny hitch angles wasted time and caused stops. Keep the trailer straight by staying in reverse with gentle steady steering. Watch the left rail and left mirror to monitor swing. Small continuous corrections beat large swings. Avoid unnecessary gear changes and maintain a low, constant reverse speed."
+      }
+     ],
+     "note": {
+      "text": "We repeatedly touched the left rail because the trailer swung left and we did not steer enough to bring it back while reversing. The controller was too aggressive with gear changes and never gave a clear view of the rail. Prioritize keeping the trailer straight by steering toward the swing with a gentle reverse speed, and keep the gaze toward the left mirror to see the rail early. Only shift to forward when the hitch angle becomes large.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We repeatedly touched the left rail because the trailer swung left and we did not steer enough to bring it back while reversing. The controller was too aggressive with gear changes and never gave a clear view of the rail. Prioritize keeping the trailer straight by steering toward the swing with a gentle reverse speed, and keep the gaze toward the left mirror to see the rail early. Only shift to forward when the hitch angle becomes large."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163235-61a570",
+   "role": "train",
+   "step": 2,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 133.5,
+     "progress": 0.3416,
+     "touches": 5,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We contacted the rail with the trailer\u2019s rear\u2011left corner because the simple proportional steering let the hitch angle drift left while reversing. The vehicle stopped, losing precious time. Next run should keep the hitch angle centered by steering toward the side the trailer swings, and retreat with forward motion when the angle grows large. Prioritise watching the rear\u2011left side with the camera or mirror and avoid letting the hitch angle exceed a few degrees."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 337.8,
+     "progress": 0.1896,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We contacted a rail early because the trailer swung right and the controller never steered to correct the hitch angle, leaving us pinned. The constant reverse approach kept the hitch angle growing instead of reducing it. For the next run, keep the hitch angle small by steering toward the swing while reversing, and only switch to forward pull when the angle becomes large. Prioritize watching the hitch angle and using proportional steering, and turn the head to watch the rails laterally. Keep the vehicle moving rather than stopping."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 235.2,
+     "progress": 0.4727,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Steer toward the side the trailer swings, and always pull forward to straighten when jackknifed before reversing again. Prioritize gentle forward moves to clear rail contacts and watch the front right corner for clearance. A slight side look when the hitch is angled right helps maintain space."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "TIME_UP",
+     "time": 619.0,
+     "progress": 0.1309,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We kept steering straight while reversing, letting the trailer swing left and hit rails. The controller never corrected the hitch angle and ignored the PINNED penalty, causing repeated contacts and wasted time. Prioritize actively reducing hitch angle during reverse, and when PINNED wait the full penalty then pull forward with steering opposite the swing to straighten before resuming reverse. Use maximum reverse speed cautiously and watch the direct view for early rail proximity."
+      }
+     ],
+     "note": {
+      "text": "The trailer swung left into the mechanical limit, causing jackknife. The controller over\u2011steered and ran full reverse speed, letting the hitch angle grow unchecked. Keep the hitch angle small by steering toward the swing while reversing, and use a lower reverse speed for smoother corrections. When the hitch angle becomes large, pause, switch to forward gear and steer opposite to straighten before resuming reverse. Early use of mirrors and the rear camera helps watch rail proximity and maintain a gentle steering rhythm.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The trailer swung left into the mechanical limit, causing jackknife. The controller over\u2011steered and ran full reverse speed, letting the hitch angle grow unchecked. Keep the hitch angle small by steering toward the swing while reversing, and use a lower reverse speed for smoother corrections. When the hitch angle becomes large, pause, switch to forward gear and steer opposite to straighten before resuming reverse. Early use of mirrors and the rear camera helps watch rail proximity and maintain a gentle steering rhythm."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163757-b91846",
+   "role": "train",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The controller kept wheels centred and reversed at default speed, letting the trailer swing left and touch a rail early. The main failure was not correcting hitch angle while reversing. Future attempts should prioritise monitoring and reducing the hitch angle, steering toward the swing, and using the head to glance left and right for rail proximity. A slower, gentle reverse gives more time to react and keeps the trailer aligned."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The trailer swung left because the controller never steered to correct hitch angle. Prioritise a controller that continuously steers toward the swing while reversing, using gentle speed to keep reaction time. Turn the head left and right often to watch rail proximity and adjust before contact."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 2.5,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Did not start moving; controller never issued reverse speed so the trailer stayed still. Prioritise issuing a reverse command quickly and steer toward the side the trailer is swung. Begin with gentle reverse speed and modest wheel angle, then adjust based on hitch angle and rail sight. Keep head turned to watch rails ahead and use mirrors to maintain clearance."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The controller never gave reverse, so the vehicle stayed still and the trailer swung right, touching the rail and causing a pin. Future runs must command reverse right away, steer toward the side the trailer is angled, and keep the head scanning the rails to catch drift early. If pinned, pull forward with opposite steering to straighten before resuming reverse."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The trailer hit the rail while reversing because the controller kept almost straight wheels and low reverse speed, giving little steering to fix a slight hitch drift. Prioritize keeping the hitch centered with stronger early steering corrections, and use modest forward\u2011reverse adjustments when the hitch deviates. Tip: turn the wheels toward the side the trailer pulls before changing direction, letting it straighten naturally."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Repeated gear changes and forward pushes on tiny hitch angles wasted time and caused stops. Keep the trailer straight by staying in reverse with gentle steady steering. Watch the left rail and left mirror to monitor swing. Small continuous corrections beat large swings. Avoid unnecessary gear changes and maintain a low, constant reverse speed."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "We repeatedly touched the left rail because the trailer swung left and we did not steer enough to bring it back while reversing. The controller was too aggressive with gear changes and never gave a clear view of the rail. Prioritize keeping the trailer straight by steering toward the swing with a gentle reverse speed, and keep the gaze toward the left mirror to see the rail early. Only shift to forward when the hitch angle becomes large."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163821-80add2",
+   "role": "train",
+   "step": 3,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We contacted the rail with the trailer\u2019s rear\u2011left corner because the simple proportional steering let the hitch angle drift left while reversing. The vehicle stopped, losing precious time. Next run should keep the hitch angle centered by steering toward the side the trailer swings, and retreat with forward motion when the angle grows large. Prioritise watching the rear\u2011left side with the camera or mirror and avoid letting the hitch angle exceed a few degrees."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We contacted a rail early because the trailer swung right and the controller never steered to correct the hitch angle, leaving us pinned. The constant reverse approach kept the hitch angle growing instead of reducing it. For the next run, keep the hitch angle small by steering toward the swing while reversing, and only switch to forward pull when the angle becomes large. Prioritize watching the hitch angle and using proportional steering, and turn the head to watch the rails laterally. Keep the vehicle moving rather than stopping."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Steer toward the side the trailer swings, and always pull forward to straighten when jackknifed before reversing again. Prioritize gentle forward moves to clear rail contacts and watch the front right corner for clearance. A slight side look when the hitch is angled right helps maintain space."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We kept steering straight while reversing, letting the trailer swing left and hit rails. The controller never corrected the hitch angle and ignored the PINNED penalty, causing repeated contacts and wasted time. Prioritize actively reducing hitch angle during reverse, and when PINNED wait the full penalty then pull forward with steering opposite the swing to straighten before resuming reverse. Use maximum reverse speed cautiously and watch the direct view for early rail proximity."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The trailer swung left into the mechanical limit, causing jackknife. The controller over\u2011steered and ran full reverse speed, letting the hitch angle grow unchecked. Keep the hitch angle small by steering toward the swing while reversing, and use a lower reverse speed for smoother corrections. When the hitch angle becomes large, pause, switch to forward gear and steer opposite to straighten before resuming reverse. Early use of mirrors and the rear camera helps watch rail proximity and maintain a gentle steering rhythm."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163852-f2e49b",
+   "role": "transfer",
+   "step": 4,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The controller kept wheels centred and reversed at default speed, letting the trailer swing left and touch a rail early. The main failure was not correcting hitch angle while reversing. Future attempts should prioritise monitoring and reducing the hitch angle, steering toward the swing, and using the head to glance left and right for rail proximity. A slower, gentle reverse gives more time to react and keeps the trailer aligned."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The trailer swung left because the controller never steered to correct hitch angle. Prioritise a controller that continuously steers toward the swing while reversing, using gentle speed to keep reaction time. Turn the head left and right often to watch rail proximity and adjust before contact."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Did not start moving; controller never issued reverse speed so the trailer stayed still. Prioritise issuing a reverse command quickly and steer toward the side the trailer is swung. Begin with gentle reverse speed and modest wheel angle, then adjust based on hitch angle and rail sight. Keep head turned to watch rails ahead and use mirrors to maintain clearance."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The controller never gave reverse, so the vehicle stayed still and the trailer swung right, touching the rail and causing a pin. Future runs must command reverse right away, steer toward the side the trailer is angled, and keep the head scanning the rails to catch drift early. If pinned, pull forward with opposite steering to straighten before resuming reverse."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The trailer hit the rail while reversing because the controller kept almost straight wheels and low reverse speed, giving little steering to fix a slight hitch drift. Prioritize keeping the hitch centered with stronger early steering corrections, and use modest forward\u2011reverse adjustments when the hitch deviates. Tip: turn the wheels toward the side the trailer pulls before changing direction, letting it straighten naturally."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Repeated gear changes and forward pushes on tiny hitch angles wasted time and caused stops. Keep the trailer straight by staying in reverse with gentle steady steering. Watch the left rail and left mirror to monitor swing. Small continuous corrections beat large swings. Avoid unnecessary gear changes and maintain a low, constant reverse speed."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "We repeatedly touched the left rail because the trailer swung left and we did not steer enough to bring it back while reversing. The controller was too aggressive with gear changes and never gave a clear view of the rail. Prioritize keeping the trailer straight by steering toward the swing with a gentle reverse speed, and keep the gaze toward the left mirror to see the rail early. Only shift to forward when the hitch angle becomes large."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163852-1b85e4",
+   "role": "transfer",
+   "step": 4,
+   "member": 1,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We contacted the rail with the trailer\u2019s rear\u2011left corner because the simple proportional steering let the hitch angle drift left while reversing. The vehicle stopped, losing precious time. Next run should keep the hitch angle centered by steering toward the side the trailer swings, and retreat with forward motion when the angle grows large. Prioritise watching the rear\u2011left side with the camera or mirror and avoid letting the hitch angle exceed a few degrees."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We contacted a rail early because the trailer swung right and the controller never steered to correct the hitch angle, leaving us pinned. The constant reverse approach kept the hitch angle growing instead of reducing it. For the next run, keep the hitch angle small by steering toward the swing while reversing, and only switch to forward pull when the angle becomes large. Prioritize watching the hitch angle and using proportional steering, and turn the head to watch the rails laterally. Keep the vehicle moving rather than stopping."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Steer toward the side the trailer swings, and always pull forward to straighten when jackknifed before reversing again. Prioritize gentle forward moves to clear rail contacts and watch the front right corner for clearance. A slight side look when the hitch is angled right helps maintain space."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We kept steering straight while reversing, letting the trailer swing left and hit rails. The controller never corrected the hitch angle and ignored the PINNED penalty, causing repeated contacts and wasted time. Prioritize actively reducing hitch angle during reverse, and when PINNED wait the full penalty then pull forward with steering opposite the swing to straighten before resuming reverse. Use maximum reverse speed cautiously and watch the direct view for early rail proximity."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The trailer swung left into the mechanical limit, causing jackknife. The controller over\u2011steered and ran full reverse speed, letting the hitch angle grow unchecked. Keep the hitch angle small by steering toward the swing while reversing, and use a lower reverse speed for smoother corrections. When the hitch angle becomes large, pause, switch to forward gear and steer opposite to straighten before resuming reverse. Early use of mirrors and the rear camera helps watch rail proximity and maintain a gentle steering rhythm."
+      }
+     ],
+     "note": null
+    }
+   ]
+  }
+ ]
+}

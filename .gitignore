@@ -1,0 +1,19 @@
+# Local environment and transient outputs
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.DS_Store
+.env
+.env.*
+!.env.example
+.secrets
+.wrangler/
+node_modules/
+build/
+dist/
+release-artifacts/
+qa/
+runs/live/
+runs/ledger/

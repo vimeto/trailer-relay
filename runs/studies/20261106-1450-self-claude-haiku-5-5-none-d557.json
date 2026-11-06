@@ -1,0 +1,834 @@
+{
+ "study": "20261106-1450-self-claude-haiku-5-5-none-d557",
+ "model": "claude-code:claude-haiku-5-5",
+ "condition": "self",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 2,
+ "steps": 3,
+ "policy": {
+  "numbers": "none",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-145053-f09dcf",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3324,
+     "touches": 7,
+     "notes_in": [],
+     "note": {
+      "text": "Rear-left corner kept hitting the left rail, and penalty holds and gear changes drained the clock. The core mistake was letting the hitch swing toward that rail early in the reverse. Steer gently into any swing as soon as it appears, keep the hitch small, and reverse slowly. Avoid going forward unless truly jackknifed, since each switch costs a long hold. After a touch, ease off rather than chasing the rail with big steering. This vehicle responds slowly, so favour smooth, modest steering.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (762 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "The trailer rear-left corner kept touching the left rail, and the clock was lost to penalty holds, forward pulls and many gear changes, so the leg timed out well short of the bay. The main mistake was letting the hitch swing toward the left rail during the early straight reverse before any correction started. Priorities: begin gentle steering into any swing at the first sign of it, keep the hitch small, and reverse slowly with the camera in view. Avoid switching to forward unless truly jackknifed, because each switch costs a long hold. After a touch, do not chase the rail with large steering; ease off speed and steer smoothly back toward the centre line. Tip for this vehicle: it responds slowly, so favour smooth, modest steering over sharp corrections.",
+       "Rear-left corner kept hitting the left rail, and penalty holds and gear changes drained the clock. The core mistake was letting the hitch swing toward that rail early in the reverse. Steer gently into any swing as soon as it appears, keep the hitch small, and reverse slowly. Avoid going forward unless truly jackknifed, since each switch costs a long hold. After a touch, ease off rather than chasing the rail with big steering. This vehicle responds slowly, so favour smooth, modest steering."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 274.7,
+     "progress": 0.1288,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Reversing let the trailer rear drift into the right rail again and again; each contact cost a long penalty and a forward pull, and the touch budget ran out long before the bay. Prioritise keeping the rear centred from the start: act early on small offsets, not just hitch angle, and check the right mirror at each check-in. Reverse slowly, since fast reversing swings the trailer past you. Limit gear changes. Pull forward only with wheels straight, because big steering while pulling forward touched the left rail.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Reversing let the trailer rear drift into the right rail again and again; each contact cost a long penalty and a forward pull, and the touch budget ran out long before the bay. Prioritise keeping the rear centred from the start: act early on small offsets, not just hitch angle, and check the right mirror at each check-in. Reverse slowly, since fast reversing swings the trailer past you. Limit gear changes. Pull forward only with wheels straight, because big steering while pulling forward touched the left rail."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 111.55,
+     "progress": 0.4551,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Start slow and gentle: fast hitch-following with strong steering swung the trailer's rear-left corner into the left rail again and again. Look back over your shoulder early and correct any leftward swing with small, steady steering rather than big jerks. Don't keep swapping controllers or pulling forward: every gear change and penalty wastes lots of time, and touches pile up toward disqualification. Tip: this cart is short and reacts quickly, so keep the hitch nearly straight with modest steering gain and a slow reverse speed.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Start slow and gentle: fast hitch-following with strong steering swung the trailer's rear-left corner into the left rail again and again. Look back over your shoulder early and correct any leftward swing with small, steady steering rather than big jerks. Don't keep swapping controllers or pulling forward: every gear change and penalty wastes lots of time, and touches pile up toward disqualification. Tip: this cart is short and reacts quickly, so keep the hitch nearly straight with modest steering gain and a slow reverse speed."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 385.85,
+     "progress": 0.322,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Most touches came from the trailer's rear-left corner drifting toward the left rail while the vehicle stayed centred. Steer early and gently to hold the rear mid-corridor, correcting the hitch before the rear wanders. Long forward pulls and gear changes to escape a pin repeatedly failed and burned time. Keep the hitch small, check the rear-left corner on the camera often, and reverse slowly whenever the rear is near a rail.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Most touches came from the trailer's rear-left corner drifting toward the left rail while the vehicle stayed centred. Steer early and gently to hold the rear mid-corridor, correcting the hitch before the rear wanders. Long forward pulls and gear changes to escape a pin repeatedly failed and burned time. Keep the hitch small, check the rear-left corner on the camera often, and reverse slowly whenever the rear is near a rail."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145053-8c0fe0",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3322,
+     "touches": 6,
+     "notes_in": [],
+     "note": {
+      "text": "Leg over: time ran out with the trailer rear pinned on the left rail and the vehicle front clipping the start wall. Next run, the key is keeping the vehicle clear of the start wall before any forward move, so use only gentle short forward pulls. Start reversing with an early bias away from the left rail while the hitch is still tiny. Hitch-chasing steering let the trailer drift left every time, and hard-turned forward pulls wasted time. Reverse slowly and make steering changes early and smooth, since the wheels turn slowly. Tip: the trailer is short and reacts fast, so small corrections win.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (641 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Last try the trailer rear kept touching the left rail, and the vehicle front clipped the start wall after a long forward pull. Hitch-chasing steering let the trailer drift left every time, and hard-turned forward pulls wasted much time. Priorities: keep the vehicle well clear of the start wall before any forward move, use only gentle short forward pulls, and start reversing with an early, deliberate bias away from the left rail while the hitch is still tiny. Reverse slowly at first and make steering changes early and smooth, since the wheels turn slowly. Tip: the trailer is short and reacts fast, so small corrections beat large ones.",
+       "Leg over: time ran out with the trailer rear pinned on the left rail and the vehicle front clipping the start wall. Next run, the key is keeping the vehicle clear of the start wall before any forward move, so use only gentle short forward pulls. Start reversing with an early bias away from the left rail while the hitch is still tiny. Hitch-chasing steering let the trailer drift left every time, and hard-turned forward pulls wasted time. Reverse slowly and make steering changes early and smooth, since the wheels turn slowly. Tip: the trailer is short and reacts fast, so small corrections win."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 192.1,
+     "progress": 0.1728,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Trailer rear kept drifting into the right rail, and each contact forced costly forward pulls and gear flips until the touch limit was lost. Prioritise keeping the trailer rear clear of the right rail from the start, correcting early and gently. Reverse slowly, since fast reversing lets the trailer swing faster than steering can answer. Avoid repeated forward and reverse flips. Look back at the right mirror often and judge the trailer rear corner, not just the hitch angle. If pinned, stop and rethink the geometry instead of repeating the same pull.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Trailer rear kept drifting into the right rail, and each contact forced costly forward pulls and gear flips until the touch limit was lost. Prioritise keeping the trailer rear clear of the right rail from the start, correcting early and gently. Reverse slowly, since fast reversing lets the trailer swing faster than steering can answer. Avoid repeated forward and reverse flips. Look back at the right mirror often and judge the trailer rear corner, not just the hitch angle. If pinned, stop and rethink the geometry instead of repeating the same pull."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 141.15,
+     "progress": 0.4346,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The trailer rear-left corner kept touching the left rail as the rig drifted left, and each correction came late and hard. Forward pulls with the wheels turned sharply only shifted the hitch and cost time in gear changes and penalties. Reverse much more slowly from the start, correct the hitch gently and early, and steer toward the side the trailer swings before it nears a rail. Keep the rear corners clear of the left rail with a gentle offset away from it. Avoid forward pulls unless truly pinned, and never push into a rail already touched. Gentle early corrections beat hard late ones.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The trailer rear-left corner kept touching the left rail as the rig drifted left, and each correction came late and hard. Forward pulls with the wheels turned sharply only shifted the hitch and cost time in gear changes and penalties. Reverse much more slowly from the start, correct the hitch gently and early, and steer toward the side the trailer swings before it nears a rail. Keep the rear corners clear of the left rail with a gentle offset away from it. Avoid forward pulls unless truly pinned, and never push into a rail already touched. Gentle early corrections beat hard late ones."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 253.6,
+     "progress": 0.2913,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Early on the trailer drifted toward the left rail and the rear-left corner kept touching it, so each fix became a costly forward clear-up with gear changes. Prioritise a slow reverse from the start, with gentle hitch steering that reacts early and keeps the rear centred, checking the camera rather than waiting until a rail is close. Never steer hard toward a nearby rail. If pinned, pull forward only briefly and avoid long retry sequences, since touches cost time and run out. Tip: this long trailer reacts slowly, so small patient corrections beat big ones.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Early on the trailer drifted toward the left rail and the rear-left corner kept touching it, so each fix became a costly forward clear-up with gear changes. Prioritise a slow reverse from the start, with gentle hitch steering that reacts early and keeps the rear centred, checking the camera rather than waiting until a rail is close. Never steer hard toward a nearby rail. If pinned, pull forward only briefly and avoid long retry sequences, since touches cost time and run out. Tip: this long trailer reacts slowly, so small patient corrections beat big ones."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-151446-619d97",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3734,
+     "touches": 8,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Rear-left corner kept hitting the left rail, and penalty holds and gear changes drained the clock. The core mistake was letting the hitch swing toward that rail early in the reverse. Steer gently into any swing as soon as it appears, keep the hitch small, and reverse slowly. Avoid going forward unless truly jackknifed, since each switch costs a long hold. After a touch, ease off rather than chasing the rail with big steering. This vehicle responds slowly, so favour smooth, modest steering."
+      }
+     ],
+     "note": {
+      "text": "Main failure: the trailer rear-left corner kept drifting into the left rail while reversing, and each contact forced a long hold and a forward pull that wasted the clock. Heavy steering during forward pulls also pushed the front into the right rail. Keep the trailer rear centred early with gentle steering that reacts as soon as it drifts left. Avoid gear changes and restarting controllers, since each restart loses progress. A slow steady reverse that stays clear beats a fast one that touches. This vehicle responds slowly, so correct early and softly.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (654 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Main failure: the trailer rear-left corner kept drifting into the left rail while reversing, and each contact forced a long hold and a forward pull that wasted the clock. Heavy steering during forward pulls also pushed the front into the right rail. Prioritise keeping the trailer rear centred early with gentle steering that reacts as soon as the rear starts drifting left. Check the mirror and camera often for the left gap. Avoid gear changes and avoid restarting controllers repeatedly, since each restart loses progress. A slow steady reverse that stays clear beats a fast one that touches. This vehicle responds slowly, so correct early and softly.",
+       "Main failure: the trailer rear-left corner kept drifting into the left rail while reversing, and each contact forced a long hold and a forward pull that wasted the clock. Heavy steering during forward pulls also pushed the front into the right rail. Keep the trailer rear centred early with gentle steering that reacts as soon as it drifts left. Avoid gear changes and restarting controllers, since each restart loses progress. A slow steady reverse that stays clear beats a fast one that touches. This vehicle responds slowly, so correct early and softly."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 179.6,
+     "progress": 0.1758,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Reversing let the trailer rear drift into the right rail again and again; each contact cost a long penalty and a forward pull, and the touch budget ran out long before the bay. Prioritise keeping the rear centred from the start: act early on small offsets, not just hitch angle, and check the right mirror at each check-in. Reverse slowly, since fast reversing swings the trailer past you. Limit gear changes. Pull forward only with wheels straight, because big steering while pulling forward touched the left rail."
+      }
+     ],
+     "note": {
+      "text": "The trailer rear-right corner kept touching the right rail near the start, always after drifting right of centre. Each contact cost a stop, a gear change and a forward pull that just returned to the same spot, so the touch limit ran out. Hold the rear clearly left of centre from the very beginning, correcting small rightward drift early and gently rather than waiting for hitch angle to grow. Check the right mirror often. Reverse very slowly and avoid needless gear changes. Straight forward pulls did not free the corner reliably; steer gently away from the rail instead.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The trailer rear-right corner kept touching the right rail near the start, always after drifting right of centre. Each contact cost a stop, a gear change and a forward pull that just returned to the same spot, so the touch limit ran out. Hold the rear clearly left of centre from the very beginning, correcting small rightward drift early and gently rather than waiting for hitch angle to grow. Check the right mirror often. Reverse very slowly and avoid needless gear changes. Straight forward pulls did not free the corner reliably; steer gently away from the rail instead."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 188.9,
+     "progress": 0.4447,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Start slow and gentle: fast hitch-following with strong steering swung the trailer's rear-left corner into the left rail again and again. Look back over your shoulder early and correct any leftward swing with small, steady steering rather than big jerks. Don't keep swapping controllers or pulling forward: every gear change and penalty wastes lots of time, and touches pile up toward disqualification. Tip: this cart is short and reacts quickly, so keep the hitch nearly straight with modest steering gain and a slow reverse speed."
+      }
+     ],
+     "note": {
+      "text": "The left rail was the killer: the trailer's rear-left corner kept pinning there, and each pin forced a forward pull plus a new controller, costing gear changes and time until the touches ran out. Stop swapping controllers, since every swap adds a gear change. Look back early and watch the rear-left corner against the left rail from the start. Keep the hitch nearly straight with gentle, slow steering rather than hard swings, and correct any leftward swing well before the corner nears the rail. Hard steering snaps the trailer into the rail. Reverse slowly and keep a controller you trust.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (617 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "The left rail was the killer: the trailer's rear-left corner kept pinning there, and each pin forced a pull forward plus a new controller, costing gear changes and time until the touches ran out. Do not keep swapping controllers, since every swap adds a gear change. Look back early and watch the rear-left corner against the left rail from the start. Keep the hitch nearly straight with gentle, slow steering rather than hard swings, and correct any leftward swing well before the corner reaches the rail. Steering too hard snaps the trailer into the rail. Reverse slowly and keep a steady controller that you trust.",
+       "The left rail was the killer: the trailer's rear-left corner kept pinning there, and each pin forced a forward pull plus a new controller, costing gear changes and time until the touches ran out. Stop swapping controllers, since every swap adds a gear change. Look back early and watch the rear-left corner against the left rail from the start. Keep the hitch nearly straight with gentle, slow steering rather than hard swings, and correct any leftward swing well before the corner nears the rail. Hard steering snaps the trailer into the rail. Reverse slowly and keep a controller you trust."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 222.25,
+     "progress": 0.3303,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Most touches came from the trailer's rear-left corner drifting toward the left rail while the vehicle stayed centred. Steer early and gently to hold the rear mid-corridor, correcting the hitch before the rear wanders. Long forward pulls and gear changes to escape a pin repeatedly failed and burned time. Keep the hitch small, check the rear-left corner on the camera often, and reverse slowly whenever the rear is near a rail."
+      }
+     ],
+     "note": {
+      "text": "Lessons: the trailer's rear-left corner kept creeping onto the left rail while the cab stayed centred, and corrections came too late. Keep the rear well clear of the left side early, before the bend, with small gentle steering and the hitch near straight. Watch the rear-left corner on the camera and left mirror constantly. Avoid forward pulls to escape a rail: they burn heavy gear-change time and still brush it. Reverse slowly near rails and correct gently. Tip: this long trailer responds slowly, so small early corrections beat big late ones.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Lessons: the trailer's rear-left corner kept creeping onto the left rail while the cab stayed centred, and corrections came too late. Keep the rear well clear of the left side early, before the bend, with small gentle steering and the hitch near straight. Watch the rear-left corner on the camera and left mirror constantly. Avoid forward pulls to escape a rail: they burn heavy gear-change time and still brush it. Reverse slowly near rails and correct gently. Tip: this long trailer responds slowly, so small early corrections beat big late ones."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-150755-acb3fc",
+   "role": "train",
+   "step": 2,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.507,
+     "touches": 8,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Leg over: time ran out with the trailer rear pinned on the left rail and the vehicle front clipping the start wall. Next run, the key is keeping the vehicle clear of the start wall before any forward move, so use only gentle short forward pulls. Start reversing with an early bias away from the left rail while the hitch is still tiny. Hitch-chasing steering let the trailer drift left every time, and hard-turned forward pulls wasted time. Reverse slowly and make steering changes early and smooth, since the wheels turn slowly. Tip: the trailer is short and reacts fast, so small corrections win."
+      }
+     ],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "too long (668 characters; the limit is 600)"
+       ],
+       [
+        "too long (637 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Last run timed out with the trailer rear-left corner pinned on the left rail, all touches used. Each contact cost a long penalty hold, and slow forward crawls near the start wall only re-pinned the trailer. Root cause: reversing without enough early bias away from the left rail, so the hitch grew before any correction. Next time, start with an early, clear turn that swings the trailer rear right while the hitch is still small, moving slowly so the wheels keep up. Check the reversing camera often for the rear-left corner. Avoid forward pulls near the start wall. If the trailer drifts toward the rail, stop well before contact rather than fight it while touching.",
+       "Last run timed out with the trailer rear-left corner pinned on the left rail and all touch allowances used. Each contact cost a long penalty hold, and slow forward crawls near the start wall only re-pinned the trailer. Root cause: the hitch grew before any correction, because bias away from the left rail came too late. Next time, start with an early turn that swings the trailer rear to the right while the hitch is still small, moving slowly so the wheels keep up. Watch the camera for the rear-left corner. Avoid forward pulls near the start wall. If the trailer drifts toward the rail, stop well before contact rather than fight it."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 253.5,
+     "progress": 0.1708,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Trailer rear kept drifting into the right rail, and each contact forced costly forward pulls and gear flips until the touch limit was lost. Prioritise keeping the trailer rear clear of the right rail from the start, correcting early and gently. Reverse slowly, since fast reversing lets the trailer swing faster than steering can answer. Avoid repeated forward and reverse flips. Look back at the right mirror often and judge the trailer rear corner, not just the hitch angle. If pinned, stop and rethink the geometry instead of repeating the same pull."
+      }
+     ],
+     "note": {
+      "text": "Hitch feedback alone failed here: the trailer rear kept sliding into the right rail while the hitch looked fine. Watch the right mirror and judge the rear corner, not the hitch. Reverse very slowly, since fast reversing outruns steering. Correct early and gently while the swing is still small. Repeated forward pulls and gear flips cost heavy time and never fixed the contact. Pulling forward with left steer moved the rear off the rail but built a large hitch that reversing then pushed back into it. Keep the hitch small and stop early whenever the rear nears the right rail.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Hitch feedback alone failed here: the trailer rear kept sliding into the right rail while the hitch looked fine. Watch the right mirror and judge the rear corner, not the hitch. Reverse very slowly, since fast reversing outruns steering. Correct early and gently while the swing is still small. Repeated forward pulls and gear flips cost heavy time and never fixed the contact. Pulling forward with left steer moved the rear off the rail but built a large hitch that reversing then pushed back into it. Keep the hitch small and stop early whenever the rear nears the right rail."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 212.15,
+     "progress": 0.4588,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The trailer rear-left corner kept touching the left rail as the rig drifted left, and each correction came late and hard. Forward pulls with the wheels turned sharply only shifted the hitch and cost time in gear changes and penalties. Reverse much more slowly from the start, correct the hitch gently and early, and steer toward the side the trailer swings before it nears a rail. Keep the rear corners clear of the left rail with a gentle offset away from it. Avoid forward pulls unless truly pinned, and never push into a rail already touched. Gentle early corrections beat hard late ones."
+      }
+     ],
+     "note": {
+      "text": "Most touches came from the trailer rear-left corner drifting onto the left rail while reversing, and each pin forced a forward clearing pull that cost gear changes and penalties. Set the rear well right of centre from the start and hold that offset with early, gentle steering into any drift. Look back often at the left rail beside the trailer corner. Reverse very slowly, since the short trailer swings fast. Avoid stopping to recover; steer away from a nearing rail while still moving. Correct small hitch angles early.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Most touches came from the trailer rear-left corner drifting onto the left rail while reversing, and each pin forced a forward clearing pull that cost gear changes and penalties. Set the rear well right of centre from the start and hold that offset with early, gentle steering into any drift. Look back often at the left rail beside the trailer corner. Reverse very slowly, since the short trailer swings fast. Avoid stopping to recover; steer away from a nearing rail while still moving. Correct small hitch angles early."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 296.4,
+     "progress": 0.2846,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Early on the trailer drifted toward the left rail and the rear-left corner kept touching it, so each fix became a costly forward clear-up with gear changes. Prioritise a slow reverse from the start, with gentle hitch steering that reacts early and keeps the rear centred, checking the camera rather than waiting until a rail is close. Never steer hard toward a nearby rail. If pinned, pull forward only briefly and avoid long retry sequences, since touches cost time and run out. Tip: this long trailer reacts slowly, so small patient corrections beat big ones."
+      }
+     ],
+     "note": {
+      "text": "Early drift is the root problem: the trailer rear crept toward the left rail while hitch-only steering held the angle but ignored where the rear was, so every fix became a costly pinned forward clear-up. Keep the rear well away from the left rail from the very start and act on the camera early, before a rail gets close. Reverse slowly with gentle steering. Forward clear-ups with hard steer swung the front corner into the right rail, so keep those gentle and short and do not repeat the same loop. Count touches carefully; they ran out long before the clock did.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Early drift is the root problem: the trailer rear crept toward the left rail while hitch-only steering held the angle but ignored where the rear was, so every fix became a costly pinned forward clear-up. Keep the rear well away from the left rail from the very start and act on the camera early, before a rail gets close. Reverse slowly with gentle steering. Forward clear-ups with hard steer swung the front corner into the right rail, so keep those gentle and short and do not repeat the same loop. Count touches carefully; they ran out long before the clock did."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-152701-ebcd7c",
+   "role": "train",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 156.1,
+     "progress": 0.3208,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Rear-left corner kept hitting the left rail, and penalty holds and gear changes drained the clock. The core mistake was letting the hitch swing toward that rail early in the reverse. Steer gently into any swing as soon as it appears, keep the hitch small, and reverse slowly. Avoid going forward unless truly jackknifed, since each switch costs a long hold. After a touch, ease off rather than chasing the rail with big steering. This vehicle responds slowly, so favour smooth, modest steering."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Main failure: the trailer rear-left corner kept drifting into the left rail while reversing, and each contact forced a long hold and a forward pull that wasted the clock. Heavy steering during forward pulls also pushed the front into the right rail. Keep the trailer rear centred early with gentle steering that reacts as soon as it drifts left. Avoid gear changes and restarting controllers, since each restart loses progress. A slow steady reverse that stays clear beats a fast one that touches. This vehicle responds slowly, so correct early and softly."
+      }
+     ],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "too long (765 characters; the limit is 600)"
+       ],
+       [
+        "too long (608 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "The trailer's rear-left corner kept striking the left rail as the hitch drifted left, and every contact forced a long hold and a forward clear that wasted the clock. Corrections came too late and too timidly, and the rear-offset steering seemed to fight the hitch correction. Priorities: keep the hitch nearly zero from the very start, answer any leftward swing at once with gentle opposing steer, and aim the trailer rear clearly right of centre well before the course narrows. Reverse slowly, because the wheels turn only a little per metre at speed. Keep forward clears gentle and nearly straight, since big steering during a forward pull swings the front into the right rail. Do not keep restarting controllers after each contact; fix the existing one smoothly.",
+       "Trailer rear-left corner kept striking the left rail as the hitch drifted left; each contact forced a long hold and a forward clear that wasted the clock. Corrections came too late and too timidly, and rear-offset steering fought the hitch correction. Keep the hitch nearly zero from the start, answer any leftward swing at once with gentle opposing steer, and aim the trailer rear clearly right of centre early. Reverse slowly. Keep forward clears gentle and nearly straight, since big steering there swings the front into the right rail. Avoid restarting controllers after contact; smooth the existing one."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 207.05,
+     "progress": 0.2199,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Reversing let the trailer rear drift into the right rail again and again; each contact cost a long penalty and a forward pull, and the touch budget ran out long before the bay. Prioritise keeping the rear centred from the start: act early on small offsets, not just hitch angle, and check the right mirror at each check-in. Reverse slowly, since fast reversing swings the trailer past you. Limit gear changes. Pull forward only with wheels straight, because big steering while pulling forward touched the left rail."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The trailer rear-right corner kept touching the right rail near the start, always after drifting right of centre. Each contact cost a stop, a gear change and a forward pull that just returned to the same spot, so the touch limit ran out. Hold the rear clearly left of centre from the very beginning, correcting small rightward drift early and gently rather than waiting for hitch angle to grow. Check the right mirror often. Reverse very slowly and avoid needless gear changes. Straight forward pulls did not free the corner reliably; steer gently away from the rail instead."
+      }
+     ],
+     "note": {
+      "text": "The trailer rear kept drifting toward the right rail while reversing, and each fix was a forward pull that swung the nose into the left rail. Correct drift early and gently while the rear is still well left of centre, instead of waiting for the hitch to grow. Penalty waits and gear changes ate most of the time, so limit them. Pull forward only with wheels nearly straight, and watch the left-front corner as well as the right rear. Check the right mirror often. Reverse very slowly and never steer hard while stopped.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The trailer rear kept drifting toward the right rail while reversing, and each fix was a forward pull that swung the nose into the left rail. Correct drift early and gently while the rear is still well left of centre, instead of waiting for the hitch to grow. Penalty waits and gear changes ate most of the time, so limit them. Pull forward only with wheels nearly straight, and watch the left-front corner as well as the right rear. Check the right mirror often. Reverse very slowly and never steer hard while stopped."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 150.1,
+     "progress": 0.4708,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Start slow and gentle: fast hitch-following with strong steering swung the trailer's rear-left corner into the left rail again and again. Look back over your shoulder early and correct any leftward swing with small, steady steering rather than big jerks. Don't keep swapping controllers or pulling forward: every gear change and penalty wastes lots of time, and touches pile up toward disqualification. Tip: this cart is short and reacts quickly, so keep the hitch nearly straight with modest steering gain and a slow reverse speed."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The left rail was the killer: the trailer's rear-left corner kept pinning there, and each pin forced a forward pull plus a new controller, costing gear changes and time until the touches ran out. Stop swapping controllers, since every swap adds a gear change. Look back early and watch the rear-left corner against the left rail from the start. Keep the hitch nearly straight with gentle, slow steering rather than hard swings, and correct any leftward swing well before the corner nears the rail. Hard steering snaps the trailer into the rail. Reverse slowly and keep a controller you trust."
+      }
+     ],
+     "note": {
+      "text": "The left rail was the killer: pins there ate the touch budget and forced gear changes. Keep the rear clear of it from the very start, looking back early and watching both rear-left and front-left corners. Correct leftward swing gently and early; big steering bursts snap the trailer into the rail. Avoid stop-start driving. Don't pull forward hard to rescue a pin, since that swung the front corner into the rail. Hold a steady controller and resist swapping mid-pin.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (715 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Lessons: the cart is short and reacts fast, and the left rail was the killer. Pins there ate the touch budget and forced gear changes with long penalties. Keep the rear clear of the left rail from the very start: look back early and watch both the rear-left and front-left corners. Correct any leftward swing gently and early, never with big steering bursts, which snap the trailer into the rail. Avoid stop-start driving and gear changes. Don't pull forward hard to rescue a pin, since that swung the front-left corner into the rail. Keep a steady controller that holds the hitch small and slow, and resist swapping controllers mid-pin. Tip: reverse slowly, and check the front-left corner before any forward move.",
+       "The left rail was the killer: pins there ate the touch budget and forced gear changes. Keep the rear clear of it from the very start, looking back early and watching both rear-left and front-left corners. Correct leftward swing gently and early; big steering bursts snap the trailer into the rail. Avoid stop-start driving. Don't pull forward hard to rescue a pin, since that swung the front corner into the rail. Hold a steady controller and resist swapping mid-pin."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 344.9,
+     "progress": 0.3265,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Most touches came from the trailer's rear-left corner drifting toward the left rail while the vehicle stayed centred. Steer early and gently to hold the rear mid-corridor, correcting the hitch before the rear wanders. Long forward pulls and gear changes to escape a pin repeatedly failed and burned time. Keep the hitch small, check the rear-left corner on the camera often, and reverse slowly whenever the rear is near a rail."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Lessons: the trailer's rear-left corner kept creeping onto the left rail while the cab stayed centred, and corrections came too late. Keep the rear well clear of the left side early, before the bend, with small gentle steering and the hitch near straight. Watch the rear-left corner on the camera and left mirror constantly. Avoid forward pulls to escape a rail: they burn heavy gear-change time and still brush it. Reverse slowly near rails and correct gently. Tip: this long trailer responds slowly, so small early corrections beat big late ones."
+      }
+     ],
+     "note": {
+      "text": "The rear-left corner kept creeping onto the left rail, and each late correction ended in a pin, a penalty and a gear change loop. Next time, bias the trailer rear well right of centre from the very start, long before the bend, with gentle steering and a slow reverse. Watch the camera's left-rear corner constantly and react at the earliest sign of drift toward the rail, not at contact. Avoid repeated forward pulls: each costs heavy gear change time and rarely clears the rail, so prefer a slow steady reverse with a small hitch.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The rear-left corner kept creeping onto the left rail, and each late correction ended in a pin, a penalty and a gear change loop. Next time, bias the trailer rear well right of centre from the very start, long before the bend, with gentle steering and a slow reverse. Watch the camera's left-rear corner constantly and react at the earliest sign of drift toward the rail, not at contact. Avoid repeated forward pulls: each costs heavy gear change time and rarely clears the rail, so prefer a slow steady reverse with a small hitch."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-152547-77a512",
+   "role": "train",
+   "step": 3,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 128.7,
+     "progress": 0.4069,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Leg over: time ran out with the trailer rear pinned on the left rail and the vehicle front clipping the start wall. Next run, the key is keeping the vehicle clear of the start wall before any forward move, so use only gentle short forward pulls. Start reversing with an early bias away from the left rail while the hitch is still tiny. Hitch-chasing steering let the trailer drift left every time, and hard-turned forward pulls wasted time. Reverse slowly and make steering changes early and smooth, since the wheels turn slowly. Tip: the trailer is short and reacts fast, so small corrections win."
+      }
+     ],
+     "note": {
+      "text": "The left rail beside the trailer's rear-left corner caused nearly every failure. Leftward swings pinned the rear against it, and hard-steered forward pulls swung it back into the rail or left it jammed. Start slowly and steer the rear clearly away from the left rail early, while the hitch is still tiny, watching the reversing camera. Prefer small, early, smooth steering corrections over big sudden ones. Keep forward pulls gentle and nearly straight. Do not chase the hitch aggressively. Protect the touch budget above all else and accept a slower pace.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (801 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "The left rail near the trailer's rear-left corner caused almost every failure. Each reverse with a slight leftward swing pinned the rear against it, and the hard-steered forward pulls then swung the rear back into the rail or left it jammed. Next time, start slowly and steer the trailer rear clearly away from the left rail early, while the hitch is still tiny, and watch the reversing camera constantly. Prefer small, early, smooth steering corrections over big sudden steering changes. Keep any forward pull gentle and nearly straight, never turned hard, because that wasted time and moved the rear toward the rail. Do not chase the hitch aggressively, since that drifted the rear left. Each rail touch costs a long hold, so protect the touch budget above all else and accept a slower overall pace.",
+       "The left rail beside the trailer's rear-left corner caused nearly every failure. Leftward swings pinned the rear against it, and hard-steered forward pulls swung it back into the rail or left it jammed. Start slowly and steer the rear clearly away from the left rail early, while the hitch is still tiny, watching the reversing camera. Prefer small, early, smooth steering corrections over big sudden ones. Keep forward pulls gentle and nearly straight. Do not chase the hitch aggressively. Protect the touch budget above all else and accept a slower pace."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 185.55,
+     "progress": 0.152,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Trailer rear kept drifting into the right rail, and each contact forced costly forward pulls and gear flips until the touch limit was lost. Prioritise keeping the trailer rear clear of the right rail from the start, correcting early and gently. Reverse slowly, since fast reversing lets the trailer swing faster than steering can answer. Avoid repeated forward and reverse flips. Look back at the right mirror often and judge the trailer rear corner, not just the hitch angle. If pinned, stop and rethink the geometry instead of repeating the same pull."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Hitch feedback alone failed here: the trailer rear kept sliding into the right rail while the hitch looked fine. Watch the right mirror and judge the rear corner, not the hitch. Reverse very slowly, since fast reversing outruns steering. Correct early and gently while the swing is still small. Repeated forward pulls and gear flips cost heavy time and never fixed the contact. Pulling forward with left steer moved the rear off the rail but built a large hitch that reversing then pushed back into it. Keep the hitch small and stop early whenever the rear nears the right rail."
+      }
+     ],
+     "note": {
+      "text": "The right rear corner was the killer: the trailer kept swinging toward the right rail, and each contact forced a long penalty and a forward pull that then swung the rear back into the rail. Start slowly and keep the hitch very small from the beginning, correcting gently while the swing is still tiny. Watch the right mirror and judge the rear corner, not just the hitch angle, and aim the rear well left of centre early. Big forward pulls with full steer built a large hitch that reversing could not unwind, so avoid them. Avoid repeated gear flips, which waste time and add touches.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The right rear corner was the killer: the trailer kept swinging toward the right rail, and each contact forced a long penalty and a forward pull that then swung the rear back into the rail. Start slowly and keep the hitch very small from the beginning, correcting gently while the swing is still tiny. Watch the right mirror and judge the rear corner, not just the hitch angle, and aim the rear well left of centre early. Big forward pulls with full steer built a large hitch that reversing could not unwind, so avoid them. Avoid repeated gear flips, which waste time and add touches."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 126.85,
+     "progress": 0.4963,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The trailer rear-left corner kept touching the left rail as the rig drifted left, and each correction came late and hard. Forward pulls with the wheels turned sharply only shifted the hitch and cost time in gear changes and penalties. Reverse much more slowly from the start, correct the hitch gently and early, and steer toward the side the trailer swings before it nears a rail. Keep the rear corners clear of the left rail with a gentle offset away from it. Avoid forward pulls unless truly pinned, and never push into a rail already touched. Gentle early corrections beat hard late ones."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Most touches came from the trailer rear-left corner drifting onto the left rail while reversing, and each pin forced a forward clearing pull that cost gear changes and penalties. Set the rear well right of centre from the start and hold that offset with early, gentle steering into any drift. Look back often at the left rail beside the trailer corner. Reverse very slowly, since the short trailer swings fast. Avoid stopping to recover; steer away from a nearing rail while still moving. Correct small hitch angles early."
+      }
+     ],
+     "note": {
+      "text": "Pinning on the left rail came from letting the trailer rear drift left before correcting, then forward pulls that steered toward that rail. Gear changes and penalties ate the clock and touches piled up. Start slowly with the rear already well right of centre, and correct hitch drift gently and early, long before the rear corner nears the rail. Keep a steady slow crawl rather than stopping. If the rear nears the left rail, steer left so it swings right, while still rolling. Avoid forward pulls with right steer. Look back at the left rear corner often.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Pinning on the left rail came from letting the trailer rear drift left before correcting, then forward pulls that steered toward that rail. Gear changes and penalties ate the clock and touches piled up. Start slowly with the rear already well right of centre, and correct hitch drift gently and early, long before the rear corner nears the rail. Keep a steady slow crawl rather than stopping. If the rear nears the left rail, steer left so it swings right, while still rolling. Avoid forward pulls with right steer. Look back at the left rear corner often."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 155.2,
+     "progress": 0.3223,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Early on the trailer drifted toward the left rail and the rear-left corner kept touching it, so each fix became a costly forward clear-up with gear changes. Prioritise a slow reverse from the start, with gentle hitch steering that reacts early and keeps the rear centred, checking the camera rather than waiting until a rail is close. Never steer hard toward a nearby rail. If pinned, pull forward only briefly and avoid long retry sequences, since touches cost time and run out. Tip: this long trailer reacts slowly, so small patient corrections beat big ones."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Early drift is the root problem: the trailer rear crept toward the left rail while hitch-only steering held the angle but ignored where the rear was, so every fix became a costly pinned forward clear-up. Keep the rear well away from the left rail from the very start and act on the camera early, before a rail gets close. Reverse slowly with gentle steering. Forward clear-ups with hard steer swung the front corner into the right rail, so keep those gentle and short and do not repeat the same loop. Count touches carefully; they ran out long before the clock did."
+      }
+     ],
+     "note": {
+      "text": "The rear-left corner kept touching the left rail: the rear drifted left early and corrections came too late, once the rail was close. Each pinned recovery then cost much time and touches. Steer gently and early, as soon as the rear starts moving toward the left, keeping it well away from that side from the start. Keep reverse speed slow. Avoid long forward clear-ups with hard steering, since they swing the front corner into the right rail. Watch the camera and the rear's lateral position, not the hitch angle alone. Never repeat a failing loop.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (645 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "The trailer rear-left corner kept touching the left rail because the rear drifted left early, and corrective steering came too late, once the rail was already close. Each pinned recovery then cost a lot of time and touches. Steer gently and early, reacting as soon as the rear starts moving toward the left side, and keep it well away from that side from the very beginning. Keep reverse speed slow. Avoid long forward clear-ups with hard steering, since they swing the front corner into the right rail. Watch the camera and the rear's lateral position, not the hitch angle alone. Count touches carefully and do not repeat the same failing loop.",
+       "The rear-left corner kept touching the left rail: the rear drifted left early and corrections came too late, once the rail was close. Each pinned recovery then cost much time and touches. Steer gently and early, as soon as the rear starts moving toward the left, keeping it well away from that side from the start. Keep reverse speed slow. Avoid long forward clear-ups with hard steering, since they swing the front corner into the right rail. Watch the camera and the rear's lateral position, not the hitch angle alone. Never repeat a failing loop."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-154904-db62fc",
+   "role": "transfer",
+   "step": 4,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 165.05,
+     "progress": 0.3715,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Rear-left corner kept hitting the left rail, and penalty holds and gear changes drained the clock. The core mistake was letting the hitch swing toward that rail early in the reverse. Steer gently into any swing as soon as it appears, keep the hitch small, and reverse slowly. Avoid going forward unless truly jackknifed, since each switch costs a long hold. After a touch, ease off rather than chasing the rail with big steering. This vehicle responds slowly, so favour smooth, modest steering."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Main failure: the trailer rear-left corner kept drifting into the left rail while reversing, and each contact forced a long hold and a forward pull that wasted the clock. Heavy steering during forward pulls also pushed the front into the right rail. Keep the trailer rear centred early with gentle steering that reacts as soon as it drifts left. Avoid gear changes and restarting controllers, since each restart loses progress. A slow steady reverse that stays clear beats a fast one that touches. This vehicle responds slowly, so correct early and softly."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "TIME_UP",
+     "time": 423.0,
+     "progress": 0.3019,
+     "touches": 7,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Reversing let the trailer rear drift into the right rail again and again; each contact cost a long penalty and a forward pull, and the touch budget ran out long before the bay. Prioritise keeping the rear centred from the start: act early on small offsets, not just hitch angle, and check the right mirror at each check-in. Reverse slowly, since fast reversing swings the trailer past you. Limit gear changes. Pull forward only with wheels straight, because big steering while pulling forward touched the left rail."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The trailer rear-right corner kept touching the right rail near the start, always after drifting right of centre. Each contact cost a stop, a gear change and a forward pull that just returned to the same spot, so the touch limit ran out. Hold the rear clearly left of centre from the very beginning, correcting small rightward drift early and gently rather than waiting for hitch angle to grow. Check the right mirror often. Reverse very slowly and avoid needless gear changes. Straight forward pulls did not free the corner reliably; steer gently away from the rail instead."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "The trailer rear kept drifting toward the right rail while reversing, and each fix was a forward pull that swung the nose into the left rail. Correct drift early and gently while the rear is still well left of centre, instead of waiting for the hitch to grow. Penalty waits and gear changes ate most of the time, so limit them. Pull forward only with wheels nearly straight, and watch the left-front corner as well as the right rear. Check the right mirror often. Reverse very slowly and never steer hard while stopped."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 132.2,
+     "progress": 0.4189,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Start slow and gentle: fast hitch-following with strong steering swung the trailer's rear-left corner into the left rail again and again. Look back over your shoulder early and correct any leftward swing with small, steady steering rather than big jerks. Don't keep swapping controllers or pulling forward: every gear change and penalty wastes lots of time, and touches pile up toward disqualification. Tip: this cart is short and reacts quickly, so keep the hitch nearly straight with modest steering gain and a slow reverse speed."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "The left rail was the killer: the trailer's rear-left corner kept pinning there, and each pin forced a forward pull plus a new controller, costing gear changes and time until the touches ran out. Stop swapping controllers, since every swap adds a gear change. Look back early and watch the rear-left corner against the left rail from the start. Keep the hitch nearly straight with gentle, slow steering rather than hard swings, and correct any leftward swing well before the corner nears the rail. Hard steering snaps the trailer into the rail. Reverse slowly and keep a controller you trust."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "The left rail was the killer: pins there ate the touch budget and forced gear changes. Keep the rear clear of it from the very start, looking back early and watching both rear-left and front-left corners. Correct leftward swing gently and early; big steering bursts snap the trailer into the rail. Avoid stop-start driving. Don't pull forward hard to rescue a pin, since that swung the front corner into the rail. Hold a steady controller and resist swapping mid-pin."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 328.2,
+     "progress": 0.3449,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Most touches came from the trailer's rear-left corner drifting toward the left rail while the vehicle stayed centred. Steer early and gently to hold the rear mid-corridor, correcting the hitch before the rear wanders. Long forward pulls and gear changes to escape a pin repeatedly failed and burned time. Keep the hitch small, check the rear-left corner on the camera often, and reverse slowly whenever the rear is near a rail."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Lessons: the trailer's rear-left corner kept creeping onto the left rail while the cab stayed centred, and corrections came too late. Keep the rear well clear of the left side early, before the bend, with small gentle steering and the hitch near straight. Watch the rear-left corner on the camera and left mirror constantly. Avoid forward pulls to escape a rail: they burn heavy gear-change time and still brush it. Reverse slowly near rails and correct gently. Tip: this long trailer responds slowly, so small early corrections beat big late ones."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "The rear-left corner kept creeping onto the left rail, and each late correction ended in a pin, a penalty and a gear change loop. Next time, bias the trailer rear well right of centre from the very start, long before the bend, with gentle steering and a slow reverse. Watch the camera's left-rear corner constantly and react at the earliest sign of drift toward the rail, not at contact. Avoid repeated forward pulls: each costs heavy gear change time and rarely clears the rail, so prefer a slow steady reverse with a small hitch."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-154904-8f0769",
+   "role": "transfer",
+   "step": 4,
+   "member": 1,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 118.0,
+     "progress": 0.2943,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Leg over: time ran out with the trailer rear pinned on the left rail and the vehicle front clipping the start wall. Next run, the key is keeping the vehicle clear of the start wall before any forward move, so use only gentle short forward pulls. Start reversing with an early bias away from the left rail while the hitch is still tiny. Hitch-chasing steering let the trailer drift left every time, and hard-turned forward pulls wasted time. Reverse slowly and make steering changes early and smooth, since the wheels turn slowly. Tip: the trailer is short and reacts fast, so small corrections win."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "The left rail beside the trailer's rear-left corner caused nearly every failure. Leftward swings pinned the rear against it, and hard-steered forward pulls swung it back into the rail or left it jammed. Start slowly and steer the rear clearly away from the left rail early, while the hitch is still tiny, watching the reversing camera. Prefer small, early, smooth steering corrections over big sudden ones. Keep forward pulls gentle and nearly straight. Do not chase the hitch aggressively. Protect the touch budget above all else and accept a slower pace."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 261.05,
+     "progress": 0.3047,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Trailer rear kept drifting into the right rail, and each contact forced costly forward pulls and gear flips until the touch limit was lost. Prioritise keeping the trailer rear clear of the right rail from the start, correcting early and gently. Reverse slowly, since fast reversing lets the trailer swing faster than steering can answer. Avoid repeated forward and reverse flips. Look back at the right mirror often and judge the trailer rear corner, not just the hitch angle. If pinned, stop and rethink the geometry instead of repeating the same pull."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Hitch feedback alone failed here: the trailer rear kept sliding into the right rail while the hitch looked fine. Watch the right mirror and judge the rear corner, not the hitch. Reverse very slowly, since fast reversing outruns steering. Correct early and gently while the swing is still small. Repeated forward pulls and gear flips cost heavy time and never fixed the contact. Pulling forward with left steer moved the rear off the rail but built a large hitch that reversing then pushed back into it. Keep the hitch small and stop early whenever the rear nears the right rail."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "The right rear corner was the killer: the trailer kept swinging toward the right rail, and each contact forced a long penalty and a forward pull that then swung the rear back into the rail. Start slowly and keep the hitch very small from the beginning, correcting gently while the swing is still tiny. Watch the right mirror and judge the rear corner, not just the hitch angle, and aim the rear well left of centre early. Big forward pulls with full steer built a large hitch that reversing could not unwind, so avoid them. Avoid repeated gear flips, which waste time and add touches."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 173.65,
+     "progress": 0.325,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The trailer rear-left corner kept touching the left rail as the rig drifted left, and each correction came late and hard. Forward pulls with the wheels turned sharply only shifted the hitch and cost time in gear changes and penalties. Reverse much more slowly from the start, correct the hitch gently and early, and steer toward the side the trailer swings before it nears a rail. Keep the rear corners clear of the left rail with a gentle offset away from it. Avoid forward pulls unless truly pinned, and never push into a rail already touched. Gentle early corrections beat hard late ones."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Most touches came from the trailer rear-left corner drifting onto the left rail while reversing, and each pin forced a forward clearing pull that cost gear changes and penalties. Set the rear well right of centre from the start and hold that offset with early, gentle steering into any drift. Look back often at the left rail beside the trailer corner. Reverse very slowly, since the short trailer swings fast. Avoid stopping to recover; steer away from a nearing rail while still moving. Correct small hitch angles early."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Pinning on the left rail came from letting the trailer rear drift left before correcting, then forward pulls that steered toward that rail. Gear changes and penalties ate the clock and touches piled up. Start slowly with the rear already well right of centre, and correct hitch drift gently and early, long before the rear corner nears the rail. Keep a steady slow crawl rather than stopping. If the rear nears the left rail, steer left so it swings right, while still rolling. Avoid forward pulls with right steer. Look back at the left rear corner often."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 288.9,
+     "progress": 0.3483,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Early on the trailer drifted toward the left rail and the rear-left corner kept touching it, so each fix became a costly forward clear-up with gear changes. Prioritise a slow reverse from the start, with gentle hitch steering that reacts early and keeps the rear centred, checking the camera rather than waiting until a rail is close. Never steer hard toward a nearby rail. If pinned, pull forward only briefly and avoid long retry sequences, since touches cost time and run out. Tip: this long trailer reacts slowly, so small patient corrections beat big ones."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Early drift is the root problem: the trailer rear crept toward the left rail while hitch-only steering held the angle but ignored where the rear was, so every fix became a costly pinned forward clear-up. Keep the rear well away from the left rail from the very start and act on the camera early, before a rail gets close. Reverse slowly with gentle steering. Forward clear-ups with hard steer swung the front corner into the right rail, so keep those gentle and short and do not repeat the same loop. Count touches carefully; they ran out long before the clock did."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "The rear-left corner kept touching the left rail: the rear drifted left early and corrections came too late, once the rail was close. Each pinned recovery then cost much time and touches. Steer gently and early, as soon as the rear starts moving toward the left, keeping it well away from that side from the start. Keep reverse speed slow. Avoid long forward clear-ups with hard steering, since they swing the front corner into the right rail. Watch the camera and the rear's lateral position, not the hitch angle alone. Never repeat a failing loop."
+      }
+     ],
+     "note": null
+    }
+   ]
+  }
+ ]
+}

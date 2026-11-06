@@ -1,0 +1,5681 @@
+{
+  "release": "0.1.0",
+  "core": {
+    "description": "standard, seeds 0/1, driver medium, code, continuous, paused",
+    "runs": [
+      "20261106-065650-281a3a",
+      "20261106-065650-91a2be",
+      "20261106-065650-96c0eb",
+      "20261106-071524-130c2b",
+      "20261106-071524-2ab620",
+      "20261106-071524-9a2ed6",
+      "20261106-071524-f4f320",
+      "20261106-073758-484dd9",
+      "20261106-073758-5a98ce",
+      "20261106-073758-626610",
+      "20261106-073758-94b99c",
+      "20261106-073758-e1c136",
+      "20261106-073758-ed4d7e",
+      "20261106-073758-f4076f",
+      "20261106-073758-f9f1bc",
+      "20261106-074711-690872",
+      "20261106-074800-2cba1e",
+      "20261106-074917-ec4129",
+      "20261106-074956-5e8db4",
+      "20261106-141044-038597",
+      "20261106-141044-0fb0af",
+      "20261106-141044-2c77ca",
+      "20261106-141044-303726",
+      "20261106-141044-da3c41",
+      "20261106-141044-dafef0",
+      "20261106-141044-e7c6e2",
+      "20261106-141044-e7e536",
+      "20261106-142205-1b4a20",
+      "20261106-142205-ef08a3",
+      "20261106-143919-42b679",
+      "20261106-143919-ed8087",
+      "20261106-144234-bf2f6d",
+      "20261106-144234-fdaec8",
+      "20261106-144235-72a040",
+      "20261106-144235-ef5840",
+      "20261106-153826-038c25",
+      "20261106-153826-f534d4",
+      "20261106-153827-6d833d",
+      "20261106-153834-03d014",
+      "20261106-153834-3a8c97",
+      "20261106-153834-908a92",
+      "20261106-153834-ac5a2c",
+      "20261106-154131-4d0367",
+      "20261106-154131-d4307a",
+      "20261106-154143-364ed1",
+      "20261106-154143-c965ee",
+      "20261106-154959-25c9d9",
+      "20261106-154959-f40910",
+      "20261106-155037-2014fb",
+      "20261106-155037-316b96",
+      "20261106-155812-282d1a",
+      "20261106-155812-5f7555",
+      "20261106-160533-85428f",
+      "20261106-160533-d497f2"
+    ],
+    "statistics": "Descriptive leg-level Wilson intervals; repeated legs share runs and courses. Fisher p-values are exploratory and uncorrected."
+  },
+  "counts": {
+    "runs": 204,
+    "matrix_runs": 84,
+    "study_runs": 120,
+    "legs": 816,
+    "notes": 369,
+    "studies": 16,
+    "excluded_api_error_runs": 7,
+    "excluded_api_error_studies": 4,
+    "excluded_studies": 4,
+    "notes_accepted_first_try": 299
+  },
+  "scoreboard": [
+    {
+      "model": "sol",
+      "level": "medium",
+      "k": 16,
+      "n": 32,
+      "ci": [
+        0.3363,
+        0.6637
+      ],
+      "runs": 8,
+      "progress": 0.754,
+      "seeds": {
+        "0": 5,
+        "1": 3
+      },
+      "vehicles": {
+        "car": [
+          8,
+          8
+        ],
+        "tractor": [
+          4,
+          8
+        ],
+        "mower": [
+          0,
+          8
+        ],
+        "truck": [
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "model": "terra",
+      "level": "medium",
+      "k": 2,
+      "n": 24,
+      "ci": [
+        0.0232,
+        0.2585
+      ],
+      "runs": 6,
+      "progress": 0.527,
+      "seeds": {
+        "0": 3,
+        "1": 3
+      },
+      "vehicles": {
+        "car": [
+          0,
+          6
+        ],
+        "tractor": [
+          0,
+          6
+        ],
+        "mower": [
+          2,
+          6
+        ],
+        "truck": [
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "model": "luna",
+      "level": "medium",
+      "k": 0,
+      "n": 20,
+      "ci": [
+        0.0,
+        0.1611
+      ],
+      "runs": 5,
+      "progress": 0.267,
+      "seeds": {
+        "0": 3,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          0,
+          5
+        ],
+        "tractor": [
+          0,
+          5
+        ],
+        "mower": [
+          0,
+          5
+        ],
+        "truck": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "model": "opus",
+      "level": "medium",
+      "k": 14,
+      "n": 28,
+      "ci": [
+        0.3263,
+        0.6737
+      ],
+      "runs": 7,
+      "progress": 0.705,
+      "seeds": {
+        "0": 4,
+        "1": 3
+      },
+      "vehicles": {
+        "car": [
+          5,
+          7
+        ],
+        "tractor": [
+          2,
+          7
+        ],
+        "mower": [
+          5,
+          7
+        ],
+        "truck": [
+          2,
+          7
+        ]
+      }
+    },
+    {
+      "model": "sonnet",
+      "level": "medium",
+      "k": 0,
+      "n": 32,
+      "ci": [
+        0.0,
+        0.1072
+      ],
+      "runs": 8,
+      "progress": 0.352,
+      "seeds": {
+        "0": 4,
+        "1": 4
+      },
+      "vehicles": {
+        "car": [
+          0,
+          8
+        ],
+        "tractor": [
+          0,
+          8
+        ],
+        "mower": [
+          0,
+          8
+        ],
+        "truck": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "model": "haiku",
+      "level": "medium",
+      "k": 0,
+      "n": 32,
+      "ci": [
+        0.0,
+        0.1072
+      ],
+      "runs": 8,
+      "progress": 0.319,
+      "seeds": {
+        "0": 4,
+        "1": 4
+      },
+      "vehicles": {
+        "car": [
+          0,
+          8
+        ],
+        "tractor": [
+          0,
+          8
+        ],
+        "mower": [
+          0,
+          8
+        ],
+        "truck": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "model": "flash",
+      "level": "medium",
+      "k": 1,
+      "n": 16,
+      "ci": [
+        0.0111,
+        0.2833
+      ],
+      "runs": 4,
+      "progress": 0.43,
+      "seeds": {
+        "0": 2,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          0,
+          4
+        ],
+        "tractor": [
+          0,
+          4
+        ],
+        "mower": [
+          0,
+          4
+        ],
+        "truck": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "model": "oss",
+      "level": "medium",
+      "k": 0,
+      "n": 32,
+      "ci": [
+        0.0,
+        0.1072
+      ],
+      "runs": 8,
+      "progress": 0.236,
+      "seeds": {
+        "0": 4,
+        "1": 4
+      },
+      "vehicles": {
+        "car": [
+          0,
+          8
+        ],
+        "tractor": [
+          0,
+          8
+        ],
+        "mower": [
+          0,
+          8
+        ],
+        "truck": [
+          0,
+          8
+        ]
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "model": "sol",
+      "level": "easy",
+      "k": 10,
+      "n": 20,
+      "ci": [
+        0.2993,
+        0.7007
+      ],
+      "runs": 5,
+      "progress": 0.795,
+      "seeds": {
+        "0": 3,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          5,
+          5
+        ],
+        "tractor": [
+          3,
+          5
+        ],
+        "mower": [
+          0,
+          5
+        ],
+        "truck": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "model": "sol",
+      "level": "medium",
+      "k": 16,
+      "n": 32,
+      "ci": [
+        0.3363,
+        0.6637
+      ],
+      "runs": 8,
+      "progress": 0.754,
+      "seeds": {
+        "0": 5,
+        "1": 3
+      },
+      "vehicles": {
+        "car": [
+          8,
+          8
+        ],
+        "tractor": [
+          4,
+          8
+        ],
+        "mower": [
+          0,
+          8
+        ],
+        "truck": [
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "model": "sol",
+      "level": "hard",
+      "k": 4,
+      "n": 20,
+      "ci": [
+        0.0807,
+        0.416
+      ],
+      "runs": 5,
+      "progress": 0.641,
+      "seeds": {
+        "0": 3,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          3,
+          5
+        ],
+        "tractor": [
+          1,
+          5
+        ],
+        "mower": [
+          0,
+          5
+        ],
+        "truck": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "model": "sol",
+      "level": "v1",
+      "k": 0,
+      "n": 4,
+      "ci": [
+        0.0,
+        0.4899
+      ],
+      "runs": 1,
+      "progress": 0.613,
+      "seeds": {
+        "0": 1
+      },
+      "vehicles": {
+        "car": [
+          0,
+          1
+        ],
+        "tractor": [
+          0,
+          1
+        ],
+        "mower": [
+          0,
+          1
+        ],
+        "truck": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "model": "terra",
+      "level": "easy",
+      "k": 4,
+      "n": 20,
+      "ci": [
+        0.0807,
+        0.416
+      ],
+      "runs": 5,
+      "progress": 0.538,
+      "seeds": {
+        "0": 3,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          1,
+          5
+        ],
+        "tractor": [
+          1,
+          5
+        ],
+        "mower": [
+          2,
+          5
+        ],
+        "truck": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "model": "terra",
+      "level": "medium",
+      "k": 2,
+      "n": 24,
+      "ci": [
+        0.0232,
+        0.2585
+      ],
+      "runs": 6,
+      "progress": 0.527,
+      "seeds": {
+        "0": 3,
+        "1": 3
+      },
+      "vehicles": {
+        "car": [
+          0,
+          6
+        ],
+        "tractor": [
+          0,
+          6
+        ],
+        "mower": [
+          2,
+          6
+        ],
+        "truck": [
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "model": "terra",
+      "level": "hard",
+      "k": 3,
+      "n": 16,
+      "ci": [
+        0.0659,
+        0.4301
+      ],
+      "runs": 4,
+      "progress": 0.556,
+      "seeds": {
+        "0": 2,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          1,
+          4
+        ],
+        "tractor": [
+          1,
+          4
+        ],
+        "mower": [
+          1,
+          4
+        ],
+        "truck": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "model": "terra",
+      "level": "v1",
+      "k": 0,
+      "n": 4,
+      "ci": [
+        0.0,
+        0.4899
+      ],
+      "runs": 1,
+      "progress": 0.419,
+      "seeds": {
+        "0": 1
+      },
+      "vehicles": {
+        "car": [
+          0,
+          1
+        ],
+        "tractor": [
+          0,
+          1
+        ],
+        "mower": [
+          0,
+          1
+        ],
+        "truck": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "model": "luna",
+      "level": "easy",
+      "k": 0,
+      "n": 16,
+      "ci": [
+        0.0,
+        0.1936
+      ],
+      "runs": 4,
+      "progress": 0.296,
+      "seeds": {
+        "0": 2,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          0,
+          4
+        ],
+        "tractor": [
+          0,
+          4
+        ],
+        "mower": [
+          0,
+          4
+        ],
+        "truck": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "model": "luna",
+      "level": "medium",
+      "k": 0,
+      "n": 20,
+      "ci": [
+        0.0,
+        0.1611
+      ],
+      "runs": 5,
+      "progress": 0.267,
+      "seeds": {
+        "0": 3,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          0,
+          5
+        ],
+        "tractor": [
+          0,
+          5
+        ],
+        "mower": [
+          0,
+          5
+        ],
+        "truck": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "model": "luna",
+      "level": "hard",
+      "k": 0,
+      "n": 16,
+      "ci": [
+        0.0,
+        0.1936
+      ],
+      "runs": 4,
+      "progress": 0.249,
+      "seeds": {
+        "0": 2,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          0,
+          4
+        ],
+        "tractor": [
+          0,
+          4
+        ],
+        "mower": [
+          0,
+          4
+        ],
+        "truck": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "model": "luna",
+      "level": "v1",
+      "k": 0,
+      "n": 4,
+      "ci": [
+        0.0,
+        0.4899
+      ],
+      "runs": 1,
+      "progress": 0.147,
+      "seeds": {
+        "0": 1
+      },
+      "vehicles": {
+        "car": [
+          0,
+          1
+        ],
+        "tractor": [
+          0,
+          1
+        ],
+        "mower": [
+          0,
+          1
+        ],
+        "truck": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "model": "opus",
+      "level": "medium",
+      "k": 14,
+      "n": 28,
+      "ci": [
+        0.3263,
+        0.6737
+      ],
+      "runs": 7,
+      "progress": 0.705,
+      "seeds": {
+        "0": 4,
+        "1": 3
+      },
+      "vehicles": {
+        "car": [
+          5,
+          7
+        ],
+        "tractor": [
+          2,
+          7
+        ],
+        "mower": [
+          5,
+          7
+        ],
+        "truck": [
+          2,
+          7
+        ]
+      }
+    },
+    {
+      "model": "sonnet",
+      "level": "medium",
+      "k": 0,
+      "n": 32,
+      "ci": [
+        0.0,
+        0.1072
+      ],
+      "runs": 8,
+      "progress": 0.352,
+      "seeds": {
+        "0": 4,
+        "1": 4
+      },
+      "vehicles": {
+        "car": [
+          0,
+          8
+        ],
+        "tractor": [
+          0,
+          8
+        ],
+        "mower": [
+          0,
+          8
+        ],
+        "truck": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "model": "haiku",
+      "level": "medium",
+      "k": 0,
+      "n": 32,
+      "ci": [
+        0.0,
+        0.1072
+      ],
+      "runs": 8,
+      "progress": 0.319,
+      "seeds": {
+        "0": 4,
+        "1": 4
+      },
+      "vehicles": {
+        "car": [
+          0,
+          8
+        ],
+        "tractor": [
+          0,
+          8
+        ],
+        "mower": [
+          0,
+          8
+        ],
+        "truck": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "model": "flash",
+      "level": "medium",
+      "k": 1,
+      "n": 16,
+      "ci": [
+        0.0111,
+        0.2833
+      ],
+      "runs": 4,
+      "progress": 0.43,
+      "seeds": {
+        "0": 2,
+        "1": 2
+      },
+      "vehicles": {
+        "car": [
+          0,
+          4
+        ],
+        "tractor": [
+          0,
+          4
+        ],
+        "mower": [
+          0,
+          4
+        ],
+        "truck": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "model": "oss",
+      "level": "medium",
+      "k": 0,
+      "n": 32,
+      "ci": [
+        0.0,
+        0.1072
+      ],
+      "runs": 8,
+      "progress": 0.236,
+      "seeds": {
+        "0": 4,
+        "1": 4
+      },
+      "vehicles": {
+        "car": [
+          0,
+          8
+        ],
+        "tractor": [
+          0,
+          8
+        ],
+        "mower": [
+          0,
+          8
+        ],
+        "truck": [
+          0,
+          8
+        ]
+      }
+    }
+  ],
+  "cost": {
+    "prices": {
+      "sol": {
+        "input": 2.0,
+        "cache_read": 0.1,
+        "cache_write": null,
+        "output": 10.0,
+        "source": "OpenAI standard API pricing",
+        "url": "https://developers.openai.com/api/docs/pricing?tab=suite"
+      },
+      "terra": {
+        "input": 1.0,
+        "cache_read": 0.05,
+        "cache_write": null,
+        "output": 5.0,
+        "source": "OpenAI standard API pricing",
+        "url": "https://developers.openai.com/api/docs/pricing?tab=suite"
+      },
+      "luna": {
+        "input": 0.1,
+        "cache_read": 0.01,
+        "cache_write": null,
+        "output": 0.5,
+        "source": "OpenAI standard API pricing",
+        "url": "https://developers.openai.com/api/docs/pricing?tab=suite"
+      },
+      "opus": {
+        "input": 4.0,
+        "cache_read": 0.2,
+        "cache_write": 5.0,
+        "output": 20.0,
+        "source": "Anthropic standard API pricing",
+        "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+      },
+      "sonnet": {
+        "input": 2.0,
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "output": 10.0,
+        "source": "Anthropic standard API pricing",
+        "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+      },
+      "haiku": {
+        "input": 0.1,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "source": "Anthropic, prompts up to 100K tokens",
+        "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+      },
+      "flash": {
+        "input": 0.75,
+        "cache_read": 0.075,
+        "cache_write": null,
+        "output": 3.75,
+        "source": "Google Cloud global introductory pricing through 2026-12-31",
+        "url": "https://cloud.google.com/model-garden/pricing"
+      },
+      "argon": {
+        "input": 2.0,
+        "cache_read": 0.1,
+        "cache_write": null,
+        "output": 10.0,
+        "source": "Google Cloud global introductory pricing through 2026-11-30",
+        "url": "https://cloud.google.com/model-garden/pricing"
+      },
+      "oss": {
+        "input": 0.15,
+        "cache_read": 0.015,
+        "cache_write": null,
+        "output": 0.6,
+        "source": "Fireworks serverless, one hosting provider",
+        "url": "https://fireworks.ai/models/fireworks/gpt-oss-120b"
+      }
+    },
+    "normalized_cache": 0.5,
+    "models": [
+      {
+        "model": "sol",
+        "route": "codex",
+        "legs": 32,
+        "parked": 16,
+        "ci": [
+          0.3363,
+          0.6637
+        ],
+        "turns": 22.1,
+        "input": 420184,
+        "cached_share": 0.405,
+        "output": 8923,
+        "reasoning": 6151,
+        "input_per_turn": 19045,
+        "usd": {
+          "measured": 0.6065,
+          "no_cache": 0.9296,
+          "normalized": 0.5304
+        },
+        "usd_per_parked": {
+          "measured": 1.213,
+          "no_cache": 1.859,
+          "normalized": 1.061
+        }
+      },
+      {
+        "model": "terra",
+        "route": "codex",
+        "legs": 24,
+        "parked": 2,
+        "ci": [
+          0.0232,
+          0.2585
+        ],
+        "turns": 37.0,
+        "input": 724579,
+        "cached_share": 0.415,
+        "output": 2932,
+        "reasoning": 95,
+        "input_per_turn": 19605,
+        "usd": {
+          "measured": 0.4534,
+          "no_cache": 0.7392,
+          "normalized": 0.3951
+        },
+        "usd_per_parked": {
+          "measured": 5.441,
+          "no_cache": 8.87,
+          "normalized": 4.741
+        }
+      },
+      {
+        "model": "luna",
+        "route": "codex",
+        "legs": 20,
+        "parked": 0,
+        "ci": [
+          0.0,
+          0.1611
+        ],
+        "turns": 59.1,
+        "input": 2048168,
+        "cached_share": 0.551,
+        "output": 23314,
+        "reasoning": 13808,
+        "input_per_turn": 34656,
+        "usd": {
+          "measured": 0.1149,
+          "no_cache": 0.2165,
+          "normalized": 0.1243
+        },
+        "usd_per_parked": {
+          "measured": null,
+          "no_cache": null,
+          "normalized": null
+        }
+      },
+      {
+        "model": "opus",
+        "route": "claude-code",
+        "legs": 28,
+        "parked": 14,
+        "ci": [
+          0.3263,
+          0.6737
+        ],
+        "turns": 16.2,
+        "input": 584197,
+        "cached_share": 0.041,
+        "output": 92571,
+        "reasoning": 62336,
+        "input_per_turn": 36030,
+        "usd": {
+          "measured": 4.0975,
+          "no_cache": 4.1882,
+          "normalized": 3.0782,
+          "measured_writes": 4.6579
+        },
+        "usd_per_parked": {
+          "measured": 8.195,
+          "no_cache": 8.376,
+          "normalized": 6.156,
+          "measured_writes": 9.316
+        }
+      },
+      {
+        "model": "sonnet",
+        "route": "claude-code",
+        "legs": 32,
+        "parked": 0,
+        "ci": [
+          0.0,
+          0.1072
+        ],
+        "turns": 25.1,
+        "input": 515422,
+        "cached_share": 0.388,
+        "output": 18532,
+        "reasoning": 11696,
+        "input_per_turn": 20565,
+        "usd": {
+          "measured": 0.8357,
+          "no_cache": 1.2162,
+          "normalized": 0.7265,
+          "measured_writes": 0.9933
+        },
+        "usd_per_parked": {
+          "measured": null,
+          "no_cache": null,
+          "normalized": null,
+          "measured_writes": null
+        }
+      },
+      {
+        "model": "haiku",
+        "route": "claude-code",
+        "legs": 32,
+        "parked": 0,
+        "ci": [
+          0.0,
+          0.1072
+        ],
+        "turns": 42.7,
+        "input": 788394,
+        "cached_share": 0.047,
+        "output": 99231,
+        "reasoning": 86354,
+        "input_per_turn": 18469,
+        "usd": {
+          "measured": 0.1251,
+          "no_cache": 0.1285,
+          "normalized": 0.093,
+          "measured_writes": 0.1439
+        },
+        "usd_per_parked": {
+          "measured": null,
+          "no_cache": null,
+          "normalized": null,
+          "measured_writes": null
+        }
+      },
+      {
+        "model": "flash",
+        "route": "agy",
+        "legs": 16,
+        "parked": 1,
+        "ci": [
+          0.0111,
+          0.2833
+        ],
+        "turns": 17.6,
+        "input": 447956,
+        "cached_share": 0.188,
+        "output": 16417,
+        "reasoning": 0,
+        "input_per_turn": 25506,
+        "usd": {
+          "measured": 0.3408,
+          "no_cache": 0.3975,
+          "normalized": 0.2463
+        },
+        "usd_per_parked": {
+          "measured": 5.453,
+          "no_cache": 6.36,
+          "normalized": 3.941
+        }
+      },
+      {
+        "model": "oss",
+        "route": "agy",
+        "legs": 32,
+        "parked": 0,
+        "ci": [
+          0.0,
+          0.1072
+        ],
+        "turns": 9.7,
+        "input": 484600,
+        "cached_share": 0.645,
+        "output": 26606,
+        "reasoning": 0,
+        "input_per_turn": 50185,
+        "usd": {
+          "measured": 0.0465,
+          "no_cache": 0.0887,
+          "normalized": 0.0559
+        },
+        "usd_per_parked": {
+          "measured": null,
+          "no_cache": null,
+          "normalized": null
+        }
+      }
+    ]
+  },
+  "learning": {
+    "models": {
+      "sol": {
+        "first": {
+          "all": [
+            16,
+            32
+          ],
+          "car": [
+            8,
+            8
+          ],
+          "tractor": [
+            1,
+            8
+          ],
+          "mower": [
+            2,
+            8
+          ],
+          "truck": [
+            5,
+            8
+          ]
+        },
+        "later": {
+          "all": [
+            41,
+            64
+          ],
+          "car": [
+            16,
+            16
+          ],
+          "tractor": [
+            2,
+            16
+          ],
+          "mower": [
+            7,
+            16
+          ],
+          "truck": [
+            16,
+            16
+          ]
+        },
+        "transfer": {
+          "all": [
+            11,
+            24
+          ],
+          "car": [
+            6,
+            6
+          ],
+          "tractor": [
+            2,
+            6
+          ],
+          "mower": [
+            2,
+            6
+          ],
+          "truck": [
+            1,
+            6
+          ]
+        },
+        "baseline_train": [
+          9,
+          20
+        ],
+        "baseline_transfer": [
+          7,
+          12
+        ],
+        "p_later_vs_first": 0.1354,
+        "p_by_vehicle": {
+          "car": 1.0,
+          "tractor": 0.751,
+          "mower": 0.3325,
+          "truck": 0.0277
+        }
+      },
+      "terra": {
+        "first": {
+          "all": [
+            5,
+            32
+          ],
+          "car": [
+            2,
+            8
+          ],
+          "tractor": [
+            0,
+            8
+          ],
+          "mower": [
+            3,
+            8
+          ],
+          "truck": [
+            0,
+            8
+          ]
+        },
+        "later": {
+          "all": [
+            10,
+            64
+          ],
+          "car": [
+            1,
+            16
+          ],
+          "tractor": [
+            2,
+            16
+          ],
+          "mower": [
+            6,
+            16
+          ],
+          "truck": [
+            1,
+            16
+          ]
+        },
+        "transfer": {
+          "all": [
+            3,
+            24
+          ],
+          "car": [
+            1,
+            6
+          ],
+          "tractor": [
+            1,
+            6
+          ],
+          "mower": [
+            1,
+            6
+          ],
+          "truck": [
+            0,
+            6
+          ]
+        },
+        "baseline_train": [
+          1,
+          12
+        ],
+        "baseline_transfer": [
+          1,
+          12
+        ],
+        "p_later_vs_first": 0.6248,
+        "p_by_vehicle": {
+          "car": 0.9723,
+          "tractor": 0.4348,
+          "mower": 0.6755,
+          "truck": 0.6667
+        }
+      },
+      "opus": {
+        "first": {
+          "all": [
+            8,
+            12
+          ],
+          "car": [
+            3,
+            3
+          ],
+          "tractor": [
+            1,
+            3
+          ],
+          "mower": [
+            2,
+            3
+          ],
+          "truck": [
+            2,
+            3
+          ]
+        },
+        "later": {
+          "all": [
+            7,
+            12
+          ],
+          "car": [
+            3,
+            3
+          ],
+          "tractor": [
+            1,
+            3
+          ],
+          "mower": [
+            1,
+            3
+          ],
+          "truck": [
+            2,
+            3
+          ]
+        },
+        "transfer": {
+          "all": [
+            2,
+            4
+          ],
+          "car": [
+            1,
+            1
+          ],
+          "tractor": [
+            0,
+            1
+          ],
+          "mower": [
+            0,
+            1
+          ],
+          "truck": [
+            1,
+            1
+          ]
+        },
+        "baseline_train": [
+          8,
+          16
+        ],
+        "baseline_transfer": [
+          6,
+          12
+        ],
+        "p_later_vs_first": 0.7998,
+        "p_by_vehicle": {
+          "car": 1.0,
+          "tractor": 0.8,
+          "mower": 0.95,
+          "truck": 0.8
+        }
+      },
+      "sonnet": {
+        "first": {
+          "all": [
+            0,
+            32
+          ],
+          "car": [
+            0,
+            8
+          ],
+          "tractor": [
+            0,
+            8
+          ],
+          "mower": [
+            0,
+            8
+          ],
+          "truck": [
+            0,
+            8
+          ]
+        },
+        "later": {
+          "all": [
+            2,
+            64
+          ],
+          "car": [
+            0,
+            16
+          ],
+          "tractor": [
+            0,
+            16
+          ],
+          "mower": [
+            2,
+            16
+          ],
+          "truck": [
+            0,
+            16
+          ]
+        },
+        "transfer": {
+          "all": [
+            0,
+            24
+          ],
+          "car": [
+            0,
+            6
+          ],
+          "tractor": [
+            0,
+            6
+          ],
+          "mower": [
+            0,
+            6
+          ],
+          "truck": [
+            0,
+            6
+          ]
+        },
+        "baseline_train": [
+          0,
+          16
+        ],
+        "baseline_transfer": [
+          0,
+          16
+        ],
+        "p_later_vs_first": 0.4421,
+        "p_by_vehicle": {
+          "car": 1.0,
+          "tractor": 1.0,
+          "mower": 0.4348,
+          "truck": 1.0
+        }
+      },
+      "haiku": {
+        "first": {
+          "all": [
+            0,
+            28
+          ],
+          "car": [
+            0,
+            7
+          ],
+          "tractor": [
+            0,
+            7
+          ],
+          "mower": [
+            0,
+            7
+          ],
+          "truck": [
+            0,
+            7
+          ]
+        },
+        "later": {
+          "all": [
+            0,
+            44
+          ],
+          "car": [
+            0,
+            11
+          ],
+          "tractor": [
+            0,
+            11
+          ],
+          "mower": [
+            0,
+            11
+          ],
+          "truck": [
+            0,
+            11
+          ]
+        },
+        "transfer": {
+          "all": [
+            0,
+            20
+          ],
+          "car": [
+            0,
+            5
+          ],
+          "tractor": [
+            0,
+            5
+          ],
+          "mower": [
+            0,
+            5
+          ],
+          "truck": [
+            0,
+            5
+          ]
+        },
+        "baseline_train": [
+          0,
+          16
+        ],
+        "baseline_transfer": [
+          0,
+          16
+        ],
+        "p_later_vs_first": 1.0,
+        "p_by_vehicle": {
+          "car": 1.0,
+          "tractor": 1.0,
+          "mower": 1.0,
+          "truck": 1.0
+        }
+      }
+    },
+    "studies": [
+      {
+        "id": "20261106-1455-pool-claude-haiku-5-5-allow-d83e",
+        "model": "haiku",
+        "condition": "pool",
+        "numbers": "allow",
+        "members": 3,
+        "steps_n": 2,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-145551-ee3aae",
+              "parked": 0,
+              "progress": 0.319,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3509
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1796
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4279
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3175
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-145551-1a57df",
+              "parked": 0,
+              "progress": 0.269,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.1911
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1644
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4424
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2767
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-145551-8c6797",
+              "parked": 0,
+              "progress": 0.316,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3231
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "TIME_UP",
+                  "progress": 0.1951
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4495
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2945
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-151548-fab298",
+              "parked": 0,
+              "progress": 0.373,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "TIME_UP",
+                  "progress": 0.3664
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1659
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6258
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3326
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-151548-544e3e",
+              "parked": 0,
+              "progress": 0.359,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.449
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1895
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5172
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2813
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-151548-c0bb74",
+              "parked": 0,
+              "progress": 0.36,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4128
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1768
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5209
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3283
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-153848-ff3861",
+              "parked": 0,
+              "progress": 0.339,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3641
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3187
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "TIME_UP",
+                  "progress": 0.3599
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3136
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": null,
+        "later": [
+          0,
+          12
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-1439-self-claude-haiku-5-5-allow-bde6",
+        "model": "haiku",
+        "condition": "self",
+        "numbers": "allow",
+        "members": 2,
+        "steps_n": 3,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-143919-c93692",
+              "parked": 0,
+              "progress": 0.324,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "TIME_UP",
+                  "progress": 0.2961
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "TIME_UP",
+                  "progress": 0.2408
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4569
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3008
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-143919-661481",
+              "parked": 0,
+              "progress": 0.31,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3616
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1425
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.446
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.29
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-150114-2df6eb",
+              "parked": 0,
+              "progress": 0.324,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3428
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1757
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4484
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3286
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-150028-dfb758",
+              "parked": 0,
+              "progress": 0.343,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3906
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1789
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5121
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2907
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-151608-bd45d2",
+              "parked": 0,
+              "progress": 0.414,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3374
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.322
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6625
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3322
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-151757-0b9360",
+              "parked": 0,
+              "progress": 0.342,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3799
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1935
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4577
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3367
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-153119-943ac2",
+              "parked": 0,
+              "progress": 0.315,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3702
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2892
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.3647
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2371
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-153119-1641c9",
+              "parked": 0,
+              "progress": 0.293,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.1797
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3213
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4249
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2468
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          3,
+          8
+        ],
+        "later": [
+          0,
+          16
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-1450-self-claude-haiku-5-5-none-d557",
+        "model": "haiku",
+        "condition": "self",
+        "numbers": "none",
+        "members": 2,
+        "steps_n": 3,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-145053-f09dcf",
+              "parked": 0,
+              "progress": 0.31,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "TIME_UP",
+                  "progress": 0.3324
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1288
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4551
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.322
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-145053-8c0fe0",
+              "parked": 0,
+              "progress": 0.308,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "TIME_UP",
+                  "progress": 0.3322
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1728
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4346
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2913
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-151446-619d97",
+              "parked": 0,
+              "progress": 0.331,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "TIME_UP",
+                  "progress": 0.3734
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1758
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4447
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3303
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-150755-acb3fc",
+              "parked": 0,
+              "progress": 0.355,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "TIME_UP",
+                  "progress": 0.507
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1708
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4588
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2846
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-152701-ebcd7c",
+              "parked": 0,
+              "progress": 0.335,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3208
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2199
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4708
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3265
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-152547-77a512",
+              "parked": 0,
+              "progress": 0.344,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4069
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.152
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4963
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3223
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-154904-db62fc",
+              "parked": 0,
+              "progress": 0.359,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3715
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "TIME_UP",
+                  "progress": 0.3019
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4189
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3449
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-154904-8f0769",
+              "parked": 0,
+              "progress": 0.318,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.2943
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3047
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.325
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3483
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          2,
+          8
+        ],
+        "later": [
+          0,
+          16
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-1455-pool-claude-opus-5-5-allow-336b",
+        "model": "opus",
+        "condition": "pool",
+        "numbers": "allow",
+        "members": 3,
+        "steps_n": 2,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-145540-0a1ed7",
+              "parked": 4,
+              "progress": 1.0,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-145540-c7f883",
+              "parked": 2,
+              "progress": 0.828,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.8159
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4962
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-145540-f5ab11",
+              "parked": 2,
+              "progress": 0.723,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3553
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.5359
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-152412-9681da",
+              "parked": 2,
+              "progress": 0.68,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "TIME_UP",
+                  "progress": 0.2644
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "TIME_UP",
+                  "progress": 0.4569
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-152412-c3fcb8",
+              "parked": 4,
+              "progress": 1.0,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-152412-b33ada",
+              "parked": 1,
+              "progress": 0.609,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3874
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.7536
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "TIME_UP",
+                  "progress": 0.2953
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-155858-e0a7e4",
+              "parked": 2,
+              "progress": 0.826,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.866
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "TIME_UP",
+                  "progress": 0.4381
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": null,
+        "later": [
+          7,
+          12
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-1439-chain-claude-sonnet-5-5-allow-be36",
+        "model": "sonnet",
+        "condition": "chain",
+        "numbers": "allow",
+        "members": 1,
+        "steps_n": 6,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-143919-5eae7d",
+              "parked": 0,
+              "progress": 0.394,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.5469
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1508
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6753
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2014
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-144714-8d8741",
+              "parked": 0,
+              "progress": 0.408,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3637
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2965
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6041
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3661
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-145750-603aa0",
+              "parked": 1,
+              "progress": 0.455,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.304
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2169
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.301
+                }
+              ]
+            }
+          ],
+          "4": [
+            {
+              "member": 0,
+              "run_id": "20261106-150519-f481a3",
+              "parked": 0,
+              "progress": 0.322,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4409
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1353
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4258
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2878
+                }
+              ]
+            }
+          ],
+          "5": [
+            {
+              "member": 0,
+              "run_id": "20261106-151553-c85c62",
+              "parked": 0,
+              "progress": 0.34,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.2787
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1462
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6731
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2604
+                }
+              ]
+            }
+          ],
+          "6": [
+            {
+              "member": 0,
+              "run_id": "20261106-152413-232266",
+              "parked": 0,
+              "progress": 0.279,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3362
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1416
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.3647
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2735
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-152959-aa7c91",
+              "parked": 0,
+              "progress": 0.349,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3138
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3102
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5222
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2479
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          0,
+          4
+        ],
+        "later": [
+          1,
+          20
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-1457-pool-claude-sonnet-5-5-allow-7cbf",
+        "model": "sonnet",
+        "condition": "pool",
+        "numbers": "allow",
+        "members": 3,
+        "steps_n": 2,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-145720-4391c2",
+              "parked": 0,
+              "progress": 0.21,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.2265
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1844
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.1303
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2985
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-145720-7bdebc",
+              "parked": 0,
+              "progress": 0.279,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3384
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.131
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.3638
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2816
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-145720-eae0d9",
+              "parked": 0,
+              "progress": 0.379,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3198
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2048
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.7024
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2883
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-150612-cac3aa",
+              "parked": 0,
+              "progress": 0.392,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3189
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3669
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6273
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2562
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-150612-0a7225",
+              "parked": 0,
+              "progress": 0.303,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.2733
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1952
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4405
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3026
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-150612-cb159c",
+              "parked": 0,
+              "progress": 0.353,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4555
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2418
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4015
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3122
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-151609-80d6da",
+              "parked": 0,
+              "progress": 0.331,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4196
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.349
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.3568
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2001
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": null,
+        "later": [
+          0,
+          12
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-1439-self-claude-sonnet-5-5-allow-fbf1",
+        "model": "sonnet",
+        "condition": "self",
+        "numbers": "allow",
+        "members": 2,
+        "steps_n": 3,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-143919-b0617d",
+              "parked": 0,
+              "progress": 0.31,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.2233
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1545
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5788
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2821
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-143919-5acc65",
+              "parked": 0,
+              "progress": 0.357,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3704
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1689
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6322
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2566
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-144656-d95a56",
+              "parked": 0,
+              "progress": 0.472,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3988
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.171
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.7286
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.5886
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-144703-29c692",
+              "parked": 0,
+              "progress": 0.347,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3471
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1747
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5326
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3346
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-145356-e77d08",
+              "parked": 0,
+              "progress": 0.46,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3231
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.4131
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5201
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.5838
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-145712-b12056",
+              "parked": 0,
+              "progress": 0.322,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4503
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.0636
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6295
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.1458
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-150741-869493",
+              "parked": 0,
+              "progress": 0.356,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3189
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1667
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6216
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3178
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-150741-51ab2a",
+              "parked": 0,
+              "progress": 0.413,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3276
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.7357
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.3378
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2493
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          1,
+          8
+        ],
+        "later": [
+          0,
+          16
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-1451-self-claude-sonnet-5-5-none-f20e",
+        "model": "sonnet",
+        "condition": "self",
+        "numbers": "none",
+        "members": 2,
+        "steps_n": 3,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-145144-59ead1",
+              "parked": 0,
+              "progress": 0.392,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.2728
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3262
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6411
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3278
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-145144-a23bb4",
+              "parked": 0,
+              "progress": 0.362,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3278
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1576
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5503
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.4125
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-145908-62c43f",
+              "parked": 0,
+              "progress": 0.337,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3456
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1344
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5659
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3004
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-145949-2a66c8",
+              "parked": 1,
+              "progress": 0.454,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.2735
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1756
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3679
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-150928-d6ac88",
+              "parked": 0,
+              "progress": 0.445,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.6636
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1365
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6779
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3033
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-150826-fe111c",
+              "parked": 0,
+              "progress": 0.265,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.2338
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1639
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.2779
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3837
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-151643-b54307",
+              "parked": 0,
+              "progress": 0.333,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3212
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2574
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.3965
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3555
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-151643-6b988c",
+              "parked": 0,
+              "progress": 0.248,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.2393
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1245
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4189
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2084
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          1,
+          8
+        ],
+        "later": [
+          1,
+          16
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-0906-chain-61-sol-allow-1aad",
+        "model": "sol",
+        "condition": "chain",
+        "numbers": "allow",
+        "members": 1,
+        "steps_n": 6,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-090632-d5f70a",
+              "parked": 4,
+              "progress": 1.0,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-094357-615802",
+              "parked": 2,
+              "progress": 0.854,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.7752
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6389
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-103114-664486",
+              "parked": 3,
+              "progress": 0.963,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.8515
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "4": [
+            {
+              "member": 0,
+              "run_id": "20261106-105635-3720b2",
+              "parked": 2,
+              "progress": 0.861,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.7174
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.7264
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "5": [
+            {
+              "member": 0,
+              "run_id": "20261106-112519-ed1355",
+              "parked": 3,
+              "progress": 0.944,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.7746
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "6": [
+            {
+              "member": 0,
+              "run_id": "20261106-114603-4e531b",
+              "parked": 3,
+              "progress": 0.791,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1649
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-115441-3fb58a",
+              "parked": 3,
+              "progress": 0.954,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.8167
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          2,
+          4
+        ],
+        "later": [
+          13,
+          20
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-0906-pool-61-sol-allow-5e75",
+        "model": "sol",
+        "condition": "pool",
+        "numbers": "allow",
+        "members": 3,
+        "steps_n": 2,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-090632-a9915c",
+              "parked": 2,
+              "progress": 0.756,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.5102
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5121
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-090632-da1339",
+              "parked": 1,
+              "progress": 0.527,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1663
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5858
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3574
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-090632-650ee8",
+              "parked": 2,
+              "progress": 0.691,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2868
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4753
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-095358-8d59cf",
+              "parked": 3,
+              "progress": 0.861,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.4456
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-095358-57d8b8",
+              "parked": 2,
+              "progress": 0.708,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.189
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6414
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-095358-14e8ea",
+              "parked": 2,
+              "progress": 0.737,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2547
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6913
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-105430-02c267",
+              "parked": 1,
+              "progress": 0.64,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3609
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6773
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.5216
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": null,
+        "later": [
+          7,
+          12
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-0906-self-61-sol-allow-23ee",
+        "model": "sol",
+        "condition": "self",
+        "numbers": "allow",
+        "members": 2,
+        "steps_n": 3,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-090632-24a019",
+              "parked": 1,
+              "progress": 0.597,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2428
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.566
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.5773
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-090632-df18b0",
+              "parked": 2,
+              "progress": 0.848,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.6911
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.7006
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-095406-26d76d",
+              "parked": 2,
+              "progress": 0.799,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.4131
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.784
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-102326-a85588",
+              "parked": 4,
+              "progress": 1.0,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-103348-42a0e9",
+              "parked": 2,
+              "progress": 0.869,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.7118
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.7631
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-104053-849920",
+              "parked": 4,
+              "progress": 1.0,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-110602-004330",
+              "parked": 3,
+              "progress": 0.848,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3936
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-110602-8db2e2",
+              "parked": 1,
+              "progress": 0.758,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.8322
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6461
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.5543
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          7,
+          8
+        ],
+        "later": [
+          12,
+          16
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-0906-self-61-sol-none-9ebb",
+        "model": "sol",
+        "condition": "self",
+        "numbers": "none",
+        "members": 2,
+        "steps_n": 3,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-090632-c8901e",
+              "parked": 3,
+              "progress": 0.769,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.0765
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-090632-4a7822",
+              "parked": 1,
+              "progress": 0.684,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1922
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.7304
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.815
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-093846-4e8c54",
+              "parked": 2,
+              "progress": 0.767,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.473
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5955
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-100941-d2ac5a",
+              "parked": 2,
+              "progress": 0.733,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2546
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6777
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-101835-3a1711",
+              "parked": 3,
+              "progress": 0.797,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1893
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-105749-1a10ef",
+              "parked": 2,
+              "progress": 0.884,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.8474
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6889
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-112447-a33a08",
+              "parked": 1,
+              "progress": 0.73,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.8669
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5639
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.4891
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-112447-1a2403",
+              "parked": 2,
+              "progress": 0.869,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.9798
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.4949
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          5,
+          8
+        ],
+        "later": [
+          9,
+          16
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-0906-chain-61-terra-allow-e203",
+        "model": "terra",
+        "condition": "chain",
+        "numbers": "allow",
+        "members": 1,
+        "steps_n": 6,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-090632-08501f",
+              "parked": 0,
+              "progress": 0.488,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.6314
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2643
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6594
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3972
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-095803-dd0917",
+              "parked": 0,
+              "progress": 0.605,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.5307
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.5188
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.8176
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.5525
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-102624-4464df",
+              "parked": 0,
+              "progress": 0.466,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3815
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.4557
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.722
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3038
+                }
+              ]
+            }
+          ],
+          "4": [
+            {
+              "member": 0,
+              "run_id": "20261106-105339-4b7b15",
+              "parked": 0,
+              "progress": 0.399,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4662
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.6486
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.1888
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2926
+                }
+              ]
+            }
+          ],
+          "5": [
+            {
+              "member": 0,
+              "run_id": "20261106-111142-ce1def",
+              "parked": 0,
+              "progress": 0.579,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.799
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.4774
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6189
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.4201
+                }
+              ]
+            }
+          ],
+          "6": [
+            {
+              "member": 0,
+              "run_id": "20261106-111903-3a8ac0",
+              "parked": 0,
+              "progress": 0.578,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.5763
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.7887
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6803
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2664
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-112509-c9b11a",
+              "parked": 0,
+              "progress": 0.461,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.6204
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2727
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5169
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.4334
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          0,
+          4
+        ],
+        "later": [
+          0,
+          20
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-0906-pool-61-terra-allow-97cc",
+        "model": "terra",
+        "condition": "pool",
+        "numbers": "allow",
+        "members": 3,
+        "steps_n": 2,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-090632-be7af0",
+              "parked": 0,
+              "progress": 0.386,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.6068
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2142
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.3591
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3632
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-090632-6d6303",
+              "parked": 0,
+              "progress": 0.48,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.1986
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2098
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.7076
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.802
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-090632-fa3469",
+              "parked": 1,
+              "progress": 0.632,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3986
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.4847
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.6442
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-100135-55ea1a",
+              "parked": 0,
+              "progress": 0.643,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.7655
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.6004
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6694
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.538
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-100135-1bf8cd",
+              "parked": 3,
+              "progress": 0.869,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4748
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                }
+              ]
+            },
+            {
+              "member": 2,
+              "run_id": "20261106-100135-7cb60f",
+              "parked": 2,
+              "progress": 0.71,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.5146
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3251
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-104624-6a3087",
+              "parked": 0,
+              "progress": 0.354,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4022
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1775
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.576
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2585
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": null,
+        "later": [
+          5,
+          12
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-0906-self-61-terra-allow-ab11",
+        "model": "terra",
+        "condition": "self",
+        "numbers": "allow",
+        "members": 2,
+        "steps_n": 3,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-090632-1b425d",
+              "parked": 0,
+              "progress": 0.425,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3231
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2969
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6636
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.4171
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-090632-70ca39",
+              "parked": 1,
+              "progress": 0.442,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3444
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1821
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2416
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-095314-18ab73",
+              "parked": 0,
+              "progress": 0.434,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.5123
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2148
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.7588
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.249
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-094916-b981ed",
+              "parked": 1,
+              "progress": 0.61,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.6897
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.4994
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2513
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-102547-fd6a43",
+              "parked": 0,
+              "progress": 0.436,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3253
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2332
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.8169
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3674
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-102230-dee21d",
+              "parked": 0,
+              "progress": 0.571,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.473
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.707
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6726
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.4302
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-105420-af0439",
+              "parked": 0,
+              "progress": 0.718,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.9249
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.763
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.8091
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3755
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-105420-946103",
+              "parked": 1,
+              "progress": 0.685,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.7618
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.5616
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.4167
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          3,
+          8
+        ],
+        "later": [
+          1,
+          16
+        ],
+        "done": true
+      },
+      {
+        "id": "20261106-0906-self-61-terra-none-e28a",
+        "model": "terra",
+        "condition": "self",
+        "numbers": "none",
+        "members": 2,
+        "steps_n": 3,
+        "steps": {
+          "1": [
+            {
+              "member": 0,
+              "run_id": "20261106-090632-c3969f",
+              "parked": 2,
+              "progress": 0.749,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.5923
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.4044
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-090632-5fb9fb",
+              "parked": 1,
+              "progress": 0.5,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2116
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4936
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2938
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "member": 0,
+              "run_id": "20261106-094902-debe53",
+              "parked": 0,
+              "progress": 0.477,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.6934
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.2961
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.6424
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2754
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-100310-902c2d",
+              "parked": 1,
+              "progress": 0.598,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.9034
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.1753
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.3145
+                }
+              ]
+            }
+          ],
+          "3": [
+            {
+              "member": 0,
+              "run_id": "20261106-102334-bfb3ec",
+              "parked": 2,
+              "progress": 0.71,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.605
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2342
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-103631-09584b",
+              "parked": 1,
+              "progress": 0.57,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.6236
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.382
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.2755
+                }
+              ]
+            }
+          ],
+          "T": [
+            {
+              "member": 0,
+              "run_id": "20261106-105626-eaec5c",
+              "parked": 1,
+              "progress": 0.477,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.4726
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "DNF",
+                  "progress": 0.3352
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "TIME_UP",
+                  "progress": 0.1018
+                }
+              ]
+            },
+            {
+              "member": 1,
+              "run_id": "20261106-105626-7cecb7",
+              "parked": 1,
+              "progress": 0.538,
+              "legs": [
+                {
+                  "vehicle": "car",
+                  "outcome": "DNF",
+                  "progress": 0.3927
+                },
+                {
+                  "vehicle": "tractor",
+                  "outcome": "FINISHED",
+                  "progress": 1.0
+                },
+                {
+                  "vehicle": "mower",
+                  "outcome": "DNF",
+                  "progress": 0.4786
+                },
+                {
+                  "vehicle": "truck",
+                  "outcome": "DNF",
+                  "progress": 0.281
+                }
+              ]
+            }
+          ]
+        },
+        "never_worse": [
+          1,
+          8
+        ],
+        "later": [
+          4,
+          16
+        ],
+        "done": true
+      }
+    ],
+    "conditions": [
+      {
+        "model": "sol",
+        "condition": "self",
+        "numbers": "allow",
+        "later": [
+          12,
+          16
+        ],
+        "study": "20261106-0906-self-61-sol-allow-23ee"
+      },
+      {
+        "model": "sol",
+        "condition": "self",
+        "numbers": "none",
+        "later": [
+          9,
+          16
+        ],
+        "study": "20261106-0906-self-61-sol-none-9ebb"
+      },
+      {
+        "model": "sol",
+        "condition": "chain",
+        "numbers": "allow",
+        "later": [
+          13,
+          20
+        ],
+        "study": "20261106-0906-chain-61-sol-allow-1aad"
+      },
+      {
+        "model": "sol",
+        "condition": "pool",
+        "numbers": "allow",
+        "later": [
+          7,
+          12
+        ],
+        "study": "20261106-0906-pool-61-sol-allow-5e75"
+      },
+      {
+        "model": "terra",
+        "condition": "self",
+        "numbers": "allow",
+        "later": [
+          1,
+          16
+        ],
+        "study": "20261106-0906-self-61-terra-allow-ab11"
+      },
+      {
+        "model": "terra",
+        "condition": "self",
+        "numbers": "none",
+        "later": [
+          4,
+          16
+        ],
+        "study": "20261106-0906-self-61-terra-none-e28a"
+      },
+      {
+        "model": "terra",
+        "condition": "chain",
+        "numbers": "allow",
+        "later": [
+          0,
+          20
+        ],
+        "study": "20261106-0906-chain-61-terra-allow-e203"
+      },
+      {
+        "model": "terra",
+        "condition": "pool",
+        "numbers": "allow",
+        "later": [
+          5,
+          12
+        ],
+        "study": "20261106-0906-pool-61-terra-allow-97cc"
+      },
+      {
+        "model": "opus",
+        "condition": "pool",
+        "numbers": "allow",
+        "later": [
+          7,
+          12
+        ],
+        "study": "20261106-1455-pool-claude-opus-5-5-allow-336b"
+      },
+      {
+        "model": "sonnet",
+        "condition": "self",
+        "numbers": "allow",
+        "later": [
+          0,
+          16
+        ],
+        "study": "20261106-1439-self-claude-sonnet-5-5-allow-fbf1"
+      },
+      {
+        "model": "sonnet",
+        "condition": "self",
+        "numbers": "none",
+        "later": [
+          1,
+          16
+        ],
+        "study": "20261106-1451-self-claude-sonnet-5-5-none-f20e"
+      },
+      {
+        "model": "sonnet",
+        "condition": "chain",
+        "numbers": "allow",
+        "later": [
+          1,
+          20
+        ],
+        "study": "20261106-1439-chain-claude-sonnet-5-5-allow-be36"
+      },
+      {
+        "model": "sonnet",
+        "condition": "pool",
+        "numbers": "allow",
+        "later": [
+          0,
+          12
+        ],
+        "study": "20261106-1457-pool-claude-sonnet-5-5-allow-7cbf"
+      },
+      {
+        "model": "haiku",
+        "condition": "self",
+        "numbers": "allow",
+        "later": [
+          0,
+          16
+        ],
+        "study": "20261106-1439-self-claude-haiku-5-5-allow-bde6"
+      },
+      {
+        "model": "haiku",
+        "condition": "self",
+        "numbers": "none",
+        "later": [
+          0,
+          16
+        ],
+        "study": "20261106-1450-self-claude-haiku-5-5-none-d557"
+      },
+      {
+        "model": "haiku",
+        "condition": "pool",
+        "numbers": "allow",
+        "later": [
+          0,
+          12
+        ],
+        "study": "20261106-1455-pool-claude-haiku-5-5-allow-d83e"
+      }
+    ],
+    "excluded": [
+      {
+        "study": "20261106-1439-chain-claude-haiku-5-5-allow-71ae",
+        "model": "claude-code:claude-haiku-5-5",
+        "reason": "model API error"
+      },
+      {
+        "study": "20261106-1439-self-claude-opus-5-5-allow-75ff",
+        "model": "claude-code:claude-opus-5-5",
+        "reason": "model API error"
+      },
+      {
+        "study": "20261106-1442-chain-claude-opus-5-5-allow-57c0",
+        "model": "claude-code:claude-opus-5-5",
+        "reason": "model API error"
+      },
+      {
+        "study": "20261106-1452-self-claude-opus-5-5-none-39a8",
+        "model": "claude-code:claude-opus-5-5",
+        "reason": "model API error"
+      }
+    ]
+  },
+  "exclusions": [
+    {
+      "run_id": "20261105-205006-824030",
+      "model": "codex:gpt-6.1-terra",
+      "reason": "different task or observation"
+    },
+    {
+      "run_id": "20261105-205006-894d32",
+      "model": "codex:gpt-6.1-sol",
+      "reason": "different task or observation"
+    },
+    {
+      "run_id": "20261105-205006-ada945",
+      "model": "codex:gpt-6.1-terra",
+      "reason": "different task or observation"
+    },
+    {
+      "run_id": "20261105-205006-d06390",
+      "model": "codex:gpt-6.1-sol",
+      "reason": "different task or observation"
+    },
+    {
+      "run_id": "20261105-205006-eebb21",
+      "model": "codex:gpt-6-luna",
+      "reason": "different task or observation"
+    },
+    {
+      "run_id": "20261105-205006-fb2785",
+      "model": "codex:gpt-6-luna",
+      "reason": "different task or observation"
+    },
+    {
+      "run_id": "20261106-153827-8291af",
+      "model": "claude-code:claude-opus-5-5",
+      "reason": "model API error"
+    },
+    {
+      "run_id": "20261106-154608-7fa60d",
+      "model": "agy:gpt-oss-120b-medium",
+      "reason": "different task or observation"
+    },
+    {
+      "run_id": "20261106-162633-13869f",
+      "model": "claude-code:claude-opus-5-5",
+      "reason": "model API error"
+    },
+    {
+      "run_id": "20261106-163037-c72fd1",
+      "model": "claude-code:claude-haiku-5-5",
+      "reason": "model API error"
+    },
+    {
+      "run_id": "20261106-163109-8c65a9",
+      "model": "claude-code:claude-opus-5-5",
+      "reason": "model API error"
+    },
+    {
+      "run_id": "20261106-163110-26eb19",
+      "model": "claude-code:claude-opus-5-5",
+      "reason": "model API error"
+    },
+    {
+      "run_id": "20261106-164410-56729d",
+      "model": "claude-code:claude-opus-5-5",
+      "reason": "model API error"
+    },
+    {
+      "run_id": "20261106-164410-ad0b1b",
+      "model": "claude-code:claude-opus-5-5",
+      "reason": "model API error"
+    }
+  ]
+}

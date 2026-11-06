@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use Trailer Relay, please cite this software and its version."
+type: software
+title: "Trailer Relay: partial-observation trailer control and note-passing evaluation"
+authors:
+  - family-names: Toivonen
+    given-names: Vilhelm
+version: 0.1.0
+date-released: 2026-11-06
+license: MIT
+repository-code: "https://github.com/vimeto/trailer-relay"
+url: "https://trailer.games.vtoivonen.com/"

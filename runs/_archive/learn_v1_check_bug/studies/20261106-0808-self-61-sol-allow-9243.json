@@ -1,0 +1,117 @@
+{
+ "study": "20261106-0808-self-61-sol-allow-9243",
+ "model": "codex:gpt-6.1-sol",
+ "condition": "self",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 2,
+ "steps": 3,
+ "policy": {
+  "numbers": "allow",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 1,
+ "runs": [
+  {
+   "run_id": "20261106-080842-e503ef",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 42.45,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": {
+      "text": "Finished in 42 seconds with no rail touches or gear changes. Watch the reversing camera and centre between nearby rails through the bend. This short trailer needs firm, prompt hitch correction to keep its swing controlled. A modest rightward trailer swing worked through the bend. Near the bay, centre between the far painted corners and straighten the trailer. Reverse around 0.65 metres per second, easing to 0.45 near the bay.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "Finished cleanly in 42 seconds with no contacts or gear changes. Keep looking at the reversing camera and reverse slowly, centring between nearby rails through the bend. Strong hitch correction prevents the short trailer from folding; follow its swing promptly. The bend held a modest rightward trailer swing. Once all bay corners appear, aim for their centre; when only the far pair remain, centre between those and straighten. A reverse pace around 0.65 m/s worked, easing to 0.45 near the bay.",
+       "Finished in 42 seconds with no rail touches or gear changes. Watch the reversing camera and centre between nearby rails through the bend. This short trailer needs firm, prompt hitch correction to keep its swing controlled. A modest rightward trailer swing worked through the bend. Near the bay, centre between the far painted corners and straighten the trailer. Reverse around 0.65 metres per second, easing to 0.45 near the bay."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 243.65,
+     "progress": 0.4166,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Every contact was on the right. Holding a fixed hitch angle blindly trapped the rig in the first bend. More leftward trailer swing did not solve tractor and trailer front clearance. Inspect both rails early and remember their positions as you move. Guide the whole rig, including its front corners, rather than only the trailer rear. Stop before clearance disappears and reassess the approach instead of repeating short shunts. This tractor has a long rear hitch overhang, so steering also swings the trailer front. Use gentle corrections and follow the trailer promptly.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "Every contact was on the right: holding a hitch angle blindly repeatedly trapped the rig in the first bend. Turning the trailer farther left alone did not solve tractor and trailer-front clearance. Inspect both rails early, remember their positions as you move, and guide the whole rig rather than just the trailer rear. Stop before clearance disappears; repeated short shunts consumed touches without fixing the approach. This tractor's rear-mounted hitch makes steering swing the trailer front too; use gentle corrections and follow the trailer promptly.",
+       "Every contact was on the right. Holding a fixed hitch angle blindly trapped the rig in the first bend. More leftward trailer swing did not solve tractor and trailer front clearance. Inspect both rails early and remember their positions as you move. Guide the whole rig, including its front corners, rather than only the trailer rear. Stop before clearance disappears and reassess the approach instead of repeating short shunts. This tractor has a long rear hitch overhang, so steering also swings the trailer front. Use gentle corrections and follow the trailer promptly."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "FINISHED",
+     "time": 123.95,
+     "progress": 1.0,
+     "touches": 3,
+     "notes_in": [],
+     "note": {
+      "text": "Start the right bend after about 4 m. Waiting until the narrowing pinned the cart. A controlled hitch angle near 28 degrees carried the bend cleanly at 0.23 m/s. The bend exit left the cart too far left for the bay. Align farther right early using painted corners and both rails. Late correction hit the mower's front-left corner. Prioritise bay position as well as heading and allow room for the mower's front swing. This short cart reacts quickly, so follow its swing promptly and straighten early.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "Start the right bend after about 4 m; waiting until the narrowing pinned the cart. A controlled hitch angle near 28 degrees carried the bend cleanly at 0.23 m/s. The bend exit left the cart too far left for the bay: align farther right well before arrival, using painted corners and both rails. Late correction hit the mower's front-left corner; reversing straight later finished. Prioritise bay position as well as heading. This short cart reacts quickly: steer promptly to follow its swing and straighten early.",
+       "Start the right bend after about 4 m. Waiting until the narrowing pinned the cart. A controlled hitch angle near 28 degrees carried the bend cleanly at 0.23 m/s. The bend exit left the cart too far left for the bay. Align farther right early using painted corners and both rails. Late correction hit the mower's front-left corner. Prioritise bay position as well as heading and allow room for the mower's front swing. This short cart reacts quickly, so follow its swing promptly and straighten early."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 227.65,
+     "progress": 0.3195,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Preset right bend angles caused repeated truck rear left rail contacts near 26 m. Straightening also endangered the trailer rear left. The rear camera missed truck clearance. Survey both mirrors plus the camera before the bend and use visible rails to choose the turn direction and setup. Straight reversing initially worked. Prioritise clearance along the entire rig over hitch angle targets. This long trailer turns slowly but the cab swings quickly, so begin corrections early and check truck corners throughout.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains a code keyword ('while straightening')",
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "Blindly holding preset right-bend hitch angles failed near 26 m: the truck\u2019s rear-left repeatedly hit the rail, while straightening also threatened the trailer\u2019s rear-left. The camera alone missed truck clearance. Survey both mirrors and the camera before the bend; infer the corridor and plan room for both truck and trailer rather than tightening after contact. Straight reversing initially worked. This long trailer turns slowly while the cab swings quickly; use gradual steering and watch truck clearance throughout.",
+       "Preset right bend angles caused repeated truck rear left rail contacts near 26 m. Straightening also endangered the trailer rear left. The rear camera missed truck clearance. Survey both mirrors plus the camera before the bend and use visible rails to choose the turn direction and setup. Straight reversing initially worked. Prioritise clearance along the entire rig over hitch angle targets. This long trailer turns slowly but the cab swings quickly, so begin corrections early and check truck corners throughout."
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

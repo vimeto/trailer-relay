@@ -1,0 +1,510 @@
+{
+ "study": "20261106-1442-chain-gemini-38-flash-low-allow-c577",
+ "model": "agy:gemini-3.8-flash-low",
+ "condition": "chain",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 1,
+ "steps": 6,
+ "policy": {
+  "numbers": "allow",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-144232-bdb0e2",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 168.65,
+     "progress": 0.6352,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The course takes a sharp 90-degree bend around 16 metres in. Every failure occurred when the trailer's rear-left corner clipped the inner corner rail during the turn. Do not stay centered or hug the inside before turning; keep the rig wide along the outside right rail first. Initiate the trailer swing early with negative hitch, but immediately track the corridor and clear the corner before cutting tight. When pulling forward to unstick, pull ahead straight or slightly right by at least two metres, because pulling forward while steering left swings the car front into the outer barrier.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The course takes a sharp 90-degree bend around 16 metres in. Every failure occurred when the trailer's rear-left corner clipped the inner corner rail during the turn. Do not stay centered or hug the inside before turning; keep the rig wide along the outside right rail first. Initiate the trailer swing early with negative hitch, but immediately track the corridor and clear the corner before cutting tight. When pulling forward to unstick, pull ahead straight or slightly right by at least two metres, because pulling forward while steering left swings the car front into the outer barrier."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 166.35,
+     "progress": 0.1692,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "At seven metres progress the course curves tightly right. Reversing straight or with small angles swings the trailer rear-right directly into the outer rail, while pulling forward swung our front-left corner into the opposite barrier. To survive this bend, initiate a deliberate negative hitch early so the trailer arcs smoothly along the corridor curve rather than cutting corners. When pulling forward to unpin, keep the steering strictly centred because the long tractor front has huge lateral sweep in tight barriers. Alternate mirror glances smoothly without lingering.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "At seven metres progress the course curves tightly right. Reversing straight or with small angles swings the trailer rear-right directly into the outer rail, while pulling forward swung our front-left corner into the opposite barrier. To survive this bend, initiate a deliberate negative hitch early so the trailer arcs smoothly along the corridor curve rather than cutting corners. When pulling forward to unpin, keep the steering strictly centred because the long tractor front has huge lateral sweep in tight barriers. Alternate mirror glances smoothly without lingering."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 159.85,
+     "progress": 0.5332,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The course opens to the right into the bay, but the starting alley hugs the left rail tightly. Driving straight back without early rightward offset caused repeated left trailer collisions. Steer right immediately from the start to bias into the spacious right side. Keep reverse speed very slow because this short garden cart responds violently to wheel input. When pulling forward to unpin, pull forward substantially with wheels straight or slight right, because short unpinning maneuvers immediately hit the left rail again. Prioritise lateral clearance from the left wall over hitch alignment.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The course opens to the right into the bay, but the starting alley hugs the left rail tightly. Driving straight back without early rightward offset caused repeated left trailer collisions. Steer right immediately from the start to bias into the spacious right side. Keep reverse speed very slow because this short garden cart responds violently to wheel input. When pulling forward to unpin, pull forward substantially with wheels straight or slight right, because short unpinning maneuvers immediately hit the left rail again. Prioritise lateral clearance from the left wall over hitch alignment."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 247.2,
+     "progress": 0.2787,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The course enters a tight right bend early on. Because the trailer is very long, maintaining even moderate hitch angles causes severe off-tracking: large hitch angles swing the trailer front-left outward into the outer rail, while the tractor rear-left also clips the rail. Prioritise keeping the hitch angle strictly under ten degrees around bends. Steer earlier and more gently, taking the curve wide rather than jackknifing into it. Tip: when pulling forward to unpin, pull straight ahead only a fraction of a metre, as turning while pulling forward quickly clips the front corners.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The course enters a tight right bend early on. Because the trailer is very long, maintaining even moderate hitch angles causes severe off-tracking: large hitch angles swing the trailer front-left outward into the outer rail, while the tractor rear-left also clips the rail. Prioritise keeping the hitch angle strictly under ten degrees around bends. Steer earlier and more gently, taking the curve wide rather than jackknifing into it. Tip: when pulling forward to unpin, pull straight ahead only a fraction of a metre, as turning while pulling forward quickly clips the front corners."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-144941-348d55",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 94.4,
+     "progress": 0.3352,
+     "touches": 6,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course takes a sharp 90-degree bend around 16 metres in. Every failure occurred when the trailer's rear-left corner clipped the inner corner rail during the turn. Do not stay centered or hug the inside before turning; keep the rig wide along the outside right rail first. Initiate the trailer swing early with negative hitch, but immediately track the corridor and clear the corner before cutting tight. When pulling forward to unstick, pull ahead straight or slightly right by at least two metres, because pulling forward while steering left swings the car front into the outer barrier."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 80.4,
+     "progress": 0.0518,
+     "touches": 4,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "At seven metres progress the course curves tightly right. Reversing straight or with small angles swings the trailer rear-right directly into the outer rail, while pulling forward swung our front-left corner into the opposite barrier. To survive this bend, initiate a deliberate negative hitch early so the trailer arcs smoothly along the corridor curve rather than cutting corners. When pulling forward to unpin, keep the steering strictly centred because the long tractor front has huge lateral sweep in tight barriers. Alternate mirror glances smoothly without lingering."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 82.6,
+     "progress": 0.4936,
+     "touches": 6,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course opens to the right into the bay, but the starting alley hugs the left rail tightly. Driving straight back without early rightward offset caused repeated left trailer collisions. Steer right immediately from the start to bias into the spacious right side. Keep reverse speed very slow because this short garden cart responds violently to wheel input. When pulling forward to unpin, pull forward substantially with wheels straight or slight right, because short unpinning maneuvers immediately hit the left rail again. Prioritise lateral clearance from the left wall over hitch alignment."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 95.7,
+     "progress": 0.3714,
+     "touches": 3,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course enters a tight right bend early on. Because the trailer is very long, maintaining even moderate hitch angles causes severe off-tracking: large hitch angles swing the trailer front-left outward into the outer rail, while the tractor rear-left also clips the rail. Prioritise keeping the hitch angle strictly under ten degrees around bends. Steer earlier and more gently, taking the curve wide rather than jackknifing into it. Tip: when pulling forward to unpin, pull straight ahead only a fraction of a metre, as turning while pulling forward quickly clips the front corners."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145349-688b82",
+   "role": "train",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course takes a sharp 90-degree bend around 16 metres in. Every failure occurred when the trailer's rear-left corner clipped the inner corner rail during the turn. Do not stay centered or hug the inside before turning; keep the rig wide along the outside right rail first. Initiate the trailer swing early with negative hitch, but immediately track the corridor and clear the corner before cutting tight. When pulling forward to unstick, pull ahead straight or slightly right by at least two metres, because pulling forward while steering left swings the car front into the outer barrier."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "At seven metres progress the course curves tightly right. Reversing straight or with small angles swings the trailer rear-right directly into the outer rail, while pulling forward swung our front-left corner into the opposite barrier. To survive this bend, initiate a deliberate negative hitch early so the trailer arcs smoothly along the corridor curve rather than cutting corners. When pulling forward to unpin, keep the steering strictly centred because the long tractor front has huge lateral sweep in tight barriers. Alternate mirror glances smoothly without lingering."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course opens to the right into the bay, but the starting alley hugs the left rail tightly. Driving straight back without early rightward offset caused repeated left trailer collisions. Steer right immediately from the start to bias into the spacious right side. Keep reverse speed very slow because this short garden cart responds violently to wheel input. When pulling forward to unpin, pull forward substantially with wheels straight or slight right, because short unpinning maneuvers immediately hit the left rail again. Prioritise lateral clearance from the left wall over hitch alignment."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course enters a tight right bend early on. Because the trailer is very long, maintaining even moderate hitch angles causes severe off-tracking: large hitch angles swing the trailer front-left outward into the outer rail, while the tractor rear-left also clips the rail. Prioritise keeping the hitch angle strictly under ten degrees around bends. Steer earlier and more gently, taking the curve wide rather than jackknifing into it. Tip: when pulling forward to unpin, pull straight ahead only a fraction of a metre, as turning while pulling forward quickly clips the front corners."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145414-4dc515",
+   "role": "train",
+   "step": 4,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course takes a sharp 90-degree bend around 16 metres in. Every failure occurred when the trailer's rear-left corner clipped the inner corner rail during the turn. Do not stay centered or hug the inside before turning; keep the rig wide along the outside right rail first. Initiate the trailer swing early with negative hitch, but immediately track the corridor and clear the corner before cutting tight. When pulling forward to unstick, pull ahead straight or slightly right by at least two metres, because pulling forward while steering left swings the car front into the outer barrier."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "At seven metres progress the course curves tightly right. Reversing straight or with small angles swings the trailer rear-right directly into the outer rail, while pulling forward swung our front-left corner into the opposite barrier. To survive this bend, initiate a deliberate negative hitch early so the trailer arcs smoothly along the corridor curve rather than cutting corners. When pulling forward to unpin, keep the steering strictly centred because the long tractor front has huge lateral sweep in tight barriers. Alternate mirror glances smoothly without lingering."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 10.5,
+     "progress": 0.3006,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course opens to the right into the bay, but the starting alley hugs the left rail tightly. Driving straight back without early rightward offset caused repeated left trailer collisions. Steer right immediately from the start to bias into the spacious right side. Keep reverse speed very slow because this short garden cart responds violently to wheel input. When pulling forward to unpin, pull forward substantially with wheels straight or slight right, because short unpinning maneuvers immediately hit the left rail again. Prioritise lateral clearance from the left wall over hitch alignment."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course enters a tight right bend early on. Because the trailer is very long, maintaining even moderate hitch angles causes severe off-tracking: large hitch angles swing the trailer front-left outward into the outer rail, while the tractor rear-left also clips the rail. Prioritise keeping the hitch angle strictly under ten degrees around bends. Steer earlier and more gently, taking the curve wide rather than jackknifing into it. Tip: when pulling forward to unpin, pull straight ahead only a fraction of a metre, as turning while pulling forward quickly clips the front corners."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145520-8d1882",
+   "role": "train",
+   "step": 5,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course takes a sharp 90-degree bend around 16 metres in. Every failure occurred when the trailer's rear-left corner clipped the inner corner rail during the turn. Do not stay centered or hug the inside before turning; keep the rig wide along the outside right rail first. Initiate the trailer swing early with negative hitch, but immediately track the corridor and clear the corner before cutting tight. When pulling forward to unstick, pull ahead straight or slightly right by at least two metres, because pulling forward while steering left swings the car front into the outer barrier."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 10.5,
+     "progress": 0.176,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "At seven metres progress the course curves tightly right. Reversing straight or with small angles swings the trailer rear-right directly into the outer rail, while pulling forward swung our front-left corner into the opposite barrier. To survive this bend, initiate a deliberate negative hitch early so the trailer arcs smoothly along the corridor curve rather than cutting corners. When pulling forward to unpin, keep the steering strictly centred because the long tractor front has huge lateral sweep in tight barriers. Alternate mirror glances smoothly without lingering."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course opens to the right into the bay, but the starting alley hugs the left rail tightly. Driving straight back without early rightward offset caused repeated left trailer collisions. Steer right immediately from the start to bias into the spacious right side. Keep reverse speed very slow because this short garden cart responds violently to wheel input. When pulling forward to unpin, pull forward substantially with wheels straight or slight right, because short unpinning maneuvers immediately hit the left rail again. Prioritise lateral clearance from the left wall over hitch alignment."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course enters a tight right bend early on. Because the trailer is very long, maintaining even moderate hitch angles causes severe off-tracking: large hitch angles swing the trailer front-left outward into the outer rail, while the tractor rear-left also clips the rail. Prioritise keeping the hitch angle strictly under ten degrees around bends. Steer earlier and more gently, taking the curve wide rather than jackknifing into it. Tip: when pulling forward to unpin, pull straight ahead only a fraction of a metre, as turning while pulling forward quickly clips the front corners."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145642-748ad6",
+   "role": "train",
+   "step": 6,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course takes a sharp 90-degree bend around 16 metres in. Every failure occurred when the trailer's rear-left corner clipped the inner corner rail during the turn. Do not stay centered or hug the inside before turning; keep the rig wide along the outside right rail first. Initiate the trailer swing early with negative hitch, but immediately track the corridor and clear the corner before cutting tight. When pulling forward to unstick, pull ahead straight or slightly right by at least two metres, because pulling forward while steering left swings the car front into the outer barrier."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "At seven metres progress the course curves tightly right. Reversing straight or with small angles swings the trailer rear-right directly into the outer rail, while pulling forward swung our front-left corner into the opposite barrier. To survive this bend, initiate a deliberate negative hitch early so the trailer arcs smoothly along the corridor curve rather than cutting corners. When pulling forward to unpin, keep the steering strictly centred because the long tractor front has huge lateral sweep in tight barriers. Alternate mirror glances smoothly without lingering."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.5,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course opens to the right into the bay, but the starting alley hugs the left rail tightly. Driving straight back without early rightward offset caused repeated left trailer collisions. Steer right immediately from the start to bias into the spacious right side. Keep reverse speed very slow because this short garden cart responds violently to wheel input. When pulling forward to unpin, pull forward substantially with wheels straight or slight right, because short unpinning maneuvers immediately hit the left rail again. Prioritise lateral clearance from the left wall over hitch alignment."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course enters a tight right bend early on. Because the trailer is very long, maintaining even moderate hitch angles causes severe off-tracking: large hitch angles swing the trailer front-left outward into the outer rail, while the tractor rear-left also clips the rail. Prioritise keeping the hitch angle strictly under ten degrees around bends. Steer earlier and more gently, taking the curve wide rather than jackknifing into it. Tip: when pulling forward to unpin, pull straight ahead only a fraction of a metre, as turning while pulling forward quickly clips the front corners."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145755-47e308",
+   "role": "transfer",
+   "step": 7,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course takes a sharp 90-degree bend around 16 metres in. Every failure occurred when the trailer's rear-left corner clipped the inner corner rail during the turn. Do not stay centered or hug the inside before turning; keep the rig wide along the outside right rail first. Initiate the trailer swing early with negative hitch, but immediately track the corridor and clear the corner before cutting tight. When pulling forward to unstick, pull ahead straight or slightly right by at least two metres, because pulling forward while steering left swings the car front into the outer barrier."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "At seven metres progress the course curves tightly right. Reversing straight or with small angles swings the trailer rear-right directly into the outer rail, while pulling forward swung our front-left corner into the opposite barrier. To survive this bend, initiate a deliberate negative hitch early so the trailer arcs smoothly along the corridor curve rather than cutting corners. When pulling forward to unpin, keep the steering strictly centred because the long tractor front has huge lateral sweep in tight barriers. Alternate mirror glances smoothly without lingering."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course opens to the right into the bay, but the starting alley hugs the left rail tightly. Driving straight back without early rightward offset caused repeated left trailer collisions. Steer right immediately from the start to bias into the spacious right side. Keep reverse speed very slow because this short garden cart responds violently to wheel input. When pulling forward to unpin, pull forward substantially with wheels straight or slight right, because short unpinning maneuvers immediately hit the left rail again. Prioritise lateral clearance from the left wall over hitch alignment."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "notebook as rewritten by driver 1",
+       "text": "The course enters a tight right bend early on. Because the trailer is very long, maintaining even moderate hitch angles causes severe off-tracking: large hitch angles swing the trailer front-left outward into the outer rail, while the tractor rear-left also clips the rail. Prioritise keeping the hitch angle strictly under ten degrees around bends. Steer earlier and more gently, taking the curve wide rather than jackknifing into it. Tip: when pulling forward to unpin, pull straight ahead only a fraction of a metre, as turning while pulling forward quickly clips the front corners."
+      }
+     ],
+     "note": null
+    }
+   ]
+  }
+ ]
+}

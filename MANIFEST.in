@@ -1,0 +1,8 @@
+include LICENSE README.md CITATION.cff CHANGELOG.md CONTRIBUTING.md
+recursive-include viewer *.html *.js *.css LICENSE
+prune viewer/mockup
+recursive-include docs *.md
+exclude docs/PUBLIC_README.md
+recursive-include examples *.py
+recursive-include tools *.py
+recursive-exclude * __pycache__

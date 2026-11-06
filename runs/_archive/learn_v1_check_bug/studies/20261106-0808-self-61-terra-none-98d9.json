@@ -1,0 +1,215 @@
+{
+ "study": "20261106-0808-self-61-terra-none-98d9",
+ "model": "codex:gpt-6.1-terra",
+ "condition": "self",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 2,
+ "steps": 3,
+ "policy": {
+  "numbers": "none",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 1,
+ "runs": [
+  {
+   "run_id": "20261106-080842-0b9164",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 125.25,
+     "progress": 0.3182,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The straight approach was easy. The trailer rear repeatedly struck the left rail at the bend, and the vehicle front struck the right rail during recovery. Position for the bend early, use the camera to find the opening, and monitor clearance at both ends. Avoid late steering changes and long forward recoveries in the narrow approach. This short trailer reacts quickly, so make gradual corrections and straighten by following its swing.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The straight approach was easy, but the trailer rear repeatedly struck the left rail at the bend; the vehicle front also struck the right rail during recovery. Start positioning for the bend early, use the camera to identify the opening, and monitor both trailer and vehicle clearance. Avoid repeated late steering changes and long forward recoveries in the narrow approach. This short trailer reacts quickly, so make gradual corrections and straighten by following its swing.",
+       "The straight approach was easy. The trailer rear repeatedly struck the left rail at the bend, and the vehicle front struck the right rail during recovery. Position for the bend early, use the camera to find the opening, and monitor clearance at both ends. Avoid late steering changes and long forward recoveries in the narrow approach. This short trailer reacts quickly, so make gradual corrections and straighten by following its swing."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 180.6,
+     "progress": 0.2781,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The trailer repeatedly hit the right rail at the first bend because the leftward correction began too late. Pulling forward with right steering also struck the vehicle's front corner. Start the trailer's leftward turn early, watch clearance at both ends, and follow the trailer promptly to limit the hitch angle. This short trailer responds quickly, so use gentle steering and reverse slowly.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The trailer repeatedly hit the right rail at the first bend; corrections began too late, and pulling forward with right steering then struck the vehicle's front-right corner. Begin the leftward trailer turn early, watch both trailer and vehicle clearance, and follow the trailer promptly to prevent excessive hitch angle. This short trailer responds quickly, so use gentle steering and reverse slowly.",
+       "The trailer repeatedly hit the right rail at the first bend because the leftward correction began too late. Pulling forward with right steering also struck the vehicle's front corner. Start the trailer's leftward turn early, watch clearance at both ends, and follow the trailer promptly to limit the hitch angle. This short trailer responds quickly, so use gentle steering and reverse slowly."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 187.35,
+     "progress": 0.7649,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The straight start reaches a bend where the cart's rear left corner repeatedly strikes the rail. Begin the bend early, watch both rails and the bay, and correct the path before clearance becomes tight. Repeated short pull ups near the obstruction did not solve the approach. The short cart reacts quickly, so use small, slow steering corrections and follow it promptly to prevent folding.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The straight start reaches a bend where the cart's rear-left corner repeatedly strikes the rail. Begin the bend early, watch both rails and the bay, and correct the cart's path before clearance becomes tight; repeated short pull-ups near the obstruction did not solve the approach. The mower's short cart reacts quickly, so use small, slow steering corrections and follow the cart promptly to prevent it folding.",
+       "The straight start reaches a bend where the cart's rear left corner repeatedly strikes the rail. Begin the bend early, watch both rails and the bay, and correct the path before clearance becomes tight. Repeated short pull ups near the obstruction did not solve the approach. The short cart reacts quickly, so use small, slow steering corrections and follow it promptly to prevent folding."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 356.85,
+     "progress": 0.3314,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The trailer rear repeatedly struck the left rail at the bend. An earlier turn helped, but excessive articulation brought the cab into the rails. Watch the camera and cab corners and correct before clearance becomes critical. This long trailer needs an early, gradual turn and progressive straightening.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains a code keyword ('while there')",
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The trailer rear repeatedly struck the left rail at the bend; starting the turn earlier helped, but aggressive articulation then brought the cab into the rails. Watch the camera and both cab corners, and adjust before clearance becomes critical. This long semi-trailer needs an early, gradual turn and time to follow the cab; straighten progressively while there is still room.",
+       "The trailer rear repeatedly struck the left rail at the bend. An earlier turn helped, but excessive articulation brought the cab into the rails. Watch the camera and cab corners and correct before clearance becomes critical. This long trailer needs an early, gradual turn and progressive straightening."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-080842-a5808e",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 120.6,
+     "progress": 0.3082,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The straight opening was easy. At the bend the trailer rear left struck the inside rail, and repeated pull ups trapped the car front right. Start turning earlier and watch the camera for the rail closing across the trailer path. Correct before clearance becomes critical. This short trailer reacts quickly, yet its rear needs room to move, so slow down early and follow the swing before it grows.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains a code keyword ('while repeated')",
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The straight opening was easy, but the trailer's rear left met the inside rail at the bend, while repeated pull-ups trapped the car's front right. Begin the bend earlier, watch the camera for the rail closing across the trailer's path, and correct before clearance becomes critical. On this short trailer, steering changes need time and distance to move the rear; slow down early and follow the swing before it grows.",
+       "The straight opening was easy. At the bend the trailer rear left struck the inside rail, and repeated pull ups trapped the car front right. Start turning earlier and watch the camera for the rail closing across the trailer path. Correct before clearance becomes critical. This short trailer reacts quickly, yet its rear needs room to move, so slow down early and follow the swing before it grows."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 215.05,
+     "progress": 0.3531,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The trailer repeatedly hit the right rail through the bend. Starting the leftward turn earlier helped, but holding a fixed trailer angle did not provide enough clearance. Watch the rails and trailer rear, position early, and adjust to the actual course. Check front clearance before pulling forward, since the vehicle also hit the right rail during recovery. This trailer responds quickly, so make small corrections slowly and straighten before the hitch angle grows.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The trailer repeatedly hit the right rail through the bend; a stronger early leftward turn helped but did not provide enough clearance. Watch the rails and trailer rear continuously, begin positioning early, and adjust to the actual course rather than holding a fixed hitch angle. Pulling forward with right steering also struck the vehicle\u2019s front right; check front clearance during recovery. This trailer responds quickly, so make small corrections slowly and straighten before the hitch angle grows.",
+       "The trailer repeatedly hit the right rail through the bend. Starting the leftward turn earlier helped, but holding a fixed trailer angle did not provide enough clearance. Watch the rails and trailer rear, position early, and adjust to the actual course. Check front clearance before pulling forward, since the vehicle also hit the right rail during recovery. This trailer responds quickly, so make small corrections slowly and straighten before the hitch angle grows."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 134.95,
+     "progress": 0.686,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The cart repeatedly struck its rear left corner at bends because straight hitch control ignored the course and corrections began too late. Pulling forward then struck the mower's front left corner. Watch both ends and the rails, begin turns early, and straighten before the bay. This short cart reacts quickly, so steer gently and reverse slowly.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The cart repeatedly struck its rear left corner at bends; holding the hitch straight ignored the course, and late corrections left too little room. Pulling forward then struck the mower's front left corner. Watch both ends and the rails, begin turns early, and straighten before the bay. This short cart reacts quickly, so use gentle steering and reverse slowly.",
+       "The cart repeatedly struck its rear left corner at bends because straight hitch control ignored the course and corrections began too late. Pulling forward then struck the mower's front left corner. Watch both ends and the rails, begin turns early, and straighten before the bay. This short cart reacts quickly, so steer gently and reverse slowly."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 332.75,
+     "progress": 0.331,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The trailer repeatedly struck its rear left corner at the bend. Late corrections and repeated resets also put the cab front left corner into the rail. Read the camera and mirrors early, leave clearance on both sides, and set up the bend well before the rail closes in. Watch the cab as well as the trailer during any pull up. The long semi trailer responds slowly, so make small early corrections and allow room for the cab to follow.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The trailer repeatedly struck its rear-left corner at the bend; late corrections and repeated resets also put the cab\u2019s front-left corner into the rail. Read the camera and mirrors early, leave clearance on both sides, and set up the bend well before the rail closes in. Watch the cab as well as the trailer during any pull-up. The long semi-trailer responds slowly, so make small early corrections and allow room for the cab to follow.",
+       "The trailer repeatedly struck its rear left corner at the bend. Late corrections and repeated resets also put the cab front left corner into the rail. Read the camera and mirrors early, leave clearance on both sides, and set up the bend well before the rail closes in. Watch the cab as well as the trailer during any pull up. The long semi trailer responds slowly, so make small early corrections and allow room for the cab to follow."
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

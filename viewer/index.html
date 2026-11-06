@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trailer Relay</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js", "three/addons/": "./vendor/addons/" } }
+</script>
+</head>
+<body data-view="broadcast">
+<canvas id="scene"></canvas>
+
+<div id="hud">
+  <!-- in-scene chips: rings, callouts, thinking bubbles and name flags projected onto the rigs every frame -->
+  <div id="chips" aria-hidden="true"></div>
+
+  <nav class="topnav">
+    <div class="viewseg" id="views" role="tablist" aria-label="View">
+      <button data-view="results" role="tab" title="Results: scoreboard, how the models fail, learning from notes (R)">Results</button>
+      <button data-view="broadcast" role="tab" title="Watch the selected runs drive the same courses together, in 3D (B)">Broadcast</button>
+      <button data-view="grid" role="tab" title="Every selected run as its own small map, side by side (G)">Grid</button>
+      <button data-view="inspect" role="tab" title="One run up close: what the driver saw, and what the model wrote (I)">Inspect</button>
+    </div>
+    <div class="relay-title" id="relay-title">—</div>
+    <div class="bc-hint" id="bc-hint" hidden></div>
+  </nav>
+
+  <div class="card clock" id="clock">
+    <div class="clock-head"><span class="eyebrow" id="clock-eyebrow">Race clock</span><button class="live-pill" id="live-pill" title="Jump to the newest moment of the runs still driving" hidden><i></i>LIVE</button></div>
+    <div class="clock-main"><span id="clock-time">0:00.0</span></div>
+    <div class="clock-sub"><span id="clock-of">of 0:00</span> · <span id="clock-speed">10×</span></div>
+  </div>
+
+  <!-- BROADCAST -->
+  <div class="card board" id="board">
+    <div class="board-head"><span class="eyebrow">Standings</span><span class="eyebrow dim" id="board-leg"></span></div>
+    <ol id="board-rows"></ol>
+    <button class="board-more" id="board-more" hidden></button>
+  </div>
+
+  <aside class="card lower" id="radio">
+    <div class="lower-head">
+      <span class="swatch" id="radio-swatch"></span>
+      <div class="lower-who">
+        <div class="radio-name" id="radio-name">—</div>
+        <div class="radio-leg" id="radio-leg">—</div>
+      </div>
+      <span class="chip THINKING" id="radio-think" hidden></span>
+      <span class="chip" id="radio-status">—</span>
+      <button class="x more" id="to-inspect" title="Inspect this run (I)" aria-label="Inspect this run">↗</button>
+    </div>
+    <div class="lower-stats">
+      <svg viewBox="0 0 120 70" class="gauge" id="hitch-gauge" aria-label="hitch angle">
+        <path class="g-track" d="M10 62 A50 50 0 0 1 110 62"/>
+        <path class="g-crit" id="g-crit-l"/><path class="g-crit" id="g-crit-r"/>
+        <path class="g-mech" id="g-mech-l"/><path class="g-mech" id="g-mech-r"/>
+        <line class="g-needle" id="g-needle" x1="60" y1="62" x2="60" y2="16"/>
+        <circle cx="60" cy="62" r="4" class="g-hub"/>
+      </svg>
+      <div class="stat" title="Angle between the vehicle and its trailer. Past the critical angle the trailer cannot be straightened by reversing: a jackknife."><span class="eyebrow">Hitch</span><b class="num" id="hitch-val">0.0°</b></div>
+      <div class="stat" title="Front-wheel steering angle"><span class="eyebrow">Steer</span><b class="num" id="steer-val">0.0°</b></div>
+      <div class="stat" id="speed-read" hidden><span class="eyebrow" id="speed-dir">Speed</span><b class="num" id="speed-val">0.0 m/s</b></div>
+      <div class="stat" title="Times the rig touched the rail (the course edge) on this leg"><span class="eyebrow">Rail hits</span><b class="num" id="touch-val">0</b></div>
+      <div class="stat" title="Changes between forward and reverse on this leg"><span class="eyebrow">Gear chg</span><b class="num" id="shuttle-val">0</b></div>
+      <div class="stat wide" id="gaze-read" hidden><span class="eyebrow">Looking</span><b class="num" id="gaze-val">—</b></div>
+    </div>
+    <div class="lower-radio">
+      <div class="eyebrow" id="radio-eyebrow" title="What the model said and decided, as it drove">Driver radio</div>
+      <div class="radio-text" id="radio-text">—</div>
+      <div class="radio-cmd" id="radio-cmd"></div>
+    </div>
+  </aside>
+
+  <!-- RESULTS (the landing view): tables and charts from runs/results.json -->
+  <section class="results" id="results-view" hidden></section>
+
+  <!-- GRID -->
+  <section class="panel" id="grid-view" hidden>
+    <div class="grid-tiles" id="grid-tiles"></div>
+  </section>
+
+  <!-- INSPECT -->
+  <section class="panel" id="inspect-view" hidden>
+    <div class="insp">
+      <div class="card insp-map">
+        <div class="insp-head">
+          <span class="swatch" id="insp-swatch"></span>
+          <div class="insp-who"><div class="insp-name" id="insp-name">—</div><div class="insp-var" id="insp-var"></div></div>
+          <span class="sp"></span>
+          <span id="insp-chips"></span>
+          <button class="btn sm" id="insp-zoom" title="Zoom: rig / whole course">Whole course</button>
+          <select id="insp-run" aria-label="Run to inspect"></select>
+        </div>
+        <svg id="insp-svg" preserveAspectRatio="xMidYMid meet"></svg>
+        <div class="legend" id="insp-legend"></div>
+      </div>
+      <div class="card insp-log">
+        <div class="insp-notes" id="insp-notes" hidden></div>
+        <div class="log-head"><span class="eyebrow" id="insp-log-title">Decision log</span></div>
+        <div class="log-body" id="insp-log"></div>
+      </div>
+      <div class="card insp-charts"><svg id="insp-charts"></svg></div>
+    </div>
+  </section>
+
+  <footer class="dock">
+    <div class="card transport">
+      <button id="play" class="btn" title="Play / pause (space)" aria-label="Play">▶</button>
+      <div class="speeds" id="speeds"></div>
+      <div class="scrub-wrap">
+        <div class="ticks" id="ticks"></div>
+        <i class="playhead" id="playhead"></i>
+        <input type="range" id="scrub" min="0" max="1000" step="1" value="0" aria-label="Timeline">
+      </div>
+      <div class="seg" id="clockmode" role="group" aria-label="Clock">
+        <button class="btn sm" data-clock="relay" title="Relay clock: each run drives its courses back to back, like a relay race (H)">Relay</button>
+        <button class="btn sm" data-clock="heats" title="Heats: everyone starts the same course together at 0:00 (H)">Heats</button>
+      </div>
+      <div class="seg" id="heatlegs" hidden></div>
+      <div class="seg cams" id="cams">
+        <button class="btn sm" data-cam="follow" title="Camera follows the selected rig from above (F)">Follow</button>
+        <button class="btn sm" data-cam="chase" title="Camera behind the selected rig (C)">Chase</button>
+        <button class="btn sm" data-cam="overview" title="Camera shows the whole course (O)">Overview</button>
+      </div>
+      <div class="seg">
+        <button class="btn sm" id="runs-btn" title="Choose runs and filters (P)">Runs <span class="count" id="runs-count"></span></button>
+        <button class="btn sm" id="compare-btn" title="Averages per model and set-up (T)">Compare</button>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="card runs-panel" id="runs-panel" hidden>
+    <div class="rp-head">
+      <span class="eyebrow">Runs</span>
+      <span class="eyebrow dim" id="rp-count"></span>
+      <button class="x" id="rp-close" aria-label="Close run picker">×</button>
+    </div>
+    <div class="rp-sub" id="relay-sub">Separate runs, same courses, replayed together</div>
+    <div class="picker" id="picker" hidden>
+      <select id="relay-select" aria-label="Courses" title="Runs are grouped by the courses they drove"></select>
+    </div>
+    <input type="search" class="rp-search" id="rp-search" placeholder="Search runs: Sol, medium, notebook, run id…" aria-label="Search runs">
+    <div class="facets" id="facets"></div>
+    <div class="rp-actions">
+      <button class="btn sm" id="sel-all">All</button>
+      <button class="btn sm" id="sel-none">None</button>
+      <button class="btn sm" id="sel-match" title="Show exactly the runs that match the filters and search">Show matching</button>
+      <button class="btn sm" id="sel-clear" title="Clear the filters">Clear filters</button>
+    </div>
+    <ul class="run-list" id="run-list"></ul>
+  </aside>
+
+  <div class="compare-wrap" id="compare" hidden>
+    <div class="card compare" role="dialog" aria-label="Compare set-ups">
+      <div class="cmp-head">
+        <div>
+          <div class="eyebrow">Compare set-ups</div>
+          <h2 id="cmp-title">—</h2>
+          <div class="sub" id="cmp-sub"></div>
+        </div>
+        <button class="x" id="cmp-close" aria-label="Close comparison">×</button>
+      </div>
+      <div class="cmp-scroll"><table class="cmp" id="compare-table"></table></div>
+      <div class="cmp-foot" id="cmp-foot">Means per set-up · adjusted time includes rail-touch and jackknife penalties · best value in each column highlighted</div>
+    </div>
+  </div>
+  <div class="empty-state" id="empty" hidden>
+    <h2>No runs yet</h2>
+    <p>Run <code>python -m relay run --models openai:gpt-6-luna autopilot</code>, then reload.</p>
+  </div>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,614 @@
+{
+ "study": "20261106-1442-pool-gemini-38-flash-low-allow-48eb",
+ "model": "agy:gemini-3.8-flash-low",
+ "condition": "pool",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 3,
+ "steps": 2,
+ "policy": {
+  "numbers": "allow",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-144239-30225b",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 102.75,
+     "progress": 0.2999,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "We failed due to repeated rear-left and front-right corner clipping in the bend. When reversing into an L-turn, initiate the trailer curve much earlier with small, smooth steering inputs instead of waiting for proximity warnings. Pulling forward inside the narrow corridor easily swings the car front into the outer barrier. Prioritise staying centered from the start to avoid ever needing forward recovery shunts. For this car and box trailer combo, keep reverse speed low and use gentle steering adjustments, as aggressive counter-steering whips the long front overhang into the rails.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We failed due to repeated rear-left and front-right corner clipping in the bend. When reversing into an L-turn, initiate the trailer curve much earlier with small, smooth steering inputs instead of waiting for proximity warnings. Pulling forward inside the narrow corridor easily swings the car front into the outer barrier. Prioritise staying centered from the start to avoid ever needing forward recovery shunts. For this car and box trailer combo, keep reverse speed low and use gentle steering adjustments, as aggressive counter-steering whips the long front overhang into the rails."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 134.95,
+     "progress": 0.1886,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The initial curve requires setting up an aggressive trailer swing much earlier. We repeatedly touched the inner right rail because the tractor stayed too far right while reversing, and attempts to pull forward clipped the outer left rail. Prioritise tracking the actual corridor center rather than keeping the tractor straight, and initiate the bend early. With this long overhang, remember that swinging the wheels pulls the tractor nose widely across the track.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The initial curve requires setting up an aggressive trailer swing much earlier. We repeatedly touched the inner right rail because the tractor stayed too far right while reversing, and attempts to pull forward clipped the outer left rail. Prioritise tracking the actual corridor center rather than keeping the tractor straight, and initiate the bend early. With this long overhang, remember that swinging the wheels pulls the tractor nose widely across the track."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 200.15,
+     "progress": 0.4263,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The cart is extremely twitchy due to its very short axle. Our fatal mistake was repeatedly clipping the left rail because the alley curves to the right, which demanded establishing clearance on the right much earlier and more aggressively. When pulling forward to unstick, steer firmly right to give the trailer enough buffer. Once reversing, keep speeds crawl-slow and use very gentle steering adjustments, as even small overcorrections cause the rear to swing wide into the outer wall. Prioritise keeping the cart body well off the inner corner rather than driving straight.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The cart is extremely twitchy due to its very short axle. Our fatal mistake was repeatedly clipping the left rail because the alley curves to the right, which demanded establishing clearance on the right much earlier and more aggressively. When pulling forward to unstick, steer firmly right to give the trailer enough buffer. Once reversing, keep speeds crawl-slow and use very gentle steering adjustments, as even small overcorrections cause the rear to swing wide into the outer wall. Prioritise keeping the cart body well off the inner corner rather than driving straight."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 215.0,
+     "progress": 0.4083,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The bend enters a sharp turn around thirty-three metres where the trailer rear-left consistently cuts too close to the outside rail. Prioritise setting up a wide line early before the corner begins rather than trying to correct lateral offset mid-turn. When pulling forward to unpin, watch the cab's long front overhang to avoid clipping the outside barrier. For this long semi combination, remember that reversing adjustments take many metres to propagate; initiate the swing into the bend well in advance and keep hitch angles moderate to avoid swinging corners wide.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The bend enters a sharp turn around thirty-three metres where the trailer rear-left consistently cuts too close to the outside rail. Prioritise setting up a wide line early before the corner begins rather than trying to correct lateral offset mid-turn. When pulling forward to unpin, watch the cab's long front overhang to avoid clipping the outside barrier. For this long semi combination, remember that reversing adjustments take many metres to propagate; initiate the swing into the bend well in advance and keep hitch angles moderate to avoid swinging corners wide."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-144239-564552",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 108.2,
+     "progress": 0.2285,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "We cut the inside corner too tightly and repeatedly clipped the trailer's rear-left corner, then hit the right rail whenever pulling forward to recover. The key priority is taking a much wider entry line along the outer rail before initiating the bend, leaving ample clearance for the trailer's inner pivot. For this vehicle, the front overhang swings wide when turning forward, so pull forward only while steering toward open space. Drive slowly and smoothly in reverse to let the steering keep pace without violent corrections.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We cut the inside corner too tightly and repeatedly clipped the trailer's rear-left corner, then hit the right rail whenever pulling forward to recover. The key priority is taking a much wider entry line along the outer rail before initiating the bend, leaving ample clearance for the trailer's inner pivot. For this vehicle, the front overhang swings wide when turning forward, so pull forward only while steering toward open space. Drive slowly and smoothly in reverse to let the steering keep pace without violent corrections."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 131.9,
+     "progress": 0.1935,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "We repeatedly clipped the right rail with the trailer rear-right corner around eight to ten metres in because the initial corridor curves left, demanding earlier, smoother trailer entry rather than sudden jack angles that swing the body wide. When pulling forward to unpin, watch the long front overhang, which easily strikes the opposite rail. Prioritise surveying both mirrors early to map corridor bounds instead of staring down one side. For this tractor, keep hitch angles small and speed low, correcting early so the trailer never drifts into the outer wall.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We repeatedly clipped the right rail with the trailer rear-right corner around eight to ten metres in because the initial corridor curves left, demanding earlier, smoother trailer entry rather than sudden jack angles that swing the body wide. When pulling forward to unpin, watch the long front overhang, which easily strikes the opposite rail. Prioritise surveying both mirrors early to map corridor bounds instead of staring down one side. For this tractor, keep hitch angles small and speed low, correcting early so the trailer never drifts into the outer wall."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 108.8,
+     "progress": 0.5558,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The narrow corridor turns right into the bay, making the left rail extremely dangerous. We accumulated touches along our left side because aggressive steering swings the vehicle body outward while the short trailer jackknifes very quickly. Prioritise staying well clear of the outer rail early and keeping the hitch angle modest. For this mower and cart, small steering inputs and slow reverse speeds are critical to keep the short trailer controllable without clipping rails.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The narrow corridor turns right into the bay, making the left rail extremely dangerous. We accumulated touches along our left side because aggressive steering swings the vehicle body outward while the short trailer jackknifes very quickly. Prioritise staying well clear of the outer rail early and keeping the hitch angle modest. For this mower and cart, small steering inputs and slow reverse speeds are critical to keep the short trailer controllable without clipping rails."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 218.25,
+     "progress": 0.3399,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The bend in this L-turn is sharp, and entering it too straight caused repeated rear-left trailer rail clips around the corner. Initiate trailer articulation well before reaching the apex rather than waiting for the corridor to bend, and keep a wider buffer on the inside apex rail. The long combination cuts corners tightly due to off-tracking. When clearing touches, prioritize small, gentle forward pulls that do not swing the front corners into the outer barriers. For this vehicle, the twenty degree steering rate means hitch adjustments take significant time, so plan angle changes early.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The bend in this L-turn is sharp, and entering it too straight caused repeated rear-left trailer rail clips around the corner. Initiate trailer articulation well before reaching the apex rather than waiting for the corridor to bend, and keep a wider buffer on the inside apex rail. The long combination cuts corners tightly due to off-tracking. When clearing touches, prioritize small, gentle forward pulls that do not swing the front corners into the outer barriers. For this vehicle, the twenty degree steering rate means hitch adjustments take significant time, so plan angle changes early."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-144239-514693",
+   "role": "train",
+   "step": 1,
+   "member": 2,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 136.5,
+     "progress": 0.5555,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "During the tight right bend, steering right while reversing swung our front overhang wide into the left rail, while trying to pull forward in that narrow pinch repeatedly clipped the same corner. Prioritise corridor clearance for both front corners alongside trailer guidance. For this car, limit maximum steering angle to prevent front swing-out, and maintain extra lateral buffer before entering turns so recovery forward pulls have room to track safely.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "During the tight right bend, steering right while reversing swung our front overhang wide into the left rail, while trying to pull forward in that narrow pinch repeatedly clipped the same corner. Prioritise corridor clearance for both front corners alongside trailer guidance. For this car, limit maximum steering angle to prevent front swing-out, and maintain extra lateral buffer before entering turns so recovery forward pulls have room to track safely."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 157.15,
+     "progress": 0.1822,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Repeatedly touched the inside rail around nine meters in due to reacting too late to the curve. Once pinned, pulling forward with aggressive steering jackknifed the combination and clipped front corners in the narrow corridor. Prioritise staying perfectly centred before the first bend and anticipating curvature smoothly with small hitch angles rather than sharp corrections. For this tractor and tipping trailer, keep reverse speed low and recover from any rail touch by pulling forward with nearly straight steering to avoid scissor contact.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Repeatedly touched the inside rail around nine meters in due to reacting too late to the curve. Once pinned, pulling forward with aggressive steering jackknifed the combination and clipped front corners in the narrow corridor. Prioritise staying perfectly centred before the first bend and anticipating curvature smoothly with small hitch angles rather than sharp corrections. For this tractor and tipping trailer, keep reverse speed low and recover from any rail touch by pulling forward with nearly straight steering to avoid scissor contact."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 165.6,
+     "progress": 0.5446,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The alley bends or offsets sharply to the right toward the bay, so hug the centerline and bias toward the right side early. Repeatedly pulling forward rightward without looking ahead caused front-corner rail collisions. Prioritise scanning both sides of the corridor rather than staring only rearward. A short garden cart reacts violently to steering inputs while reversing: keep reverse speeds very low, limit target hitch angles strictly, and use tiny steering corrections so trailer corners do not swing out into the rails.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The alley bends or offsets sharply to the right toward the bay, so hug the centerline and bias toward the right side early. Repeatedly pulling forward rightward without looking ahead caused front-corner rail collisions. Prioritise scanning both sides of the corridor rather than staring only rearward. A short garden cart reacts violently to steering inputs while reversing: keep reverse speeds very low, limit target hitch angles strictly, and use tiny steering corrections so trailer corners do not swing out into the rails."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "FINISHED",
+     "time": 83.25,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": {
+      "text": "Reversing smoothly in a single continuous push worked perfectly. Keep gaze locked on the reversing camera screen to maintain clear vision of the corridor walls and painted markings. Center the trailer continuously between the left and right barrier detections while reversing at a steady pace. As you near the bay, gradually ease off the speed and steer towards zero hitch angle to ensure the trailer docks straight. Tip for the semi: long wheelbase trailers react predictably, so avoid abrupt wheel turns and let gentle steering adjustments guide the trailer through the curve.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Reversing smoothly in a single continuous push worked perfectly. Keep gaze locked on the reversing camera screen to maintain clear vision of the corridor walls and painted markings. Center the trailer continuously between the left and right barrier detections while reversing at a steady pace. As you near the bay, gradually ease off the speed and steer towards zero hitch angle to ensure the trailer docks straight. Tip for the semi: long wheelbase trailers react predictably, so avoid abrupt wheel turns and let gentle steering adjustments guide the trailer through the curve."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145053-c91be8",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 26.1,
+     "progress": 0.2041,
+     "touches": 3,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "We failed due to repeated rear-left and front-right corner clipping in the bend. When reversing into an L-turn, initiate the trailer curve much earlier with small, smooth steering inputs instead of waiting for proximity warnings. Pulling forward inside the narrow corridor easily swings the car front into the outer barrier. Prioritise staying centered from the start to avoid ever needing forward recovery shunts. For this car and box trailer combo, keep reverse speed low and use gentle steering adjustments, as aggressive counter-steering whips the long front overhang into the rails."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We cut the inside corner too tightly and repeatedly clipped the trailer's rear-left corner, then hit the right rail whenever pulling forward to recover. The key priority is taking a much wider entry line along the outer rail before initiating the bend, leaving ample clearance for the trailer's inner pivot. For this vehicle, the front overhang swings wide when turning forward, so pull forward only while steering toward open space. Drive slowly and smoothly in reverse to let the steering keep pace without violent corrections."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "During the tight right bend, steering right while reversing swung our front overhang wide into the left rail, while trying to pull forward in that narrow pinch repeatedly clipped the same corner. Prioritise corridor clearance for both front corners alongside trailer guidance. For this car, limit maximum steering angle to prevent front swing-out, and maintain extra lateral buffer before entering turns so recovery forward pulls have room to track safely."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 37.3,
+     "progress": 0.2978,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The initial curve requires setting up an aggressive trailer swing much earlier. We repeatedly touched the inner right rail because the tractor stayed too far right while reversing, and attempts to pull forward clipped the outer left rail. Prioritise tracking the actual corridor center rather than keeping the tractor straight, and initiate the bend early. With this long overhang, remember that swinging the wheels pulls the tractor nose widely across the track."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We repeatedly clipped the right rail with the trailer rear-right corner around eight to ten metres in because the initial corridor curves left, demanding earlier, smoother trailer entry rather than sudden jack angles that swing the body wide. When pulling forward to unpin, watch the long front overhang, which easily strikes the opposite rail. Prioritise surveying both mirrors early to map corridor bounds instead of staring down one side. For this tractor, keep hitch angles small and speed low, correcting early so the trailer never drifts into the outer wall."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "Repeatedly touched the inside rail around nine meters in due to reacting too late to the curve. Once pinned, pulling forward with aggressive steering jackknifed the combination and clipped front corners in the narrow corridor. Prioritise staying perfectly centred before the first bend and anticipating curvature smoothly with small hitch angles rather than sharp corrections. For this tractor and tipping trailer, keep reverse speed low and recover from any rail touch by pulling forward with nearly straight steering to avoid scissor contact."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 74.4,
+     "progress": 0.3448,
+     "touches": 5,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The cart is extremely twitchy due to its very short axle. Our fatal mistake was repeatedly clipping the left rail because the alley curves to the right, which demanded establishing clearance on the right much earlier and more aggressively. When pulling forward to unstick, steer firmly right to give the trailer enough buffer. Once reversing, keep speeds crawl-slow and use very gentle steering adjustments, as even small overcorrections cause the rear to swing wide into the outer wall. Prioritise keeping the cart body well off the inner corner rather than driving straight."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "The narrow corridor turns right into the bay, making the left rail extremely dangerous. We accumulated touches along our left side because aggressive steering swings the vehicle body outward while the short trailer jackknifes very quickly. Prioritise staying well clear of the outer rail early and keeping the hitch angle modest. For this mower and cart, small steering inputs and slow reverse speeds are critical to keep the short trailer controllable without clipping rails."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The alley bends or offsets sharply to the right toward the bay, so hug the centerline and bias toward the right side early. Repeatedly pulling forward rightward without looking ahead caused front-corner rail collisions. Prioritise scanning both sides of the corridor rather than staring only rearward. A short garden cart reacts violently to steering inputs while reversing: keep reverse speeds very low, limit target hitch angles strictly, and use tiny steering corrections so trailer corners do not swing out into the rails."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "FINISHED",
+     "time": 97.35,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The bend enters a sharp turn around thirty-three metres where the trailer rear-left consistently cuts too close to the outside rail. Prioritise setting up a wide line early before the corner begins rather than trying to correct lateral offset mid-turn. When pulling forward to unpin, watch the cab's long front overhang to avoid clipping the outside barrier. For this long semi combination, remember that reversing adjustments take many metres to propagate; initiate the swing into the bend well in advance and keep hitch angles moderate to avoid swinging corners wide."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "The bend in this L-turn is sharp, and entering it too straight caused repeated rear-left trailer rail clips around the corner. Initiate trailer articulation well before reaching the apex rather than waiting for the corridor to bend, and keep a wider buffer on the inside apex rail. The long combination cuts corners tightly due to off-tracking. When clearing touches, prioritize small, gentle forward pulls that do not swing the front corners into the outer barriers. For this vehicle, the twenty degree steering rate means hitch adjustments take significant time, so plan angle changes early."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "Reversing smoothly in a single continuous push worked perfectly. Keep gaze locked on the reversing camera screen to maintain clear vision of the corridor walls and painted markings. Center the trailer continuously between the left and right barrier detections while reversing at a steady pace. As you near the bay, gradually ease off the speed and steer towards zero hitch angle to ensure the trailer docks straight. Tip for the semi: long wheelbase trailers react predictably, so avoid abrupt wheel turns and let gentle steering adjustments guide the trailer through the curve."
+      }
+     ],
+     "note": {
+      "text": "Reversing continuously while locked onto the camera screen worked flawlessly. Prioritise corridor centering from the rear camera walls and gently transition to tracking the painted bay corners once they appear. Easing speed and guiding hitch angle toward straight as you enter the final stretch ensures an aligned dock. For this semi, steering rate is relatively slow so let smooth, moderate hitch angles do the work and avoid overcorrecting.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Reversing continuously while locked onto the camera screen worked flawlessly. Prioritise corridor centering from the rear camera walls and gently transition to tracking the painted bay corners once they appear. Easing speed and guiding hitch angle toward straight as you enter the final stretch ensures an aligned dock. For this semi, steering rate is relatively slow so let smooth, moderate hitch angles do the work and avoid overcorrecting."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145053-5c1d2d",
+   "role": "train",
+   "step": 2,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 24.5,
+     "progress": 0.3752,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "We failed due to repeated rear-left and front-right corner clipping in the bend. When reversing into an L-turn, initiate the trailer curve much earlier with small, smooth steering inputs instead of waiting for proximity warnings. Pulling forward inside the narrow corridor easily swings the car front into the outer barrier. Prioritise staying centered from the start to avoid ever needing forward recovery shunts. For this car and box trailer combo, keep reverse speed low and use gentle steering adjustments, as aggressive counter-steering whips the long front overhang into the rails."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We cut the inside corner too tightly and repeatedly clipped the trailer's rear-left corner, then hit the right rail whenever pulling forward to recover. The key priority is taking a much wider entry line along the outer rail before initiating the bend, leaving ample clearance for the trailer's inner pivot. For this vehicle, the front overhang swings wide when turning forward, so pull forward only while steering toward open space. Drive slowly and smoothly in reverse to let the steering keep pace without violent corrections."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "During the tight right bend, steering right while reversing swung our front overhang wide into the left rail, while trying to pull forward in that narrow pinch repeatedly clipped the same corner. Prioritise corridor clearance for both front corners alongside trailer guidance. For this car, limit maximum steering angle to prevent front swing-out, and maintain extra lateral buffer before entering turns so recovery forward pulls have room to track safely."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 72.9,
+     "progress": 0.2174,
+     "touches": 4,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The initial curve requires setting up an aggressive trailer swing much earlier. We repeatedly touched the inner right rail because the tractor stayed too far right while reversing, and attempts to pull forward clipped the outer left rail. Prioritise tracking the actual corridor center rather than keeping the tractor straight, and initiate the bend early. With this long overhang, remember that swinging the wheels pulls the tractor nose widely across the track."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We repeatedly clipped the right rail with the trailer rear-right corner around eight to ten metres in because the initial corridor curves left, demanding earlier, smoother trailer entry rather than sudden jack angles that swing the body wide. When pulling forward to unpin, watch the long front overhang, which easily strikes the opposite rail. Prioritise surveying both mirrors early to map corridor bounds instead of staring down one side. For this tractor, keep hitch angles small and speed low, correcting early so the trailer never drifts into the outer wall."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "Repeatedly touched the inside rail around nine meters in due to reacting too late to the curve. Once pinned, pulling forward with aggressive steering jackknifed the combination and clipped front corners in the narrow corridor. Prioritise staying perfectly centred before the first bend and anticipating curvature smoothly with small hitch angles rather than sharp corrections. For this tractor and tipping trailer, keep reverse speed low and recover from any rail touch by pulling forward with nearly straight steering to avoid scissor contact."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 34.9,
+     "progress": 0.4298,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The cart is extremely twitchy due to its very short axle. Our fatal mistake was repeatedly clipping the left rail because the alley curves to the right, which demanded establishing clearance on the right much earlier and more aggressively. When pulling forward to unstick, steer firmly right to give the trailer enough buffer. Once reversing, keep speeds crawl-slow and use very gentle steering adjustments, as even small overcorrections cause the rear to swing wide into the outer wall. Prioritise keeping the cart body well off the inner corner rather than driving straight."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "The narrow corridor turns right into the bay, making the left rail extremely dangerous. We accumulated touches along our left side because aggressive steering swings the vehicle body outward while the short trailer jackknifes very quickly. Prioritise staying well clear of the outer rail early and keeping the hitch angle modest. For this mower and cart, small steering inputs and slow reverse speeds are critical to keep the short trailer controllable without clipping rails."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The alley bends or offsets sharply to the right toward the bay, so hug the centerline and bias toward the right side early. Repeatedly pulling forward rightward without looking ahead caused front-corner rail collisions. Prioritise scanning both sides of the corridor rather than staring only rearward. A short garden cart reacts violently to steering inputs while reversing: keep reverse speeds very low, limit target hitch angles strictly, and use tiny steering corrections so trailer corners do not swing out into the rails."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 41.4,
+     "progress": 0.1786,
+     "touches": 3,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The bend enters a sharp turn around thirty-three metres where the trailer rear-left consistently cuts too close to the outside rail. Prioritise setting up a wide line early before the corner begins rather than trying to correct lateral offset mid-turn. When pulling forward to unpin, watch the cab's long front overhang to avoid clipping the outside barrier. For this long semi combination, remember that reversing adjustments take many metres to propagate; initiate the swing into the bend well in advance and keep hitch angles moderate to avoid swinging corners wide."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "The bend in this L-turn is sharp, and entering it too straight caused repeated rear-left trailer rail clips around the corner. Initiate trailer articulation well before reaching the apex rather than waiting for the corridor to bend, and keep a wider buffer on the inside apex rail. The long combination cuts corners tightly due to off-tracking. When clearing touches, prioritize small, gentle forward pulls that do not swing the front corners into the outer barriers. For this vehicle, the twenty degree steering rate means hitch adjustments take significant time, so plan angle changes early."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "Reversing smoothly in a single continuous push worked perfectly. Keep gaze locked on the reversing camera screen to maintain clear vision of the corridor walls and painted markings. Center the trailer continuously between the left and right barrier detections while reversing at a steady pace. As you near the bay, gradually ease off the speed and steer towards zero hitch angle to ensure the trailer docks straight. Tip for the semi: long wheelbase trailers react predictably, so avoid abrupt wheel turns and let gentle steering adjustments guide the trailer through the curve."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145053-0c9efa",
+   "role": "train",
+   "step": 2,
+   "member": 2,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 19.3,
+     "progress": 0.1902,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "We failed due to repeated rear-left and front-right corner clipping in the bend. When reversing into an L-turn, initiate the trailer curve much earlier with small, smooth steering inputs instead of waiting for proximity warnings. Pulling forward inside the narrow corridor easily swings the car front into the outer barrier. Prioritise staying centered from the start to avoid ever needing forward recovery shunts. For this car and box trailer combo, keep reverse speed low and use gentle steering adjustments, as aggressive counter-steering whips the long front overhang into the rails."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We cut the inside corner too tightly and repeatedly clipped the trailer's rear-left corner, then hit the right rail whenever pulling forward to recover. The key priority is taking a much wider entry line along the outer rail before initiating the bend, leaving ample clearance for the trailer's inner pivot. For this vehicle, the front overhang swings wide when turning forward, so pull forward only while steering toward open space. Drive slowly and smoothly in reverse to let the steering keep pace without violent corrections."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "During the tight right bend, steering right while reversing swung our front overhang wide into the left rail, while trying to pull forward in that narrow pinch repeatedly clipped the same corner. Prioritise corridor clearance for both front corners alongside trailer guidance. For this car, limit maximum steering angle to prevent front swing-out, and maintain extra lateral buffer before entering turns so recovery forward pulls have room to track safely."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 32.3,
+     "progress": 0.2755,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The initial curve requires setting up an aggressive trailer swing much earlier. We repeatedly touched the inner right rail because the tractor stayed too far right while reversing, and attempts to pull forward clipped the outer left rail. Prioritise tracking the actual corridor center rather than keeping the tractor straight, and initiate the bend early. With this long overhang, remember that swinging the wheels pulls the tractor nose widely across the track."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We repeatedly clipped the right rail with the trailer rear-right corner around eight to ten metres in because the initial corridor curves left, demanding earlier, smoother trailer entry rather than sudden jack angles that swing the body wide. When pulling forward to unpin, watch the long front overhang, which easily strikes the opposite rail. Prioritise surveying both mirrors early to map corridor bounds instead of staring down one side. For this tractor, keep hitch angles small and speed low, correcting early so the trailer never drifts into the outer wall."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "Repeatedly touched the inside rail around nine meters in due to reacting too late to the curve. Once pinned, pulling forward with aggressive steering jackknifed the combination and clipped front corners in the narrow corridor. Prioritise staying perfectly centred before the first bend and anticipating curvature smoothly with small hitch angles rather than sharp corrections. For this tractor and tipping trailer, keep reverse speed low and recover from any rail touch by pulling forward with nearly straight steering to avoid scissor contact."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 36.6,
+     "progress": 0.8601,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The cart is extremely twitchy due to its very short axle. Our fatal mistake was repeatedly clipping the left rail because the alley curves to the right, which demanded establishing clearance on the right much earlier and more aggressively. When pulling forward to unstick, steer firmly right to give the trailer enough buffer. Once reversing, keep speeds crawl-slow and use very gentle steering adjustments, as even small overcorrections cause the rear to swing wide into the outer wall. Prioritise keeping the cart body well off the inner corner rather than driving straight."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "The narrow corridor turns right into the bay, making the left rail extremely dangerous. We accumulated touches along our left side because aggressive steering swings the vehicle body outward while the short trailer jackknifes very quickly. Prioritise staying well clear of the outer rail early and keeping the hitch angle modest. For this mower and cart, small steering inputs and slow reverse speeds are critical to keep the short trailer controllable without clipping rails."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The alley bends or offsets sharply to the right toward the bay, so hug the centerline and bias toward the right side early. Repeatedly pulling forward rightward without looking ahead caused front-corner rail collisions. Prioritise scanning both sides of the corridor rather than staring only rearward. A short garden cart reacts violently to steering inputs while reversing: keep reverse speeds very low, limit target hitch angles strictly, and use tiny steering corrections so trailer corners do not swing out into the rails."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 53.2,
+     "progress": 0.297,
+     "touches": 3,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The bend enters a sharp turn around thirty-three metres where the trailer rear-left consistently cuts too close to the outside rail. Prioritise setting up a wide line early before the corner begins rather than trying to correct lateral offset mid-turn. When pulling forward to unpin, watch the cab's long front overhang to avoid clipping the outside barrier. For this long semi combination, remember that reversing adjustments take many metres to propagate; initiate the swing into the bend well in advance and keep hitch angles moderate to avoid swinging corners wide."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "The bend in this L-turn is sharp, and entering it too straight caused repeated rear-left trailer rail clips around the corner. Initiate trailer articulation well before reaching the apex rather than waiting for the corridor to bend, and keep a wider buffer on the inside apex rail. The long combination cuts corners tightly due to off-tracking. When clearing touches, prioritize small, gentle forward pulls that do not swing the front corners into the outer barriers. For this vehicle, the twenty degree steering rate means hitch adjustments take significant time, so plan angle changes early."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "Reversing smoothly in a single continuous push worked perfectly. Keep gaze locked on the reversing camera screen to maintain clear vision of the corridor walls and painted markings. Center the trailer continuously between the left and right barrier detections while reversing at a steady pace. As you near the bay, gradually ease off the speed and steer towards zero hitch angle to ensure the trailer docks straight. Tip for the semi: long wheelbase trailers react predictably, so avoid abrupt wheel turns and let gentle steering adjustments guide the trailer through the curve."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145356-f41baa",
+   "role": "transfer",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.5,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.5,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.5,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "round 2, driver 1",
+       "text": "Reversing continuously while locked onto the camera screen worked flawlessly. Prioritise corridor centering from the rear camera walls and gently transition to tracking the painted bay corners once they appear. Easing speed and guiding hitch angle toward straight as you enter the final stretch ensures an aligned dock. For this semi, steering rate is relatively slow so let smooth, moderate hitch angles do the work and avoid overcorrecting."
+      }
+     ],
+     "note": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,805 @@
+{
+ "study": "20261106-1451-self-claude-sonnet-5-5-none-f20e",
+ "model": "claude-code:claude-sonnet-5-5",
+ "condition": "self",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 2,
+ "steps": 3,
+ "policy": {
+  "numbers": "none",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-145144-59ead1",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 148.3,
+     "progress": 0.2728,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Blind reversing with a fixed hitch bias failed: the trailer's rear-left corner kept hitting the left rail at the same early spot, and pulling forward then re-reversing wasted time and caused front-right touches. Rails curve, so read the walls first, using camera and left mirror views while stopped, then plan a wide swing. Keep the trailer rear clear of the left rail by steering the trailer gently and early, not by large hitch offsets. Go slowly, look back often, avoid the forward-right corner when pulling out. Touches are costly, so stop early.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Blind reversing with a fixed hitch bias failed: the trailer's rear-left corner kept hitting the left rail at the same early spot, and pulling forward then re-reversing wasted time and caused front-right touches. Rails curve, so read the walls first, using camera and left mirror views while stopped, then plan a wide swing. Keep the trailer rear clear of the left rail by steering the trailer gently and early, not by large hitch offsets. Go slowly, look back often, avoid the forward-right corner when pulling out. Touches are costly, so stop early."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 139.55,
+     "progress": 0.3262,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Driving straight back along the start hugged the right rail and the trailer rear kept scraping it; I wasted touches on repeated reposition attempts. Look at the rails early, before moving, and aim the rig away from the right side, because the course bends. Reverse slowly, steer gently, and never keep reversing once the rear nears a rail. Prefer one clean pull forward to realign over many small fixes. The trailer reacts fairly slowly, so small hitch angles can be held calmly.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Driving straight back along the start hugged the right rail and the trailer rear kept scraping it; I wasted touches on repeated reposition attempts. Look at the rails early, before moving, and aim the rig away from the right side, because the course bends. Reverse slowly, steer gently, and never keep reversing once the rear nears a rail. Prefer one clean pull forward to realign over many small fixes. The trailer reacts fairly slowly, so small hitch angles can be held calmly."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 130.1,
+     "progress": 0.6411,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Course is a narrow alley, so the mower's front corners swing into the rails whenever the trailer is allowed to fold. Most touches were the front-left corner while the hitch was far to the right with strong right steering. Do not drive straight back blindly at the start: the trailer rear drifted into the left rail early. Keep the hitch angle small, steer gently and early, and reverse very slowly. When the hitch grows, stop and pull forward straight rather than fighting it. Spend touches carefully; I ran out of them. Looking straight back showed the bay and rails well.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Course is a narrow alley, so the mower's front corners swing into the rails whenever the trailer is allowed to fold. Most touches were the front-left corner while the hitch was far to the right with strong right steering. Do not drive straight back blindly at the start: the trailer rear drifted into the left rail early. Keep the hitch angle small, steer gently and early, and reverse very slowly. When the hitch grows, stop and pull forward straight rather than fighting it. Spend touches carefully; I ran out of them. Looking straight back showed the bay and rails well."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 237.65,
+     "progress": 0.3278,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Straight reversing worked early, but the course bends left and the trailer rear kept clipping the left rail at the same spot. Blind retries with a fixed rightward offset failed and burned touches. Next time look at the rails through the mirrors or camera, and start steering the trailer rear gently away from the left rail well before the bend, so the whole long rig arcs through it. Reverse slowly, keep the hitch small, and never pull forward with large steering near the front rails. Protect the touch budget first.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Straight reversing worked early, but the course bends left and the trailer rear kept clipping the left rail at the same spot. Blind retries with a fixed rightward offset failed and burned touches. Next time look at the rails through the mirrors or camera, and start steering the trailer rear gently away from the left rail well before the bend, so the whole long rig arcs through it. Reverse slowly, keep the hitch small, and never pull forward with large steering near the front rails. Protect the touch budget first."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145144-a23bb4",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 114.7,
+     "progress": 0.3278,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Driving straight back drifted the trailer rear into the left rail again and again near the start of the bend, and I burned every touch by retrying blindly. Stop and study the rail sightings first, using the camera and left mirror. Begin steering the trailer rear toward the right side early, before the bend, then ease it back once past the corner. Move slowly, keep gentle steering, and treat each touch as precious. Pulling forward with wheels turned hit the front-right rail, so pull out straight and short. This car's long trailer reacts slowly, so correct early.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Driving straight back drifted the trailer rear into the left rail again and again near the start of the bend, and I burned every touch by retrying blindly. Stop and study the rail sightings first, using the camera and left mirror. Begin steering the trailer rear toward the right side early, before the bend, then ease it back once past the corner. Move slowly, keep gentle steering, and treat each touch as precious. Pulling forward with wheels turned hit the front-right rail, so pull out straight and short. This car's long trailer reacts slowly, so correct early."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 131.85,
+     "progress": 0.1576,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Last time I kept bumping the trailer's rear-right corner on the right rail early, then the front-left corner while pulling forward, and ran out of touches. Hitch-only control ignored the walls and I never read them. Look at the rails first: the course is an S-bend, so the rig must drift sideways, not straight back. Go very slowly, keep the trailer gently angled, and steer early. Short pulls forward should stay straight. Check in often and avoid repeated gear changes.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Last time I kept bumping the trailer's rear-right corner on the right rail early, then the front-left corner while pulling forward, and ran out of touches. Hitch-only control ignored the walls and I never read them. Look at the rails first: the course is an S-bend, so the rig must drift sideways, not straight back. Go very slowly, keep the trailer gently angled, and steer early. Short pulls forward should stay straight. Check in often and avoid repeated gear changes."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 111.4,
+     "progress": 0.5503,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Last time I drove blind: I looked straight back the whole time and never learned the alley's shape, so I kept scraping the left rail with the trailer's rear-left corner, then the mower's front-left when pulling forward. Too many gear changes and corrections wasted the touch budget. Next: look ahead first to read the alley and where the bay sits, reverse very slowly, steer gently and early, hold the trailer nearly straight, and never let it swing far. Short trailer reacts fast, so use small, quick corrections. Keep clear of the left rail.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Last time I drove blind: I looked straight back the whole time and never learned the alley's shape, so I kept scraping the left rail with the trailer's rear-left corner, then the mower's front-left when pulling forward. Too many gear changes and corrections wasted the touch budget. Next: look ahead first to read the alley and where the bay sits, reverse very slowly, steer gently and early, hold the trailer nearly straight, and never let it swing far. Short trailer reacts fast, so use small, quick corrections. Keep clear of the left rail."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 229.85,
+     "progress": 0.4125,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Straight reversing worked at first, but the course bends right and the trailer rear-left corner kept clipping the left rail at the bend, costing most touches. Start the right swing much earlier and wider, before the bend, not at it. Reverse slowly and keep a generous gap on the left. After a touch, pull forward well clear before retrying, not small tweaks. Watch the rear-left corner with camera and mirrors. The long trailer reacts slowly, so steer early and gently.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Straight reversing worked at first, but the course bends right and the trailer rear-left corner kept clipping the left rail at the bend, costing most touches. Start the right swing much earlier and wider, before the bend, not at it. Reverse slowly and keep a generous gap on the left. After a touch, pull forward well clear before retrying, not small tweaks. Watch the rear-left corner with camera and mirrors. The long trailer reacts slowly, so steer early and gently."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145908-62c43f",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 126.9,
+     "progress": 0.3456,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Blind reversing with a fixed hitch bias failed: the trailer's rear-left corner kept hitting the left rail at the same early spot, and pulling forward then re-reversing wasted time and caused front-right touches. Rails curve, so read the walls first, using camera and left mirror views while stopped, then plan a wide swing. Keep the trailer rear clear of the left rail by steering the trailer gently and early, not by large hitch offsets. Go slowly, look back often, avoid the forward-right corner when pulling out. Touches are costly, so stop early."
+      }
+     ],
+     "note": {
+      "text": "Touches ran out fast: the trailer rear-left corner hit the left rail again and again at the same early spot, and pulling forward steered right clipped the front-right corner. Reversing straight drifts left into that rail. Before moving, stop and study the rails with camera and mirror. Start the reverse with the trailer rear already angled gently to the right, hold it there, and go very slowly. When pulling out, steer only slightly and stop early. Never repeat the same move after a touch.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Touches ran out fast: the trailer rear-left corner hit the left rail again and again at the same early spot, and pulling forward steered right clipped the front-right corner. Reversing straight drifts left into that rail. Before moving, stop and study the rails with camera and mirror. Start the reverse with the trailer rear already angled gently to the right, hold it there, and go very slowly. When pulling out, steer only slightly and stop early. Never repeat the same move after a touch."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 138.2,
+     "progress": 0.1344,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Driving straight back along the start hugged the right rail and the trailer rear kept scraping it; I wasted touches on repeated reposition attempts. Look at the rails early, before moving, and aim the rig away from the right side, because the course bends. Reverse slowly, steer gently, and never keep reversing once the rear nears a rail. Prefer one clean pull forward to realign over many small fixes. The trailer reacts fairly slowly, so small hitch angles can be held calmly."
+      }
+     ],
+     "note": {
+      "text": "Failed by constant rail touches: the trailer rear kept scraping the right rail while the front left corner hit the left rail after short forward pulls. Tiny hitch-hold corrections were not enough, since the course bends. Before moving, turn head to look at both rails and mirrors, and plan the whole path. Start by steering gently so the rear drifts left, away from the right rail, and keep the tractor centred. Forward pulls should be long and straight, never sharp. Stay very slow and stop early.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Failed by constant rail touches: the trailer rear kept scraping the right rail while the front left corner hit the left rail after short forward pulls. Tiny hitch-hold corrections were not enough, since the course bends. Before moving, turn head to look at both rails and mirrors, and plan the whole path. Start by steering gently so the rear drifts left, away from the right rail, and keep the tractor centred. Forward pulls should be long and straight, never sharp. Stay very slow and stop early."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 126.2,
+     "progress": 0.5659,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Course is a narrow alley, so the mower's front corners swing into the rails whenever the trailer is allowed to fold. Most touches were the front-left corner while the hitch was far to the right with strong right steering. Do not drive straight back blindly at the start: the trailer rear drifted into the left rail early. Keep the hitch angle small, steer gently and early, and reverse very slowly. When the hitch grows, stop and pull forward straight rather than fighting it. Spend touches carefully; I ran out of them. Looking straight back showed the bay and rails well."
+      }
+     ],
+     "note": {
+      "text": "Last time I ran out of touches by repeatedly pulling forward and reversing again near the same left rail. The alley is tight and the left side is the danger: the trailer rear and mower corners kept grazing it. Reversing blind and straight drifted left early, so steer gently right from the very start to keep the trailer centred, and look straight back to judge the gap. Go very slowly, correct early, and never stop and retry in the same spot. Tip: this short cart reacts fast, so keep the hitch small.",
+      "accepted": true,
+      "rejections": [
+       [
+        "no leave_note call"
+       ]
+      ],
+      "drafts": [
+       "Leaving lessons for next attempt.",
+       "Last time I ran out of touches by repeatedly pulling forward and reversing again near the same left rail. The alley is tight and the left side is the danger: the trailer rear and mower corners kept grazing it. Reversing blind and straight drifted left early, so steer gently right from the very start to keep the trailer centred, and look straight back to judge the gap. Go very slowly, correct early, and never stop and retry in the same spot. Tip: this short cart reacts fast, so keep the hitch small."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 249.1,
+     "progress": 0.3004,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Straight reversing worked early, but the course bends left and the trailer rear kept clipping the left rail at the same spot. Blind retries with a fixed rightward offset failed and burned touches. Next time look at the rails through the mirrors or camera, and start steering the trailer rear gently away from the left rail well before the bend, so the whole long rig arcs through it. Reverse slowly, keep the hitch small, and never pull forward with large steering near the front rails. Protect the touch budget first."
+      }
+     ],
+     "note": {
+      "text": "Straight reversing is fine early, but the trailer rear-left corner clipped the left rail at the same spot at the start of the left bend, again and again. Fixed rightward hitch offsets and pulling forward then retrying wasted touches and time. Instead, begin the rightward shift of the whole rig very early, well before the bend, using the left mirror to keep a generous gap, and stay slow. Never keep reversing toward a close rail: stop and pull forward straight before touching. Tip: this long trailer reacts slowly, so use gentle steering.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Straight reversing is fine early, but the trailer rear-left corner clipped the left rail at the same spot at the start of the left bend, again and again. Fixed rightward hitch offsets and pulling forward then retrying wasted touches and time. Instead, begin the rightward shift of the whole rig very early, well before the bend, using the left mirror to keep a generous gap, and stay slow. Never keep reversing toward a close rail: stop and pull forward straight before touching. Tip: this long trailer reacts slowly, so use gentle steering."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145949-2a66c8",
+   "role": "train",
+   "step": 2,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 116.25,
+     "progress": 0.2735,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Driving straight back drifted the trailer rear into the left rail again and again near the start of the bend, and I burned every touch by retrying blindly. Stop and study the rail sightings first, using the camera and left mirror. Begin steering the trailer rear toward the right side early, before the bend, then ease it back once past the corner. Move slowly, keep gentle steering, and treat each touch as precious. Pulling forward with wheels turned hit the front-right rail, so pull out straight and short. This car's long trailer reacts slowly, so correct early."
+      }
+     ],
+     "note": {
+      "text": "Driving straight back was fine at first, but the trailer rear-left corner clipped the left rail at the start of the bend, again and again, and I wasted every touch retrying blindly with tiny steering biases. Pulling forward with wheels turned hit the front-right rail, so pull out only straight and short. Before reversing far, study the rails with the camera and left mirror, and plan a deliberate wide arc early: swing the trailer rear clearly away from the left rail before the bend, then follow it round. Go slowly, and spend touches very sparingly.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Driving straight back was fine at first, but the trailer rear-left corner clipped the left rail at the start of the bend, again and again, and I wasted every touch retrying blindly with tiny steering biases. Pulling forward with wheels turned hit the front-right rail, so pull out only straight and short. Before reversing far, study the rails with the camera and left mirror, and plan a deliberate wide arc early: swing the trailer rear clearly away from the left rail before the bend, then follow it round. Go slowly, and spend touches very sparingly."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 145.9,
+     "progress": 0.1756,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last time I kept bumping the trailer's rear-right corner on the right rail early, then the front-left corner while pulling forward, and ran out of touches. Hitch-only control ignored the walls and I never read them. Look at the rails first: the course is an S-bend, so the rig must drift sideways, not straight back. Go very slowly, keep the trailer gently angled, and steer early. Short pulls forward should stay straight. Check in often and avoid repeated gear changes."
+      }
+     ],
+     "note": {
+      "text": "Almost every touch was the trailer's rear-right corner on the right rail, early, while reversing nearly straight; the rails sit very close and the course shifts sideways, so a hitch-only loop wastes touches. Pulling forward and retrying just repeated it. Before moving, read the rail points and decide the lateral path. Start by swinging the rig well to the left, with the vehicle itself positioned left, before reversing. Reverse very slowly, with small deliberate hitch angles, and stop at the first sign of the right rail. Save touches.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Almost every touch was the trailer's rear-right corner on the right rail, early, while reversing nearly straight; the rails sit very close and the course shifts sideways, so a hitch-only loop wastes touches. Pulling forward and retrying just repeated it. Before moving, read the rail points and decide the lateral path. Start by swinging the rig well to the left, with the vehicle itself positioned left, before reversing. Reverse very slowly, with small deliberate hitch angles, and stop at the first sign of the right rail. Save touches."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "FINISHED",
+     "time": 124.1,
+     "progress": 1.0,
+     "touches": 7,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last time I drove blind: I looked straight back the whole time and never learned the alley's shape, so I kept scraping the left rail with the trailer's rear-left corner, then the mower's front-left when pulling forward. Too many gear changes and corrections wasted the touch budget. Next: look ahead first to read the alley and where the bay sits, reverse very slowly, steer gently and early, hold the trailer nearly straight, and never let it swing far. Short trailer reacts fast, so use small, quick corrections. Keep clear of the left rail."
+      }
+     ],
+     "note": {
+      "text": "Finished, but with many rail touches, mostly the trailer's rear corners on the right and the mower's rear-right. Each touch froze me and forced a costly pull forward. The alley bends: early on the left rail is close, later the right rail closes in near the bay. Reverse very slowly, keep the trailer nearly straight, and check the sides to read the rails instead of staring ahead. Steer gently, correct early, and avoid hard-lock pull-forwards. What worked at the end: swing the trailer right, then recover it smoothly and drive in straight.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Finished, but with many rail touches, mostly the trailer's rear corners on the right and the mower's rear-right. Each touch froze me and forced a costly pull forward. The alley bends: early on the left rail is close, later the right rail closes in near the bay. Reverse very slowly, keep the trailer nearly straight, and check the sides to read the rails instead of staring ahead. Steer gently, correct early, and avoid hard-lock pull-forwards. What worked at the end: swing the trailer right, then recover it smoothly and drive in straight."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 224.65,
+     "progress": 0.3679,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Straight reversing worked at first, but the course bends right and the trailer rear-left corner kept clipping the left rail at the bend, costing most touches. Start the right swing much earlier and wider, before the bend, not at it. Reverse slowly and keep a generous gap on the left. After a touch, pull forward well clear before retrying, not small tweaks. Watch the rear-left corner with camera and mirrors. The long trailer reacts slowly, so steer early and gently."
+      }
+     ],
+     "note": {
+      "text": "Straight reversing is easy early on; the trouble is the right-hand bend, where the trailer rear-left corner kept clipping the left rail, and a few touches came from the cab front corners while pulling forward after a touch. Touches ran out fast, so avoid every one. Reverse slowly, begin a gentle but sustained right swing of the trailer well before the bend, and keep watching the camera and mirrors for the left rail. After a touch, pull forward straight and only a short way, since steering hard forward hit the cab corners. Leave wide margins and use few decisions.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Straight reversing is easy early on; the trouble is the right-hand bend, where the trailer rear-left corner kept clipping the left rail, and a few touches came from the cab front corners while pulling forward after a touch. Touches ran out fast, so avoid every one. Reverse slowly, begin a gentle but sustained right swing of the trailer well before the bend, and keep watching the camera and mirrors for the left rail. After a touch, pull forward straight and only a short way, since steering hard forward hit the cab corners. Leave wide margins and use few decisions."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-150928-d6ac88",
+   "role": "train",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 135.5,
+     "progress": 0.6636,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Blind reversing with a fixed hitch bias failed: the trailer's rear-left corner kept hitting the left rail at the same early spot, and pulling forward then re-reversing wasted time and caused front-right touches. Rails curve, so read the walls first, using camera and left mirror views while stopped, then plan a wide swing. Keep the trailer rear clear of the left rail by steering the trailer gently and early, not by large hitch offsets. Go slowly, look back often, avoid the forward-right corner when pulling out. Touches are costly, so stop early."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Touches ran out fast: the trailer rear-left corner hit the left rail again and again at the same early spot, and pulling forward steered right clipped the front-right corner. Reversing straight drifts left into that rail. Before moving, stop and study the rails with camera and mirror. Start the reverse with the trailer rear already angled gently to the right, hold it there, and go very slowly. When pulling out, steer only slightly and stop early. Never repeat the same move after a touch."
+      }
+     ],
+     "note": {
+      "text": "Blind hitch holding failed: the trailer rear-left corner hit the left rail again and again late in the course, after a long easy stretch. Pull-forward retries wasted time and clipped front corners. Next time, pause briefly to read the rails with camera and left mirror, keep the trailer rear well toward the right through the middle, and ease it back toward the bay only late. Go slowly, correct early, and never repeat the same move after a touch.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Blind hitch holding failed: the trailer rear-left corner hit the left rail again and again late in the course, after a long easy stretch. Pull-forward retries wasted time and clipped front corners. Next time, pause briefly to read the rails with camera and left mirror, keep the trailer rear well toward the right through the middle, and ease it back toward the bay only late. Go slowly, correct early, and never repeat the same move after a touch."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 129.9,
+     "progress": 0.1365,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Driving straight back along the start hugged the right rail and the trailer rear kept scraping it; I wasted touches on repeated reposition attempts. Look at the rails early, before moving, and aim the rig away from the right side, because the course bends. Reverse slowly, steer gently, and never keep reversing once the rear nears a rail. Prefer one clean pull forward to realign over many small fixes. The trailer reacts fairly slowly, so small hitch angles can be held calmly."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Failed by constant rail touches: the trailer rear kept scraping the right rail while the front left corner hit the left rail after short forward pulls. Tiny hitch-hold corrections were not enough, since the course bends. Before moving, turn head to look at both rails and mirrors, and plan the whole path. Start by steering gently so the rear drifts left, away from the right rail, and keep the tractor centred. Forward pulls should be long and straight, never sharp. Stay very slow and stop early."
+      }
+     ],
+     "note": {
+      "text": "Holding the trailer straight failed: the course is an S-bend and the trailer rear kept scraping the right rail within the first few metres, while short forward pulls then clipped the left rail with the tractor front. Before moving, turn the head and read both rails and the mirrors to judge the lane. Deliberately steer so the trailer rear swings left early and gently, then follow it, rather than chasing zero. Go very slowly, and make few, long, straight forward pulls. Never keep reversing once a rear corner nears a rail. Do not waste touches.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Holding the trailer straight failed: the course is an S-bend and the trailer rear kept scraping the right rail within the first few metres, while short forward pulls then clipped the left rail with the tractor front. Before moving, turn the head and read both rails and the mirrors to judge the lane. Deliberately steer so the trailer rear swings left early and gently, then follow it, rather than chasing zero. Go very slowly, and make few, long, straight forward pulls. Never keep reversing once a rear corner nears a rail. Do not waste touches."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 129.85,
+     "progress": 0.6779,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Course is a narrow alley, so the mower's front corners swing into the rails whenever the trailer is allowed to fold. Most touches were the front-left corner while the hitch was far to the right with strong right steering. Do not drive straight back blindly at the start: the trailer rear drifted into the left rail early. Keep the hitch angle small, steer gently and early, and reverse very slowly. When the hitch grows, stop and pull forward straight rather than fighting it. Spend touches carefully; I ran out of them. Looking straight back showed the bay and rails well."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Last time I ran out of touches by repeatedly pulling forward and reversing again near the same left rail. The alley is tight and the left side is the danger: the trailer rear and mower corners kept grazing it. Reversing blind and straight drifted left early, so steer gently right from the very start to keep the trailer centred, and look straight back to judge the gap. Go very slowly, correct early, and never stop and retry in the same spot. Tip: this short cart reacts fast, so keep the hitch small."
+      }
+     ],
+     "note": {
+      "text": "Nearly every touch was the trailer rear-left corner against the left rail, even with the hitch small and the rig seemingly straight, so the whole rig sits too far left in the alley. Holding the hitch slightly right made the mower front-left clip instead. Stopping and retrying wasted touches. Start by looking ahead and back to judge the gap, keep the rig centred early, reverse very slowly, and check in often. Prefer steering the whole rig gently right in the first stretch, never forcing the hitch.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Nearly every touch was the trailer rear-left corner against the left rail, even with the hitch small and the rig seemingly straight, so the whole rig sits too far left in the alley. Holding the hitch slightly right made the mower front-left clip instead. Stopping and retrying wasted touches. Start by looking ahead and back to judge the gap, keep the rig centred early, reverse very slowly, and check in often. Prefer steering the whole rig gently right in the first stretch, never forcing the hitch."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 184.35,
+     "progress": 0.3033,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Straight reversing worked early, but the course bends left and the trailer rear kept clipping the left rail at the same spot. Blind retries with a fixed rightward offset failed and burned touches. Next time look at the rails through the mirrors or camera, and start steering the trailer rear gently away from the left rail well before the bend, so the whole long rig arcs through it. Reverse slowly, keep the hitch small, and never pull forward with large steering near the front rails. Protect the touch budget first."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Straight reversing is fine early, but the trailer rear-left corner clipped the left rail at the same spot at the start of the left bend, again and again. Fixed rightward hitch offsets and pulling forward then retrying wasted touches and time. Instead, begin the rightward shift of the whole rig very early, well before the bend, using the left mirror to keep a generous gap, and stay slow. Never keep reversing toward a close rail: stop and pull forward straight before touching. Tip: this long trailer reacts slowly, so use gentle steering."
+      }
+     ],
+     "note": {
+      "text": "Straight slow reversing is fine early, but the trailer rear-left corner clipped the left rail at the start of the left bend, over and over, and every blind retry spent a touch and ended the leg. Do not retry the same line: before the bend, use the left mirror to see the gap and move the whole rig well to the right early, in a gentle sweep. If the rear gets close to the left rail, stop and pull forward straight, then check the gap before reversing again. Protect touches first; steer gently, the long trailer reacts slowly.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Straight slow reversing is fine early, but the trailer rear-left corner clipped the left rail at the start of the left bend, over and over, and every blind retry spent a touch and ended the leg. Do not retry the same line: before the bend, use the left mirror to see the gap and move the whole rig well to the right early, in a gentle sweep. If the rear gets close to the left rail, stop and pull forward straight, then check the gap before reversing again. Protect touches first; steer gently, the long trailer reacts slowly."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-150826-fe111c",
+   "role": "train",
+   "step": 3,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 147.85,
+     "progress": 0.2338,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Driving straight back drifted the trailer rear into the left rail again and again near the start of the bend, and I burned every touch by retrying blindly. Stop and study the rail sightings first, using the camera and left mirror. Begin steering the trailer rear toward the right side early, before the bend, then ease it back once past the corner. Move slowly, keep gentle steering, and treat each touch as precious. Pulling forward with wheels turned hit the front-right rail, so pull out straight and short. This car's long trailer reacts slowly, so correct early."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Driving straight back was fine at first, but the trailer rear-left corner clipped the left rail at the start of the bend, again and again, and I wasted every touch retrying blindly with tiny steering biases. Pulling forward with wheels turned hit the front-right rail, so pull out only straight and short. Before reversing far, study the rails with the camera and left mirror, and plan a deliberate wide arc early: swing the trailer rear clearly away from the left rail before the bend, then follow it round. Go slowly, and spend touches very sparingly."
+      }
+     ],
+     "note": {
+      "text": "Every attempt ended with the trailer rear-left corner hitting the left rail at the same spot where the bend begins, whether I steered straight, biased right, or biased left. Blind retries burned all touches. Do not retry the same thing. Early on, while still far from the bend, deliberately swing the trailer rear well to the right side of the lane, then follow it round. Look with the camera and left mirror first. Pull out only straight and short. Drive slowly and keep touches precious.",
+      "accepted": true,
+      "rejections": [
+       [
+        "no leave_note call"
+       ]
+      ],
+      "drafts": [
+       "Leaving lessons for the next attempt.",
+       "Every attempt ended with the trailer rear-left corner hitting the left rail at the same spot where the bend begins, whether I steered straight, biased right, or biased left. Blind retries burned all touches. Do not retry the same thing. Early on, while still far from the bend, deliberately swing the trailer rear well to the right side of the lane, then follow it round. Look with the camera and left mirror first. Pull out only straight and short. Drive slowly and keep touches precious."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 130.7,
+     "progress": 0.1639,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last time I kept bumping the trailer's rear-right corner on the right rail early, then the front-left corner while pulling forward, and ran out of touches. Hitch-only control ignored the walls and I never read them. Look at the rails first: the course is an S-bend, so the rig must drift sideways, not straight back. Go very slowly, keep the trailer gently angled, and steer early. Short pulls forward should stay straight. Check in often and avoid repeated gear changes."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Almost every touch was the trailer's rear-right corner on the right rail, early, while reversing nearly straight; the rails sit very close and the course shifts sideways, so a hitch-only loop wastes touches. Pulling forward and retrying just repeated it. Before moving, read the rail points and decide the lateral path. Start by swinging the rig well to the left, with the vehicle itself positioned left, before reversing. Reverse very slowly, with small deliberate hitch angles, and stop at the first sign of the right rail. Save touches."
+      }
+     ],
+     "note": {
+      "text": "The trailer rear-right corner kept hitting the right rail early, while reversing nearly straight, and touches ran out. Hitch-only steering ignored the rails. Before moving, look back over both shoulders and in the mirrors to read where the rails are. The course shifts sideways, so aim the trailer rear gently toward the open side from the start. Go very slowly and stop at the first sign of a rail. Do not waste touches on repeated forward-and-back retries; pull forward straight to reset instead. Tip: the trailer is long, so it reacts slowly and needs early, small steering.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The trailer rear-right corner kept hitting the right rail early, while reversing nearly straight, and touches ran out. Hitch-only steering ignored the rails. Before moving, look back over both shoulders and in the mirrors to read where the rails are. The course shifts sideways, so aim the trailer rear gently toward the open side from the start. Go very slowly and stop at the first sign of a rail. Do not waste touches on repeated forward-and-back retries; pull forward straight to reset instead. Tip: the trailer is long, so it reacts slowly and needs early, small steering."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 134.45,
+     "progress": 0.2779,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last time I drove blind: I looked straight back the whole time and never learned the alley's shape, so I kept scraping the left rail with the trailer's rear-left corner, then the mower's front-left when pulling forward. Too many gear changes and corrections wasted the touch budget. Next: look ahead first to read the alley and where the bay sits, reverse very slowly, steer gently and early, hold the trailer nearly straight, and never let it swing far. Short trailer reacts fast, so use small, quick corrections. Keep clear of the left rail."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Finished, but with many rail touches, mostly the trailer's rear corners on the right and the mower's rear-right. Each touch froze me and forced a costly pull forward. The alley bends: early on the left rail is close, later the right rail closes in near the bay. Reverse very slowly, keep the trailer nearly straight, and check the sides to read the rails instead of staring ahead. Steer gently, correct early, and avoid hard-lock pull-forwards. What worked at the end: swing the trailer right, then recover it smoothly and drive in straight."
+      }
+     ],
+     "note": {
+      "text": "Failed by scraping the trailer's rear-left corner on the left rail again and again, early in the alley, until the touch budget ran out. Holding the trailer dead straight does not clear it: the alley bends and the left rail is close right at the start. Every touch froze me and forced pull-forwards that only repeated the problem. Prioritise: before reversing, look ahead and sideways to learn where the left rail runs, then start by moving the whole rig rightward. Reverse very slowly, hold a gentle steady trailer lean to the right, and check the rail gaps with head turns.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Failed by scraping the trailer's rear-left corner on the left rail again and again, early in the alley, until the touch budget ran out. Holding the trailer dead straight does not clear it: the alley bends and the left rail is close right at the start. Every touch froze me and forced pull-forwards that only repeated the problem. Prioritise: before reversing, look ahead and sideways to learn where the left rail runs, then start by moving the whole rig rightward. Reverse very slowly, hold a gentle steady trailer lean to the right, and check the rail gaps with head turns."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 253.1,
+     "progress": 0.3837,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Straight reversing worked at first, but the course bends right and the trailer rear-left corner kept clipping the left rail at the bend, costing most touches. Start the right swing much earlier and wider, before the bend, not at it. Reverse slowly and keep a generous gap on the left. After a touch, pull forward well clear before retrying, not small tweaks. Watch the rear-left corner with camera and mirrors. The long trailer reacts slowly, so steer early and gently."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Straight reversing is easy early on; the trouble is the right-hand bend, where the trailer rear-left corner kept clipping the left rail, and a few touches came from the cab front corners while pulling forward after a touch. Touches ran out fast, so avoid every one. Reverse slowly, begin a gentle but sustained right swing of the trailer well before the bend, and keep watching the camera and mirrors for the left rail. After a touch, pull forward straight and only a short way, since steering hard forward hit the cab corners. Leave wide margins and use few decisions."
+      }
+     ],
+     "note": {
+      "text": "Every touch was the trailer rear-left corner at the same bend; steering the trailer right, left or straight all failed, and I never looked at the rails. Next time use the left mirror and camera, turn the head, and read the wall bearings to steer by the actual gap. Over-swinging right was likely wrong: the trailer cuts the inside corner, so keep it further right and well clear of the left rail before the bend, going slowly. After a touch pull forward only briefly. Touches are scarce, so stop and think rather than retry blindly.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Every touch was the trailer rear-left corner at the same bend; steering the trailer right, left or straight all failed, and I never looked at the rails. Next time use the left mirror and camera, turn the head, and read the wall bearings to steer by the actual gap. Over-swinging right was likely wrong: the trailer cuts the inside corner, so keep it further right and well clear of the left rail before the bend, going slowly. After a touch pull forward only briefly. Touches are scarce, so stop and think rather than retry blindly."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-151643-b54307",
+   "role": "transfer",
+   "step": 4,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 152.6,
+     "progress": 0.3212,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Blind reversing with a fixed hitch bias failed: the trailer's rear-left corner kept hitting the left rail at the same early spot, and pulling forward then re-reversing wasted time and caused front-right touches. Rails curve, so read the walls first, using camera and left mirror views while stopped, then plan a wide swing. Keep the trailer rear clear of the left rail by steering the trailer gently and early, not by large hitch offsets. Go slowly, look back often, avoid the forward-right corner when pulling out. Touches are costly, so stop early."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Touches ran out fast: the trailer rear-left corner hit the left rail again and again at the same early spot, and pulling forward steered right clipped the front-right corner. Reversing straight drifts left into that rail. Before moving, stop and study the rails with camera and mirror. Start the reverse with the trailer rear already angled gently to the right, hold it there, and go very slowly. When pulling out, steer only slightly and stop early. Never repeat the same move after a touch."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Blind hitch holding failed: the trailer rear-left corner hit the left rail again and again late in the course, after a long easy stretch. Pull-forward retries wasted time and clipped front corners. Next time, pause briefly to read the rails with camera and left mirror, keep the trailer rear well toward the right through the middle, and ease it back toward the bay only late. Go slowly, correct early, and never repeat the same move after a touch."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 144.2,
+     "progress": 0.2574,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Driving straight back along the start hugged the right rail and the trailer rear kept scraping it; I wasted touches on repeated reposition attempts. Look at the rails early, before moving, and aim the rig away from the right side, because the course bends. Reverse slowly, steer gently, and never keep reversing once the rear nears a rail. Prefer one clean pull forward to realign over many small fixes. The trailer reacts fairly slowly, so small hitch angles can be held calmly."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Failed by constant rail touches: the trailer rear kept scraping the right rail while the front left corner hit the left rail after short forward pulls. Tiny hitch-hold corrections were not enough, since the course bends. Before moving, turn head to look at both rails and mirrors, and plan the whole path. Start by steering gently so the rear drifts left, away from the right rail, and keep the tractor centred. Forward pulls should be long and straight, never sharp. Stay very slow and stop early."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Holding the trailer straight failed: the course is an S-bend and the trailer rear kept scraping the right rail within the first few metres, while short forward pulls then clipped the left rail with the tractor front. Before moving, turn the head and read both rails and the mirrors to judge the lane. Deliberately steer so the trailer rear swings left early and gently, then follow it, rather than chasing zero. Go very slowly, and make few, long, straight forward pulls. Never keep reversing once a rear corner nears a rail. Do not waste touches."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 114.95,
+     "progress": 0.3965,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Course is a narrow alley, so the mower's front corners swing into the rails whenever the trailer is allowed to fold. Most touches were the front-left corner while the hitch was far to the right with strong right steering. Do not drive straight back blindly at the start: the trailer rear drifted into the left rail early. Keep the hitch angle small, steer gently and early, and reverse very slowly. When the hitch grows, stop and pull forward straight rather than fighting it. Spend touches carefully; I ran out of them. Looking straight back showed the bay and rails well."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Last time I ran out of touches by repeatedly pulling forward and reversing again near the same left rail. The alley is tight and the left side is the danger: the trailer rear and mower corners kept grazing it. Reversing blind and straight drifted left early, so steer gently right from the very start to keep the trailer centred, and look straight back to judge the gap. Go very slowly, correct early, and never stop and retry in the same spot. Tip: this short cart reacts fast, so keep the hitch small."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Nearly every touch was the trailer rear-left corner against the left rail, even with the hitch small and the rig seemingly straight, so the whole rig sits too far left in the alley. Holding the hitch slightly right made the mower front-left clip instead. Stopping and retrying wasted touches. Start by looking ahead and back to judge the gap, keep the rig centred early, reverse very slowly, and check in often. Prefer steering the whole rig gently right in the first stretch, never forcing the hitch."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 214.6,
+     "progress": 0.3555,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Straight reversing worked early, but the course bends left and the trailer rear kept clipping the left rail at the same spot. Blind retries with a fixed rightward offset failed and burned touches. Next time look at the rails through the mirrors or camera, and start steering the trailer rear gently away from the left rail well before the bend, so the whole long rig arcs through it. Reverse slowly, keep the hitch small, and never pull forward with large steering near the front rails. Protect the touch budget first."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Straight reversing is fine early, but the trailer rear-left corner clipped the left rail at the same spot at the start of the left bend, again and again. Fixed rightward hitch offsets and pulling forward then retrying wasted touches and time. Instead, begin the rightward shift of the whole rig very early, well before the bend, using the left mirror to keep a generous gap, and stay slow. Never keep reversing toward a close rail: stop and pull forward straight before touching. Tip: this long trailer reacts slowly, so use gentle steering."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Straight slow reversing is fine early, but the trailer rear-left corner clipped the left rail at the start of the left bend, over and over, and every blind retry spent a touch and ended the leg. Do not retry the same line: before the bend, use the left mirror to see the gap and move the whole rig well to the right early, in a gentle sweep. If the rear gets close to the left rail, stop and pull forward straight, then check the gap before reversing again. Protect touches first; steer gently, the long trailer reacts slowly."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-151643-6b988c",
+   "role": "transfer",
+   "step": 4,
+   "member": 1,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 133.3,
+     "progress": 0.2393,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Driving straight back drifted the trailer rear into the left rail again and again near the start of the bend, and I burned every touch by retrying blindly. Stop and study the rail sightings first, using the camera and left mirror. Begin steering the trailer rear toward the right side early, before the bend, then ease it back once past the corner. Move slowly, keep gentle steering, and treat each touch as precious. Pulling forward with wheels turned hit the front-right rail, so pull out straight and short. This car's long trailer reacts slowly, so correct early."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Driving straight back was fine at first, but the trailer rear-left corner clipped the left rail at the start of the bend, again and again, and I wasted every touch retrying blindly with tiny steering biases. Pulling forward with wheels turned hit the front-right rail, so pull out only straight and short. Before reversing far, study the rails with the camera and left mirror, and plan a deliberate wide arc early: swing the trailer rear clearly away from the left rail before the bend, then follow it round. Go slowly, and spend touches very sparingly."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Every attempt ended with the trailer rear-left corner hitting the left rail at the same spot where the bend begins, whether I steered straight, biased right, or biased left. Blind retries burned all touches. Do not retry the same thing. Early on, while still far from the bend, deliberately swing the trailer rear well to the right side of the lane, then follow it round. Look with the camera and left mirror first. Pull out only straight and short. Drive slowly and keep touches precious."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 182.1,
+     "progress": 0.1245,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last time I kept bumping the trailer's rear-right corner on the right rail early, then the front-left corner while pulling forward, and ran out of touches. Hitch-only control ignored the walls and I never read them. Look at the rails first: the course is an S-bend, so the rig must drift sideways, not straight back. Go very slowly, keep the trailer gently angled, and steer early. Short pulls forward should stay straight. Check in often and avoid repeated gear changes."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Almost every touch was the trailer's rear-right corner on the right rail, early, while reversing nearly straight; the rails sit very close and the course shifts sideways, so a hitch-only loop wastes touches. Pulling forward and retrying just repeated it. Before moving, read the rail points and decide the lateral path. Start by swinging the rig well to the left, with the vehicle itself positioned left, before reversing. Reverse very slowly, with small deliberate hitch angles, and stop at the first sign of the right rail. Save touches."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "The trailer rear-right corner kept hitting the right rail early, while reversing nearly straight, and touches ran out. Hitch-only steering ignored the rails. Before moving, look back over both shoulders and in the mirrors to read where the rails are. The course shifts sideways, so aim the trailer rear gently toward the open side from the start. Go very slowly and stop at the first sign of a rail. Do not waste touches on repeated forward-and-back retries; pull forward straight to reset instead. Tip: the trailer is long, so it reacts slowly and needs early, small steering."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 126.25,
+     "progress": 0.4189,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last time I drove blind: I looked straight back the whole time and never learned the alley's shape, so I kept scraping the left rail with the trailer's rear-left corner, then the mower's front-left when pulling forward. Too many gear changes and corrections wasted the touch budget. Next: look ahead first to read the alley and where the bay sits, reverse very slowly, steer gently and early, hold the trailer nearly straight, and never let it swing far. Short trailer reacts fast, so use small, quick corrections. Keep clear of the left rail."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Finished, but with many rail touches, mostly the trailer's rear corners on the right and the mower's rear-right. Each touch froze me and forced a costly pull forward. The alley bends: early on the left rail is close, later the right rail closes in near the bay. Reverse very slowly, keep the trailer nearly straight, and check the sides to read the rails instead of staring ahead. Steer gently, correct early, and avoid hard-lock pull-forwards. What worked at the end: swing the trailer right, then recover it smoothly and drive in straight."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Failed by scraping the trailer's rear-left corner on the left rail again and again, early in the alley, until the touch budget ran out. Holding the trailer dead straight does not clear it: the alley bends and the left rail is close right at the start. Every touch froze me and forced pull-forwards that only repeated the problem. Prioritise: before reversing, look ahead and sideways to learn where the left rail runs, then start by moving the whole rig rightward. Reverse very slowly, hold a gentle steady trailer lean to the right, and check the rail gaps with head turns."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 214.2,
+     "progress": 0.2084,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Straight reversing worked at first, but the course bends right and the trailer rear-left corner kept clipping the left rail at the bend, costing most touches. Start the right swing much earlier and wider, before the bend, not at it. Reverse slowly and keep a generous gap on the left. After a touch, pull forward well clear before retrying, not small tweaks. Watch the rear-left corner with camera and mirrors. The long trailer reacts slowly, so steer early and gently."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Straight reversing is easy early on; the trouble is the right-hand bend, where the trailer rear-left corner kept clipping the left rail, and a few touches came from the cab front corners while pulling forward after a touch. Touches ran out fast, so avoid every one. Reverse slowly, begin a gentle but sustained right swing of the trailer well before the bend, and keep watching the camera and mirrors for the left rail. After a touch, pull forward straight and only a short way, since steering hard forward hit the cab corners. Leave wide margins and use few decisions."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Every touch was the trailer rear-left corner at the same bend; steering the trailer right, left or straight all failed, and I never looked at the rails. Next time use the left mirror and camera, turn the head, and read the wall bearings to steer by the actual gap. Over-swinging right was likely wrong: the trailer cuts the inside corner, so keep it further right and well clear of the left rail before the bend, going slowly. After a touch pull forward only briefly. Touches are scarce, so stop and think rather than retry blindly."
+      }
+     ],
+     "note": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "study": "20261106-0808-chain-61-terra-allow-617c",
+ "model": "codex:gpt-6.1-terra",
+ "condition": "chain",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 1,
+ "steps": 6,
+ "policy": {
+  "numbers": "allow",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 1,
+ "runs": [
+  {
+   "run_id": "20261106-080842-b4c112",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 171.3,
+     "progress": 0.5974,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ],
+       [
+        "it contains a code keyword ('while there')"
+       ]
+      ],
+      "drafts": [
+       "The course bends right. Straight reversing worked at the start, but repeated attempts at the bend trapped the trailer's rear-left corner and the vehicle's front-left corner against the rails. Watch both clearances and use the camera to guide the trailer toward the opening; hitch angle alone does not show whether the path is clear. If a corner gets close, reposition early with enough forward room before trying again. This short trailer reacts quickly, so use gentle steering and follow its swing promptly.",
+       "The course bends right. Straight reversing worked at the start, but the trailer rear-left and vehicle front-left repeatedly struck the rails in the bend. Hitch angle alone does not show whether the path is clear. Watch both corners and use the camera to guide the trailer toward the opening. Reposition early while there is room, rather than repeating the same approach after contact. This short trailer reacts quickly, so steer gently and follow its swing promptly."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 236.1,
+     "progress": 0.7059,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "it contains a code keyword ('while watching')",
+        "it contains code operators or braces (';')"
+       ],
+       [
+        "it contains a code keyword ('while pulling')"
+       ]
+      ],
+      "drafts": [
+       "The course bends; a fixed hitch angle and progress-based guesses left the trailer rear-right and vehicle front corners hitting rails. Look rearward and use both rail boundaries to guide the trailer early, while watching front-corner clearance as the tractor swings. After contact, move away from the touched corner before steering or adding speed. Pulling forward with a large steering angle sharply increased articulation and caused another contact. This tractor's long hitch offset makes front swing and hitch growth important; use small, early corrections and straighten before the bay.",
+       "Fixed hitch targets and guesses based on distance led to repeated contacts. Look rearward and use both rail boundaries to guide the trailer early. Watch the tractor's front corners as it swings, especially near the right rail. After contact, choose a direction and steering angle that move the touched corner clear. A sharp turn while pulling forward greatly increased articulation and caused another contact. This tractor has a long hitch offset, so use small early corrections and straighten for the bay."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 221.75,
+     "progress": 0.7336,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The alley bends toward the cart's right. A straight reverse hits the rear-left rail. Reposition right early, use the visible rails to judge clearance, and straighten before the narrowing. Repeated late turns and pull-forwards left the rig too close to the left rail and exhausted the touch allowance. Watch the vehicle's front-left corner during recovery. The short cart reacts quickly, so reverse slowly and follow its swing promptly to prevent overcorrection.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The alley bends toward the cart's right; a straight reverse hits the rear-left rail. Start the rightward repositioning early and use the visible rails to judge clearance, then straighten before the narrowing. Our repeated late turns and pull-forwards left the rig too close to the left rail and exhausted the touch allowance. Watch the vehicle's front-left corner during recovery. The short cart reacts quickly: reverse slowly and follow its swing promptly to prevent overcorrection.",
+       "The alley bends toward the cart's right. A straight reverse hits the rear-left rail. Reposition right early, use the visible rails to judge clearance, and straighten before the narrowing. Repeated late turns and pull-forwards left the rig too close to the left rail and exhausted the touch allowance. Watch the vehicle's front-left corner during recovery. The short cart reacts quickly, so reverse slowly and follow its swing promptly to prevent overcorrection."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 358.8,
+     "progress": 0.3998,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The bend repeatedly caught the trailer's rear-left corner because holding a fixed hitch angle ignored the closing rail. Begin the bend early and use the camera to track trailer clearance, adjusting before it disappears. Watch the cab's front corners when pulling forward, because straight steering also led to contact. This long semi-trailer responds slowly, so make small corrections early and allow room for its rear to follow.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The bend repeatedly caught the trailer's rear-left corner; holding a fixed hitch angle ignored the rail closing in. Start the bend early, use the camera to track the trailer corners and adjust before clearance disappears. Watch the cab's front corners when pulling forward: straight steering hit the front-left rail twice. This long semi-trailer responds slowly, so make small corrections early and allow room for its rear to follow.",
+       "The bend repeatedly caught the trailer's rear-left corner because holding a fixed hitch angle ignored the closing rail. Begin the bend early and use the camera to track trailer clearance, adjusting before it disappears. Watch the cab's front corners when pulling forward, because straight steering also led to contact. This long semi-trailer responds slowly, so make small corrections early and allow room for its rear to follow."
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

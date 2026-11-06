@@ -1,0 +1,602 @@
+{
+ "study": "20261106-1442-self-gemini-38-flash-low-none-1fba",
+ "model": "agy:gemini-3.8-flash-low",
+ "condition": "self",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 2,
+ "steps": 3,
+ "policy": {
+  "numbers": "none",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-144238-4a821a",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 123.35,
+     "progress": 0.2843,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The bend turns right. Steering left swings the long vehicle front into the right wall, while staying straight swings the trailer rear-left into the outer corner. You must begin turning right very early in the straight section while there is still room on both sides. Keep all steering inputs extremely gentle and smooth to prevent the car nose from swinging outward into barriers. Never pull forward too far into the narrow bend when pinned because the front will strike the rail. Steer early, smoothly, and reverse slowly.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The bend turns right. Steering left swings the long vehicle front into the right wall, while staying straight swings the trailer rear-left into the outer corner. You must begin turning right very early in the straight section while there is still room on both sides. Keep all steering inputs extremely gentle and smooth to prevent the car nose from swinging outward into barriers. Never pull forward too far into the narrow bend when pinned because the front will strike the rail. Steer early, smoothly, and reverse slowly."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 139.4,
+     "progress": 0.2102,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The corridor bends early to the left, which repeatedly caught the trailer rear-right corner. We tried to steer while reversing but reacted far too late, and pulling forward with sharp steering repeatedly scraped the front-left on the outer rail. Priority: anticipate the left curve before reaching it by building a positive hitch early and reversing very slowly. Keep scanning both mirrors continuously so neither side is blind. Vehicle tip: the wheels turn slowly, so pre-position your steering before entering the bend and never use aggressive lock when pulling forward in a narrow channel.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The corridor bends early to the left, which repeatedly caught the trailer rear-right corner. We tried to steer while reversing but reacted far too late, and pulling forward with sharp steering repeatedly scraped the front-left on the outer rail. Priority: anticipate the left curve before reaching it by building a positive hitch early and reversing very slowly. Keep scanning both mirrors continuously so neither side is blind. Vehicle tip: the wheels turn slowly, so pre-position your steering before entering the bend and never use aggressive lock when pulling forward in a narrow channel."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 150.65,
+     "progress": 0.7459,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The course narrows towards the bay with the right rail dangerously close. We repeatedly clipped the trailer rear-right because reversing drifted rightward and attempts to pull forward clipped the front-left. Priority: keep the rig biased slightly toward the left side of the alley from the very start, using small hitch corrections. When reversing, steer right to swing the trailer left away from the right rail. The short cart reacts extremely quickly, so reverse very slowly with gentle steering gains. If pulling forward is ever needed, keep the wheels centered so the front corners do not swing.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The course narrows towards the bay with the right rail dangerously close. We repeatedly clipped the trailer rear-right because reversing drifted rightward and attempts to pull forward clipped the front-left. Priority: keep the rig biased slightly toward the left side of the alley from the very start, using small hitch corrections. When reversing, steer right to swing the trailer left away from the right rail. The short cart reacts extremely quickly, so reverse very slowly with gentle steering gains. If pulling forward is ever needed, keep the wheels centered so the front corners do not swing."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 242.45,
+     "progress": 0.724,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The course has a tight bend to the right leading into the handoff bay. We repeatedly clipped the trailer rear-left against the outer rail corner because we turned in too early and cut the inside too sharply, while pulling forward sharply swung the cab nose into the opposite rail. Prioritise staying centered along the approach corridor, initiate the turn into the bay smoothly without letting the trailer sweep too wide, and if pulling forward to adjust, steer very gently to keep the front overhang clear of side barriers. For this vehicle, small steering corrections keep the long trailer stable.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The course has a tight bend to the right leading into the handoff bay. We repeatedly clipped the trailer rear-left against the outer rail corner because we turned in too early and cut the inside too sharply, while pulling forward sharply swung the cab nose into the opposite rail. Prioritise staying centered along the approach corridor, initiate the turn into the bay smoothly without letting the trailer sweep too wide, and if pulling forward to adjust, steer very gently to keep the front overhang clear of side barriers. For this vehicle, small steering corrections keep the long trailer stable."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-144238-1fa05f",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 174.25,
+     "progress": 0.4824,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "We failed from repeated left-side rail touches. The course has a sharp right bend. When steering right while reversing, the long car swings its front corner wide to the left into the rail. Initiate the turn early with gentle steering, keeping the vehicle body away from the outer rail. Keep the hitch angle modest throughout the curve so the combination does not fold and drive the rear or front into the wall. If unpinning by moving forward, steer away from the near rail rather than swinging into it. Prioritise maintaining clearance on the vehicle front corner over aggressive turning.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We failed from repeated left-side rail touches. The course has a sharp right bend. When steering right while reversing, the long car swings its front corner wide to the left into the rail. Initiate the turn early with gentle steering, keeping the vehicle body away from the outer rail. Keep the hitch angle modest throughout the curve so the combination does not fold and drive the rear or front into the wall. If unpinning by moving forward, steer away from the near rail rather than swinging into it. Prioritise maintaining clearance on the vehicle front corner over aggressive turning."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 168.15,
+     "progress": 0.2144,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Reversing into the initial bend clipped the outside rail repeatedly because the turn was initiated far too late. The combination enters straight while the rails curve left, so initiate a gentle trailer angle early from the very start rather than reacting late. Keep hitch angle modest to prevent front corners from swinging into barriers. For this tractor and long tipping trailer, steer gently and reverse at a crawl through bends so corrections take effect smoothly without wild swings.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Reversing into the initial bend clipped the outside rail repeatedly because the turn was initiated far too late. The combination enters straight while the rails curve left, so initiate a gentle trailer angle early from the very start rather than reacting late. Keep hitch angle modest to prevent front corners from swinging into barriers. For this tractor and long tipping trailer, steer gently and reverse at a crawl through bends so corrections take effect smoothly without wild swings."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 203.85,
+     "progress": 0.5305,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The course narrows or shifts right mid-way, causing repeated rear-left trailer scrapes when reversing straight. Prioritise staying biased towards the right rail rather than hugging the left. The short garden cart responds extremely rapidly to steering inputs, so reverse very slowly and keep hitch adjustments gentle. Pulling forward to clear contacts must move well forward and right before reversing again. Avoid over-correcting steering which causes rapid jackknifing.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The course narrows or shifts right mid-way, causing repeated rear-left trailer scrapes when reversing straight. Prioritise staying biased towards the right rail rather than hugging the left. The short garden cart responds extremely rapidly to steering inputs, so reverse very slowly and keep hitch adjustments gentle. Pulling forward to clear contacts must move well forward and right before reversing again. Avoid over-correcting steering which causes rapid jackknifing."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "FINISHED",
+     "time": 98.5,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": {
+      "text": "Watching the rear camera display keeps the trailer safely centered between rails through the entire bend. Reversing at a steady moderate pace gives ample steering response to handle the long trailer smoothly without risking jackknife. Prioritize gentle steering corrections toward the open side indicated by camera rail clearances. The long semi-trailer reacts gradually, so maintain small hitch adjustments and allow the rig to track naturally into the final bay.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Watching the rear camera display keeps the trailer safely centered between rails through the entire bend. Reversing at a steady moderate pace gives ample steering response to handle the long trailer smoothly without risking jackknife. Prioritize gentle steering corrections toward the open side indicated by camera rail clearances. The long semi-trailer reacts gradually, so maintain small hitch adjustments and allow the rig to track naturally into the final bay."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-144945-4aa26d",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 96.6,
+     "progress": 0.9242,
+     "touches": 5,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The bend turns right. Steering left swings the long vehicle front into the right wall, while staying straight swings the trailer rear-left into the outer corner. You must begin turning right very early in the straight section while there is still room on both sides. Keep all steering inputs extremely gentle and smooth to prevent the car nose from swinging outward into barriers. Never pull forward too far into the narrow bend when pinned because the front will strike the rail. Steer early, smoothly, and reverse slowly."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 92.1,
+     "progress": 0.42,
+     "touches": 5,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The corridor bends early to the left, which repeatedly caught the trailer rear-right corner. We tried to steer while reversing but reacted far too late, and pulling forward with sharp steering repeatedly scraped the front-left on the outer rail. Priority: anticipate the left curve before reaching it by building a positive hitch early and reversing very slowly. Keep scanning both mirrors continuously so neither side is blind. Vehicle tip: the wheels turn slowly, so pre-position your steering before entering the bend and never use aggressive lock when pulling forward in a narrow channel."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 116.4,
+     "progress": 0.3647,
+     "touches": 6,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The course narrows towards the bay with the right rail dangerously close. We repeatedly clipped the trailer rear-right because reversing drifted rightward and attempts to pull forward clipped the front-left. Priority: keep the rig biased slightly toward the left side of the alley from the very start, using small hitch corrections. When reversing, steer right to swing the trailer left away from the right rail. The short cart reacts extremely quickly, so reverse very slowly with gentle steering gains. If pulling forward is ever needed, keep the wheels centered so the front corners do not swing."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 113.4,
+     "progress": 0.3218,
+     "touches": 3,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The course has a tight bend to the right leading into the handoff bay. We repeatedly clipped the trailer rear-left against the outer rail corner because we turned in too early and cut the inside too sharply, while pulling forward sharply swung the cab nose into the opposite rail. Prioritise staying centered along the approach corridor, initiate the turn into the bay smoothly without letting the trailer sweep too wide, and if pulling forward to adjust, steer very gently to keep the front overhang clear of side barriers. For this vehicle, small steering corrections keep the long trailer stable."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145013-ed264d",
+   "role": "train",
+   "step": 2,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 31.85,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We failed from repeated left-side rail touches. The course has a sharp right bend. When steering right while reversing, the long car swings its front corner wide to the left into the rail. Initiate the turn early with gentle steering, keeping the vehicle body away from the outer rail. Keep the hitch angle modest throughout the curve so the combination does not fold and drive the rear or front into the wall. If unpinning by moving forward, steer away from the near rail rather than swinging into it. Prioritise maintaining clearance on the vehicle front corner over aggressive turning."
+      }
+     ],
+     "note": {
+      "text": "Clean run completed quickly with zero touches. Reverse straight briefly, then initiate a gentle right turn curve before straightening into the bay. Keeping the hitch angle modest avoids jackknifing and prevents the car front corner from swinging wide into the outer wall. Constantly look at the reversing camera screen to monitor bay corners and trailer alignment. Steer proportionally to track the target hitch angle smoothly.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Clean run completed quickly with zero touches. Reverse straight briefly, then initiate a gentle right turn curve before straightening into the bay. Keeping the hitch angle modest avoids jackknifing and prevents the car front corner from swinging wide into the outer wall. Constantly look at the reversing camera screen to monitor bay corners and trailer alignment. Steer proportionally to track the target hitch angle smoothly."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 84.0,
+     "progress": 0.3901,
+     "touches": 4,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Reversing into the initial bend clipped the outside rail repeatedly because the turn was initiated far too late. The combination enters straight while the rails curve left, so initiate a gentle trailer angle early from the very start rather than reacting late. Keep hitch angle modest to prevent front corners from swinging into barriers. For this tractor and long tipping trailer, steer gently and reverse at a crawl through bends so corrections take effect smoothly without wild swings."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 93.0,
+     "progress": 0.5858,
+     "touches": 5,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The course narrows or shifts right mid-way, causing repeated rear-left trailer scrapes when reversing straight. Prioritise staying biased towards the right rail rather than hugging the left. The short garden cart responds extremely rapidly to steering inputs, so reverse very slowly and keep hitch adjustments gentle. Pulling forward to clear contacts must move well forward and right before reversing again. Avoid over-correcting steering which causes rapid jackknifing."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 112.7,
+     "progress": 0.4251,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Watching the rear camera display keeps the trailer safely centered between rails through the entire bend. Reversing at a steady moderate pace gives ample steering response to handle the long trailer smoothly without risking jackknife. Prioritize gentle steering corrections toward the open side indicated by camera rail clearances. The long semi-trailer reacts gradually, so maintain small hitch adjustments and allow the rig to track naturally into the final bay."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145352-81f255",
+   "role": "train",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The bend turns right. Steering left swings the long vehicle front into the right wall, while staying straight swings the trailer rear-left into the outer corner. You must begin turning right very early in the straight section while there is still room on both sides. Keep all steering inputs extremely gentle and smooth to prevent the car nose from swinging outward into barriers. Never pull forward too far into the narrow bend when pinned because the front will strike the rail. Steer early, smoothly, and reverse slowly."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The corridor bends early to the left, which repeatedly caught the trailer rear-right corner. We tried to steer while reversing but reacted far too late, and pulling forward with sharp steering repeatedly scraped the front-left on the outer rail. Priority: anticipate the left curve before reaching it by building a positive hitch early and reversing very slowly. Keep scanning both mirrors continuously so neither side is blind. Vehicle tip: the wheels turn slowly, so pre-position your steering before entering the bend and never use aggressive lock when pulling forward in a narrow channel."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The course narrows towards the bay with the right rail dangerously close. We repeatedly clipped the trailer rear-right because reversing drifted rightward and attempts to pull forward clipped the front-left. Priority: keep the rig biased slightly toward the left side of the alley from the very start, using small hitch corrections. When reversing, steer right to swing the trailer left away from the right rail. The short cart reacts extremely quickly, so reverse very slowly with gentle steering gains. If pulling forward is ever needed, keep the wheels centered so the front corners do not swing."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The course has a tight bend to the right leading into the handoff bay. We repeatedly clipped the trailer rear-left against the outer rail corner because we turned in too early and cut the inside too sharply, while pulling forward sharply swung the cab nose into the opposite rail. Prioritise staying centered along the approach corridor, initiate the turn into the bay smoothly without letting the trailer sweep too wide, and if pulling forward to adjust, steer very gently to keep the front overhang clear of side barriers. For this vehicle, small steering corrections keep the long trailer stable."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145408-4ff5fd",
+   "role": "train",
+   "step": 3,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We failed from repeated left-side rail touches. The course has a sharp right bend. When steering right while reversing, the long car swings its front corner wide to the left into the rail. Initiate the turn early with gentle steering, keeping the vehicle body away from the outer rail. Keep the hitch angle modest throughout the curve so the combination does not fold and drive the rear or front into the wall. If unpinning by moving forward, steer away from the near rail rather than swinging into it. Prioritise maintaining clearance on the vehicle front corner over aggressive turning."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Clean run completed quickly with zero touches. Reverse straight briefly, then initiate a gentle right turn curve before straightening into the bay. Keeping the hitch angle modest avoids jackknifing and prevents the car front corner from swinging wide into the outer wall. Constantly look at the reversing camera screen to monitor bay corners and trailer alignment. Steer proportionally to track the target hitch angle smoothly."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Reversing into the initial bend clipped the outside rail repeatedly because the turn was initiated far too late. The combination enters straight while the rails curve left, so initiate a gentle trailer angle early from the very start rather than reacting late. Keep hitch angle modest to prevent front corners from swinging into barriers. For this tractor and long tipping trailer, steer gently and reverse at a crawl through bends so corrections take effect smoothly without wild swings."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The course narrows or shifts right mid-way, causing repeated rear-left trailer scrapes when reversing straight. Prioritise staying biased towards the right rail rather than hugging the left. The short garden cart responds extremely rapidly to steering inputs, so reverse very slowly and keep hitch adjustments gentle. Pulling forward to clear contacts must move well forward and right before reversing again. Avoid over-correcting steering which causes rapid jackknifing."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Watching the rear camera display keeps the trailer safely centered between rails through the entire bend. Reversing at a steady moderate pace gives ample steering response to handle the long trailer smoothly without risking jackknife. Prioritize gentle steering corrections toward the open side indicated by camera rail clearances. The long semi-trailer reacts gradually, so maintain small hitch adjustments and allow the rig to track naturally into the final bay."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145515-9ced2e",
+   "role": "transfer",
+   "step": 4,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The bend turns right. Steering left swings the long vehicle front into the right wall, while staying straight swings the trailer rear-left into the outer corner. You must begin turning right very early in the straight section while there is still room on both sides. Keep all steering inputs extremely gentle and smooth to prevent the car nose from swinging outward into barriers. Never pull forward too far into the narrow bend when pinned because the front will strike the rail. Steer early, smoothly, and reverse slowly."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 15.5,
+     "progress": 0.2253,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The corridor bends early to the left, which repeatedly caught the trailer rear-right corner. We tried to steer while reversing but reacted far too late, and pulling forward with sharp steering repeatedly scraped the front-left on the outer rail. Priority: anticipate the left curve before reaching it by building a positive hitch early and reversing very slowly. Keep scanning both mirrors continuously so neither side is blind. Vehicle tip: the wheels turn slowly, so pre-position your steering before entering the bend and never use aggressive lock when pulling forward in a narrow channel."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The course narrows towards the bay with the right rail dangerously close. We repeatedly clipped the trailer rear-right because reversing drifted rightward and attempts to pull forward clipped the front-left. Priority: keep the rig biased slightly toward the left side of the alley from the very start, using small hitch corrections. When reversing, steer right to swing the trailer left away from the right rail. The short cart reacts extremely quickly, so reverse very slowly with gentle steering gains. If pulling forward is ever needed, keep the wheels centered so the front corners do not swing."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The course has a tight bend to the right leading into the handoff bay. We repeatedly clipped the trailer rear-left against the outer rail corner because we turned in too early and cut the inside too sharply, while pulling forward sharply swung the cab nose into the opposite rail. Prioritise staying centered along the approach corridor, initiate the turn into the bay smoothly without letting the trailer sweep too wide, and if pulling forward to adjust, steer very gently to keep the front overhang clear of side barriers. For this vehicle, small steering corrections keep the long trailer stable."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145515-053486",
+   "role": "transfer",
+   "step": 4,
+   "member": 1,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "We failed from repeated left-side rail touches. The course has a sharp right bend. When steering right while reversing, the long car swings its front corner wide to the left into the rail. Initiate the turn early with gentle steering, keeping the vehicle body away from the outer rail. Keep the hitch angle modest throughout the curve so the combination does not fold and drive the rear or front into the wall. If unpinning by moving forward, steer away from the near rail rather than swinging into it. Prioritise maintaining clearance on the vehicle front corner over aggressive turning."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Clean run completed quickly with zero touches. Reverse straight briefly, then initiate a gentle right turn curve before straightening into the bay. Keeping the hitch angle modest avoids jackknifing and prevents the car front corner from swinging wide into the outer wall. Constantly look at the reversing camera screen to monitor bay corners and trailer alignment. Steer proportionally to track the target hitch angle smoothly."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Reversing into the initial bend clipped the outside rail repeatedly because the turn was initiated far too late. The combination enters straight while the rails curve left, so initiate a gentle trailer angle early from the very start rather than reacting late. Keep hitch angle modest to prevent front corners from swinging into barriers. For this tractor and long tipping trailer, steer gently and reverse at a crawl through bends so corrections take effect smoothly without wild swings."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "The course narrows or shifts right mid-way, causing repeated rear-left trailer scrapes when reversing straight. Prioritise staying biased towards the right rail rather than hugging the left. The short garden cart responds extremely rapidly to steering inputs, so reverse very slowly and keep hitch adjustments gentle. Pulling forward to clear contacts must move well forward and right before reversing again. Avoid over-correcting steering which causes rapid jackknifing."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Watching the rear camera display keeps the trailer safely centered between rails through the entire bend. Reversing at a steady moderate pace gives ample steering response to handle the long trailer smoothly without risking jackknife. Prioritize gentle steering corrections toward the open side indicated by camera rail clearances. The long semi-trailer reacts gradually, so maintain small hitch adjustments and allow the rig to track naturally into the final bay."
+      }
+     ],
+     "note": null
+    }
+   ]
+  }
+ ]
+}

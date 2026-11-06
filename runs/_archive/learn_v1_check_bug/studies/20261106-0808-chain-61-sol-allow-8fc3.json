@@ -1,0 +1,122 @@
+{
+ "study": "20261106-0808-chain-61-sol-allow-8fc3",
+ "model": "codex:gpt-6.1-sol",
+ "condition": "chain",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 1,
+ "steps": 6,
+ "policy": {
+  "numbers": "allow",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 1,
+ "runs": [
+  {
+   "run_id": "20261106-080842-de393c",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "FINISHED",
+     "time": 39.6,
+     "progress": 1.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": {
+      "text": "Watch the rear camera and follow the centre between the rails through the bend. Reversing at 0.7 metres per second kept hitch angles modest without stops or contacts. Near the bay, use its painted corners for alignment. The end rail can mislead rail-centre guidance into continuing the turn. Slow to 0.4 metres per second and finish straight. This short trailer reacts quickly, so follow its swing promptly to control the hitch.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "Use the rear camera continuously and follow the centre between the rails through the bend. Reversing at 0.7 m/s worked cleanly, with modest hitch angles and no stops or contacts. As the bay approaches, switch attention to its painted corners: the end rail can mislead rail-centre guidance into continuing the turn. Slow to 0.4 m/s and straighten into the bay. This short trailer reacts quickly; follow its swing promptly to keep the hitch controlled.",
+       "Watch the rear camera and follow the centre between the rails through the bend. Reversing at 0.7 metres per second kept hitch angles modest without stops or contacts. Near the bay, use its painted corners for alignment. The end rail can mislead rail-centre guidance into continuing the turn. Slow to 0.4 metres per second and finish straight. This short trailer reacts quickly, so follow its swing promptly to control the hitch."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 220.8,
+     "progress": 0.2246,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "it contains code operators or braces (';')"
+       ],
+       [
+        "it contains a code keyword ('while allowing')"
+       ]
+      ],
+      "drafts": [
+       "Repeated rear-right trailer contacts near the first bend ended this run. Fixed hitch-angle targets and assuming the bend direction never established a safe path. Inspect both sides before moving; use seen rails to plan the trailer path and the tractor's swept clearance. Strong correction also swung the tractor into the right rail. Pulling forward freed contacts but sometimes hit another rail: inspect the escape path first. This tractor's short wheelbase and rearward hitch make steering corrections sharp; set up early and correct gently.",
+       "Repeated trailer rear-right contacts at the first bend ended this run. Fixed hitch targets and an assumed bend direction failed to establish a safe path. Inspect both rails before moving and use their positions to guide the trailer while allowing room for the tractor to swing. Strong straightening corrections also brought the tractor into the right rail. Pulling forward can free a contact but needs a clear escape path. This tractor's short wheelbase and rearward hitch make corrections sharp. Set up early and steer gently."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 228.65,
+     "progress": 0.7184,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Straight reversing was easy at first. Holding a fixed right bend led into the left rail. Repeated small retries trapped the mower against it. Plan the bend early using visible rails and bay markings. Watch both mower corners as well as the cart. Right steering in reverse can swing the mower front left into a rail. After contact, pull well clear and change the approach before retrying. This short cart folds quickly, so reverse slowly, correct early and follow the cart before the hitch angle grows large.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains a code keyword ('while the')",
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "Straight reversing was easy initially, but holding a fixed right bend led into the left rail. Repeated local corrections trapped the mower: its front and rear swept left while the cart turned right. Plan the bend early from visible rails and bay markings; inspect both sides and protect the whole rig, not just the cart. Pull well clear and change the approach before retrying a contact. This short cart develops hitch angle very quickly: use slow reverse, small corrections, and follow the cart promptly before the angle grows large.",
+       "Straight reversing was easy at first. Holding a fixed right bend led into the left rail. Repeated small retries trapped the mower against it. Plan the bend early using visible rails and bay markings. Watch both mower corners as well as the cart. Right steering in reverse can swing the mower front left into a rail. After contact, pull well clear and change the approach before retrying. This short cart folds quickly, so reverse slowly, correct early and follow the cart before the hitch angle grows large."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 241.25,
+     "progress": 0.315,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Fixed hitch targets and rear camera alone led to repeated left rail contacts. Watch both mirrors as well as the camera to judge the truck rear and trailer front clearance. Right steering in reverse straightened the trailer but swept its front left into the rail. Larger articulation did not solve the bend. Set up gradually with room for cab swing. If trapped, stop and make a substantial reposition rather than repeating small shunts. This long semi needs clearance along its whole length, not just at its rear.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (611 characters; the limit is 600)",
+        "it contains a code keyword ('def')",
+        "it contains code operators or braces (';')"
+       ]
+      ],
+      "drafts": [
+       "The bend defeated fixed hitch-angle targets: repeated retries returned to the same rail. Rear camera alone missed the truck rear-left and trailer front-left sweeping into the inside rail. Inspect both mirrors and camera before committing; judge clearance along the whole combination, not just the trailer rear. Stop and reposition substantially when trapped rather than repeating tiny shunts. Large articulation did not solve the corner. This long semi needs room for cab swing and early, gradual setup; right steering while reversing straightens a trailer swung right, but can sweep its front left into a rail.",
+       "Fixed hitch targets and rear camera alone led to repeated left rail contacts. Watch both mirrors as well as the camera to judge the truck rear and trailer front clearance. Right steering in reverse straightened the trailer but swept its front left into the rail. Larger articulation did not solve the bend. Set up gradually with room for cab swing. If trapped, stop and make a substantial reposition rather than repeating small shunts. This long semi needs clearance along its whole length, not just at its rear."
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

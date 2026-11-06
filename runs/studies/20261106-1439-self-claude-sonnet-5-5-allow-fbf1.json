@@ -1,0 +1,845 @@
+{
+ "study": "20261106-1439-self-claude-sonnet-5-5-allow-fbf1",
+ "model": "claude-code:claude-sonnet-5-5",
+ "condition": "self",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 2,
+ "steps": 3,
+ "policy": {
+  "numbers": "allow",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-143919-b0617d",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 125.9,
+     "progress": 0.2233,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [
+       [
+        "no leave_note call"
+       ],
+       [
+        "it contains 7 numbers; at most 6 are allowed"
+       ]
+      ],
+      "drafts": [
+       "Leaving lessons for the next attempt.",
+       "Last time I ran out of touches (9 of 8 allowed) by repeatedly scraping the left rail with the trailer's rear-left and the car's rear-left, stuck near 6-9 m of 26. Straight reversing drifted left into the rail around 9 m, and my pull-forward and retry cycles just re-hit it. Prioritise: look at the course walls early, steer the trailer rear away from the left rail before the 9 m point, use gentle gains, reverse slowly, and avoid wasting touches."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 181.4,
+     "progress": 0.1545,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Failed: 8 of 9 touches were the trailer rear-right corner on the right rail, within about 9 m of reversing, because I steered near-straight and never looked at the rails. Repeated pull-forward and retry loops wasted time and touches. Next time: from the start look at the right mirror, keep the rig left of centre, and steer gently using the rails seen, not just hitch angle. Reverse at about 1 m/s. Use wide, early left-following corrections. Stay under 8 touches.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Failed: 8 of 9 touches were the trailer rear-right corner on the right rail, within about 9 m of reversing, because I steered near-straight and never looked at the rails. Repeated pull-forward and retry loops wasted time and touches. Next time: from the start look at the right mirror, keep the rig left of centre, and steer gently using the rails seen, not just hitch angle. Reverse at about 1 m/s. Use wide, early left-following corrections. Stay under 8 touches."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 122.65,
+     "progress": 0.5788,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Lane is very narrow (rails about 2.3 m apart). I wasted touches by reversing blindly and then re-pulling forward, which swung the mower's front-left corner into the rail. The first 6 m went straight fine; the left rail then caught the trailer rear-left near 6 m, so start bending right earlier, gently. Keep speed at 0.5 m/s, look back and watch the left rail distance each call, and do not make large steering swings. Avoid touches: only 8 allowed.",
+      "accepted": true,
+      "rejections": [
+       [
+        "no leave_note call"
+       ]
+      ],
+      "drafts": [
+       "Leaving lessons for next attempt.",
+       "Lane is very narrow (rails about 2.3 m apart). I wasted touches by reversing blindly and then re-pulling forward, which swung the mower's front-left corner into the rail. The first 6 m went straight fine; the left rail then caught the trailer rear-left near 6 m, so start bending right earlier, gently. Keep speed at 0.5 m/s, look back and watch the left rail distance each call, and do not make large steering swings. Avoid touches: only 8 allowed."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 204.2,
+     "progress": 0.2821,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Failed: 8 touches, all trailer rear-left corner at about 23 m of reversing, where the course turns right and the left rail cuts in. Straight reversing with hitch feedback ran the long trailer's rear into the inside rail. Start the turn earlier: before about 18 m, swing the trailer rear right with a sustained hitch angle near 10-15 degrees, and watch the camera and rear-left rail distance. Go slow, about 1 m/s. Pulling forward and re-reversing repeated the same contact, so change the approach, not just the retry. The long trailer reacts slowly, so steer early and gently.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Failed: 8 touches, all trailer rear-left corner at about 23 m of reversing, where the course turns right and the left rail cuts in. Straight reversing with hitch feedback ran the long trailer's rear into the inside rail. Start the turn earlier: before about 18 m, swing the trailer rear right with a sustained hitch angle near 10-15 degrees, and watch the camera and rear-left rail distance. Go slow, about 1 m/s. Pulling forward and re-reversing repeated the same contact, so change the approach, not just the retry. The long trailer reacts slowly, so steer early and gently."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-143919-5acc65",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 121.2,
+     "progress": 0.3704,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Last attempt failed with 9 rail touches, only 37% progress. Plain hitch-angle feedback reversed straight and kept scraping the left rail: the trailer rear-left and the car front-left, alternately. The course bends (L-turn), so a straight-ahead hold is wrong. Do not just pull forward and retry repeatedly; each touch costs 5 s. Plan the curve early: use the first 5 m to set an offset, read the rail points on the camera and mirrors, and keep a clear margin from the left rail. Reverse slowly, under 1.2 m/s, and check in often.",
+      "accepted": true,
+      "rejections": [
+       [
+        "no leave_note call"
+       ]
+      ],
+      "drafts": [
+       "Leaving lessons for next attempt.",
+       "Last attempt failed with 9 rail touches, only 37% progress. Plain hitch-angle feedback reversed straight and kept scraping the left rail: the trailer rear-left and the car front-left, alternately. The course bends (L-turn), so a straight-ahead hold is wrong. Do not just pull forward and retry repeatedly; each touch costs 5 s. Plan the curve early: use the first 5 m to set an offset, read the rail points on the camera and mirrors, and keep a clear margin from the left rail. Reverse slowly, under 1.2 m/s, and check in often."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 126.2,
+     "progress": 0.1689,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Failed by touching rails 9 times, mostly trailer rear-right (6) and vehicle front-left (3). The course bends (S-bend) and I drove blind with a pure hitch-follow controller, keeping the head turned back at 170 and never reading the rail points. Next time: read rail bearings and distances every step and steer toward the gap. Reverse slowly, about 1 m/s. After an early contact, rethink instead of retrying the same bias. Pulling forward with the wheels steered only swung the nose into the left rail.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Failed by touching rails 9 times, mostly trailer rear-right (6) and vehicle front-left (3). The course bends (S-bend) and I drove blind with a pure hitch-follow controller, keeping the head turned back at 170 and never reading the rail points. Next time: read rail bearings and distances every step and steer toward the gap. Reverse slowly, about 1 m/s. After an early contact, rethink instead of retrying the same bias. Pulling forward with the wheels steered only swung the nose into the left rail."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 124.7,
+     "progress": 0.6322,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Failed: 9 touches, mostly the left rails (trailer rear-left, vehicle front-left). A blind hitch-angle stabilizer drifted left, and my forward pulls with the wheels steered also hit the left rail. Priorities: use the first 3 m, which are clear, to learn where the walls are; look backward and read the rails each call; steer from what you see. Keep corrections small and the speed at 0.5 m/s. Avoid forward pulls with big steering. The bay lies back-left, with the course wider on the right. Short trailer: it reacts fast.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Failed: 9 touches, mostly the left rails (trailer rear-left, vehicle front-left). A blind hitch-angle stabilizer drifted left, and my forward pulls with the wheels steered also hit the left rail. Priorities: use the first 3 m, which are clear, to learn where the walls are; look backward and read the rails each call; steer from what you see. Keep corrections small and the speed at 0.5 m/s. Avoid forward pulls with big steering. The bay lies back-left, with the course wider on the right. Short trailer: it reacts fast."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 203.35,
+     "progress": 0.2566,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Last time I drove straight back near 1.3 m/s and the long trailer's rear-left corner hit the left rail six times at about 25 m of 82, ending in DNF after 9 touches. Blind biasing of the hitch angle did not help, and a hard right-steer jackknifed it. Before reaching that point, study the rails you see and the camera, and start curving the trailer early, well before the rail. After any touch, pull forward straight a long way before retrying. Steer gently: this trailer is long, so it reacts slowly. Never use full lock in reverse. Touches are limited, so avoid them.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Last time I drove straight back near 1.3 m/s and the long trailer's rear-left corner hit the left rail six times at about 25 m of 82, ending in DNF after 9 touches. Blind biasing of the hitch angle did not help, and a hard right-steer jackknifed it. Before reaching that point, study the rails you see and the camera, and start curving the trailer early, well before the rail. After any touch, pull forward straight a long way before retrying. Steer gently: this trailer is long, so it reacts slowly. Never use full lock in reverse. Touches are limited, so avoid them."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-144656-d95a56",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 125.05,
+     "progress": 0.3988,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "Failed: 9 rail touches, DNF at 40%. The course is narrow and bends; I reversed nearly straight and the trailer's rear-left corner hit the left rail five times near 10 m. Each fix (pull forward, re-reverse) just hit rails again, and forward pulls with steering hit the front corners. Next time: before moving, turn the head to the camera and mirrors and study where the rails curve. Start steering early to follow the bend, with the trailer rear angled away from the left rail. Reverse slowly, avoid wasteful gear changes, and keep a few touches in reserve.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Failed: 9 rail touches, DNF at 40%. The course is narrow and bends; I reversed nearly straight and the trailer's rear-left corner hit the left rail five times near 10 m. Each fix (pull forward, re-reverse) just hit rails again, and forward pulls with steering hit the front corners. Next time: before moving, turn the head to the camera and mirrors and study where the rails curve. Start steering early to follow the bend, with the trailer rear angled away from the left rail. Reverse slowly, avoid wasteful gear changes, and keep a few touches in reserve."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 141.1,
+     "progress": 0.171,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed: 8 of 9 touches were the trailer rear-right corner on the right rail, within about 9 m of reversing, because I steered near-straight and never looked at the rails. Repeated pull-forward and retry loops wasted time and touches. Next time: from the start look at the right mirror, keep the rig left of centre, and steer gently using the rails seen, not just hitch angle. Reverse at about 1 m/s. Use wide, early left-following corrections. Stay under 8 touches."
+      }
+     ],
+     "note": {
+      "text": "Attempt 2 failed: 9 touches, 17% progress. Five were the trailer rear-right corner on the right rail within about 9 m, so the course pulls right early. Plain hitch-following drifts the trailer right, and retries (pull forward, re-reverse) only added touches. Do not wall-hug: from the first metres steer deliberately to keep the rig left of centre, using rails seen in the right mirror and direct view. Reverse at 0.6 to 1 m/s. Full left steer pulling forward hit the front-left corner. Avoid gear changes.",
+      "accepted": true,
+      "rejections": [
+       [
+        "too long (606 characters; the limit is 600)"
+       ]
+      ],
+      "drafts": [
+       "Attempt 2 failed again: 9 touches, only 17% progress. Five were the trailer rear-right corner on the right rail within about 9 m, so the course pulls right early. Plain hitch-following keeps the trailer drifting right, and the retries (pull forward, re-reverse) just added touches. Do not wall-hug: from the very first metres, steer deliberately to keep the rig left of centre, using rails seen in the right mirror and direct view. Check clearances every call. Reverse at 0.6 to 1 m/s. Pulling forward with full left steer hit the front-left corner. Avoid gear changes; prefer small continuous corrections.",
+       "Attempt 2 failed: 9 touches, 17% progress. Five were the trailer rear-right corner on the right rail within about 9 m, so the course pulls right early. Plain hitch-following drifts the trailer right, and retries (pull forward, re-reverse) only added touches. Do not wall-hug: from the first metres steer deliberately to keep the rig left of centre, using rails seen in the right mirror and direct view. Reverse at 0.6 to 1 m/s. Full left steer pulling forward hit the front-left corner. Avoid gear changes."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 113.8,
+     "progress": 0.7286,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Lane is very narrow (rails about 2.3 m apart). I wasted touches by reversing blindly and then re-pulling forward, which swung the mower's front-left corner into the rail. The first 6 m went straight fine; the left rail then caught the trailer rear-left near 6 m, so start bending right earlier, gently. Keep speed at 0.5 m/s, look back and watch the left rail distance each call, and do not make large steering swings. Avoid touches: only 8 allowed."
+      }
+     ],
+     "note": {
+      "text": "Lane is only about 2.3 m wide and I hit 9 rails, mostly the trailer rear corners, from 6 m onward. Blind steady hitch-bias steering failed, and each touch costs a stop plus a re-pull. Prioritise: reverse very slowly, and from midway on, look at the rails and steer on the trailer rear's gap to each rail, not a fixed hitch angle. Make small corrections early. Don't pull forward with wheels steered: it swung the mower's front-left into the rail. The first 5 m straight with a hitch gain of 2 was fine.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains 7 numbers; at most 6 are allowed"
+       ]
+      ],
+      "drafts": [
+       "Lane is only about 2.3 m wide and I hit 9 rails, mostly the trailer rear corners, from 6 m onward. Blind steady hitch-bias steering failed, and each touch costs a stop plus a re-pull. Prioritise: reverse very slowly (0.4 m/s), and from 5 m on, look at the rails and steer on the trailer rear's gap to each rail, not a fixed hitch angle. Make small corrections early. Don't pull forward with wheels steered: it swung the mower's front-left into the rail. The first 5 m straight with a hitch gain of 2 was fine.",
+       "Lane is only about 2.3 m wide and I hit 9 rails, mostly the trailer rear corners, from 6 m onward. Blind steady hitch-bias steering failed, and each touch costs a stop plus a re-pull. Prioritise: reverse very slowly, and from midway on, look at the rails and steer on the trailer rear's gap to each rail, not a fixed hitch angle. Make small corrections early. Don't pull forward with wheels steered: it swung the mower's front-left into the rail. The first 5 m straight with a hitch gain of 2 was fine."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 200.45,
+     "progress": 0.5886,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed: 8 touches, all trailer rear-left corner at about 23 m of reversing, where the course turns right and the left rail cuts in. Straight reversing with hitch feedback ran the long trailer's rear into the inside rail. Start the turn earlier: before about 18 m, swing the trailer rear right with a sustained hitch angle near 10-15 degrees, and watch the camera and rear-left rail distance. Go slow, about 1 m/s. Pulling forward and re-reversing repeated the same contact, so change the approach, not just the retry. The long trailer reacts slowly, so steer early and gently."
+      }
+     ],
+     "note": {
+      "text": "Failed with 9 touches: trailer rear-left four times, truck front-left four times, around 36 to 51 m of reversing where the course bends right and the left rail cuts in. Blind retries and pull-forwards just repeated contacts and wasted touches. Prioritise steering from what you see: turn your head to the camera and left mirror, and keep the rear-left corner clear of the left rail. Hold a gentle right-swung trailer early, but do not let the truck front swing into the left rail while pulling forward; pull forward with wheels near straight. Go slow and avoid pointless gear changes.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Failed with 9 touches: trailer rear-left four times, truck front-left four times, around 36 to 51 m of reversing where the course bends right and the left rail cuts in. Blind retries and pull-forwards just repeated contacts and wasted touches. Prioritise steering from what you see: turn your head to the camera and left mirror, and keep the rear-left corner clear of the left rail. Hold a gentle right-swung trailer early, but do not let the truck front swing into the left rail while pulling forward; pull forward with wheels near straight. Go slow and avoid pointless gear changes."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-144703-29c692",
+   "role": "train",
+   "step": 2,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 187.45,
+     "progress": 0.3471,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last attempt failed with 9 rail touches, only 37% progress. Plain hitch-angle feedback reversed straight and kept scraping the left rail: the trailer rear-left and the car front-left, alternately. The course bends (L-turn), so a straight-ahead hold is wrong. Do not just pull forward and retry repeatedly; each touch costs 5 s. Plan the curve early: use the first 5 m to set an offset, read the rail points on the camera and mirrors, and keep a clear margin from the left rail. Reverse slowly, under 1.2 m/s, and check in often."
+      }
+     ],
+     "note": {
+      "text": "Attempt 2 failed too: 9 touches, 35% progress, 24 gear changes. Every touch was on the LEFT side, always near the course bend, about 9 to 10 m into the reverse. Plain hitch feedback and small offsets all scraped there; pulling forward and retrying just burned time. Do not reverse blind: look at the left mirror and camera, read the rails, and start a deliberate right swing of the trailer rear early. Reverse slowly, avoid gear changes, never fight a rail already touched.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains 7 numbers; at most 6 are allowed"
+       ]
+      ],
+      "drafts": [
+       "Attempt 2 failed too: 9 touches, 35% progress, 24 gear changes. Every touch was on the LEFT side, always near 9-10 m of reversing, where the course bends. Straight hitch feedback and small offsets all scraped there; pulling forward and retrying just burned time. Do not start reversing blind: first look left with mirror and camera, read the rails, and begin a deliberate right-swing of the trailer rear before 8 m. Keep reversing speed low, avoid gear changes, and never fight a rail already touched.",
+       "Attempt 2 failed too: 9 touches, 35% progress, 24 gear changes. Every touch was on the LEFT side, always near the course bend, about 9 to 10 m into the reverse. Plain hitch feedback and small offsets all scraped there; pulling forward and retrying just burned time. Do not reverse blind: look at the left mirror and camera, read the rails, and start a deliberate right swing of the trailer rear early. Reverse slowly, avoid gear changes, never fight a rail already touched."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 133.35,
+     "progress": 0.1747,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed by touching rails 9 times, mostly trailer rear-right (6) and vehicle front-left (3). The course bends (S-bend) and I drove blind with a pure hitch-follow controller, keeping the head turned back at 170 and never reading the rail points. Next time: read rail bearings and distances every step and steer toward the gap. Reverse slowly, about 1 m/s. After an early contact, rethink instead of retrying the same bias. Pulling forward with the wheels steered only swung the nose into the left rail."
+      }
+     ],
+     "note": {
+      "text": "Twice failed: trailer rear-right corner hit the right rail seven times, always within about 9 m of reversing, while I held the hitch near zero and looked backward blind. Biasing the hitch left and pulling forward never fixed it. The course starts bending early, so the right rail closes on the trailer. Before reversing, turn the head to the right mirror and read rail distances every step. Steer so the trailer rear moves left early, with a larger hitch angle, and stay slow. Stop at the first sign of closeness instead of colliding.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Twice failed: trailer rear-right corner hit the right rail seven times, always within about 9 m of reversing, while I held the hitch near zero and looked backward blind. Biasing the hitch left and pulling forward never fixed it. The course starts bending early, so the right rail closes on the trailer. Before reversing, turn the head to the right mirror and read rail distances every step. Steer so the trailer rear moves left early, with a larger hitch angle, and stay slow. Stop at the first sign of closeness instead of colliding."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 165.35,
+     "progress": 0.5326,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed: 9 touches, mostly the left rails (trailer rear-left, vehicle front-left). A blind hitch-angle stabilizer drifted left, and my forward pulls with the wheels steered also hit the left rail. Priorities: use the first 3 m, which are clear, to learn where the walls are; look backward and read the rails each call; steer from what you see. Keep corrections small and the speed at 0.5 m/s. Avoid forward pulls with big steering. The bay lies back-left, with the course wider on the right. Short trailer: it reacts fast."
+      }
+     ],
+     "note": {
+      "text": "Attempt 2 also failed with 9 touches at 53 percent. Straight slow reversing drifts the trailer rear into the LEFT rail near 6 m, and every forward pull then hit a rail too. Do not use a blind stabilizer: while reversing, look back and read the rails. Around 5 m start steering the rig gently away from the left side, toward the right where the course is wider. Keep speed about 0.4 m/s and avoid forward pulls with big steering. Touches cost more than speed.",
+      "accepted": true,
+      "rejections": [
+       [
+        "no leave_note call"
+       ]
+      ],
+      "drafts": [
+       "Leaving lessons for next attempt.",
+       "Attempt 2 also failed with 9 touches at 53 percent. Straight slow reversing drifts the trailer rear into the LEFT rail near 6 m, and every forward pull then hit a rail too. Do not use a blind stabilizer: while reversing, look back and read the rails. Around 5 m start steering the rig gently away from the left side, toward the right where the course is wider. Keep speed about 0.4 m/s and avoid forward pulls with big steering. Touches cost more than speed."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 247.3,
+     "progress": 0.3346,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last time I drove straight back near 1.3 m/s and the long trailer's rear-left corner hit the left rail six times at about 25 m of 82, ending in DNF after 9 touches. Blind biasing of the hitch angle did not help, and a hard right-steer jackknifed it. Before reaching that point, study the rails you see and the camera, and start curving the trailer early, well before the rail. After any touch, pull forward straight a long way before retrying. Steer gently: this trailer is long, so it reacts slowly. Never use full lock in reverse. Touches are limited, so avoid them."
+      }
+     ],
+     "note": {
+      "text": "Attempt 2 also DNF: rear-left trailer corner hit the left rail about 25 m in, seven times, whatever fixed hitch bias I tried (right, left or none). Fixed biases do not work. Before that point, read the rails in the left mirror and the camera, and steer from their actual positions. Reverse slowly there and correct early. After a touch, pull forward straight a long way, and never steer hard while pulling forward, because that hit the right rail. Touches are limited, so slow down near the bend.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Attempt 2 also DNF: rear-left trailer corner hit the left rail about 25 m in, seven times, whatever fixed hitch bias I tried (right, left or none). Fixed biases do not work. Before that point, read the rails in the left mirror and the camera, and steer from their actual positions. Reverse slowly there and correct early. After a touch, pull forward straight a long way, and never steer hard while pulling forward, because that hit the right rail. Touches are limited, so slow down near the bend."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145356-e77d08",
+   "role": "train",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 128.5,
+     "progress": 0.3231,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 2",
+       "text": "Failed: 9 rail touches, DNF at 40%. The course is narrow and bends; I reversed nearly straight and the trailer's rear-left corner hit the left rail five times near 10 m. Each fix (pull forward, re-reverse) just hit rails again, and forward pulls with steering hit the front corners. Next time: before moving, turn the head to the camera and mirrors and study where the rails curve. Start steering early to follow the bend, with the trailer rear angled away from the left rail. Reverse slowly, avoid wasteful gear changes, and keep a few touches in reserve."
+      }
+     ],
+     "note": {
+      "text": "Attempt 3 failed again: 9 touches, DNF at 32%. Trailer rear-left corner hit the left rail about 9 m into the course, over and over. Reversing straight or with small hitch bias does not clear it; the course bends and the left rail closes in there. Every pull forward wasted time and hit front corners. Before reaching 8 m, look at the camera and rails and begin a deliberate steer RIGHT early so the trailer rear swings left only after the bend, then follow it. Use bigger, earlier hitch angles and keep touches in reserve.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Attempt 3 failed again: 9 touches, DNF at 32%. Trailer rear-left corner hit the left rail about 9 m into the course, over and over. Reversing straight or with small hitch bias does not clear it; the course bends and the left rail closes in there. Every pull forward wasted time and hit front corners. Before reaching 8 m, look at the camera and rails and begin a deliberate steer RIGHT early so the trailer rear swings left only after the bend, then follow it. Use bigger, earlier hitch angles and keep touches in reserve."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 202.7,
+     "progress": 0.4131,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed: 8 of 9 touches were the trailer rear-right corner on the right rail, within about 9 m of reversing, because I steered near-straight and never looked at the rails. Repeated pull-forward and retry loops wasted time and touches. Next time: from the start look at the right mirror, keep the rig left of centre, and steer gently using the rails seen, not just hitch angle. Reverse at about 1 m/s. Use wide, early left-following corrections. Stay under 8 touches."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Attempt 2 failed: 9 touches, 17% progress. Five were the trailer rear-right corner on the right rail within about 9 m, so the course pulls right early. Plain hitch-following drifts the trailer right, and retries (pull forward, re-reverse) only added touches. Do not wall-hug: from the first metres steer deliberately to keep the rig left of centre, using rails seen in the right mirror and direct view. Reverse at 0.6 to 1 m/s. Full left steer pulling forward hit the front-left corner. Avoid gear changes."
+      }
+     ],
+     "note": {
+      "text": "Failed again: 8 of 9 touches were the trailer rear-right corner on the right rail, around 14-17 m into the reversing. Biasing the hitch left did not fix it, and every pinned retry touched the same spot until the touch limit ran out. Next time, stop before that stretch and look at the right mirror and direct view to map the rails. Steer to keep the whole rig well clear of the right rail, with the rear swung left early. Reverse slowly and avoid retries.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains 7 numbers; at most 6 are allowed"
+       ]
+      ],
+      "drafts": [
+       "Failed again: 8 of 9 touches were the trailer rear-right corner on the right rail near 14-17 m of reversing. Pushing the hitch to the left (rear swung left) did not help; the rail seems to curve in there. Each retry just re-touched the same spot and the 8-touch limit ran out. Next time: pause near 12 m, look at the right mirror and direct view, and map the rails before committing. Keep the whole rig well left of the right rail before that bend, and reverse at 0.5 m/s. Avoid pinned retries.",
+       "Failed again: 8 of 9 touches were the trailer rear-right corner on the right rail, around 14-17 m into the reversing. Biasing the hitch left did not fix it, and every pinned retry touched the same spot until the touch limit ran out. Next time, stop before that stretch and look at the right mirror and direct view to map the rails. Steer to keep the whole rig well clear of the right rail, with the rear swung left early. Reverse slowly and avoid retries."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 168.75,
+     "progress": 0.5201,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Lane is very narrow (rails about 2.3 m apart). I wasted touches by reversing blindly and then re-pulling forward, which swung the mower's front-left corner into the rail. The first 6 m went straight fine; the left rail then caught the trailer rear-left near 6 m, so start bending right earlier, gently. Keep speed at 0.5 m/s, look back and watch the left rail distance each call, and do not make large steering swings. Avoid touches: only 8 allowed."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Lane is only about 2.3 m wide and I hit 9 rails, mostly the trailer rear corners, from 6 m onward. Blind steady hitch-bias steering failed, and each touch costs a stop plus a re-pull. Prioritise: reverse very slowly, and from midway on, look at the rails and steer on the trailer rear's gap to each rail, not a fixed hitch angle. Make small corrections early. Don't pull forward with wheels steered: it swung the mower's front-left into the rail. The first 5 m straight with a hitch gain of 2 was fine."
+      }
+     ],
+     "note": {
+      "text": "Attempt 3 failed with 9 touches: front-left of the mower x5, trailer rear-left x4, all after 6 m. Hitch-bias steering toward the right made the trailer fold to about 40 degrees, and pulling forward then swung the mower's front-left into the rail. Do not use big hitch biases or pull forward steered. Instead, steer from the rail gaps you see, keep the trailer nearly straight, and start the bend early at 3 to 4 m. Use minimal forward pulls, wheels straight. Spend decisions sparingly, check in often.",
+      "accepted": true,
+      "rejections": [
+       [
+        "no leave_note call"
+       ]
+      ],
+      "drafts": [
+       "Leaving a note for the next attempt.",
+       "Attempt 3 failed with 9 touches: front-left of the mower x5, trailer rear-left x4, all after 6 m. Hitch-bias steering toward the right made the trailer fold to about 40 degrees, and pulling forward then swung the mower's front-left into the rail. Do not use big hitch biases or pull forward steered. Instead, steer from the rail gaps you see, keep the trailer nearly straight, and start the bend early at 3 to 4 m. Use minimal forward pulls, wheels straight. Spend decisions sparingly, check in often."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 325.15,
+     "progress": 0.5838,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed: 8 touches, all trailer rear-left corner at about 23 m of reversing, where the course turns right and the left rail cuts in. Straight reversing with hitch feedback ran the long trailer's rear into the inside rail. Start the turn earlier: before about 18 m, swing the trailer rear right with a sustained hitch angle near 10-15 degrees, and watch the camera and rear-left rail distance. Go slow, about 1 m/s. Pulling forward and re-reversing repeated the same contact, so change the approach, not just the retry. The long trailer reacts slowly, so steer early and gently."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Failed with 9 touches: trailer rear-left four times, truck front-left four times, around 36 to 51 m of reversing where the course bends right and the left rail cuts in. Blind retries and pull-forwards just repeated contacts and wasted touches. Prioritise steering from what you see: turn your head to the camera and left mirror, and keep the rear-left corner clear of the left rail. Hold a gentle right-swung trailer early, but do not let the truck front swing into the left rail while pulling forward; pull forward with wheels near straight. Go slow and avoid pointless gear changes."
+      }
+     ],
+     "note": {
+      "text": "Attempt 3 failed, 9 touches, DNF at 58 percent. Holding a fixed small hitch angle did not work. The left rail cuts in from about 25 m, and the trailer rear-left corner or truck front-left hit it every time. Retrying with a pull-forward gave the same hit. Hitch angle alone only rotates the trailer. The whole rig has to be shifted right earlier, so keep the truck itself well off the left rail. Use the camera and left mirror to measure left clearance and steer on that. Go slow, never reverse into a contact point twice, and don't spend touches on blind retries.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Attempt 3 failed, 9 touches, DNF at 58 percent. Holding a fixed small hitch angle did not work. The left rail cuts in from about 25 m, and the trailer rear-left corner or truck front-left hit it every time. Retrying with a pull-forward gave the same hit. Hitch angle alone only rotates the trailer. The whole rig has to be shifted right earlier, so keep the truck itself well off the left rail. Use the camera and left mirror to measure left clearance and steer on that. Go slow, never reverse into a contact point twice, and don't spend touches on blind retries."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-145712-b12056",
+   "role": "train",
+   "step": 3,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 144.0,
+     "progress": 0.4503,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last attempt failed with 9 rail touches, only 37% progress. Plain hitch-angle feedback reversed straight and kept scraping the left rail: the trailer rear-left and the car front-left, alternately. The course bends (L-turn), so a straight-ahead hold is wrong. Do not just pull forward and retry repeatedly; each touch costs 5 s. Plan the curve early: use the first 5 m to set an offset, read the rail points on the camera and mirrors, and keep a clear margin from the left rail. Reverse slowly, under 1.2 m/s, and check in often."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Attempt 2 failed too: 9 touches, 35% progress, 24 gear changes. Every touch was on the LEFT side, always near the course bend, about 9 to 10 m into the reverse. Plain hitch feedback and small offsets all scraped there; pulling forward and retrying just burned time. Do not reverse blind: look at the left mirror and camera, read the rails, and start a deliberate right swing of the trailer rear early. Reverse slowly, avoid gear changes, never fight a rail already touched."
+      }
+     ],
+     "note": {
+      "text": "Third failure: 9 touches, 45%. Straight reverse worked to about 13 m, then the trailer rear-left corner hit the left rail at the bend every time, 7 times. Pinned retries only wasted time and added penalties. Don't retry the same bend blindly. Start the right swing of the trailer rear earlier, around 8 m, and make it gentle and sustained. Look at the left mirror and camera to read the left rail gap. Pulling forward 2 m resets little. Keep the hitch angle small.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Third failure: 9 touches, 45%. Straight reverse worked to about 13 m, then the trailer rear-left corner hit the left rail at the bend every time, 7 times. Pinned retries only wasted time and added penalties. Don't retry the same bend blindly. Start the right swing of the trailer rear earlier, around 8 m, and make it gentle and sustained. Look at the left mirror and camera to read the left rail gap. Pulling forward 2 m resets little. Keep the hitch angle small."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 187.55,
+     "progress": 0.0636,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed by touching rails 9 times, mostly trailer rear-right (6) and vehicle front-left (3). The course bends (S-bend) and I drove blind with a pure hitch-follow controller, keeping the head turned back at 170 and never reading the rail points. Next time: read rail bearings and distances every step and steer toward the gap. Reverse slowly, about 1 m/s. After an early contact, rethink instead of retrying the same bias. Pulling forward with the wheels steered only swung the nose into the left rail."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Twice failed: trailer rear-right corner hit the right rail seven times, always within about 9 m of reversing, while I held the hitch near zero and looked backward blind. Biasing the hitch left and pulling forward never fixed it. The course starts bending early, so the right rail closes on the trailer. Before reversing, turn the head to the right mirror and read rail distances every step. Steer so the trailer rear moves left early, with a larger hitch angle, and stay slow. Stop at the first sign of closeness instead of colliding."
+      }
+     ],
+     "note": {
+      "text": "Failed again: nine touches, seven of them trailer rear-right, all near the same spot early in the reverse, then stuck pinned against the right rail. Blind hitch-following and fixed left biases never worked, and forward moves with big steering hit the vehicle front-right. Next time: slow down before that spot, read rail distances in the right mirror every step, and steer to keep the trailer rear away from the right rail. Pull straight forward a little the instant anything is close. Never retry the same move.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains 7 numbers; at most 6 are allowed"
+       ]
+      ],
+      "drafts": [
+       "Failed again: 9 touches, 7 of them trailer rear-right, all near 8-9 m of reversing, then stuck pinned against the right rail. Blind hitch-follow and left biases never worked, and forward moves with steering hit the front-right. Next: stop at about 7 m, look at the right mirror, and read rail distances before moving. Make small steering moves, never pinned retries. Count touches: each costs a lot, so pull straight forward 1-2 m the instant anything is close.",
+       "Failed again: nine touches, seven of them trailer rear-right, all near the same spot early in the reverse, then stuck pinned against the right rail. Blind hitch-following and fixed left biases never worked, and forward moves with big steering hit the vehicle front-right. Next time: slow down before that spot, read rail distances in the right mirror every step, and steer to keep the trailer rear away from the right rail. Pull straight forward a little the instant anything is close. Never retry the same move."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 147.75,
+     "progress": 0.6295,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed: 9 touches, mostly the left rails (trailer rear-left, vehicle front-left). A blind hitch-angle stabilizer drifted left, and my forward pulls with the wheels steered also hit the left rail. Priorities: use the first 3 m, which are clear, to learn where the walls are; look backward and read the rails each call; steer from what you see. Keep corrections small and the speed at 0.5 m/s. Avoid forward pulls with big steering. The bay lies back-left, with the course wider on the right. Short trailer: it reacts fast."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Attempt 2 also failed with 9 touches at 53 percent. Straight slow reversing drifts the trailer rear into the LEFT rail near 6 m, and every forward pull then hit a rail too. Do not use a blind stabilizer: while reversing, look back and read the rails. Around 5 m start steering the rig gently away from the left side, toward the right where the course is wider. Keep speed about 0.4 m/s and avoid forward pulls with big steering. Touches cost more than speed."
+      }
+     ],
+     "note": {
+      "text": "Attempt 3 also failed with nine touches. The first part reverses fine, but near the midpoint the corridor is narrow and the trailer rear touched the left rail, then the right one. A fixed hitch bias just swung it between sides, and each forced forward pull lost ground and used touches. Do not bias blindly. Reverse slowly with small steering, look back and read both rails, and steer from the measured gap. Stop early and re-plan rather than pushing on. The bay is back-left. The short trailer reacts fast.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains 8 numbers; at most 6 are allowed"
+       ]
+      ],
+      "drafts": [
+       "Attempt 3 also DNF with 9 touches at 63 percent. The first 6 m reversed fine, then every attempt got pinned near 7 m: the trailer rear touched left, then right rails, so the corridor is narrow there and a fixed hitch bias just swings it between sides. Each pinning forced forward pulls that lost ground and used touches. Do not bias the hitch blindly. Stop before 6 m, look back (gaze near 170) and read both rails, then steer from the measured gap. Reverse slowly, about 0.3 m/s, with small steering. The bay is back-left; the trailer is short and reacts fast.",
+       "Attempt 3 also failed with nine touches. The first part reverses fine, but near the midpoint the corridor is narrow and the trailer rear touched the left rail, then the right one. A fixed hitch bias just swung it between sides, and each forced forward pull lost ground and used touches. Do not bias blindly. Reverse slowly with small steering, look back and read both rails, and steer from the measured gap. Stop early and re-plan rather than pushing on. The bay is back-left. The short trailer reacts fast."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 259.85,
+     "progress": 0.1458,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last time I drove straight back near 1.3 m/s and the long trailer's rear-left corner hit the left rail six times at about 25 m of 82, ending in DNF after 9 touches. Blind biasing of the hitch angle did not help, and a hard right-steer jackknifed it. Before reaching that point, study the rails you see and the camera, and start curving the trailer early, well before the rail. After any touch, pull forward straight a long way before retrying. Steer gently: this trailer is long, so it reacts slowly. Never use full lock in reverse. Touches are limited, so avoid them."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Attempt 2 also DNF: rear-left trailer corner hit the left rail about 25 m in, seven times, whatever fixed hitch bias I tried (right, left or none). Fixed biases do not work. Before that point, read the rails in the left mirror and the camera, and steer from their actual positions. Reverse slowly there and correct early. After a touch, pull forward straight a long way, and never steer hard while pulling forward, because that hit the right rail. Touches are limited, so slow down near the bend."
+      }
+     ],
+     "note": {
+      "text": "Three attempts failed at the same spot, about 25 m of 82, where the course bends left and the trailer's rear-left corner hits the left rail. Fixed hitch biases never helped, and pulling forward to retry hit the front-right rail. Touches are limited to 8, so prioritise avoiding them. Before the bend, read the left mirror rails and steer from them. Swing the trailer right early, going wide. Reverse slowly. Never steer hard going forward.",
+      "accepted": true,
+      "rejections": [
+       [
+        "it contains 7 numbers; at most 6 are allowed"
+       ]
+      ],
+      "drafts": [
+       "Three attempts all failed at the same place: about 25 m of 82, where the course bends left and the trailer's rear-left corner hits the left rail. Holding the hitch angle near zero or biased right by 3 to 14 degrees did not help. Pulling forward and retrying also hit the front-right rail. Prioritise avoiding touches: the limit is 8. Before about 20 m, stop and read the rail points in the left mirror and camera. Steer the trailer's path from them: swing it right early, then make the turn wide. Keep reversing slow, at about 0.7 m/s.",
+       "Three attempts failed at the same spot, about 25 m of 82, where the course bends left and the trailer's rear-left corner hits the left rail. Fixed hitch biases never helped, and pulling forward to retry hit the front-right rail. Touches are limited to 8, so prioritise avoiding them. Before the bend, read the left mirror rails and steer from them. Swing the trailer right early, going wide. Reverse slowly. Never steer hard going forward."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-150741-869493",
+   "role": "transfer",
+   "step": 4,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 148.75,
+     "progress": 0.3189,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 2",
+       "text": "Failed: 9 rail touches, DNF at 40%. The course is narrow and bends; I reversed nearly straight and the trailer's rear-left corner hit the left rail five times near 10 m. Each fix (pull forward, re-reverse) just hit rails again, and forward pulls with steering hit the front corners. Next time: before moving, turn the head to the camera and mirrors and study where the rails curve. Start steering early to follow the bend, with the trailer rear angled away from the left rail. Reverse slowly, avoid wasteful gear changes, and keep a few touches in reserve."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Attempt 3 failed again: 9 touches, DNF at 32%. Trailer rear-left corner hit the left rail about 9 m into the course, over and over. Reversing straight or with small hitch bias does not clear it; the course bends and the left rail closes in there. Every pull forward wasted time and hit front corners. Before reaching 8 m, look at the camera and rails and begin a deliberate steer RIGHT early so the trailer rear swings left only after the bend, then follow it. Use bigger, earlier hitch angles and keep touches in reserve."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 170.0,
+     "progress": 0.1667,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed: 8 of 9 touches were the trailer rear-right corner on the right rail, within about 9 m of reversing, because I steered near-straight and never looked at the rails. Repeated pull-forward and retry loops wasted time and touches. Next time: from the start look at the right mirror, keep the rig left of centre, and steer gently using the rails seen, not just hitch angle. Reverse at about 1 m/s. Use wide, early left-following corrections. Stay under 8 touches."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Attempt 2 failed: 9 touches, 17% progress. Five were the trailer rear-right corner on the right rail within about 9 m, so the course pulls right early. Plain hitch-following drifts the trailer right, and retries (pull forward, re-reverse) only added touches. Do not wall-hug: from the first metres steer deliberately to keep the rig left of centre, using rails seen in the right mirror and direct view. Reverse at 0.6 to 1 m/s. Full left steer pulling forward hit the front-left corner. Avoid gear changes."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Failed again: 8 of 9 touches were the trailer rear-right corner on the right rail, around 14-17 m into the reversing. Biasing the hitch left did not fix it, and every pinned retry touched the same spot until the touch limit ran out. Next time, stop before that stretch and look at the right mirror and direct view to map the rails. Steer to keep the whole rig well clear of the right rail, with the rear swung left early. Reverse slowly and avoid retries."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 103.3,
+     "progress": 0.6216,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Lane is very narrow (rails about 2.3 m apart). I wasted touches by reversing blindly and then re-pulling forward, which swung the mower's front-left corner into the rail. The first 6 m went straight fine; the left rail then caught the trailer rear-left near 6 m, so start bending right earlier, gently. Keep speed at 0.5 m/s, look back and watch the left rail distance each call, and do not make large steering swings. Avoid touches: only 8 allowed."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Lane is only about 2.3 m wide and I hit 9 rails, mostly the trailer rear corners, from 6 m onward. Blind steady hitch-bias steering failed, and each touch costs a stop plus a re-pull. Prioritise: reverse very slowly, and from midway on, look at the rails and steer on the trailer rear's gap to each rail, not a fixed hitch angle. Make small corrections early. Don't pull forward with wheels steered: it swung the mower's front-left into the rail. The first 5 m straight with a hitch gain of 2 was fine."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Attempt 3 failed with 9 touches: front-left of the mower x5, trailer rear-left x4, all after 6 m. Hitch-bias steering toward the right made the trailer fold to about 40 degrees, and pulling forward then swung the mower's front-left into the rail. Do not use big hitch biases or pull forward steered. Instead, steer from the rail gaps you see, keep the trailer nearly straight, and start the bend early at 3 to 4 m. Use minimal forward pulls, wheels straight. Spend decisions sparingly, check in often."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 265.2,
+     "progress": 0.3178,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed: 8 touches, all trailer rear-left corner at about 23 m of reversing, where the course turns right and the left rail cuts in. Straight reversing with hitch feedback ran the long trailer's rear into the inside rail. Start the turn earlier: before about 18 m, swing the trailer rear right with a sustained hitch angle near 10-15 degrees, and watch the camera and rear-left rail distance. Go slow, about 1 m/s. Pulling forward and re-reversing repeated the same contact, so change the approach, not just the retry. The long trailer reacts slowly, so steer early and gently."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Failed with 9 touches: trailer rear-left four times, truck front-left four times, around 36 to 51 m of reversing where the course bends right and the left rail cuts in. Blind retries and pull-forwards just repeated contacts and wasted touches. Prioritise steering from what you see: turn your head to the camera and left mirror, and keep the rear-left corner clear of the left rail. Hold a gentle right-swung trailer early, but do not let the truck front swing into the left rail while pulling forward; pull forward with wheels near straight. Go slow and avoid pointless gear changes."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Attempt 3 failed, 9 touches, DNF at 58 percent. Holding a fixed small hitch angle did not work. The left rail cuts in from about 25 m, and the trailer rear-left corner or truck front-left hit it every time. Retrying with a pull-forward gave the same hit. Hitch angle alone only rotates the trailer. The whole rig has to be shifted right earlier, so keep the truck itself well off the left rail. Use the camera and left mirror to measure left clearance and steer on that. Go slow, never reverse into a contact point twice, and don't spend touches on blind retries."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-150741-51ab2a",
+   "role": "transfer",
+   "step": 4,
+   "member": 1,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 122.25,
+     "progress": 0.3276,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last attempt failed with 9 rail touches, only 37% progress. Plain hitch-angle feedback reversed straight and kept scraping the left rail: the trailer rear-left and the car front-left, alternately. The course bends (L-turn), so a straight-ahead hold is wrong. Do not just pull forward and retry repeatedly; each touch costs 5 s. Plan the curve early: use the first 5 m to set an offset, read the rail points on the camera and mirrors, and keep a clear margin from the left rail. Reverse slowly, under 1.2 m/s, and check in often."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Attempt 2 failed too: 9 touches, 35% progress, 24 gear changes. Every touch was on the LEFT side, always near the course bend, about 9 to 10 m into the reverse. Plain hitch feedback and small offsets all scraped there; pulling forward and retrying just burned time. Do not reverse blind: look at the left mirror and camera, read the rails, and start a deliberate right swing of the trailer rear early. Reverse slowly, avoid gear changes, never fight a rail already touched."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Third failure: 9 touches, 45%. Straight reverse worked to about 13 m, then the trailer rear-left corner hit the left rail at the bend every time, 7 times. Pinned retries only wasted time and added penalties. Don't retry the same bend blindly. Start the right swing of the trailer rear earlier, around 8 m, and make it gentle and sustained. Look at the left mirror and camera to read the left rail gap. Pulling forward 2 m resets little. Keep the hitch angle small."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 206.05,
+     "progress": 0.7357,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed by touching rails 9 times, mostly trailer rear-right (6) and vehicle front-left (3). The course bends (S-bend) and I drove blind with a pure hitch-follow controller, keeping the head turned back at 170 and never reading the rail points. Next time: read rail bearings and distances every step and steer toward the gap. Reverse slowly, about 1 m/s. After an early contact, rethink instead of retrying the same bias. Pulling forward with the wheels steered only swung the nose into the left rail."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Twice failed: trailer rear-right corner hit the right rail seven times, always within about 9 m of reversing, while I held the hitch near zero and looked backward blind. Biasing the hitch left and pulling forward never fixed it. The course starts bending early, so the right rail closes on the trailer. Before reversing, turn the head to the right mirror and read rail distances every step. Steer so the trailer rear moves left early, with a larger hitch angle, and stay slow. Stop at the first sign of closeness instead of colliding."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Failed again: nine touches, seven of them trailer rear-right, all near the same spot early in the reverse, then stuck pinned against the right rail. Blind hitch-following and fixed left biases never worked, and forward moves with big steering hit the vehicle front-right. Next time: slow down before that spot, read rail distances in the right mirror every step, and steer to keep the trailer rear away from the right rail. Pull straight forward a little the instant anything is close. Never retry the same move."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 136.3,
+     "progress": 0.3378,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Failed: 9 touches, mostly the left rails (trailer rear-left, vehicle front-left). A blind hitch-angle stabilizer drifted left, and my forward pulls with the wheels steered also hit the left rail. Priorities: use the first 3 m, which are clear, to learn where the walls are; look backward and read the rails each call; steer from what you see. Keep corrections small and the speed at 0.5 m/s. Avoid forward pulls with big steering. The bay lies back-left, with the course wider on the right. Short trailer: it reacts fast."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Attempt 2 also failed with 9 touches at 53 percent. Straight slow reversing drifts the trailer rear into the LEFT rail near 6 m, and every forward pull then hit a rail too. Do not use a blind stabilizer: while reversing, look back and read the rails. Around 5 m start steering the rig gently away from the left side, toward the right where the course is wider. Keep speed about 0.4 m/s and avoid forward pulls with big steering. Touches cost more than speed."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Attempt 3 also failed with nine touches. The first part reverses fine, but near the midpoint the corridor is narrow and the trailer rear touched the left rail, then the right one. A fixed hitch bias just swung it between sides, and each forced forward pull lost ground and used touches. Do not bias blindly. Reverse slowly with small steering, look back and read both rails, and steer from the measured gap. Stop early and re-plan rather than pushing on. The bay is back-left. The short trailer reacts fast."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 239.95,
+     "progress": 0.2493,
+     "touches": 9,
+     "notes_in": [
+      {
+       "from": "you, attempt 1",
+       "text": "Last time I drove straight back near 1.3 m/s and the long trailer's rear-left corner hit the left rail six times at about 25 m of 82, ending in DNF after 9 touches. Blind biasing of the hitch angle did not help, and a hard right-steer jackknifed it. Before reaching that point, study the rails you see and the camera, and start curving the trailer early, well before the rail. After any touch, pull forward straight a long way before retrying. Steer gently: this trailer is long, so it reacts slowly. Never use full lock in reverse. Touches are limited, so avoid them."
+      },
+      {
+       "from": "you, attempt 2",
+       "text": "Attempt 2 also DNF: rear-left trailer corner hit the left rail about 25 m in, seven times, whatever fixed hitch bias I tried (right, left or none). Fixed biases do not work. Before that point, read the rails in the left mirror and the camera, and steer from their actual positions. Reverse slowly there and correct early. After a touch, pull forward straight a long way, and never steer hard while pulling forward, because that hit the right rail. Touches are limited, so slow down near the bend."
+      },
+      {
+       "from": "you, attempt 3",
+       "text": "Three attempts failed at the same spot, about 25 m of 82, where the course bends left and the trailer's rear-left corner hits the left rail. Fixed hitch biases never helped, and pulling forward to retry hit the front-right rail. Touches are limited to 8, so prioritise avoiding them. Before the bend, read the left mirror rails and steer from them. Swing the trailer right early, going wide. Reverse slowly. Never steer hard going forward."
+      }
+     ],
+     "note": null
+    }
+   ]
+  }
+ ]
+}

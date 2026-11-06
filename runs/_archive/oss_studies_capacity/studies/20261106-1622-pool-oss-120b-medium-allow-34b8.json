@@ -1,0 +1,625 @@
+{
+ "study": "20261106-1622-pool-oss-120b-medium-allow-34b8",
+ "model": "agy:gpt-oss-120b-medium",
+ "condition": "pool",
+ "level": "medium",
+ "seed": 0,
+ "transfer_seed": 1,
+ "members": 3,
+ "steps": 2,
+ "policy": {
+  "numbers": "allow",
+  "max_chars": 600,
+  "max_numbers": 6,
+  "retries": 1
+ },
+ "prompt_version": 2,
+ "runs": [
+  {
+   "run_id": "20261106-162241-8f14c5",
+   "role": "train",
+   "step": 1,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3433,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "The controller used a fixed reverse speed and only reacted to hitch angle later, allowing the trailer to swing left to ~15\u00b0 and hit the rail. Head never turned to monitor side mirrors, missing the contact. Future drivers should keep the hitch angle small by steering toward the swing immediately, use side\u2011mirror looks or glance left/right to gauge rail clearance, and start with a lower reverse speed until the angle is under control. If the hitch angle exceeds about 10\u00b0, pull forward briefly to reset before continuing.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The controller used a fixed reverse speed and only reacted to hitch angle later, allowing the trailer to swing left to ~15\u00b0 and hit the rail. Head never turned to monitor side mirrors, missing the contact. Future drivers should keep the hitch angle small by steering toward the swing immediately, use side\u2011mirror looks or glance left/right to gauge rail clearance, and start with a lower reverse speed until the angle is under control. If the hitch angle exceeds about 10\u00b0, pull forward briefly to reset before continuing."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "TIME_UP",
+     "time": 458.0,
+     "progress": 0.0973,
+     "touches": 2,
+     "notes_in": [],
+     "note": {
+      "text": "Got stuck pinned with trailer swinging about 76\u00b0 right and ran out of time. The controller stayed reverse too long; it should switch to forward pull when the hitch angle exceeds roughly 70\u00b0 or when status becomes PINNED. Prioritise early detection of a large swing and a quick gear change to forward, then steer to reduce the swing before resuming reverse. Tip: while reversing always steer toward the side the trailer is swung to.",
+      "accepted": true,
+      "rejections": [
+       [
+        "no leave_note call"
+       ]
+      ],
+      "drafts": [
+       "",
+       "Got stuck pinned with trailer swinging about 76\u00b0 right and ran out of time. The controller stayed reverse too long; it should switch to forward pull when the hitch angle exceeds roughly 70\u00b0 or when status becomes PINNED. Prioritise early detection of a large swing and a quick gear change to forward, then steer to reduce the swing before resuming reverse. Tip: while reversing always steer toward the side the trailer is swung to."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 261.9,
+     "progress": 0.4439,
+     "touches": 9,
+     "notes_in": [],
+     "note": {
+      "text": "The controller over\u2011steered right after each rear\u2011left touch, never reducing the hitch angle enough. Prioritize gentle steering within the 45\u00b0 limit and switch to forward recovery earlier when the hitch drifts a few degrees. Keep the head aimed at the visible bay line to track swing and use the target bearing for small corrections. Remember only 8 touches are allowed, each adds a 5\u202fs penalty, reverse speed is ~0.8\u202fm/s, forward recovery ~1.2\u202fm/s, and keep hitch below\u202f7\u00b0.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The controller over\u2011steered right after each rear\u2011left touch, never reducing the hitch angle enough. Prioritize gentle steering within the 45\u00b0 limit and switch to forward recovery earlier when the hitch drifts a few degrees. Keep the head aimed at the visible bay line to track swing and use the target bearing for small corrections. Remember only 8 touches are allowed, each adds a 5\u202fs penalty, reverse speed is ~0.8\u202fm/s, forward recovery ~1.2\u202fm/s, and keep hitch below\u202f7\u00b0."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "TIME_UP",
+     "time": 619.0,
+     "progress": 0.2941,
+     "touches": 5,
+     "notes_in": [],
+     "note": {
+      "text": "Our controller used a simple proportional steer based on hitch angle, which kept the trailer swinging left and repeatedly bumped the left rail. The contacts caused gear\u2011change delays and ate the time budget. When the trailer becomes pinned, switch immediately to forward pulling to straighten before reversing again, and keep reverse speed low. Prioritize detecting PINNED status and adding a forward\u2011pull phase. Tip: watch the left rail with the head or mirror and only steer a few degrees left while reversing.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Our controller used a simple proportional steer based on hitch angle, which kept the trailer swinging left and repeatedly bumped the left rail. The contacts caused gear\u2011change delays and ate the time budget. When the trailer becomes pinned, switch immediately to forward pulling to straighten before reversing again, and keep reverse speed low. Prioritize detecting PINNED status and adding a forward\u2011pull phase. Tip: watch the left rail with the head or mirror and only steer a few degrees left while reversing."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-162241-c63806",
+   "role": "train",
+   "step": 1,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.2417,
+     "touches": 0,
+     "notes_in": [],
+     "note": {
+      "text": "Jackknifed because controller used full reverse speed and max steering, letting hitch hit 75\u00b0. Keep reverse speed low (~0.5\u202fm/s) and steer modestly, continuously correcting hitch angle. When hitch exceeds ~30\u00b0 switch to forward pull to straighten before resuming reverse. Turn head to keep rail edges in view and avoid large sudden corrections.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "Jackknifed because controller used full reverse speed and max steering, letting hitch hit 75\u00b0. Keep reverse speed low (~0.5\u202fm/s) and steer modestly, continuously correcting hitch angle. When hitch exceeds ~30\u00b0 switch to forward pull to straighten before resuming reverse. Turn head to keep rail edges in view and avoid large sudden corrections."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "TIME_UP",
+     "time": 458.0,
+     "progress": 0.2146,
+     "touches": 6,
+     "notes_in": [],
+     "note": {
+      "text": "We repeatedly hit the rail with the trailer's rear\u2011right corner (6 contacts) because the trailer swung right while reversing. Keep the hitch angle under about 15\u201120\u00b0. If it grows, pull forward sooner with wheels steered opposite to straighten. Use the left mirror to monitor the right side while reversing and keep your head forward when possible. Avoid large steering angles (max 45\u00b0) in reverse; they amplify hitch errors. Prioritise early forward pulls to reset the trailer before it nears the rail.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We repeatedly hit the rail with the trailer's rear\u2011right corner (6 contacts) because the trailer swung right while reversing. Keep the hitch angle under about 15\u201120\u00b0. If it grows, pull forward sooner with wheels steered opposite to straighten. Use the left mirror to monitor the right side while reversing and keep your head forward when possible. Avoid large steering angles (max 45\u00b0) in reverse; they amplify hitch errors. Prioritise early forward pulls to reset the trailer before it nears the rail."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "TIME_UP",
+     "time": 364.0,
+     "progress": 0.3231,
+     "touches": 6,
+     "notes_in": [],
+     "note": {
+      "text": "We touched rails 6 times and jackknifed twice (max hitch ~84\u00b0). Recovery needed: longer forward pull, small opposite steering while moving forward, and keep gaze left while reversing to monitor side rails. Prioritize straightening before resuming reverse and avoid large reverse steering near limits.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We touched rails 6 times and jackknifed twice (max hitch ~84\u00b0). Recovery needed: longer forward pull, small opposite steering while moving forward, and keep gaze left while reversing to monitor side rails. Prioritize straightening before resuming reverse and avoid large reverse steering near limits."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "TIME_UP",
+     "time": 619.0,
+     "progress": 0.0,
+     "touches": 3,
+     "notes_in": [],
+     "note": {
+      "text": "We got pinned twice by the trailer rear and once by the vehicle front, ending the leg with time up. The slow reverse controller stalled after contacts, and we waited too long before pulling forward to straighten the hitch. Prioritize keeping the hitch angle under about ten degrees and switch to a gentle forward move as soon as it grows, while watching the left rail via the mirror. Use a moderate reverse speed and keep the head scanning the rails to avoid late contacts.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We got pinned twice by the trailer rear and once by the vehicle front, ending the leg with time up. The slow reverse controller stalled after contacts, and we waited too long before pulling forward to straighten the hitch. Prioritize keeping the hitch angle under about ten degrees and switch to a gentle forward move as soon as it grows, while watching the left rail via the mirror. Use a moderate reverse speed and keep the head scanning the rails to avoid late contacts."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-162241-b038ce",
+   "role": "train",
+   "step": 1,
+   "member": 2,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3671,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "The trailer never moved; the controller stayed at zero speed and got pinned by a rail. Key fixes: start reverse speed promptly after gear change, monitor hitch angle, and on any rail contact switch to low forward speed while steering toward the tilt to straighten. Keep the head (or mirrors) turned toward the trailer rear to maintain visual on the hitch during corrections.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The trailer never moved; the controller stayed at zero speed and got pinned by a rail. Key fixes: start reverse speed promptly after gear change, monitor hitch angle, and on any rail contact switch to low forward speed while steering toward the tilt to straighten. Keep the head (or mirrors) turned toward the trailer rear to maintain visual on the hitch during corrections."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "TIME_UP",
+     "time": 458.0,
+     "progress": 0.0753,
+     "touches": 3,
+     "notes_in": [],
+     "note": {
+      "text": "We ran out of time because the trailer swung right and we became PINNED. Our recovery kept pulling forward at high speed but did not straighten the hitch before the clock expired. Prioritise keeping the trailer straight while reversing: steer opposite the hitch angle and use a modest reverse speed. If PINNED, pull forward with steering toward the swing and look to the opposite side to keep the rail in view. Avoid aggressive forward bursts until the hitch is near zero.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We ran out of time because the trailer swung right and we became PINNED. Our recovery kept pulling forward at high speed but did not straighten the hitch before the clock expired. Prioritise keeping the trailer straight while reversing: steer opposite the hitch angle and use a modest reverse speed. If PINNED, pull forward with steering toward the swing and look to the opposite side to keep the rail in view. Avoid aggressive forward bursts until the hitch is near zero."
+      ]
+     }
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "TIME_UP",
+     "time": 364.0,
+     "progress": 0.1576,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "The controller started reversing from STOPPED with full reverse speed and only proportional steering to the hitch angle. Trailer hit left rail immediately, costing a penalty and stopping progress. After contact we switched forward but ran out of time with only ~16% of the course covered. Priorities: start with a short forward move for clearance, then reverse slowly while steering toward hitch angle to keep it near zero. Keep head turned toward rail side to watch trailer rear and use gentle steering to avoid exceeding limits.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The controller started reversing from STOPPED with full reverse speed and only proportional steering to the hitch angle. Trailer hit left rail immediately, costing a penalty and stopping progress. After contact we switched forward but ran out of time with only ~16% of the course covered. Priorities: start with a short forward move for clearance, then reverse slowly while steering toward hitch angle to keep it near zero. Keep head turned toward rail side to watch trailer rear and use gentle steering to avoid exceeding limits."
+      ]
+     }
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "TIME_UP",
+     "time": 619.0,
+     "progress": 0.2713,
+     "touches": 1,
+     "notes_in": [],
+     "note": {
+      "text": "The constant reverse controller let the trailer swing left and hit the rail early (1 touch, hitch ~18\u00b0). When the hitch deviates, switch to forward drive to straighten before resuming reverse. Keep the look direction on the rear camera to monitor the trailer. Use modest reverse speed and stay within the 42\u00b0 steering limit to reduce overshoot. Prioritise early hitch correction to avoid repeated gear changes and penalties.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "The constant reverse controller let the trailer swing left and hit the rail early (1 touch, hitch ~18\u00b0). When the hitch deviates, switch to forward drive to straighten before resuming reverse. Keep the look direction on the rear camera to monitor the trailer. Use modest reverse speed and stay within the 42\u00b0 steering limit to reduce overshoot. Prioritise early hitch correction to avoid repeated gear changes and penalties."
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163349-53b0f7",
+   "role": "train",
+   "step": 2,
+   "member": 0,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3621,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The controller used a fixed reverse speed and only reacted to hitch angle later, allowing the trailer to swing left to ~15\u00b0 and hit the rail. Head never turned to monitor side mirrors, missing the contact. Future drivers should keep the hitch angle small by steering toward the swing immediately, use side\u2011mirror looks or glance left/right to gauge rail clearance, and start with a lower reverse speed until the angle is under control. If the hitch angle exceeds about 10\u00b0, pull forward briefly to reset before continuing."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "Jackknifed because controller used full reverse speed and max steering, letting hitch hit 75\u00b0. Keep reverse speed low (~0.5\u202fm/s) and steer modestly, continuously correcting hitch angle. When hitch exceeds ~30\u00b0 switch to forward pull to straighten before resuming reverse. Turn head to keep rail edges in view and avoid large sudden corrections."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The trailer never moved; the controller stayed at zero speed and got pinned by a rail. Key fixes: start reverse speed promptly after gear change, monitor hitch angle, and on any rail contact switch to low forward speed while steering toward the tilt to straighten. Keep the head (or mirrors) turned toward the trailer rear to maintain visual on the hitch during corrections."
+      }
+     ],
+     "note": {
+      "text": null,
+      "accepted": false,
+      "rejections": [],
+      "drafts": [],
+      "error": "agy:gpt-oss-120b-medium: exit 3, unparseable result (agy status ERROR: {\n  \"note\": \"Controller kept a constant reverse speed of \u20130.5\u202fm/s and only looked at the left mirror. The trailer touched the left rail early while the hitch angle was only\u202f+2\u00b0. The main failure was i): ')\\nAGY_ERROR: {\"short_error\":\"RESOURCE_EXHAUSTED (code 429): Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 4h0m55s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"85c902fd-0565-4020-9eab-c17ab5db70ae-3\"}\\n'"
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 173.7,
+     "progress": 0.2159,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Got stuck pinned with trailer swinging about 76\u00b0 right and ran out of time. The controller stayed reverse too long; it should switch to forward pull when the hitch angle exceeds roughly 70\u00b0 or when status becomes PINNED. Prioritise early detection of a large swing and a quick gear change to forward, then steer to reduce the swing before resuming reverse. Tip: while reversing always steer toward the side the trailer is swung to."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We repeatedly hit the rail with the trailer's rear\u2011right corner (6 contacts) because the trailer swung right while reversing. Keep the hitch angle under about 15\u201120\u00b0. If it grows, pull forward sooner with wheels steered opposite to straighten. Use the left mirror to monitor the right side while reversing and keep your head forward when possible. Avoid large steering angles (max 45\u00b0) in reverse; they amplify hitch errors. Prioritise early forward pulls to reset the trailer before it nears the rail."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "We ran out of time because the trailer swung right and we became PINNED. Our recovery kept pulling forward at high speed but did not straighten the hitch before the clock expired. Prioritise keeping the trailer straight while reversing: steer opposite the hitch angle and use a modest reverse speed. If PINNED, pull forward with steering toward the swing and look to the opposite side to keep the rail in view. Avoid aggressive forward bursts until the hitch is near zero."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 81.9,
+     "progress": 0.0,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The controller over\u2011steered right after each rear\u2011left touch, never reducing the hitch angle enough. Prioritize gentle steering within the 45\u00b0 limit and switch to forward recovery earlier when the hitch drifts a few degrees. Keep the head aimed at the visible bay line to track swing and use the target bearing for small corrections. Remember only 8 touches are allowed, each adds a 5\u202fs penalty, reverse speed is ~0.8\u202fm/s, forward recovery ~1.2\u202fm/s, and keep hitch below\u202f7\u00b0."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We touched rails 6 times and jackknifed twice (max hitch ~84\u00b0). Recovery needed: longer forward pull, small opposite steering while moving forward, and keep gaze left while reversing to monitor side rails. Prioritize straightening before resuming reverse and avoid large reverse steering near limits."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The controller started reversing from STOPPED with full reverse speed and only proportional steering to the hitch angle. Trailer hit left rail immediately, costing a penalty and stopping progress. After contact we switched forward but ran out of time with only ~16% of the course covered. Priorities: start with a short forward move for clearance, then reverse slowly while steering toward hitch angle to keep it near zero. Keep head turned toward rail side to watch trailer rear and use gentle steering to avoid exceeding limits."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 307.9,
+     "progress": 0.3172,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Our controller used a simple proportional steer based on hitch angle, which kept the trailer swinging left and repeatedly bumped the left rail. The contacts caused gear\u2011change delays and ate the time budget. When the trailer becomes pinned, switch immediately to forward pulling to straighten before reversing again, and keep reverse speed low. Prioritize detecting PINNED status and adding a forward\u2011pull phase. Tip: watch the left rail with the head or mirror and only steer a few degrees left while reversing."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We got pinned twice by the trailer rear and once by the vehicle front, ending the leg with time up. The slow reverse controller stalled after contacts, and we waited too long before pulling forward to straighten the hitch. Prioritize keeping the hitch angle under about ten degrees and switch to a gentle forward move as soon as it grows, while watching the left rail via the mirror. Use a moderate reverse speed and keep the head scanning the rails to avoid late contacts."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The constant reverse controller let the trailer swing left and hit the rail early (1 touch, hitch ~18\u00b0). When the hitch deviates, switch to forward drive to straighten before resuming reverse. Keep the look direction on the rear camera to monitor the trailer. Use modest reverse speed and stay within the 42\u00b0 steering limit to reduce overshoot. Prioritise early hitch correction to avoid repeated gear changes and penalties."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163349-19c4fd",
+   "role": "train",
+   "step": 2,
+   "member": 1,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 222.9,
+     "progress": 0.3662,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The controller used a fixed reverse speed and only reacted to hitch angle later, allowing the trailer to swing left to ~15\u00b0 and hit the rail. Head never turned to monitor side mirrors, missing the contact. Future drivers should keep the hitch angle small by steering toward the swing immediately, use side\u2011mirror looks or glance left/right to gauge rail clearance, and start with a lower reverse speed until the angle is under control. If the hitch angle exceeds about 10\u00b0, pull forward briefly to reset before continuing."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "Jackknifed because controller used full reverse speed and max steering, letting hitch hit 75\u00b0. Keep reverse speed low (~0.5\u202fm/s) and steer modestly, continuously correcting hitch angle. When hitch exceeds ~30\u00b0 switch to forward pull to straighten before resuming reverse. Turn head to keep rail edges in view and avoid large sudden corrections."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The trailer never moved; the controller stayed at zero speed and got pinned by a rail. Key fixes: start reverse speed promptly after gear change, monitor hitch angle, and on any rail contact switch to low forward speed while steering toward the tilt to straighten. Keep the head (or mirrors) turned toward the trailer rear to maintain visual on the hitch during corrections."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 97.7,
+     "progress": 0.2293,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Got stuck pinned with trailer swinging about 76\u00b0 right and ran out of time. The controller stayed reverse too long; it should switch to forward pull when the hitch angle exceeds roughly 70\u00b0 or when status becomes PINNED. Prioritise early detection of a large swing and a quick gear change to forward, then steer to reduce the swing before resuming reverse. Tip: while reversing always steer toward the side the trailer is swung to."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We repeatedly hit the rail with the trailer's rear\u2011right corner (6 contacts) because the trailer swung right while reversing. Keep the hitch angle under about 15\u201120\u00b0. If it grows, pull forward sooner with wheels steered opposite to straighten. Use the left mirror to monitor the right side while reversing and keep your head forward when possible. Avoid large steering angles (max 45\u00b0) in reverse; they amplify hitch errors. Prioritise early forward pulls to reset the trailer before it nears the rail."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "We ran out of time because the trailer swung right and we became PINNED. Our recovery kept pulling forward at high speed but did not straighten the hitch before the clock expired. Prioritise keeping the trailer straight while reversing: steer opposite the hitch angle and use a modest reverse speed. If PINNED, pull forward with steering toward the swing and look to the opposite side to keep the rail in view. Avoid aggressive forward bursts until the hitch is near zero."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 203.7,
+     "progress": 0.5121,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The controller over\u2011steered right after each rear\u2011left touch, never reducing the hitch angle enough. Prioritize gentle steering within the 45\u00b0 limit and switch to forward recovery earlier when the hitch drifts a few degrees. Keep the head aimed at the visible bay line to track swing and use the target bearing for small corrections. Remember only 8 touches are allowed, each adds a 5\u202fs penalty, reverse speed is ~0.8\u202fm/s, forward recovery ~1.2\u202fm/s, and keep hitch below\u202f7\u00b0."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We touched rails 6 times and jackknifed twice (max hitch ~84\u00b0). Recovery needed: longer forward pull, small opposite steering while moving forward, and keep gaze left while reversing to monitor side rails. Prioritize straightening before resuming reverse and avoid large reverse steering near limits."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The controller started reversing from STOPPED with full reverse speed and only proportional steering to the hitch angle. Trailer hit left rail immediately, costing a penalty and stopping progress. After contact we switched forward but ran out of time with only ~16% of the course covered. Priorities: start with a short forward move for clearance, then reverse slowly while steering toward hitch angle to keep it near zero. Keep head turned toward rail side to watch trailer rear and use gentle steering to avoid exceeding limits."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 157.0,
+     "progress": 0.3187,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Our controller used a simple proportional steer based on hitch angle, which kept the trailer swinging left and repeatedly bumped the left rail. The contacts caused gear\u2011change delays and ate the time budget. When the trailer becomes pinned, switch immediately to forward pulling to straighten before reversing again, and keep reverse speed low. Prioritize detecting PINNED status and adding a forward\u2011pull phase. Tip: watch the left rail with the head or mirror and only steer a few degrees left while reversing."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We got pinned twice by the trailer rear and once by the vehicle front, ending the leg with time up. The slow reverse controller stalled after contacts, and we waited too long before pulling forward to straighten the hitch. Prioritize keeping the hitch angle under about ten degrees and switch to a gentle forward move as soon as it grows, while watching the left rail via the mirror. Use a moderate reverse speed and keep the head scanning the rails to avoid late contacts."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The constant reverse controller let the trailer swing left and hit the rail early (1 touch, hitch ~18\u00b0). When the hitch deviates, switch to forward drive to straighten before resuming reverse. Keep the look direction on the rear camera to monitor the trailer. Use modest reverse speed and stay within the 42\u00b0 steering limit to reduce overshoot. Prioritise early hitch correction to avoid repeated gear changes and penalties."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163349-4810ff",
+   "role": "train",
+   "step": 2,
+   "member": 2,
+   "relay": "standard-s0",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "TIME_UP",
+     "time": 227.0,
+     "progress": 0.3663,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The controller used a fixed reverse speed and only reacted to hitch angle later, allowing the trailer to swing left to ~15\u00b0 and hit the rail. Head never turned to monitor side mirrors, missing the contact. Future drivers should keep the hitch angle small by steering toward the swing immediately, use side\u2011mirror looks or glance left/right to gauge rail clearance, and start with a lower reverse speed until the angle is under control. If the hitch angle exceeds about 10\u00b0, pull forward briefly to reset before continuing."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "Jackknifed because controller used full reverse speed and max steering, letting hitch hit 75\u00b0. Keep reverse speed low (~0.5\u202fm/s) and steer modestly, continuously correcting hitch angle. When hitch exceeds ~30\u00b0 switch to forward pull to straighten before resuming reverse. Turn head to keep rail edges in view and avoid large sudden corrections."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The trailer never moved; the controller stayed at zero speed and got pinned by a rail. Key fixes: start reverse speed promptly after gear change, monitor hitch angle, and on any rail contact switch to low forward speed while steering toward the tilt to straighten. Keep the head (or mirrors) turned toward the trailer rear to maintain visual on the hitch during corrections."
+      }
+     ],
+     "note": {
+      "text": "We used a constant reverse speed and simple proportional steering, which let the trailer swing left and touch the rail early. The controller never turned the head to watch side mirrors, missing clearance. Prioritize keeping the hitch angle near zero by steering toward the swing immediately, use a low reverse speed (~0.5\u202fm/s) and glance left/right or use mirrors to monitor rail distance. When the angle exceeds about 5\u00b0, pull forward briefly with wheels steered to straighten before resuming reverse.",
+      "accepted": true,
+      "rejections": [],
+      "drafts": [
+       "We used a constant reverse speed and simple proportional steering, which let the trailer swing left and touch the rail early. The controller never turned the head to watch side mirrors, missing clearance. Prioritize keeping the hitch angle near zero by steering toward the swing immediately, use a low reverse speed (~0.5\u202fm/s) and glance left/right or use mirrors to monitor rail distance. When the angle exceeds about 5\u00b0, pull forward briefly with wheels steered to straighten before resuming reverse."
+      ]
+     }
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 194.5,
+     "progress": 0.0307,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Got stuck pinned with trailer swinging about 76\u00b0 right and ran out of time. The controller stayed reverse too long; it should switch to forward pull when the hitch angle exceeds roughly 70\u00b0 or when status becomes PINNED. Prioritise early detection of a large swing and a quick gear change to forward, then steer to reduce the swing before resuming reverse. Tip: while reversing always steer toward the side the trailer is swung to."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We repeatedly hit the rail with the trailer's rear\u2011right corner (6 contacts) because the trailer swung right while reversing. Keep the hitch angle under about 15\u201120\u00b0. If it grows, pull forward sooner with wheels steered opposite to straighten. Use the left mirror to monitor the right side while reversing and keep your head forward when possible. Avoid large steering angles (max 45\u00b0) in reverse; they amplify hitch errors. Prioritise early forward pulls to reset the trailer before it nears the rail."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "We ran out of time because the trailer swung right and we became PINNED. Our recovery kept pulling forward at high speed but did not straighten the hitch before the clock expired. Prioritise keeping the trailer straight while reversing: steer opposite the hitch angle and use a modest reverse speed. If PINNED, pull forward with steering toward the swing and look to the opposite side to keep the rail in view. Avoid aggressive forward bursts until the hitch is near zero."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 320.7,
+     "progress": 0.4484,
+     "touches": 2,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "The controller over\u2011steered right after each rear\u2011left touch, never reducing the hitch angle enough. Prioritize gentle steering within the 45\u00b0 limit and switch to forward recovery earlier when the hitch drifts a few degrees. Keep the head aimed at the visible bay line to track swing and use the target bearing for small corrections. Remember only 8 touches are allowed, each adds a 5\u202fs penalty, reverse speed is ~0.8\u202fm/s, forward recovery ~1.2\u202fm/s, and keep hitch below\u202f7\u00b0."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We touched rails 6 times and jackknifed twice (max hitch ~84\u00b0). Recovery needed: longer forward pull, small opposite steering while moving forward, and keep gaze left while reversing to monitor side rails. Prioritize straightening before resuming reverse and avoid large reverse steering near limits."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The controller started reversing from STOPPED with full reverse speed and only proportional steering to the hitch angle. Trailer hit left rail immediately, costing a penalty and stopping progress. After contact we switched forward but ran out of time with only ~16% of the course covered. Priorities: start with a short forward move for clearance, then reverse slowly while steering toward hitch angle to keep it near zero. Keep head turned toward rail side to watch trailer rear and use gentle steering to avoid exceeding limits."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 484.9,
+     "progress": 0.2872,
+     "touches": 1,
+     "notes_in": [
+      {
+       "from": "round 1, driver 1",
+       "text": "Our controller used a simple proportional steer based on hitch angle, which kept the trailer swinging left and repeatedly bumped the left rail. The contacts caused gear\u2011change delays and ate the time budget. When the trailer becomes pinned, switch immediately to forward pulling to straighten before reversing again, and keep reverse speed low. Prioritize detecting PINNED status and adding a forward\u2011pull phase. Tip: watch the left rail with the head or mirror and only steer a few degrees left while reversing."
+      },
+      {
+       "from": "round 1, driver 2",
+       "text": "We got pinned twice by the trailer rear and once by the vehicle front, ending the leg with time up. The slow reverse controller stalled after contacts, and we waited too long before pulling forward to straighten the hitch. Prioritize keeping the hitch angle under about ten degrees and switch to a gentle forward move as soon as it grows, while watching the left rail via the mirror. Use a moderate reverse speed and keep the head scanning the rails to avoid late contacts."
+      },
+      {
+       "from": "round 1, driver 3",
+       "text": "The constant reverse controller let the trailer swing left and hit the rail early (1 touch, hitch ~18\u00b0). When the hitch deviates, switch to forward drive to straighten before resuming reverse. Keep the look direction on the rear camera to monitor the trailer. Use modest reverse speed and stay within the 42\u00b0 steering limit to reduce overshoot. Prioritise early hitch correction to avoid repeated gear changes and penalties."
+      }
+     ],
+     "note": null
+    }
+   ]
+  },
+  {
+   "run_id": "20261106-163822-5582d8",
+   "role": "transfer",
+   "step": 3,
+   "member": 0,
+   "relay": "standard-s1",
+   "legs": [
+    {
+     "index": 0,
+     "vehicle": "car",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [
+      {
+       "from": "round 2, driver 3",
+       "text": "We used a constant reverse speed and simple proportional steering, which let the trailer swing left and touch the rail early. The controller never turned the head to watch side mirrors, missing clearance. Prioritize keeping the hitch angle near zero by steering toward the swing immediately, use a low reverse speed (~0.5\u202fm/s) and glance left/right or use mirrors to monitor rail distance. When the angle exceeds about 5\u00b0, pull forward briefly with wheels steered to straighten before resuming reverse."
+      }
+     ],
+     "note": null
+    },
+    {
+     "index": 1,
+     "vehicle": "tractor",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": null
+    },
+    {
+     "index": 2,
+     "vehicle": "mower",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": null
+    },
+    {
+     "index": 3,
+     "vehicle": "truck",
+     "outcome": "DNF",
+     "time": 0.0,
+     "progress": 0.0,
+     "touches": 0,
+     "notes_in": [],
+     "note": null
+    }
+   ]
+  }
+ ]
+}
