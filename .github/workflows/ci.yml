@@ -16,8 +16,8 @@ jobs:
           python-version: ${{ matrix.python }}
           cache: pip
       - run: python -m pip install -e '.[dev]'
-      - run: pytest -q -m 'not live and not browser'
       - run: python tools/reproduce.py --verify
+      - run: pytest -q -m 'not live and not browser'
       - run: python tools/audit_public.py
       - run: python -m build
       - run: python -m twine check dist/*

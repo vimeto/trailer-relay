@@ -143,7 +143,7 @@ def build(runs_dir: str | Path = "runs") -> dict:
             Ls = [L for r in rs for L in legs_by_run[r["run_id"]]]
             k, n = _kn(Ls)
             matrix.append({"model": mk, "level": lv, "k": k, "n": n, "ci": wilson(k, n), "runs": len(rs),
-                           "progress": round(sum(L["progress"] for L in Ls) / n, 3),
+                           "progress": round(math.fsum(L["progress"] for L in Ls) / n, 3),
                            "seeds": {str(s): sum(1 for r in rs if r["seed"] == s) for s in sorted({r["seed"] for r in rs})},
                            "vehicles": {v: _kn(L for L in Ls if L["vehicle"] == v) for v in VEH_ORDER}})
 
@@ -170,7 +170,7 @@ def build(runs_dir: str | Path = "runs") -> dict:
                     continue
                 n = len(Ls)
                 gaze.append({"model": mk, "vehicle": v, "parked": parked, "n": n,
-                             "share": {g: round(sum(L["gaze"][g] for L in Ls) / n, 3) for g in Ls[0]["gaze"]},
+                             "share": {g: round(math.fsum(L["gaze"][g] for L in Ls) / n, 3) for g in Ls[0]["gaze"]},
                              "looks": round(sum(L.get("looks", 0) for L in Ls) / n, 1),
                              "touches": round(sum(L["touches"] for L in Ls) / n, 2),
                              "shuttles": round(sum(L["shuttles"] for L in Ls) / n, 2)})
@@ -208,7 +208,7 @@ def build(runs_dir: str | Path = "runs") -> dict:
         for r in s["runs"]:
             key = "T" if r["role"] == "transfer" else str(r["step"])
             steps[key].append({"member": r["member"], "run_id": r["run_id"], "parked": sum(L["outcome"] == "FINISHED" for L in r["legs"]),
-                               "progress": round(sum(L["progress"] for L in r["legs"]) / len(r["legs"]), 3),
+                               "progress": round(math.fsum(L["progress"] for L in r["legs"]) / len(r["legs"]), 3),
                                "legs": [{"vehicle": L["vehicle"], "outcome": L["outcome"], "progress": L["progress"]} for L in r["legs"]]})
             if r["role"] == "train":
                 for L in r["legs"]:
