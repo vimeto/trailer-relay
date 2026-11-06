@@ -86,3 +86,20 @@ def test_thin_trace_keeps_what_the_viewer_needs():
     # elsewhere, at most 0.2 s between samples while moving
     moving = [x for x in t if x >= 5.0]
     assert max(b - a for a, b in zip(moving, moving[1:])) <= 0.2 + 1e-9
+
+
+def test_valid_export_removes_whole_infrastructure_failed_study(tmp_path):
+    root = _fixture(tmp_path)
+    runs = root / 'runs'
+    digest = json.loads((runs / 'results.json').read_text())
+    study = json.loads((runs / 'studies/s1.json').read_text())
+    digest['runs'].append({'run_id': 'b2', 'file': 'b2.json'})
+    digest['legs'] = [{'run_id': 'b2', 'vehicle': 'car', 'reason': 'model API error'}]
+    digest['studies'] = [study]
+    (runs / 'results.json').write_text(json.dumps(digest))
+    out = tmp_path / 'site'
+    info = build(out, root, valid_only=True, log=lambda _: None)
+    assert info['runs'] == 1 and info['studies'] == 0
+    assert not (out / 'runs/b2.json').exists()
+    assert json.loads((out / 'runs/studies/index.json').read_text()) == []
+    assert json.loads((out / 'runs/results.json').read_text())['studies'] == []

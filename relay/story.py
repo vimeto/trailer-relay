@@ -44,7 +44,7 @@ ROUTE_NAMES = {"codex": "Codex CLI", "claude-code": "Claude Code CLI", "agy": "A
 VEH_ORDER = ["car", "tractor", "mower", "truck"]
 LEVEL_ORDER = ["easy", "medium", "hard", "v1"]
 # API list prices, USD per 1M tokens, looked up 2026-11-06. Runs went through $0 subscription CLIs; these prices say what
-# the same tokens would cost on each vendor's API. cache_write None = the vendor bills cache writes at the input price.
+# the same tokens would cost on each vendor's API. cache_write is the modeled short-TTL write sensitivity; None does not imply all explicit caching is free.
 PRICE_SHEET = {
     "sol":    {"input": 2.00, "cache_read": 0.10, "cache_write": None, "output": 10.00, "source": "OpenAI standard API pricing", "url": "https://developers.openai.com/api/docs/pricing?tab=suite"},
     "terra":  {"input": 1.00, "cache_read": 0.05, "cache_write": None, "output": 5.00, "source": "OpenAI standard API pricing", "url": "https://developers.openai.com/api/docs/pricing?tab=suite"},

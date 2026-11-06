@@ -31,7 +31,7 @@ def test_study_needs_every_member_and_transfer_and_no_api_errors():
     for step, role in [(1, "train"), (2, "train"), (3, "transfer")]:
         for member in range(2):
             rid = f"r{step}{member}"
-            records[rid] = {**record(), "run_id": rid}
+            records[rid] = {**record(), "run_id": rid, "seed": 1 if role == "transfer" else 0}
             by_run[rid] = legs()
             s["runs"].append({"run_id": rid, "role": role, "step": step, "member": member})
     assert study_reason(s, records, by_run) is None

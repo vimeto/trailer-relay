@@ -41,6 +41,9 @@ def study_reason(study: dict, runs: dict, legs_by_run: dict) -> str | None:
         reason = cohort_reason(runs[rid], legs_by_run.get(rid, []))
         if reason:
             return reason
+        expected_seed = study.get("transfer_seed", 1) if row["role"] == "transfer" else study.get("seed", 0)
+        if runs[rid].get("seed") != expected_seed:
+            return "different study course set"
     members = study["members"] if study["condition"] in ("self", "pool") else 1
     expected = {("train", step, member) for step in range(1, study["steps"] + 1) for member in range(members)}
     transfer_members = study["members"] if study["condition"] == "self" else 1

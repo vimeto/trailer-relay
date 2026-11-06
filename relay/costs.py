@@ -16,8 +16,8 @@ import fcntl
 import json
 from pathlib import Path
 
-# USD per 1M tokens: input, cached input, output. Sources (Nov 2026): OpenAI's GPT-6.1 Sol announcement;
-# Requesty's pricing posts for GPT-6.1 Terra and GPT-6 Luna (third-party; treat as provisional).
+# USD per 1M tokens: input, cached input, output. Standard read/fresh token rates checked 2026-11-06:
+# https://developers.openai.com/api/docs/pricing?tab=suite (explicit write/storage charges are not modeled).
 PRICES: dict[str, tuple[float, float, float]] = {
     "gpt-6.1-sol": (2.00, 0.10, 10.00),
     "gpt-6-sol": (2.00, 0.10, 10.00),
