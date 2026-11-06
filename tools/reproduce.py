@@ -23,7 +23,8 @@ def reproduce(root, verify=False):
     d = build(root / "runs")
     summary = {"release": "0.1.0", "core": d["core"], "counts": d["counts"],
                "scoreboard": [r for r in d["matrix"] if r["level"] == "medium"],
-               "matrix": d["matrix"], "cost": d["cost"], "learning": d["learning"], "exclusions": d["exclusions"]}
+               "matrix": d["matrix"], "cost": d["cost"], "learning": d["learning"], "exclusions": d["exclusions"],
+               "gaze": d["gaze"], "failures": d["failures"], "notes": d["notes"]}
     summary = json.loads(json.dumps(summary))  # normalize tuples exactly as stored JSON
     path = root / "experiments" / "evaluation.json"
     if verify:

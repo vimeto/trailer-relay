@@ -159,12 +159,12 @@ def build(runs_dir: str | Path = "runs") -> dict:
             if Ls:
                 failures[mk][lv] = fail_stats(Ls)
 
-    # ---- gaze: every driver's-seat run (studies included), per model x vehicle x outcome
+    # ---- gaze: core no-notes baseline only, per model x vehicle x outcome
     gaze = []
     for mk, _ in MODELS:
         for v in VEH_ORDER:
             for parked in (True, False):
-                Ls = [L for r in base + study_runs if model_key(r["model"]) == mk and r["level"] in ("easy", "medium", "hard")
+                Ls = [L for r in base if model_key(r["model"]) == mk and r["level"] == "medium"
                       for L in legs_by_run[r["run_id"]] if L["vehicle"] == v and (L["outcome"] == "FINISHED") == parked and L.get("gaze")]
                 if not Ls:
                     continue
