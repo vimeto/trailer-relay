@@ -147,7 +147,10 @@ def cmd_serve(a):
 
 def cmd_site(a):
     from .site import build
+    from .results import write
 
+    update_index(a.runs)
+    write(a.runs)
     build(a.out, ROOT, a.runs, full_traces=a.full_traces, valid_only=a.valid_only, viewer_dir=viewer_directory())
 
 

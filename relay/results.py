@@ -175,6 +175,7 @@ def build(runs_dir: str | Path = "runs") -> dict:
 
 def write(runs_dir: str | Path = "runs") -> Path:
     out = Path(runs_dir) / "results.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
     data = build(runs_dir)
     tmp = out.with_suffix(".tmp")
     tmp.write_text(json.dumps(data, separators=(",", ":"), allow_nan=False, default=lambda o: None if isinstance(o, float) and not math.isfinite(o) else o))

@@ -122,3 +122,15 @@ def test_index_initializes_an_empty_workspace(tmp_path):
 
     out = update_index(tmp_path / 'new-workspace' / 'runs')
     assert json.loads(out.read_text()) == {'runs': []}
+
+
+def test_results_and_static_export_initialize_empty_workspace(tmp_path, monkeypatch):
+    from relay import __main__ as cli
+
+    monkeypatch.setattr(cli, 'ROOT', tmp_path)
+    runs = tmp_path / 'runs'
+    cli.main(['--runs', str(runs), 'results'])
+    assert json.loads((runs / 'results.json').read_text())['runs'] == []
+    cli.main(['--runs', str(runs), 'site', '--out', str(tmp_path / 'site')])
+    assert (tmp_path / 'site/explorer/vendor/three.module.min.js').is_file()
+    assert json.loads((tmp_path / 'site/runs/index.json').read_text())['runs'] == []
