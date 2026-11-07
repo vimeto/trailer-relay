@@ -1,10 +1,16 @@
 # Trailer Relay
 
-A simulator and evaluation harness for reversing vehicles with trailers. Language-model drivers get partial observations, issue controls or write Python controllers, and can pass short notes to later drivers. Every recorded attempt can be replayed in a three.js viewer.
+A simulator and evaluation harness for reversing vehicles with trailers. Language models drive from the driver's seat: they see rail points from wherever their head points, plus mirrors and a reversing camera, and they write Python controllers that steer the rig. They can leave short notes for later drivers. Every recorded attempt can be replayed in a three.js viewer.
 
 **[Interactive results and replays](https://trailer.games.vtoivonen.com/)** · [Reproduce the evaluation](docs/REPRODUCIBILITY.md) · [Dataset](docs/DATASET.md) · [Extend the environment](docs/EXTENDING.md)
 
-The November 2026 experiment compares eight model configurations on a car, tractor, ride-on mower and semi truck. Sol parks 16/32 valid core legs; Opus parks 14/28. This is an exploratory comparison through subscription CLIs, with unequal samples, route-specific preambles and default reasoning efforts. It is not a controlled comparison of model weights alone. Notes and repeated attempts are not experimentally separated.
+## Why trailers
+
+Backing up a trailer means planning for a position you can't see yet. To get round a 90-degree bend, the trailer has to be at the right angle before the bend starts, and the driver has to know where the tow vehicle's own corners are the whole time. People learn this by feel. Language models have probably seen little of it in training, so it tests whether their spatial reasoning generalises.
+
+The task is far from solved. In the November 2026 evaluation of eight models on a car, a tractor, a ride-on mower and a semi truck, GPT-6.1 Sol parks 16 of 32 legs and Claude Opus 5.5 parks 14 of 28. Four models park none. All decisions are still made on a 2D plan, and the courses leave room to spare, so the benchmark can get much harder: courses at each rig's turning limit, decisions in 3D, wider or asymmetric trailers, and training rather than only evaluation.
+
+Read the results as exploratory. Models run through their vendors' subscription CLIs at default reasoning effort, with different preambles and unequal sample sizes, so this is not a controlled comparison of model weights. Notes and repeated attempts always come together, so the effect of notes alone is not measured.
 
 ## Install and try it
 
@@ -20,9 +26,9 @@ python -m relay run --models autopilot --relay mini
 python -m relay serve
 ```
 
-Open the printed viewer URL. `relay` is also installed as a command. By default, tracks and run records are written under the current working directory; `--runs` and `--tracks` go before the subcommand. `RELAY_WORKSPACE` sets a different workspace root.
+Open the printed viewer URL. Installing also adds a `relay` command. Tracks and run records go under the current working directory unless you pass `--runs` and `--tracks` before the subcommand or set `RELAY_WORKSPACE`.
 
-For a model run, supply your own credentials through environment variables, or use an installed subscription CLI on your own account. Nothing is charged by installing or replaying this dataset.
+To run a model, supply your own credentials through environment variables or use a subscription CLI installed on your own account. Installing the package and replaying the dataset cost nothing.
 
 ```sh
 export OPENAI_API_KEY=...  # set in your shell, never in a committed file
@@ -31,9 +37,9 @@ python -m relay run --models openai:YOUR_MODEL_ID --relay standard \
   --control continuous --clock paused --trials 2 --budget-usd 1
 ```
 
-The API budget is checked between requests; concurrent in-flight calls can overshoot it. Verify current model availability and rates before new experiments. Historical model identifiers in this dataset are the exact requested CLI identifiers; provider-side weight snapshots were not independently verified.
+The harness checks the API budget between requests, so calls already in flight can overshoot it. Check current model availability and rates before new experiments. Model identifiers in the dataset are the exact identifiers sent to each CLI. Nothing verifies which weight snapshot the provider served.
 
-Model-written code runs in a subprocess. **Read [the execution boundary](docs/SECURITY.md) before running untrusted controllers.** The macOS implementation uses `sandbox-exec`; Linux requires an external sandbox/container for equivalent filesystem and network isolation.
+Model-written code runs in a subprocess. **Read [the execution boundary](docs/SECURITY.md) before running untrusted controllers.** On macOS the harness uses `sandbox-exec`. On Linux you need your own container or VM for the same filesystem and network isolation.
 
 ## What is included
 
@@ -45,9 +51,9 @@ Model-written code runs in a subprocess. **Read [the execution boundary](docs/SE
 | `runs/` | Experiment transcripts, controller programs, metrics, events and traces; archived invalid attempts are retained separately |
 | `experiments/` | Frozen evaluation, cohort definition and raw-record SHA-256 checksums |
 | `tests/` | Simulator, harness, adapter, analysis and browser tests |
-| `examples/` | A direct simulator rollout showing the extension surface |
+| `examples/` | A direct simulator rollout, a starting point for extensions |
 
-The article, editorial drafts, design iterations and website deployment live in a separate private repository. They are not needed to run, inspect or extend the simulator.
+The article and its drafts live in a separate repository. You don't need them to run, inspect or extend the simulator.
 
 ## Validate
 
@@ -59,6 +65,6 @@ pytest -q -m browser
 python -m build
 ```
 
-New research runs should use a separate `--runs` directory to preserve the frozen release. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Put new runs in a separate `--runs` directory so the frozen release stays intact. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-MIT for the original software and experiment records; the vendored three.js license is retained in `viewer/vendor/LICENSE`. Provider names belong to their respective owners. Cite the project using [CITATION.cff](CITATION.cff).
+The software and experiment records are MIT licensed. The vendored three.js license is in `viewer/vendor/LICENSE`. Provider names belong to their owners. To cite the project, use [CITATION.cff](CITATION.cff).
